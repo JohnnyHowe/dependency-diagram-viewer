@@ -1,9 +1,9 @@
 import pygame
 from pygame import Vector2, Rect
 
-from camera import Camera
-from font_cache import FontCache
-from window import Window
+from window_engine.camera import Camera
+from window_engine.font_cache import FontCache
+from window_engine.window import Window
 
 
 def rect(rect: Rect, color="#ffffff", width=1):

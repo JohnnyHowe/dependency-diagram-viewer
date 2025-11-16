@@ -1,5 +1,5 @@
 import pygame
-from singleton import Singleton
+from window_engine.singleton import Singleton
 
 
 class FontCache(metaclass=Singleton):

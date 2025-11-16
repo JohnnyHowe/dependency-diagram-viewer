@@ -1,7 +1,7 @@
 import pygame
 from pygame import Vector2
 
-from singleton import Singleton
+from window_engine.singleton import Singleton
 
 
 class Window(metaclass=Singleton):

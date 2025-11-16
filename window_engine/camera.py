@@ -1,7 +1,6 @@
-from singleton import Singleton
 from pygame import Vector2, Rect
-
-from window import Window
+from window_engine.singleton import Singleton
+from window_engine.window import Window
 
 
 class Camera(metaclass=Singleton):

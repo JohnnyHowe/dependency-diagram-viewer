@@ -1,8 +1,8 @@
 import math
 from pygame import Vector2
 import pygame
-from camera import Camera
-from window import Window
+from window_engine.camera import Camera
+from window_engine.window import Window
 
 
 class CameraController:

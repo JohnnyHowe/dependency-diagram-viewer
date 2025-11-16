@@ -1,8 +1,8 @@
 import pygame
 from pygame import Vector2
 
-import draw
-from window import Window
+import window_engine.draw as draw
+from window_engine.window import Window
 from camera_controller import CameraController
 
 class DiagramViewer:
