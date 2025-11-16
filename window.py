@@ -12,7 +12,7 @@ class Window(metaclass=Singleton):
     def __init__(self) -> None:
         if not pygame.get_init():
             pygame.init()
-        self.surface = pygame.display.set_mode(self.size)
+        self._reset_surface()
         self.pygame_events = []
 
     def update(self):
@@ -24,3 +24,9 @@ class Window(metaclass=Singleton):
         for event in self.pygame_events:
             if event.type == pygame.QUIT:
                 quit()
+            if event.type == pygame.VIDEORESIZE:
+                self.size = Vector2(event.w, event.h)
+                self._reset_surface()
+
+    def _reset_surface(self):
+        self.surface = pygame.display.set_mode(self.size, pygame.RESIZABLE)
