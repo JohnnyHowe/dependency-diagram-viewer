@@ -2,12 +2,14 @@ import pygame
 
 import draw
 from window import Window
+from camera_controller import CameraController
 
 class DiagramViewer:
     file_path: str
 
     def __init__(self, file_path: str):
         self.file_path = file_path
+        self._camera_controller = CameraController()
         self._run()
 
     def _run(self):
@@ -15,6 +17,7 @@ class DiagramViewer:
             self._run_frame()
 
     def _run_frame(self):
+        self._camera_controller.update()
         self._draw()
         Window().update()
 

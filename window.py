@@ -10,7 +10,8 @@ class Window(metaclass=Singleton):
     pygame_events: list
 
     def __init__(self) -> None:
-        pygame.init()
+        if not pygame.get_init():
+            pygame.init()
         self.surface = pygame.display.set_mode(self.size)
 
     def update(self):
