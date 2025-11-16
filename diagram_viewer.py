@@ -1,4 +1,5 @@
 import pygame
+from pygame import Vector2
 
 import draw
 from window import Window
@@ -24,3 +25,7 @@ class DiagramViewer:
     def _draw(self):
         Window().surface.fill((0, 0, 0))
         draw.rect(pygame.Rect(-100, -100, 200, 200))
+        self._draw_controls()
+
+    def _draw_controls(self):
+        draw.text_screen_space("middle mouse to pan\nmore to come xx", 20, Vector2(0, 0))

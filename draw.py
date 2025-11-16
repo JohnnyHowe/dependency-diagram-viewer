@@ -1,8 +1,20 @@
 import pygame
+from pygame import Vector2, Rect
 
 from camera import Camera
+from font_cache import FontCache
 from window import Window
 
 
-def rect(rect: pygame.Rect, color="#ffffff", width=1):
+def rect(rect: Rect, color="#ffffff", width=1):
     pygame.draw.rect(Window().surface, color, Camera().project_rect(rect), max(1, int(Camera().project_size_component(width))))
+
+
+def text_screen_space(text: str, size: int, position: Vector2, color="#ffffff"):
+    position = Vector2(position)
+    lines = text.splitlines()
+    font = FontCache().get_font(size)
+
+    for line in lines:
+        Window().surface.blit(font.render(line, True, color), position)
+        position.y += size
