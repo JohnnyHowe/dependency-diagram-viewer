@@ -1,5 +1,6 @@
 import pygame
 
+import draw
 from window import Window
 
 class DiagramViewer:
@@ -19,3 +20,4 @@ class DiagramViewer:
 
     def _draw(self):
         Window().surface.fill((0, 0, 0))
+        draw.rect(pygame.Rect(-100, -100, 200, 200))

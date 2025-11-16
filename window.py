@@ -6,12 +6,12 @@ from singleton import Singleton
 
 class Window(metaclass=Singleton):
     surface: pygame.Surface
-    surface_size: Vector2 = Vector2(1280, 960)
+    size: Vector2 = Vector2(1280, 960)
     pygame_events: list
 
     def __init__(self) -> None:
         pygame.init()
-        self.surface = pygame.display.set_mode(self.surface_size)
+        self.surface = pygame.display.set_mode(self.size)
 
     def update(self):
         self._run_event_loop()
