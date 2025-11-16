@@ -1,5 +1,3 @@
+from diagram_viewer import DiagramViewer
 
-from window import Window
-
-
-Window("./dwarfhold.json")
+DiagramViewer("./dwarfhold.json")
