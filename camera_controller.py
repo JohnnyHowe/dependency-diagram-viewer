@@ -7,6 +7,7 @@ from window import Window
 
 class CameraController:
     button_number = 1
+    reset_key = pygame.K_f
     _zoom_step: int 
 
     def __init__(self) -> None:
@@ -21,6 +22,9 @@ class CameraController:
                 self._step_zoom(event.y)
             if event.type == pygame.MOUSEMOTION:
                 self._mouse_movement(Vector2(event.rel))
+            if event.type == pygame.KEYDOWN:
+                if event.key == self.reset_key:
+                    self._reset()
 
     def _step_zoom(self, step_change: int):
         mouse_screen_position = Vector2(pygame.mouse.get_pos())
@@ -41,3 +45,8 @@ class CameraController:
     def _mouse_movement(self, change: Vector2):
         if pygame.mouse.get_pressed()[self.button_number]:
             Camera().position -= change
+
+    def _reset(self):
+        Camera().position = Vector2(0, 0)
+        self._zoom_step = 0
+        Camera().zoom = 1
