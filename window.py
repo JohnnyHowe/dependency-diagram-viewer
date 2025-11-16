@@ -13,6 +13,7 @@ class Window(metaclass=Singleton):
         if not pygame.get_init():
             pygame.init()
         self.surface = pygame.display.set_mode(self.size)
+        self.pygame_events = []
 
     def update(self):
         self._run_event_loop()

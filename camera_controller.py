@@ -1,22 +1,43 @@
+import math
 from pygame import Vector2
 import pygame
 from camera import Camera
+from window import Window
 
 
 class CameraController:
     button_number = 1
-    _last_mouse_position: Vector2
+    _zoom_step: int 
 
     def __init__(self) -> None:
         if not pygame.get_init():
             pygame.init()
         self._last_mouse_position = Vector2(0, 0)
+        self._zoom_step = 0
 
     def update(self):
-        new_position = Vector2(pygame.mouse.get_pos())
+        for event in Window().pygame_events:
+            if event.type == pygame.MOUSEWHEEL:
+                self._step_zoom(event.y)
+            if event.type == pygame.MOUSEMOTION:
+                self._mouse_movement(Vector2(event.rel))
 
+    def _step_zoom(self, step_change: int):
+        mouse_screen_position = Vector2(pygame.mouse.get_pos())
+        original_mouse_world_position = Camera().unproject_position(mouse_screen_position)
+
+        self._zoom_step += step_change
+        Camera().zoom = self._get_zoom()
+
+        new_mouse_world_position = Camera().unproject_position(mouse_screen_position)
+        mouse_position_change = new_mouse_world_position - original_mouse_world_position
+        mouse_position_change_screen_size = Camera().project_size(mouse_position_change)
+
+        Camera().position -= mouse_position_change_screen_size
+
+    def _get_zoom(self) -> float:
+        return math.pow(1.1, self._zoom_step)
+
+    def _mouse_movement(self, change: Vector2):
         if pygame.mouse.get_pressed()[self.button_number]:
-            Camera().position -= new_position - self._last_mouse_position
-
-        self._last_mouse_position = new_position
-
+            Camera().position -= change

@@ -17,6 +17,9 @@ class Camera(metaclass=Singleton):
     def project_position(self, position: Vector2) -> Vector2:
         return (position + Window().size / 2) * self.zoom - self.position
 
+    def unproject_position(self, position: Vector2) -> Vector2:
+        return (position + self.position) / self.zoom - Window().size / 2
+
     def project_size(self, size: Vector2) -> Vector2:
         return size * self.zoom
 
