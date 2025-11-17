@@ -1,6 +1,8 @@
 from pygame import Rect
+import pygame
 
 from diagram.diagram_loader import DiagramLoader
+from window_engine.camera import Camera
 import window_engine.draw as draw
 from window_engine.window import Window
 from camera_controller import CameraController
@@ -12,6 +14,7 @@ class DiagramViewer:
         self.file_path = file_path
         self._camera_controller = CameraController()
         self._load_diagram()
+        self.hovered_item = None
         self._run()
 
     def _load_diagram(self):
@@ -28,8 +31,23 @@ class DiagramViewer:
         Window().update()
 
     def _update_mouse_over(self):
+        mouse_position = Camera().unproject_position(pygame.mouse.get_pos())
+
         deepest_item_with_mouse_over = None
-        deepest_item_with_mouse_over_depth = None
+        for item in self.root.get_all_children_recursive():
+            if item.is_root:
+                continue
+            if not item.rect.collidepoint(mouse_position): continue
+            if deepest_item_with_mouse_over:
+                if item.depth <= deepest_item_with_mouse_over.depth:
+                    continue
+            deepest_item_with_mouse_over = item
+
+        if self.hovered_item:
+            self.hovered_item.is_hovered = False
+        self.hovered_item = deepest_item_with_mouse_over
+        if self.hovered_item:
+            self.hovered_item.is_hovered = True
 
     def _draw(self):
         Window().surface.fill((0, 0, 0))

@@ -24,10 +24,10 @@ class DiagramLoader:
         module = DiagramModule(data["path"], data["name"], parent, data.get("position", Vector2(0, 0)))
 
         for script_data in data["scripts"]:
-            module.scripts.append(self._create_script_from_data_dict(parent, script_data))
+            module.scripts.append(self._create_script_from_data_dict(module, script_data))
 
         for module_data in data["folders"]:
-            module.scripts.append(self._create_module_from_data_dict_recursive(parent, module_data))
+            module.folders.append(self._create_module_from_data_dict_recursive(module, module_data))
 
         return module
 

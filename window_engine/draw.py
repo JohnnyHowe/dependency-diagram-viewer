@@ -8,7 +8,7 @@ from window_engine.window import Window
 
 
 def rect(rect: Rect, color="#ffffff", width=1):
-    pygame.draw.rect(Window().surface, color, Camera().project_rect(rect), max(1, int(Camera().project_size_component(width))))
+    pygame.draw.rect(Window().surface, color, Camera().project_rect(rect), math.ceil(Camera().project_size_component(width)))
 
 
 def text(text: str, size: float, containing_rect: Rect, color="#ffffff", v_alignment=-1, h_alignment=-1):

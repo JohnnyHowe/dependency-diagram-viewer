@@ -11,12 +11,25 @@ class DiagramItem:
         self.path = path
         self.name = name
         
-        self.hovered = False
+        self.is_hovered = False
         self.is_child_hovered = False
 
         self.rect = Rect(0, 0, 0, 0)
         self.rect.center = center_position
         self.rect.size = Vector2(160, 40)
+
+        self.depth = self._get_depth()
+        self.is_root = parent == None
+
+    def _get_depth(self) -> int:
+        return len(self._get_parent_chain())
+
+    def _get_parent_chain(self) -> list:
+        chain = [self]
+        while chain[-1].parent:
+            chain.append(chain[-1].parent)
+        chain.reverse()
+        return chain
 
     def draw(self):
         draw.rect(self.rect)

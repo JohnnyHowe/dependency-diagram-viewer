@@ -51,3 +51,18 @@ class DiagramModule(DiagramItem):
         rect.topleft = Vector2(rect.topleft) + detail_padding + padding
         rect.size = Vector2(rect.size) - (padding * 2 + detail_padding)
         return rect
+
+    def get_all_children_recursive(self):
+        return self.get_scripts_recursive() + self.get_folders_recursive()
+
+    def get_scripts_recursive(self):
+        scripts = []
+        for folder in self.get_folders_recursive():
+            scripts += folder.scripts
+        return scripts
+
+    def get_folders_recursive(self):
+        folders = [self] 
+        for folder in self.folders:
+            folders += folder.get_folders_recursive()
+        return folders
