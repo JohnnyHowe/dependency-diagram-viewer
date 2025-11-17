@@ -23,5 +23,5 @@ class DiagramItem:
 
     def get_rect_with_padding(self):
         rect = self.get_rect()
-        pad = configuration.item_padding
+        pad = configuration.padding
         return Rect(rect.x + pad, rect.y + pad, rect.w - pad * 2, rect.h - pad * 2)
