@@ -1,5 +1,5 @@
 import pygame
-from pygame import Vector2
+from pygame import Rect, Vector2
 
 from diagram.diagram_loader import DiagramLoader
 import window_engine.draw as draw
@@ -29,9 +29,8 @@ class DiagramViewer:
 
     def _draw(self):
         Window().surface.fill((0, 0, 0))
-        #draw.rect(pygame.Rect(-100, -100, 200, 200))
         self.root.draw()
         self._draw_controls_text()
 
     def _draw_controls_text(self):
-        draw.text_screen_space("hold middle mouse to pan\nscrollwheel to zoom\n\nf: reset camera", 20, Vector2(0, 0))
+        draw.text_screen_space("hold middle mouse to pan\nscrollwheel to zoom\n\nf: reset camera", 20, Rect((0, 0), Window().size))

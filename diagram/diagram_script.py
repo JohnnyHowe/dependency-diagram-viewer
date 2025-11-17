@@ -5,7 +5,7 @@ from window_engine import draw
 
 class DiagramScript(DiagramItem):
     size = Vector2(160, 40)
-    max_font_size = 20
+    font_size = 40
 
     def __init__(self, full_name, name, path, center_position):
         super().__init__(path, center_position)
@@ -16,7 +16,7 @@ class DiagramScript(DiagramItem):
     def draw(self):
         rect = self.get_rect()
         draw.rect(rect)
-        draw.text(self.name, self.max_font_size, Vector2(rect.topleft))
+        draw.text(self.name, self.font_size, rect)
 
     def get_rect(self) -> Rect:
         rect = Rect(0, 0, 0, 0)
