@@ -13,3 +13,8 @@ class DiagramModule(DiagramItem):
         draw.rect(self.get_rect())
         for child in self.folders + self.scripts:
             child.draw()
+        self._expand_to_fit_children()
+
+    def _expand_to_fit_children(self):
+        for child in self.folders + self.scripts:
+            self.rect = self.rect.union(child.rect)

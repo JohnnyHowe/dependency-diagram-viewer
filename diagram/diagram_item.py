@@ -8,19 +8,18 @@ class DiagramItem:
 
     def __init__(self, path: str, center_position: Vector2):
         self.path = path
-        self.center_position = center_position
-        self.size = (160, 40)
         self.hovered = False
         self.is_child_hovered = False
+
+        self.rect = Rect(0, 0, 0, 0)
+        self.rect.center = center_position
+        self.rect.size = Vector2(160, 40)
 
     def draw(self):
         draw.rect(self.get_rect())
 
     def get_rect(self) -> Rect:
-        rect = Rect(0, 0, 0, 0)
-        rect.center = self.center_position
-        rect.size = self.size
-        return rect
+        return self.rect
 
     def get_rect_with_padding(self):
         rect = self.get_rect()
