@@ -16,7 +16,7 @@ class DiagramScript(DiagramItem):
     def draw(self):
         rect = self.get_rect()
         draw.rect(rect)
-        draw.text(self.name, self.font_size, rect)
+        draw.text(self.name, self.font_size, self.get_rect_with_padding(rect))
 
     def get_rect(self) -> Rect:
         rect = Rect(0, 0, 0, 0)

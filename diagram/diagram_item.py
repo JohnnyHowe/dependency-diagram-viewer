@@ -1,4 +1,6 @@
-from pygame import Vector2
+from pygame import Rect, Vector2
+
+import configuration
 
 
 class DiagramItem:
@@ -11,3 +13,7 @@ class DiagramItem:
 
     def draw(self):
         pass
+
+    def get_rect_with_padding(self, rect: Rect):
+        pad = configuration.item_padding
+        return Rect(rect.x + pad, rect.y + pad, rect.w - pad * 2, rect.h - pad * 2)
