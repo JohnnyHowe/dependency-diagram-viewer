@@ -49,5 +49,5 @@ class DiagramModule(DiagramItem):
         padding = Vector2(1, 1) * configuration.padding
 
         rect.topleft = Vector2(rect.topleft) + detail_padding + padding
-        rect.size = Vector2(rect.size) - (padding + detail_padding)
+        rect.size = Vector2(rect.size) - (padding * 2 + detail_padding)
         return rect
