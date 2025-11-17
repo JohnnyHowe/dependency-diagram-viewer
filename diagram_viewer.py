@@ -29,7 +29,8 @@ class DiagramViewer:
 
     def _draw(self):
         Window().surface.fill((0, 0, 0))
-        draw.rect(pygame.Rect(-100, -100, 200, 200))
+        #draw.rect(pygame.Rect(-100, -100, 200, 200))
+        self.root.draw()
         self._draw_controls_text()
 
     def _draw_controls_text(self):
