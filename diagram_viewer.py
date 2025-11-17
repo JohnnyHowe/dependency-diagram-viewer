@@ -31,23 +31,29 @@ class DiagramViewer:
         Window().update()
 
     def _update_mouse_over(self):
-        mouse_position = Camera().unproject_position(pygame.mouse.get_pos())
-
-        deepest_item_with_mouse_over = None
-        for item in self.root.get_all_children_recursive():
-            if item.is_root:
-                continue
-            if not item.rect.collidepoint(mouse_position): continue
-            if deepest_item_with_mouse_over:
-                if item.depth <= deepest_item_with_mouse_over.depth:
-                    continue
-            deepest_item_with_mouse_over = item
+        deepest_item_with_mouse_over = self._get_deepest_item_under_mouse()
 
         if self.hovered_item:
             self.hovered_item.is_hovered = False
         self.hovered_item = deepest_item_with_mouse_over
         if self.hovered_item:
             self.hovered_item.is_hovered = True
+
+    def _get_deepest_item_under_mouse(self):
+        deepest_item_with_mouse_over = None
+        for item in self._get_items_under_mouse():
+            if deepest_item_with_mouse_over == None:
+                deepest_item_with_mouse_over = item
+            elif item.depth > deepest_item_with_mouse_over.depth:
+                deepest_item_with_mouse_over = item
+        return deepest_item_with_mouse_over
+
+    def _get_items_under_mouse(self):
+        mouse_position = Camera().unproject_position(pygame.mouse.get_pos())
+        for item in self.root.get_all_children_recursive():
+            if item.is_root: continue
+            if not item.rect.collidepoint(mouse_position): continue
+            yield item
 
     def _draw(self):
         Window().surface.fill((0, 0, 0))
