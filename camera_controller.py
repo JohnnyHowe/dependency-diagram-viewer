@@ -2,6 +2,7 @@ import math
 from pygame import Vector2
 import pygame
 from window_engine.camera import Camera
+from window_engine.mouse import Mouse
 from window_engine.window import Window
 
 
@@ -13,20 +14,20 @@ class CameraController:
     def __init__(self) -> None:
         if not pygame.get_init():
             pygame.init()
-        self._last_mouse_position = Vector2(0, 0)
         self._zoom_step = 0
 
     def update(self):
+        self._mouse_movement(Mouse().rel)
+        self._step_zoom(Mouse().wheel_change)
+
         for event in Window().pygame_events:
-            if event.type == pygame.MOUSEWHEEL:
-                self._step_zoom(event.y)
-            if event.type == pygame.MOUSEMOTION:
-                self._mouse_movement(Vector2(event.rel))
             if event.type == pygame.KEYDOWN:
                 if event.key == self.reset_key:
                     self._reset()
 
     def _step_zoom(self, step_change: int):
+        if step_change == 0: return
+
         mouse_screen_position = Vector2(pygame.mouse.get_pos())
         original_mouse_world_position = Camera().unproject_position(mouse_screen_position)
 
@@ -43,7 +44,7 @@ class CameraController:
         return math.pow(1.1, self._zoom_step)
 
     def _mouse_movement(self, change: Vector2):
-        if pygame.mouse.get_pressed()[self.button_number]:
+        if Mouse().buttons_held[self.button_number]:
             Camera().position -= change
 
     def _reset(self):
