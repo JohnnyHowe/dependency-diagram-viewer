@@ -11,8 +11,8 @@ class DiagramItem:
         self.path = path
         self.name = name
         
+        self.is_held = False
         self.is_hovered = False
-        self.is_child_hovered = False
 
         self.rect = Rect(0, 0, 0, 0)
         self.rect.center = center_position

@@ -15,6 +15,7 @@ class DiagramViewer:
         self._camera_controller = CameraController()
         self._load_diagram()
         self.hovered_item = None
+        self.held_item = None
         self._run()
 
     def _load_diagram(self):
@@ -26,9 +27,17 @@ class DiagramViewer:
 
     def _run_frame(self):
         self._camera_controller.update()
-        self._update_mouse_over()
+        self._update_mouse_input()
         self._draw()
         Window().update()
+
+    # ===========================================================================================
+    # region Mouse
+    # ===========================================================================================
+
+    def _update_mouse_input(self):
+        self._update_mouse_over()
+        self._update_held_item()
 
     def _update_mouse_over(self):
         deepest_item_with_mouse_over = self._get_deepest_item_under_mouse()
@@ -54,6 +63,19 @@ class DiagramViewer:
             if item.is_root: continue
             if not item.rect.collidepoint(mouse_position): continue
             yield item
+            
+    def _update_held_item(self):
+        if self.held_item:
+            self.held_item.is_held = False
+        self.held_item = None
+
+        if self.hovered_item and pygame.mouse.get_pressed()[0]:
+            self.held_item = self.hovered_item
+            self.held_item.is_held = True
+
+    # ===========================================================================================
+    # region Drawing
+    # ===========================================================================================
 
     def _draw(self):
         Window().surface.fill((0, 0, 0))
