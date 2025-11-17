@@ -1,13 +1,12 @@
 from pygame import Rect, Vector2
+import configuration
 from diagram.diagram_item import DiagramItem
 from window_engine import draw
 
 
 class DiagramScript(DiagramItem):
-    font_size = 40
-
     def __init__(self, full_name, name, path, center_position):
-        super().__init__(path, center_position)
+        super().__init__(path, name, center_position)
         self.dependencies = []
         self.full_name = full_name
         self.name = name
@@ -15,4 +14,4 @@ class DiagramScript(DiagramItem):
     def draw(self):
         rect = self.get_rect()
         draw.rect(rect)
-        draw.text(self.name, self.font_size, self.get_rect_with_padding(), h_alignment=0, v_alignment=0)
+        draw.text(self.name, configuration.script_font_size, self.get_rect_with_padding(), h_alignment=0, v_alignment=0)

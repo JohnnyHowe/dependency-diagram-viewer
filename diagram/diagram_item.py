@@ -6,8 +6,10 @@ from window_engine import draw
 
 class DiagramItem:
 
-    def __init__(self, path: str, center_position: Vector2):
+    def __init__(self, path: str, name: str, center_position: Vector2):
         self.path = path
+        self.name = name
+        
         self.hovered = False
         self.is_child_hovered = False
 

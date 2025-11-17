@@ -5,15 +5,19 @@ from window_engine import draw
 
 
 class DiagramModule(DiagramItem):
-    def __init__(self, path, center_position):
-        super().__init__(path, center_position)
+
+    def __init__(self, path, name, center_position):
+        super().__init__(path, name, center_position)
         self.folders = []
         self.scripts = []
 
     def draw(self):
         draw.rect(self.get_rect())
+        draw.text(self.name, configuration.module_font_size, self.get_rect_with_padding())
+
         for child in self.folders + self.scripts:
             child.draw()
+
         self._expand_to_fit_children()
 
     def _expand_to_fit_children(self):
@@ -21,6 +25,5 @@ class DiagramModule(DiagramItem):
         for child in self.folders + self.scripts:
             self.rect = self.rect.union(child.rect)
 
-        padding_vec = Vector2(configuration.padding, configuration.padding)
-        self.rect.topleft = Vector2(self.rect.topleft) - padding_vec
-        self.rect.size += padding_vec * 2
+        self.rect.topleft = Vector2(self.rect.topleft) - configuration.padding * Vector2(1, 1) - configuration.module_font_size * Vector2(0, 1) * 2
+        self.rect.size = Vector2(self.rect.size) + (configuration.padding + configuration.module_font_size) * Vector2(1, 1) * 2
