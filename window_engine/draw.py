@@ -11,16 +11,17 @@ def rect(rect: Rect, color="#ffffff", width=1):
     pygame.draw.rect(Window().surface, color, Camera().project_rect(rect), max(1, int(Camera().project_size_component(width))))
 
 
-def text(text: str, size: float, containing_rect: Rect, color="#ffffff"):
-    text_screen_space(text, int(Camera().project_size_component(size)), Camera().project_rect(containing_rect), color)
+def text(text: str, size: float, containing_rect: Rect, color="#ffffff", v_alignment=-1, h_alignment=-1):
+    text_screen_space(text, int(Camera().project_size_component(size)), Camera().project_rect(containing_rect), color, v_alignment, h_alignment)
 
 
-def text_screen_space(text: str, size: int, containing_rect: Rect, color="#ffffff"):
+def text_screen_space(text: str, size: int, containing_rect: Rect, color="#ffffff", v_alignment=-1, h_alignment=-1):
     max_font_size = _get_max_font_size_for_text_to_fit(text, Vector2(containing_rect.size))
     font_size = min(max_font_size, size)
     font = FontCache().get_font(font_size)
-    
-    current_position = Vector2(containing_rect.topleft)
+
+    text_area_size = _get_space_rendered_text_will_use(text, font_size)
+    current_position = _get_position_for_alignment(containing_rect, text_area_size, v_alignment, h_alignment) 
     for line in text.splitlines():
         Window().surface.blit(font.render(line, True, color), current_position)
         current_position.y += font_size
@@ -44,3 +45,22 @@ def _get_space_rendered_text_will_use(text: str, screen_font_size: int) -> Vecto
     for line in text.splitlines():
         real_space_used_with_target_font_size += Vector2(font.size(line))
     return real_space_used_with_target_font_size
+
+
+def _get_position_for_alignment(containing_rect: Rect, item_size: Vector2, v_alignment, h_alignment) -> Vector2:
+    assert(v_alignment in [-1, 0, 1] and h_alignment in [-1, 0, 1], f"Text alignment values can only be -1, 0, or 1! Recieved {(v_alignment, h_alignment)}.")
+
+    position = Vector2(containing_rect.topleft)
+    size_difference = Vector2(containing_rect.size) - item_size
+
+    if h_alignment == 0:
+        position.x += size_difference.x / 2
+    elif h_alignment == 1:
+        position.x += size_difference.x
+
+    if v_alignment == 0:
+        position.y += size_difference.y / 2
+    elif v_alignment == 1:
+        position.y += size_difference.y
+
+    return position
