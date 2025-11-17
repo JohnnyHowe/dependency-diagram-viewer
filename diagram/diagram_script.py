@@ -4,7 +4,6 @@ from window_engine import draw
 
 
 class DiagramScript(DiagramItem):
-    size = Vector2(160, 40)
     font_size = 40
 
     def __init__(self, full_name, name, path, center_position):
@@ -16,10 +15,4 @@ class DiagramScript(DiagramItem):
     def draw(self):
         rect = self.get_rect()
         draw.rect(rect)
-        draw.text(self.name, self.font_size, self.get_rect_with_padding(rect), h_alignment=0, v_alignment=0)
-
-    def get_rect(self) -> Rect:
-        rect = Rect(0, 0, 0, 0)
-        rect.center = self.center_position
-        rect.size = self.size
-        return rect
+        draw.text(self.name, self.font_size, self.get_rect_with_padding(), h_alignment=0, v_alignment=0)
