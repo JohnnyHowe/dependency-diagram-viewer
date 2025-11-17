@@ -2,8 +2,8 @@ from pygame import Rect
 import pygame
 
 from diagram.diagram_loader import DiagramLoader
-from window_engine.camera import Camera
 import window_engine.draw as draw
+from window_engine.mouse import Mouse
 from window_engine.window import Window
 from camera_controller import CameraController
 
@@ -27,6 +27,7 @@ class DiagramViewer:
 
     def _run_frame(self):
         self._camera_controller.update()
+        Mouse().update()
         self._update_mouse_input()
         self._draw()
         Window().update()
@@ -58,10 +59,9 @@ class DiagramViewer:
         return deepest_item_with_mouse_over
 
     def _get_items_under_mouse(self):
-        mouse_position = Camera().unproject_position(pygame.mouse.get_pos())
         for item in self.root.get_all_children_recursive():
             if item.is_root: continue
-            if not item.rect.collidepoint(mouse_position): continue
+            if not item.rect.collidepoint(Mouse().position): continue
             yield item
             
     def _update_held_item(self):
