@@ -1,6 +1,7 @@
 import pygame
 from pygame import Vector2
 
+from diagram.diagram_loader import DiagramLoader
 import window_engine.draw as draw
 from window_engine.window import Window
 from camera_controller import CameraController
@@ -11,7 +12,11 @@ class DiagramViewer:
     def __init__(self, file_path: str):
         self.file_path = file_path
         self._camera_controller = CameraController()
+        self._load_diagram()
         self._run()
+
+    def _load_diagram(self):
+        self.root = DiagramLoader(self.file_path).get_root()
 
     def _run(self):
         while True:
