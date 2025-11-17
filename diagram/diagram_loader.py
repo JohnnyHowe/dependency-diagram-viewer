@@ -13,26 +13,26 @@ class DiagramLoader:
 
     def _load(self):
         self._load_json()
-        self._root = self._create_module_from_data_dict_recursive(self._raw_json)
+        self._root = self._create_module_from_data_dict_recursive(None, self._raw_json)
         self._populate_all_script_dependencies()
 
     def _load_json(self):
         with open(self.file_path, "r") as file:
             self._raw_json = json.loads(file.read())
 
-    def _create_module_from_data_dict_recursive(self, data: dict) -> DiagramModule:
-        module = DiagramModule(data["path"], data["name"], data.get("position", Vector2(0, 0)))
+    def _create_module_from_data_dict_recursive(self, parent, data: dict) -> DiagramModule:
+        module = DiagramModule(data["path"], data["name"], parent, data.get("position", Vector2(0, 0)))
 
         for script_data in data["scripts"]:
-            module.scripts.append(self._create_script_from_data_dict(script_data))
+            module.scripts.append(self._create_script_from_data_dict(parent, script_data))
 
         for module_data in data["folders"]:
-            module.scripts.append(self._create_module_from_data_dict_recursive(module_data))
+            module.scripts.append(self._create_module_from_data_dict_recursive(parent, module_data))
 
         return module
 
-    def _create_script_from_data_dict(self, data: dict) -> DiagramScript:
-        script = DiagramScript(data["full_name"], data["name"], data["path"], data.get("position", Vector2(0, 0)))
+    def _create_script_from_data_dict(self, parent, data: dict) -> DiagramScript:
+        script = DiagramScript(data["full_name"], data["name"], data["path"], parent, data.get("position", Vector2(0, 0)))
         self._all_scripts[script.full_name] = [script, data]
         return script
 

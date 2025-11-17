@@ -1,5 +1,4 @@
-import pygame
-from pygame import Rect, Vector2
+from pygame import Rect
 
 from diagram.diagram_loader import DiagramLoader
 import window_engine.draw as draw
@@ -24,8 +23,13 @@ class DiagramViewer:
 
     def _run_frame(self):
         self._camera_controller.update()
+        self._update_mouse_over()
         self._draw()
         Window().update()
+
+    def _update_mouse_over(self):
+        deepest_item_with_mouse_over = None
+        deepest_item_with_mouse_over_depth = None
 
     def _draw(self):
         Window().surface.fill((0, 0, 0))

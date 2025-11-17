@@ -6,8 +6,8 @@ from window_engine import draw
 
 class DiagramModule(DiagramItem):
 
-    def __init__(self, path, name, center_position):
-        super().__init__(path, name, center_position)
+    def __init__(self, path, name, parent, center_position):
+        super().__init__(path, name, parent, center_position)
         self.folders = []
         self.scripts = []
 

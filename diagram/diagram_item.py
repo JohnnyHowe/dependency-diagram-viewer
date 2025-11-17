@@ -6,7 +6,8 @@ from window_engine import draw
 
 class DiagramItem:
 
-    def __init__(self, path: str, name: str, center_position: Vector2):
+    def __init__(self, path: str, name: str, parent, center_position: Vector2):
+        self.parent = parent
         self.path = path
         self.name = name
         
