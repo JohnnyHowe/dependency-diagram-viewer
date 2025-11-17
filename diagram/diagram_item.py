@@ -18,12 +18,9 @@ class DiagramItem:
         self.rect.size = Vector2(160, 40)
 
     def draw(self):
-        draw.rect(self.get_rect())
-
-    def get_rect(self) -> Rect:
-        return self.rect
+        draw.rect(self.rect)
 
     def get_rect_with_padding(self):
-        rect = self.get_rect()
+        rect = self.rect
         pad = configuration.padding
         return Rect(rect.x + pad, rect.y + pad, rect.w - pad * 2, rect.h - pad * 2)

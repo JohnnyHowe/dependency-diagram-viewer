@@ -12,6 +12,6 @@ class DiagramScript(DiagramItem):
         self.name = name
 
     def draw(self):
-        rect = self.get_rect()
+        rect = self.rect
         draw.rect(rect)
         draw.text(self.name, configuration.script_font_size, self.get_rect_with_padding(), h_alignment=0, v_alignment=0)
