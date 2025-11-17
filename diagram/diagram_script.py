@@ -13,7 +13,6 @@ class DiagramScript(DiagramItem):
 
     def draw(self):
         rect = self.rect
-        if self.is_hovered:
-            draw.rect(self.rect, configuration.hovered_item_fill_color, 0)
+        self.draw_background_fill()
         draw.rect(rect)
         draw.text(self.name, configuration.script_font_size, self.get_rect_with_padding(), h_alignment=0, v_alignment=0)

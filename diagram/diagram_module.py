@@ -22,8 +22,7 @@ class DiagramModule(DiagramItem):
         self._expand_to_fit_children()
 
     def _draw_shape(self):
-        if self.is_hovered:
-            draw.rect(self.rect, configuration.hovered_item_fill_color, 0)
+        self.draw_background_fill()
         draw.rect(self.rect)
 
         detail_size = configuration.module_detail_size

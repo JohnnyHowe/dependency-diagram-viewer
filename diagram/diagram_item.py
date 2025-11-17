@@ -38,3 +38,9 @@ class DiagramItem:
         rect = self.rect
         pad = configuration.padding
         return Rect(rect.x + pad, rect.y + pad, rect.w - pad * 2, rect.h - pad * 2)
+
+    def draw_background_fill(self):
+        if self.is_held:
+            draw.rect(self.rect, configuration.held_item_fill_color, 0)
+        elif self.is_hovered:
+            draw.rect(self.rect, configuration.hovered_item_fill_color, 0)
