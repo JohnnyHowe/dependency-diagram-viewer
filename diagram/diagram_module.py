@@ -12,8 +12,9 @@ class DiagramModule(DiagramItem):
         self.scripts = []
 
     def draw(self):
-        self._draw_shape()
-        draw.text(self.name, configuration.module_font_size, self.get_rect_with_padding())
+        if not self.is_root:
+            self._draw_shape()
+            draw.text(self.name, configuration.module_font_size, self.get_rect_with_padding())
 
         for child in self.folders + self.scripts:
             child.draw()
@@ -21,7 +22,6 @@ class DiagramModule(DiagramItem):
         self._expand_to_fit_children()
 
     def _draw_shape(self):
-        #draw.rect(self.rect, configuration.hovered_item_fill_color if self.is_hovered else configuration.item_fill_color, 0)
         if self.is_hovered:
             draw.rect(self.rect, configuration.hovered_item_fill_color, 0)
         draw.rect(self.rect)
