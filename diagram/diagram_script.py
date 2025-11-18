@@ -9,7 +9,6 @@ class DiagramScript(DiagramItem):
         super().__init__(path, name, parent, center_position)
         self.dependencies = []
         self.full_name = full_name
-        self.name = name
 
     def draw(self):
         rect = self.rect

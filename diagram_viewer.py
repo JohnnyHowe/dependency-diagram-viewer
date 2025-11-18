@@ -3,6 +3,7 @@ import pygame
 
 from diagram.diagram_loader import DiagramLoader
 from diagram.diagram_module import DiagramModule
+from diagram.diagram_saver import DiagramSaver
 import window_engine.draw as draw
 from window_engine.mouse import Mouse
 from window_engine.window import Window
@@ -50,6 +51,8 @@ class DiagramViewer:
             self._toggle_selection_visibility()
         if key == pygame.K_c:
             self._toggle_selection_collapse()
+        if key == pygame.K_s:
+            DiagramSaver(self.file_path, self.root).save()
 
     def _toggle_selection_visibility(self):
         if self.held_item:
@@ -128,4 +131,4 @@ class DiagramViewer:
         self._draw_controls_text()
 
     def _draw_controls_text(self):
-        draw.text_screen_space("hold middle mouse to pan\nhold left mouse to select and move items\nscrollwheel to zoom\n\nf: reset camera\nh: toggle visibility on selection", 20, Rect((0, 0), Window().size))
+        draw.text_screen_space("hold middle mouse to pan\nhold left mouse to select and move items\nscrollwheel to zoom\n\nf: reset camera\nh: toggle visibility on selection\ns: save", 20, Rect((0, 0), Window().size))

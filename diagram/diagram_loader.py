@@ -22,6 +22,8 @@ class DiagramLoader:
 
     def _create_module_from_data_dict_recursive(self, parent, data: dict) -> DiagramModule:
         module = DiagramModule(data["path"], data["name"], parent, data.get("position", Vector2(0, 0)))
+        module.is_hidden = data.get("is_hidden", False)
+        module.is_collapsed = data.get("is_collapsed", False)
 
         for script_data in data["scripts"]:
             module.scripts.append(self._create_script_from_data_dict(module, script_data))
@@ -33,6 +35,7 @@ class DiagramLoader:
 
     def _create_script_from_data_dict(self, parent, data: dict) -> DiagramScript:
         script = DiagramScript(data["full_name"], data["name"], data["path"], parent, data.get("position", Vector2(0, 0)))
+        script.is_hidden = data.get("is_hidden", False)
         self._all_scripts[script.full_name] = [script, data]
         return script
 
@@ -44,7 +47,7 @@ class DiagramLoader:
         script.dependencies = []
         dependency_names = json_data["dependencies"]
         for dependency_full_name in dependency_names:
-            script.dependencies.append(self._all_scripts[dependency_full_name])
+            script.dependencies.append(self._all_scripts[dependency_full_name][0])
 
     def get_root(self):
         return self._root
