@@ -9,7 +9,7 @@ class DiagramModule(DiagramItem):
 
     def __init__(self, path, name, parent, center_position):
         super().__init__(path, name, parent, center_position)
-        self.folders = []
+        self.modules = []
         self.scripts = []
         self.is_collapsed = False
 
@@ -20,12 +20,12 @@ class DiagramModule(DiagramItem):
             draw.text(text, configuration.module_font_size, self.get_rect_with_padding(), self.get_outline_color())
 
         if not self.is_collapsed:
-            for child in self.folders + self.scripts:
+            for child in self.modules + self.scripts:
                 child.draw()
 
     def update(self):
         self._update_size()
-        for submodule in self.folders:
+        for submodule in self.modules:
             submodule.update()
 
     def _draw_shape(self):
@@ -55,7 +55,7 @@ class DiagramModule(DiagramItem):
 
     def _expand_to_fit_children(self):
         self.rect = Rect(self.rect.center, (0, 0))
-        for child in self.folders + self.scripts:
+        for child in self.modules + self.scripts:
             self.rect = self.rect.union(child.rect)
 
         header_padding = Vector2(0, configuration.module_font_size) * 2
@@ -79,25 +79,25 @@ class DiagramModule(DiagramItem):
         if self.is_collapsed:
             return [self]
         children = [self, ] + self.scripts
-        for folder in self.folders:
-            children += folder.get_all_visible_children_recursive()
+        for module in self.modules:
+            children += module.get_all_visible_children_recursive()
         return children
 
     def get_all_children_recursive(self):
-        return self.get_scripts_recursive() + self.get_folders_recursive()
+        return self.get_scripts_recursive() + self.get_modules_recursive()
 
     def get_scripts_recursive(self):
         scripts = []
-        for folder in self.get_folders_recursive():
-            scripts += folder.scripts
+        for module in self.get_modules_recursive():
+            scripts += module.scripts
         return scripts
 
-    def get_folders_recursive(self):
-        folders = [self] 
-        for folder in self.folders:
-            folders += folder.get_folders_recursive()
-        return folders
+    def get_modules_recursive(self):
+        modules = [self] 
+        for module in self.modules:
+            modules += module.get_modules_recursive()
+        return modules
 
     def move(self, change: Vector2):
-        for child in self.folders + self.scripts:
+        for child in self.modules + self.scripts:
             child.move(change)

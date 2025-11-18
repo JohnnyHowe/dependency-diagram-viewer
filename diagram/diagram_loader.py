@@ -27,7 +27,7 @@ class DiagramLoader:
             module.scripts.append(self._create_script_from_data_dict(module, script_data))
 
         for module_data in data["folders"]:
-            module.folders.append(self._create_module_from_data_dict_recursive(module, module_data))
+            module.modules.append(self._create_module_from_data_dict_recursive(module, module_data))
 
         return module
 
