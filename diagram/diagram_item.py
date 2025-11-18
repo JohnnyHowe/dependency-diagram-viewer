@@ -50,15 +50,15 @@ class DiagramItem:
         return configuration.item_outline_color if not self.is_parent_or_self_hidden() else configuration.item_hidden_outline_color
 
     def is_parent_or_self_hidden(self):
-        for item in self._get_parent_chain():
+        for item in self.get_parent_chain():
             if item.is_hidden:
                 return True
         return False
 
     def _get_depth(self) -> int:
-        return len(self._get_parent_chain())
+        return len(self.get_parent_chain())
 
-    def _get_parent_chain(self) -> list:
+    def get_parent_chain(self) -> list:
         chain = [self]
         while chain[-1].parent:
             chain.append(chain[-1].parent)

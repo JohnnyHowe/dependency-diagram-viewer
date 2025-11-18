@@ -2,6 +2,7 @@ from pygame import Rect
 import pygame
 
 from diagram.diagram_loader import DiagramLoader
+from diagram.diagram_module import DiagramModule
 import window_engine.draw as draw
 from window_engine.mouse import Mouse
 from window_engine.window import Window
@@ -31,6 +32,7 @@ class DiagramViewer:
         Mouse().update()
         self._update_mouse_input()
         self._update_key_input()
+        self.root.update()
         self._draw()
         Window().update()
 
@@ -46,10 +48,16 @@ class DiagramViewer:
     def _keydown(self, key: int):
         if key == pygame.K_h:
             self._toggle_selection_visibility()
+        if key == pygame.K_c:
+            self._toggle_selection_collapse()
 
     def _toggle_selection_visibility(self):
         if self.held_item:
             self.held_item.is_hidden = not self.held_item.is_hidden
+
+    def _toggle_selection_collapse(self):
+        if isinstance(self.held_item, DiagramModule):
+            self.held_item.is_collapsed = not self.held_item.is_collapsed
 
     # ===========================================================================================
     # region Mouse input
@@ -78,7 +86,7 @@ class DiagramViewer:
         return deepest_item_with_mouse_over
 
     def _get_items_under_mouse(self):
-        for item in self.root.get_all_children_recursive():
+        for item in self.root.get_all_visible_children_recursive():
             if item.is_root: continue
             if not item.rect.collidepoint(Mouse().position): continue
             yield item
