@@ -68,3 +68,7 @@ class DiagramModule(DiagramItem):
         for folder in self.folders:
             folders += folder.get_folders_recursive()
         return folders
+
+    def move(self, change: Vector2):
+        for child in self.folders + self.scripts:
+            child.move(change)

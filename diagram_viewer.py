@@ -102,4 +102,4 @@ class DiagramViewer:
         self._draw_controls_text()
 
     def _draw_controls_text(self):
-        draw.text_screen_space("hold middle mouse to pan\nscrollwheel to zoom\n\nf: reset camera", 20, Rect((0, 0), Window().size))
+        draw.text_screen_space("hold middle mouse to pan\nhold left mouse to select and move items\nscrollwheel to zoom\n\nf: reset camera", 20, Rect((0, 0), Window().size))
