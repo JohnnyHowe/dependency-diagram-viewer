@@ -30,11 +30,29 @@ class DiagramViewer:
         self._camera_controller.update()
         Mouse().update()
         self._update_mouse_input()
+        self._update_key_input()
         self._draw()
         Window().update()
 
     # ===========================================================================================
-    # region Mouse
+    # region Key input
+    # ===========================================================================================
+
+    def _update_key_input(self):
+        for event in Window().pygame_events:
+            if event.type == pygame.KEYDOWN:
+                self._keydown(event.key)
+
+    def _keydown(self, key: int):
+        if key == pygame.K_h:
+            self._toggle_selection_visibility()
+
+    def _toggle_selection_visibility(self):
+        if self.held_item:
+            self.held_item.is_hidden = not self.held_item.is_hidden
+
+    # ===========================================================================================
+    # region Mouse input
     # ===========================================================================================
 
     def _update_mouse_input(self):
@@ -102,4 +120,4 @@ class DiagramViewer:
         self._draw_controls_text()
 
     def _draw_controls_text(self):
-        draw.text_screen_space("hold middle mouse to pan\nhold left mouse to select and move items\nscrollwheel to zoom\n\nf: reset camera", 20, Rect((0, 0), Window().size))
+        draw.text_screen_space("hold middle mouse to pan\nhold left mouse to select and move items\nscrollwheel to zoom\n\nf: reset camera\nh: toggle visibility on selection", 20, Rect((0, 0), Window().size))

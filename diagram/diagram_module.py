@@ -14,7 +14,7 @@ class DiagramModule(DiagramItem):
     def draw(self):
         if not self.is_root:
             self._draw_shape()
-            draw.text(self.name, configuration.module_font_size, self.get_rect_with_padding())
+            draw.text(self.name, configuration.module_font_size, self.get_rect_with_padding(), self.get_outline_color())
 
         for child in self.folders + self.scripts:
             child.draw()

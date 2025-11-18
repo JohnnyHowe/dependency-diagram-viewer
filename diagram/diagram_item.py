@@ -22,17 +22,7 @@ class DiagramItem:
         self.is_root = parent == None
 
         self.is_hidden = False
-
-    def _get_depth(self) -> int:
-        return len(self._get_parent_chain())
-
-    def _get_parent_chain(self) -> list:
-        chain = [self]
-        while chain[-1].parent:
-            chain.append(chain[-1].parent)
-        chain.reverse()
-        return chain
-    
+   
     def move(self, change: Vector2):
         self.rect.topleft = Vector2(self.rect.topleft) + change
 
@@ -51,12 +41,27 @@ class DiagramItem:
             draw.rect(self.rect, color, 0)
 
     def get_fill_color(self) -> Color:
-        if self.is_hidden:
-            return None
         if self.is_held:
             return configuration.held_item_fill_color
         if self.is_hovered:
             return configuration.hovered_item_fill_color
 
     def get_outline_color(self) -> Color:
-        return configuration.item_outline_color if not self.is_hidden else configuration.item_hidden_outline_color
+        return configuration.item_outline_color if not self.is_parent_or_self_hidden() else configuration.item_hidden_outline_color
+
+    def is_parent_or_self_hidden(self):
+        for item in self._get_parent_chain():
+            if item.is_hidden:
+                return True
+        return False
+
+    def _get_depth(self) -> int:
+        return len(self._get_parent_chain())
+
+    def _get_parent_chain(self) -> list:
+        chain = [self]
+        while chain[-1].parent:
+            chain.append(chain[-1].parent)
+        chain.reverse()
+        return chain
+ 
