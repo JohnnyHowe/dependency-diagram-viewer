@@ -14,5 +14,5 @@ class DiagramScript(DiagramItem):
     def draw(self):
         rect = self.rect
         self.draw_background_fill()
-        draw.rect(rect)
+        draw.rect(rect, self.get_outline_color())
         draw.text(self.name, configuration.script_font_size, self.get_rect_with_padding(), h_alignment=0, v_alignment=0)

@@ -23,14 +23,14 @@ class DiagramModule(DiagramItem):
 
     def _draw_shape(self):
         self.draw_background_fill()
-        draw.rect(self.rect)
+        draw.rect(self.rect, self.get_outline_color())
 
         detail_size = configuration.module_detail_size
 
         detail = Rect(Vector2(self.rect.topleft) + Vector2(-1, 1) * detail_size, Vector2(detail_size * 2, detail_size))
-        draw.rect(detail)
+        draw.rect(detail, self.get_outline_color())
         detail.topleft = Vector2(detail.topleft) + Vector2(0, 1) * detail_size * 2
-        draw.rect(detail)
+        draw.rect(detail, self.get_outline_color())
 
     def _expand_to_fit_children(self):
         self.rect = Rect(self.rect.center, (0, 0))

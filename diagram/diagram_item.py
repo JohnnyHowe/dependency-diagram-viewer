@@ -1,4 +1,4 @@
-from pygame import Rect, Vector2
+from pygame import Color, Rect, Vector2
 
 import configuration
 from window_engine import draw
@@ -21,6 +21,8 @@ class DiagramItem:
         self.depth = self._get_depth()
         self.is_root = parent == None
 
+        self.is_hidden = False
+
     def _get_depth(self) -> int:
         return len(self._get_parent_chain())
 
@@ -35,7 +37,8 @@ class DiagramItem:
         self.rect.topleft = Vector2(self.rect.topleft) + change
 
     def draw(self):
-        draw.rect(self.rect)
+        draw.rect(self.rect, configuration.item_outline_color)
+        self.draw_background_fill()
 
     def get_rect_with_padding(self):
         rect = self.rect
@@ -43,7 +46,17 @@ class DiagramItem:
         return Rect(rect.x + pad, rect.y + pad, rect.w - pad * 2, rect.h - pad * 2)
 
     def draw_background_fill(self):
+        color = self.get_fill_color()
+        if color:
+            draw.rect(self.rect, color, 0)
+
+    def get_fill_color(self) -> Color:
+        if self.is_hidden:
+            return None
         if self.is_held:
-            draw.rect(self.rect, configuration.held_item_fill_color, 0)
-        elif self.is_hovered:
-            draw.rect(self.rect, configuration.hovered_item_fill_color, 0)
+            return configuration.held_item_fill_color
+        if self.is_hovered:
+            return configuration.hovered_item_fill_color
+
+    def get_outline_color(self) -> Color:
+        return configuration.item_outline_color if not self.is_hidden else configuration.item_hidden_outline_color
