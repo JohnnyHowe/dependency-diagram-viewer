@@ -17,7 +17,7 @@ class CameraController:
         self._zoom_step = 0
 
     def update(self):
-        self._mouse_movement(Mouse().rel)
+        self._mouse_movement(Mouse().screen_rel)
         self._step_zoom(Mouse().wheel_change)
 
         for event in Window().pygame_events:

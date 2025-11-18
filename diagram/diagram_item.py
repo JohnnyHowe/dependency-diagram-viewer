@@ -30,6 +30,9 @@ class DiagramItem:
             chain.append(chain[-1].parent)
         chain.reverse()
         return chain
+    
+    def move(self, change: Vector2):
+        self.rect.topleft = Vector2(self.rect.topleft) + change
 
     def draw(self):
         draw.rect(self.rect)

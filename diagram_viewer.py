@@ -9,6 +9,7 @@ from camera_controller import CameraController
 
 class DiagramViewer:
     file_path: str
+    selection_mouse_button_index = 1
 
     def __init__(self, file_path: str):
         self.file_path = file_path
@@ -65,13 +66,31 @@ class DiagramViewer:
             yield item
             
     def _update_held_item(self):
-        if self.held_item:
-            self.held_item.is_held = False
-        self.held_item = None
+        for event in Window().pygame_events:
+            if event.type == pygame.MOUSEBUTTONDOWN:
+                self._mouse_down(event.button)
+            if event.type == pygame.MOUSEBUTTONUP:
+                self._mouse_up(event.button)
 
-        if self.hovered_item and pygame.mouse.get_pressed()[0]:
+        self._move_held_item()
+
+    def _mouse_down(self, button_index: int):
+        if button_index != self.selection_mouse_button_index: return
+
+        if self.hovered_item:
             self.held_item = self.hovered_item
             self.held_item.is_held = True
+
+    def _mouse_up(self, button_index: int):
+        if button_index != self.selection_mouse_button_index: return
+
+        if self.held_item:
+            self.held_item.is_held = False
+            self.held_item = None
+
+    def _move_held_item(self):
+        if self.held_item:
+            self.held_item.move(Mouse().rel)
 
     # ===========================================================================================
     # region Drawing

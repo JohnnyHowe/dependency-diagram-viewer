@@ -10,13 +10,17 @@ class Mouse(metaclass=Singleton):
         self.screen_position = Vector2(0, 0)
         self.position = Vector2(0, 0)
         self.rel = Vector2(0, 0)
+        self.screen_rel = Vector2(0, 0)
         self.buttons_held = [0, 0, 0]
         self.wheel_change = 0
 
     def update(self):
         self.screen_position = pygame.mouse.get_pos()
         self.position = Camera().unproject_position(self.screen_position)
-        self.rel = pygame.mouse.get_rel()
+
+        self.screen_rel = Vector2(pygame.mouse.get_rel())
+        self.rel = Camera().unproject_size(self.screen_rel)
+
         self.buttons_held = pygame.mouse.get_pressed()
 
         self.wheel_change = 0
