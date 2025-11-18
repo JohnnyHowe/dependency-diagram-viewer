@@ -6,7 +6,7 @@ from window_engine import draw
 
 class DiagramItem:
 
-    def __init__(self, path: str, name: str, parent, center_position: Vector2):
+    def __init__(self, path: str, name: str, parent):
         self.parent = parent
         self.path = path
         self.name = name
@@ -15,7 +15,6 @@ class DiagramItem:
         self.is_hovered = False
 
         self.rect = Rect(0, 0, 0, 0)
-        self.rect.center = center_position
         self.rect.size = Vector2(160, 40)
 
         self.depth = self._get_depth()

@@ -36,6 +36,7 @@ class DiagramSaver:
         d = self._get_item_as_dict(script)
         d["full_name"] = script.full_name
         d["dependencies"] = []
+        d["position"] = script.rect.center
         for dependency in script.dependencies:
             d["dependencies"].append(dependency.full_name)
         return d
@@ -44,6 +45,5 @@ class DiagramSaver:
         return {
             "path": item.path,
             "name": item.name,
-            "position": item.rect.center,
             "is_hidden": item.is_hidden,
         }

@@ -21,7 +21,7 @@ class DiagramLoader:
             self._raw_json = json.loads(file.read())
 
     def _create_module_from_data_dict_recursive(self, parent, data: dict) -> DiagramModule:
-        module = DiagramModule(data["path"], data["name"], parent, data.get("position", Vector2(0, 0)))
+        module = DiagramModule(data["path"], data["name"], parent)
         module.is_hidden = data.get("is_hidden", False)
         module.is_collapsed = data.get("is_collapsed", False)
 

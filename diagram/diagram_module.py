@@ -7,8 +7,8 @@ from window_engine import draw
 class DiagramModule(DiagramItem):
     min_size = Vector2(160, 80)
 
-    def __init__(self, path, name, parent, center_position):
-        super().__init__(path, name, parent, center_position)
+    def __init__(self, path, name, parent):
+        super().__init__(path, name, parent)
         self.modules = []
         self.scripts = []
         self.is_collapsed = False

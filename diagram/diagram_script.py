@@ -6,9 +6,10 @@ from window_engine import draw
 
 class DiagramScript(DiagramItem):
     def __init__(self, full_name, name, path, parent, center_position):
-        super().__init__(path, name, parent, center_position)
+        super().__init__(path, name, parent)
         self.dependencies = []
         self.full_name = full_name
+        self.rect.center = center_position
 
     def draw(self):
         rect = self.rect
