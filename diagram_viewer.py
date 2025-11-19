@@ -146,7 +146,12 @@ class DiagramViewer:
         draw.text_screen_space("\n".join(lines), 20, Rect((0, 0), Window().size))
 
     def _draw_dependencies(self):
-        pass
+        self._get_all_visible_dependencies()
 
     def _get_all_visible_dependencies(self) -> list[tuple]:
-        pass
+        dependency_data = {}
+        for script in self.root.get_scripts_recursive():
+            deepest_item = script.get_deepest_visible_in_parent_chain()
+            dependency_data[deepest_item.path] = {"item": deepest_item, "dependencies": []}
+        
+        return [(0,),]

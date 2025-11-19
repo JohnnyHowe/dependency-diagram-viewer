@@ -25,6 +25,10 @@ class DiagramItem:
     def move(self, change: Vector2):
         self.rect.topleft = Vector2(self.rect.topleft) + change
 
+    # ===========================================================================================
+    # region Drawing 
+    # ===========================================================================================
+
     def draw(self):
         draw.rect(self.rect, configuration.item_outline_color)
         self.draw_background_fill()
@@ -48,6 +52,10 @@ class DiagramItem:
     def get_outline_color(self) -> Color:
         return configuration.item_outline_color if not self.is_parent_or_self_hidden() else configuration.item_hidden_outline_color
 
+    # ===========================================================================================
+    # region Tree Traversal
+    # ===========================================================================================
+
     def is_parent_or_self_hidden(self):
         for item in self.get_parent_chain():
             if item.is_hidden:
@@ -63,4 +71,3 @@ class DiagramItem:
             chain.append(chain[-1].parent)
         chain.reverse()
         return chain
- 
