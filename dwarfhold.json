@@ -246,7 +246,7 @@
         {
             "path": "C:\\Users\\Work\\Documents\\Projects\\dwarfhold\\Generics",
             "name": "Generics",
-            "is_hidden": false,
+            "is_hidden": true,
             "is_collapsed": false,
             "folders": [
                 {

@@ -131,4 +131,15 @@ class DiagramViewer:
         self._draw_controls_text()
 
     def _draw_controls_text(self):
-        draw.text_screen_space("hold middle mouse to pan\nhold left mouse to select and move items\nscrollwheel to zoom\n\nf: reset camera\nh: toggle visibility on selection\ns: save", 20, Rect((0, 0), Window().size))
+        lines = [
+            "hold middle mouse to pan", 
+            "hold left mouse to select and move items",
+            "scrollwheel to zoom",
+            "",
+            "f: reset camera",
+            "h: toggle visibility on selection",
+            "c: collapse/expand selection",
+            "",
+            "s: save"
+        ]
+        draw.text_screen_space("\n".join(lines), 20, Rect((0, 0), Window().size))
