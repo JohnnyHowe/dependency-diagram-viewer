@@ -158,6 +158,7 @@ class DiagramViewer:
         pairs = []
         for dependency_source in self._get_visible_items(self.root.get_scripts_recursive()):
             for dependency_target in self._get_visible_items(dependency_source.get_all_script_dependencies()):
+                if dependency_source == dependency_target: continue
                 pairs.append((dependency_source, dependency_target))
         
         return pairs
