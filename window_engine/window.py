@@ -14,9 +14,13 @@ class Window(metaclass=Singleton):
             pygame.init()
         self._reset_surface()
         self.pygame_events = []
+        self._draw_calls = []
 
     def update(self):
         self._run_event_loop()
+        for func in sorted(self._draw_calls, key=lambda call: call[1]):
+            func[0]()
+        self._draw_calls = []
         pygame.display.flip()
 
     def _run_event_loop(self):
@@ -30,3 +34,6 @@ class Window(metaclass=Singleton):
 
     def _reset_surface(self):
         self.surface = pygame.display.set_mode(self.size, pygame.RESIZABLE)
+
+    def queue_draw_call(self, draw_func, layer):
+        self._draw_calls.append((draw_func, layer))

@@ -7,32 +7,37 @@ from window_engine.font_cache import FontCache
 from window_engine.window import Window
 
 
-def rect(rect: Rect, color="#ffffff", width=1):
-    pygame.draw.rect(Window().surface, color, Camera().project_rect(rect), math.ceil(Camera().project_size_component(width)))
+def rect(rect: Rect, color="#ffffff", width=1, layer=0):
+    call = lambda: pygame.draw.rect(Window().surface, color, Camera().project_rect(rect), math.ceil(Camera().project_size_component(width)))
+    Window().queue_draw_call(call, layer)
 
 
-def arrow(source: Vector2, destination: Vector2, color="#ffffff", width=1):
+def arrow(source: Vector2, destination: Vector2, color="#ffffff", width=1, layer=0):
     source = Camera().project_position(source)
     destination = Camera().project_position(destination)
     width = Camera().project_size_component(width)
-    pygame.draw.line(Window().surface, color, source, destination, max(1, int(width)))
+    call = lambda:pygame.draw.line(Window().surface, color, source, destination, max(1, int(width)))
+    Window().queue_draw_call(call, layer)
 
 
-def text(text: str, size: float, containing_rect: Rect, color="#ffffff", v_alignment=-1, h_alignment=-1):
+def text(text: str, size: float, containing_rect: Rect, color="#ffffff", v_alignment=-1, h_alignment=-1, layer=0):
     text_screen_space(text, int(Camera().project_size_component(size)), Camera().project_rect(containing_rect), color, v_alignment, h_alignment)
 
 
-def text_screen_space(text: str, size: int, containing_rect: Rect, color="#ffffff", v_alignment=-1, h_alignment=-1):
-    max_font_size = _get_max_font_size_for_text_to_fit(text, Vector2(containing_rect.size))
-    font_size = min(max_font_size, size)
-    font = FontCache().get_font(font_size)
+def text_screen_space(text: str, size: int, containing_rect: Rect, color="#ffffff", v_alignment=-1, h_alignment=-1, layer=0):
+    def draw():
+        max_font_size = _get_max_font_size_for_text_to_fit(text, Vector2(containing_rect.size))
+        font_size = min(max_font_size, size)
+        font = FontCache().get_font(font_size)
 
-    text_area_size = _get_space_rendered_text_will_use(text, font_size)
-    current_position = _get_position_for_alignment(containing_rect, text_area_size, v_alignment, h_alignment) 
-    for line in text.splitlines():
-        Window().surface.blit(font.render(line, True, color), current_position)
-        current_position.y += font_size
-
+        text_area_size = _get_space_rendered_text_will_use(text, font_size)
+        start_position = _get_position_for_alignment(containing_rect, text_area_size, v_alignment, h_alignment) 
+        lines = text.splitlines()
+        for i in range(len(lines)):
+            position = start_position + Vector2(0, 1) * font_size * i
+            Window().surface.blit(font.render(lines[i], True, color), position)
+            
+    Window().queue_draw_call(draw, layer)
 
 def _get_max_font_size_for_text_to_fit(text: str, area: Vector2) -> int:
     n_lines = len(text.splitlines())
@@ -55,7 +60,7 @@ def _get_space_rendered_text_will_use(text: str, screen_font_size: int) -> Vecto
 
 
 def _get_position_for_alignment(containing_rect: Rect, item_size: Vector2, v_alignment, h_alignment) -> Vector2:
-    assert(v_alignment in [-1, 0, 1] and h_alignment in [-1, 0, 1], f"Text alignment values can only be -1, 0, or 1! Recieved {(v_alignment, h_alignment)}.")
+    assert v_alignment in [-1, 0, 1] and h_alignment in [-1, 0, 1], f"Text alignment values can only be -1, 0, or 1! Recieved {v_alignment}, {h_alignment}."
 
     position = Vector2(containing_rect.topleft)
     size_difference = Vector2(containing_rect.size) - item_size

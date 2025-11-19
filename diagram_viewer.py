@@ -147,20 +147,35 @@ class DiagramViewer:
 
     def _draw_dependencies(self):
         pairs = self._get_all_visible_dependency_pairs()
-        for source, target in pairs:
-            draw.arrow(source.rect.midtop, target.rect.midbottom, color="#ff0000", width=4)
+
+        selected_pairs = []
+        other_pairs = []
+        for pair in pairs:
+            if self._is_dependency_targetted(pair): 
+                selected_pairs.append(pair)
+            else:
+                other_pairs.append(pair)
+
+        is_item_targetted = self.held_item != None or self.hovered_item != None
+
+        other_color = "#444444" if is_item_targetted > 0 else "#ffffff"
+        other_layer = -1 if is_item_targetted > 0 else 1
+        for pair in other_pairs:
+            draw.arrow(pair[0].rect.midtop, pair[1].rect.midbottom, other_color, 4, other_layer)
+
+        for pair in selected_pairs:
+            draw.arrow(pair[0].rect.midtop, pair[1].rect.midbottom, "#ff0000", 4, 2)
+
+    def _is_dependency_targetted(self, pair):
+        targetted_item = self.held_item if self.held_item else self.hovered_item
+        return targetted_item in pair[0].get_parent_chain() or targetted_item in pair[1].get_parent_chain()
 
     def _get_all_visible_dependency_pairs(self) -> list[tuple]:
-        #dependency_data = {}
-        #for item in self._get_all_visible_dependency_sources():
-        #   dependency_data[item.path] = {"item": item, "dependencies": item.get_all_script_dependencies()}
-
         pairs = []
         for dependency_source in self._get_visible_items(self.root.get_scripts_recursive()):
             for dependency_target in self._get_visible_items(dependency_source.get_all_script_dependencies()):
                 if dependency_source == dependency_target: continue
                 pairs.append((dependency_source, dependency_target))
-        
         return pairs
 
     def _get_visible_items(self, items_list):
