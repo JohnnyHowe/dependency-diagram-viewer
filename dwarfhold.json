@@ -27,8 +27,8 @@
                                 "Event"
                             ],
                             "position": [
-                                -502,
-                                2260
+                                -665,
+                                2094
                             ]
                         },
                         {
@@ -41,8 +41,8 @@
                                 "PopupData"
                             ],
                             "position": [
-                                -505,
-                                2262
+                                -668,
+                                2096
                             ]
                         },
                         {
@@ -54,8 +54,8 @@
                                 "Event"
                             ],
                             "position": [
-                                -505,
-                                2262
+                                -668,
+                                2096
                             ]
                         }
                     ]
@@ -74,8 +74,8 @@
                         "TokenFinder"
                     ],
                     "position": [
-                        -532,
-                        2146
+                        -695,
+                        1980
                     ]
                 },
                 {
@@ -88,8 +88,8 @@
                         "Event"
                     ],
                     "position": [
-                        -529,
-                        2144
+                        -692,
+                        1978
                     ]
                 },
                 {
@@ -102,8 +102,8 @@
                         "EnemySpawner"
                     ],
                     "position": [
-                        -532,
-                        2146
+                        -695,
+                        1980
                     ]
                 },
                 {
@@ -119,8 +119,8 @@
                         "Event"
                     ],
                     "position": [
-                        -532,
-                        2146
+                        -695,
+                        1980
                     ]
                 },
                 {
@@ -133,8 +133,8 @@
                         "PopupData"
                     ],
                     "position": [
-                        -532,
-                        2146
+                        -695,
+                        1980
                     ]
                 },
                 {
@@ -148,8 +148,8 @@
                         "Event"
                     ],
                     "position": [
-                        -532,
-                        2146
+                        -695,
+                        1980
                     ]
                 },
                 {
@@ -162,8 +162,8 @@
                         "Token"
                     ],
                     "position": [
-                        -532,
-                        2146
+                        -695,
+                        1980
                     ]
                 },
                 {
@@ -177,8 +177,8 @@
                         "Token"
                     ],
                     "position": [
-                        -532,
-                        2146
+                        -695,
+                        1980
                     ]
                 },
                 {
@@ -192,8 +192,8 @@
                         "PopupData"
                     ],
                     "position": [
-                        -532,
-                        2146
+                        -695,
+                        1980
                     ]
                 },
                 {
@@ -206,8 +206,8 @@
                         "PopupData"
                     ],
                     "position": [
-                        -532,
-                        2146
+                        -695,
+                        1980
                     ]
                 },
                 {
@@ -221,8 +221,8 @@
                         "PopupData"
                     ],
                     "position": [
-                        -532,
-                        2146
+                        -695,
+                        1980
                     ]
                 },
                 {
@@ -237,8 +237,8 @@
                         "Event"
                     ],
                     "position": [
-                        -532,
-                        2146
+                        -695,
+                        1980
                     ]
                 }
             ]
@@ -247,13 +247,13 @@
             "path": "C:\\Users\\Work\\Documents\\Projects\\dwarfhold\\Generics",
             "name": "Generics",
             "is_hidden": true,
-            "is_collapsed": false,
+            "is_collapsed": true,
             "folders": [
                 {
                     "path": "C:\\Users\\Work\\Documents\\Projects\\dwarfhold\\Generics\\Modules",
                     "name": "Modules",
                     "is_hidden": false,
-                    "is_collapsed": false,
+                    "is_collapsed": true,
                     "folders": [
                         {
                             "path": "C:\\Users\\Work\\Documents\\Projects\\dwarfhold\\Generics\\Modules\\AudioManager",
@@ -269,8 +269,8 @@
                                     "full_name": "EasyAudioPlayer",
                                     "dependencies": [],
                                     "position": [
-                                        -2832,
-                                        75
+                                        -3286,
+                                        -222
                                     ]
                                 },
                                 {
@@ -280,8 +280,8 @@
                                     "full_name": "LoopableAudioStreamPlayer",
                                     "dependencies": [],
                                     "position": [
-                                        -2835,
-                                        -59
+                                        -3289,
+                                        -356
                                     ]
                                 },
                                 {
@@ -294,8 +294,8 @@
                                         "BetterResourceLoader"
                                     ],
                                     "position": [
-                                        -2834,
-                                        16
+                                        -3288,
+                                        -281
                                     ]
                                 }
                             ]
@@ -314,8 +314,8 @@
                                     "full_name": "DebugLoggerStringProcessor",
                                     "dependencies": [],
                                     "position": [
-                                        -2501,
-                                        -58
+                                        -2955,
+                                        -355
                                     ]
                                 },
                                 {
@@ -328,8 +328,8 @@
                                         "DebugLoggerStringProcessor"
                                     ],
                                     "position": [
-                                        -2500,
-                                        3
+                                        -2954,
+                                        -294
                                     ]
                                 },
                                 {
@@ -339,8 +339,8 @@
                                     "full_name": "player_input_logger.gd",
                                     "dependencies": [],
                                     "position": [
-                                        -2503,
-                                        58
+                                        -2957,
+                                        -239
                                     ]
                                 }
                             ]
@@ -361,8 +361,8 @@
                                         "DynamicSignalCollection"
                                     ],
                                     "position": [
-                                        -2140,
-                                        -61
+                                        -2594,
+                                        -358
                                     ]
                                 }
                             ]
@@ -384,8 +384,8 @@
                                         "BetterResourceLoader"
                                     ],
                                     "position": [
-                                        -1784,
-                                        -61
+                                        -2238,
+                                        -358
                                     ]
                                 }
                             ]
@@ -407,8 +407,8 @@
                                         "DictionaryUtility"
                                     ],
                                     "position": [
-                                        -1440,
-                                        -65
+                                        -1894,
+                                        -362
                                     ]
                                 }
                             ]
@@ -427,8 +427,8 @@
                                     "full_name": "PopupData",
                                     "dependencies": [],
                                     "position": [
-                                        -3192,
-                                        -58
+                                        -3646,
+                                        -355
                                     ]
                                 },
                                 {
@@ -440,8 +440,8 @@
                                         "PopupData"
                                     ],
                                     "position": [
-                                        -3370,
-                                        7
+                                        -3824,
+                                        -290
                                     ]
                                 },
                                 {
@@ -454,8 +454,8 @@
                                         "RPGStylePopup"
                                     ],
                                     "position": [
-                                        -3190,
-                                        72
+                                        -3644,
+                                        -225
                                     ]
                                 }
                             ]
@@ -467,7 +467,7 @@
                     "path": "C:\\Users\\Work\\Documents\\Projects\\dwarfhold\\Generics\\ScriptTestRunner",
                     "name": "ScriptTestRunner",
                     "is_hidden": false,
-                    "is_collapsed": false,
+                    "is_collapsed": true,
                     "folders": [],
                     "scripts": [
                         {
@@ -477,8 +477,8 @@
                             "full_name": "TestResult",
                             "dependencies": [],
                             "position": [
-                                -1088,
-                                -98
+                                -2550,
+                                -388
                             ]
                         },
                         {
@@ -491,8 +491,8 @@
                                 "TestResult"
                             ],
                             "position": [
-                                -1083,
-                                -44
+                                -2545,
+                                -334
                             ]
                         }
                     ]
@@ -501,7 +501,7 @@
                     "path": "C:\\Users\\Work\\Documents\\Projects\\dwarfhold\\Generics\\Scripts",
                     "name": "Scripts",
                     "is_hidden": false,
-                    "is_collapsed": false,
+                    "is_collapsed": true,
                     "folders": [],
                     "scripts": [
                         {
@@ -511,8 +511,8 @@
                             "full_name": "ArrayCaster",
                             "dependencies": [],
                             "position": [
-                                -212,
-                                -672
+                                -2582,
+                                -509
                             ]
                         },
                         {
@@ -522,8 +522,8 @@
                             "full_name": "BetterLerp",
                             "dependencies": [],
                             "position": [
-                                340,
-                                -500
+                                -2030,
+                                -337
                             ]
                         },
                         {
@@ -533,8 +533,8 @@
                             "full_name": "BetterRandom",
                             "dependencies": [],
                             "position": [
-                                12,
-                                -503
+                                -2358,
+                                -340
                             ]
                         },
                         {
@@ -544,8 +544,8 @@
                             "full_name": "BetterResourceLoader",
                             "dependencies": [],
                             "position": [
-                                305,
-                                -660
+                                -2065,
+                                -497
                             ]
                         },
                         {
@@ -555,8 +555,8 @@
                             "full_name": "CombinationSet",
                             "dependencies": [],
                             "position": [
-                                -255,
-                                -580
+                                -2625,
+                                -417
                             ]
                         },
                         {
@@ -566,8 +566,8 @@
                             "full_name": "DictionaryUtility",
                             "dependencies": [],
                             "position": [
-                                114,
-                                -656
+                                -2256,
+                                -493
                             ]
                         },
                         {
@@ -577,8 +577,8 @@
                             "full_name": "DynamicSignalCollection",
                             "dependencies": [],
                             "position": [
-                                -311,
-                                -481
+                                -2681,
+                                -318
                             ]
                         },
                         {
@@ -588,8 +588,8 @@
                             "full_name": "Easings",
                             "dependencies": [],
                             "position": [
-                                436,
-                                -595
+                                -1934,
+                                -432
                             ]
                         },
                         {
@@ -599,8 +599,8 @@
                             "full_name": "GameSaver",
                             "dependencies": [],
                             "position": [
-                                37,
-                                -540
+                                -2333,
+                                -377
                             ]
                         },
                         {
@@ -610,8 +610,8 @@
                             "full_name": "NodeFinder",
                             "dependencies": [],
                             "position": [
-                                -75,
-                                -625
+                                -2445,
+                                -462
                             ]
                         },
                         {
@@ -621,8 +621,8 @@
                             "full_name": "ScrollContainerAutoScroll",
                             "dependencies": [],
                             "position": [
-                                236,
-                                -496
+                                -2134,
+                                -333
                             ]
                         },
                         {
@@ -632,8 +632,8 @@
                             "full_name": "Set",
                             "dependencies": [],
                             "position": [
-                                -46,
-                                -472
+                                -2416,
+                                -309
                             ]
                         },
                         {
@@ -643,8 +643,8 @@
                             "full_name": "StringUtil",
                             "dependencies": [],
                             "position": [
-                                376,
-                                -511
+                                -1994,
+                                -348
                             ]
                         },
                         {
@@ -654,8 +654,8 @@
                             "full_name": "VectorUtil",
                             "dependencies": [],
                             "position": [
-                                -304,
-                                -593
+                                -2674,
+                                -430
                             ]
                         },
                         {
@@ -667,8 +667,8 @@
                                 "BetterLerp"
                             ],
                             "position": [
-                                297,
-                                -396
+                                -2073,
+                                -233
                             ]
                         },
                         {
@@ -678,8 +678,8 @@
                             "full_name": "weblink_button.gd",
                             "dependencies": [],
                             "position": [
-                                118,
-                                -583
+                                -2252,
+                                -420
                             ]
                         }
                     ]
@@ -857,8 +857,8 @@
                                 "BetterLerp"
                             ],
                             "position": [
-                                -4265,
-                                1471
+                                -4162,
+                                1558
                             ]
                         }
                     ]
@@ -872,8 +872,8 @@
                     "full_name": "mouse_event_stopper.gd",
                     "dependencies": [],
                     "position": [
-                        -3996,
-                        1482
+                        -3893,
+                        1569
                     ]
                 }
             ]
@@ -915,8 +915,8 @@
                                         "RecipeUtility"
                                     ],
                                     "position": [
-                                        -2145,
-                                        900
+                                        -2283,
+                                        801
                                     ]
                                 },
                                 {
@@ -928,8 +928,8 @@
                                         "Token"
                                     ],
                                     "position": [
-                                        -1869,
-                                        897
+                                        -2007,
+                                        798
                                     ]
                                 },
                                 {
@@ -939,8 +939,8 @@
                                     "full_name": "RecipeUtility",
                                     "dependencies": [],
                                     "position": [
-                                        -2146,
-                                        841
+                                        -2284,
+                                        742
                                     ]
                                 }
                             ]
@@ -966,8 +966,8 @@
                                         "TokenContainer"
                                     ],
                                     "position": [
-                                        -2141,
-                                        1106
+                                        -2279,
+                                        1007
                                     ]
                                 }
                             ]
@@ -986,8 +986,8 @@
                                     "full_name": "TimeController",
                                     "dependencies": [],
                                     "position": [
-                                        -2261,
-                                        631
+                                        -2399,
+                                        532
                                     ]
                                 }
                             ]
@@ -1017,8 +1017,8 @@
                                         "BetterLerp"
                                     ],
                                     "position": [
-                                        -2594,
-                                        789
+                                        -2732,
+                                        690
                                     ]
                                 },
                                 {
@@ -1028,8 +1028,8 @@
                                     "full_name": "copy_sprite.gd",
                                     "dependencies": [],
                                     "position": [
-                                        -2847,
-                                        789
+                                        -2985,
+                                        690
                                     ]
                                 },
                                 {
@@ -1039,8 +1039,8 @@
                                     "full_name": "sprite_flash.gd",
                                     "dependencies": [],
                                     "position": [
-                                        -3352,
-                                        787
+                                        -3490,
+                                        688
                                     ]
                                 },
                                 {
@@ -1050,8 +1050,8 @@
                                     "full_name": "token_outline.tres.gd",
                                     "dependencies": [],
                                     "position": [
-                                        -3100,
-                                        790
+                                        -3238,
+                                        691
                                     ]
                                 }
                             ]
@@ -1074,8 +1074,8 @@
                                         "TokenCache"
                                     ],
                                     "position": [
-                                        -1445,
-                                        979
+                                        -1583,
+                                        880
                                     ]
                                 },
                                 {
@@ -1088,8 +1088,8 @@
                                         "Token"
                                     ],
                                     "position": [
-                                        -1445,
-                                        920
+                                        -1583,
+                                        821
                                     ]
                                 },
                                 {
@@ -1107,8 +1107,8 @@
                                         "BaseTokenCache"
                                     ],
                                     "position": [
-                                        -1444,
-                                        1036
+                                        -1582,
+                                        937
                                     ]
                                 }
                             ]
@@ -1130,8 +1130,8 @@
                                         "TokenContainer"
                                     ],
                                     "position": [
-                                        -2825,
-                                        1102
+                                        -2963,
+                                        1003
                                     ]
                                 },
                                 {
@@ -1145,8 +1145,8 @@
                                         "TokenContainer"
                                     ],
                                     "position": [
-                                        -3328,
-                                        1101
+                                        -3466,
+                                        1002
                                     ]
                                 },
                                 {
@@ -1160,8 +1160,8 @@
                                         "TokenContainer"
                                     ],
                                     "position": [
-                                        -3072,
-                                        1101
+                                        -3210,
+                                        1002
                                     ]
                                 }
                             ]
@@ -1182,8 +1182,8 @@
                                         "Token"
                                     ],
                                     "position": [
-                                        -3333,
-                                        914
+                                        -3471,
+                                        815
                                     ]
                                 },
                                 {
@@ -1202,8 +1202,8 @@
                                         "TokenManager"
                                     ],
                                     "position": [
-                                        -3068,
-                                        985
+                                        -3206,
+                                        886
                                     ]
                                 },
                                 {
@@ -1222,8 +1222,8 @@
                                         "TokenContainer"
                                     ],
                                     "position": [
-                                        -3326,
-                                        984
+                                        -3464,
+                                        885
                                     ]
                                 },
                                 {
@@ -1235,8 +1235,8 @@
                                         "Token"
                                     ],
                                     "position": [
-                                        -3071,
-                                        914
+                                        -3209,
+                                        815
                                     ]
                                 }
                             ]
@@ -1266,8 +1266,8 @@
                                         "TokenManager"
                                     ],
                                     "position": [
-                                        -3312,
-                                        1326
+                                        -3495,
+                                        1239
                                     ]
                                 }
                             ]
@@ -1295,8 +1295,8 @@
                                     "full_name": "settings_manager.gd",
                                     "dependencies": [],
                                     "position": [
-                                        -3331,
-                                        439
+                                        -3514,
+                                        352
                                     ]
                                 }
                             ]
@@ -1330,8 +1330,8 @@
                                 "Token"
                             ],
                             "position": [
-                                -2762,
-                                2069
+                                -2780,
+                                2081
                             ]
                         }
                     ]
@@ -1352,8 +1352,8 @@
                                 "Token"
                             ],
                             "position": [
-                                -3399,
-                                1930
+                                -3417,
+                                1942
                             ]
                         }
                     ]
@@ -1375,8 +1375,8 @@
                                 "Token"
                             ],
                             "position": [
-                                -2409,
-                                1942
+                                -2427,
+                                1954
                             ]
                         },
                         {
@@ -1389,8 +1389,8 @@
                                 "BetterLerp"
                             ],
                             "position": [
-                                -2765,
-                                2000
+                                -2783,
+                                2012
                             ]
                         },
                         {
@@ -1404,8 +1404,8 @@
                                 "Token"
                             ],
                             "position": [
-                                -2515,
-                                2000
+                                -2533,
+                                2012
                             ]
                         },
                         {
@@ -1417,8 +1417,8 @@
                                 "Enemy"
                             ],
                             "position": [
-                                -2268,
-                                2001
+                                -2286,
+                                2013
                             ]
                         },
                         {
@@ -1430,8 +1430,8 @@
                                 "Enemy"
                             ],
                             "position": [
-                                -2017,
-                                2001
+                                -2035,
+                                2013
                             ]
                         }
                     ]
@@ -1456,8 +1456,8 @@
                                 "Token"
                             ],
                             "position": [
-                                -2117,
-                                1916
+                                -2135,
+                                1928
                             ]
                         }
                     ]
@@ -1478,8 +1478,8 @@
                                 "Easings"
                             ],
                             "position": [
-                                -1774,
-                                1921
+                                -1792,
+                                1933
                             ]
                         }
                     ]
@@ -1502,8 +1502,8 @@
                                 "Projectile"
                             ],
                             "position": [
-                                -3264,
-                                1931
+                                -3282,
+                                1943
                             ]
                         },
                         {
@@ -1515,8 +1515,8 @@
                                 "Token"
                             ],
                             "position": [
-                                -2981,
-                                1933
+                                -2999,
+                                1945
                             ]
                         },
                         {
@@ -1528,8 +1528,8 @@
                                 "TowerBase"
                             ],
                             "position": [
-                                -3398,
-                                1999
+                                -3416,
+                                2011
                             ]
                         },
                         {
@@ -1542,8 +1542,8 @@
                                 "TowerBase"
                             ],
                             "position": [
-                                -3116,
-                                2028
+                                -3134,
+                                2040
                             ]
                         }
                     ]
@@ -1559,8 +1559,8 @@
                         "TokenContainer"
                     ],
                     "position": [
-                        -3124,
-                        1910
+                        -3142,
+                        1922
                     ]
                 }
             ]
@@ -1568,7 +1568,7 @@
         {
             "path": "C:\\Users\\Work\\Documents\\Projects\\dwarfhold\\UI",
             "name": "UI",
-            "is_hidden": false,
+            "is_hidden": true,
             "is_collapsed": false,
             "folders": [
                 {
@@ -1593,8 +1593,8 @@
                                         "TokenManager"
                                     ],
                                     "position": [
-                                        -1297,
-                                        2435
+                                        -1454,
+                                        2597
                                     ]
                                 },
                                 {
@@ -1608,8 +1608,8 @@
                                         "Token"
                                     ],
                                     "position": [
-                                        -1556,
-                                        2435
+                                        -1713,
+                                        2597
                                     ]
                                 }
                             ]
@@ -1633,8 +1633,8 @@
                                         "BetterResourceLoader"
                                     ],
                                     "position": [
-                                        -1901,
-                                        2436
+                                        -2058,
+                                        2598
                                     ]
                                 }
                             ]
@@ -1665,8 +1665,8 @@
                                         "BetterResourceLoader"
                                     ],
                                     "position": [
-                                        -2663,
-                                        2703
+                                        -2820,
+                                        2865
                                     ]
                                 }
                             ]
@@ -1687,8 +1687,8 @@
                                         "TimeController"
                                     ],
                                     "position": [
-                                        -2962,
-                                        2858
+                                        -3119,
+                                        3020
                                     ]
                                 }
                             ]
@@ -1711,8 +1711,8 @@
                                         "TokenManager"
                                     ],
                                     "position": [
-                                        -2600,
-                                        2863
+                                        -2757,
+                                        3025
                                     ]
                                 },
                                 {
@@ -1727,8 +1727,8 @@
                                         "TokenManager"
                                     ],
                                     "position": [
-                                        -2602,
-                                        2916
+                                        -2759,
+                                        3078
                                     ]
                                 }
                             ]
@@ -1751,8 +1751,8 @@
                                         "ScrollContainerThatConsumesAllScrollEvents"
                                     ],
                                     "position": [
-                                        -3324,
-                                        2866
+                                        -3481,
+                                        3028
                                     ]
                                 }
                             ]
@@ -1775,8 +1775,8 @@
                                         "TokenContainer"
                                     ],
                                     "position": [
-                                        -3332,
-                                        2704
+                                        -3489,
+                                        2866
                                     ]
                                 },
                                 {
@@ -1786,8 +1786,8 @@
                                     "full_name": "day_progress_anim.gd",
                                     "dependencies": [],
                                     "position": [
-                                        -3333,
-                                        2752
+                                        -3490,
+                                        2914
                                     ]
                                 }
                             ]
@@ -1810,8 +1810,8 @@
                                         "BetterResourceLoader"
                                     ],
                                     "position": [
-                                        -2997,
-                                        2707
+                                        -3154,
+                                        2869
                                     ]
                                 }
                             ]
@@ -1842,8 +1842,8 @@
                                         "SaveController"
                                     ],
                                     "position": [
-                                        -2959,
-                                        2424
+                                        -3116,
+                                        2586
                                     ]
                                 }
                             ]
@@ -1865,8 +1865,8 @@
                                         "SaveController"
                                     ],
                                     "position": [
-                                        -3329,
-                                        2490
+                                        -3486,
+                                        2652
                                     ]
                                 }
                             ]
@@ -1880,8 +1880,8 @@
                             "full_name": "UserInterfaceMenu",
                             "dependencies": [],
                             "position": [
-                                -3354,
-                                2375
+                                -3511,
+                                2537
                             ]
                         }
                     ]
@@ -1895,8 +1895,8 @@
                     "full_name": "ui_enabler.gd",
                     "dependencies": [],
                     "position": [
-                        -2310,
-                        2507
+                        -2467,
+                        2669
                     ]
                 },
                 {
@@ -1906,8 +1906,8 @@
                     "full_name": "ui_flash.gd",
                     "dependencies": [],
                     "position": [
-                        -2591,
-                        2500
+                        -2748,
+                        2662
                     ]
                 }
             ]
@@ -1927,8 +1927,8 @@
                 "BetterLerp"
             ],
             "position": [
-                -552,
-                1811
+                -566,
+                1795
             ]
         },
         {
@@ -1938,8 +1938,8 @@
             "full_name": "ScrollContainerThatConsumesAllScrollEvents",
             "dependencies": [],
             "position": [
-                -3826,
-                2049
+                -1078,
+                1943
             ]
         },
         {
@@ -1951,8 +1951,8 @@
                 "Projectile"
             ],
             "position": [
-                -303,
-                343
+                -203,
+                1768
             ]
         },
         {
@@ -1965,8 +1965,8 @@
                 "World"
             ],
             "position": [
-                -577,
-                530
+                -280,
+                1936
             ]
         },
         {
@@ -1981,8 +1981,8 @@
                 "TokenContainer"
             ],
             "position": [
-                -876,
-                3152
+                -570,
+                2273
             ]
         }
     ]

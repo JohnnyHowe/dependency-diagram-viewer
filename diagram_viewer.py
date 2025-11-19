@@ -127,8 +127,8 @@ class DiagramViewer:
 
     def _draw(self):
         Window().surface.fill((0, 0, 0))
-        self._draw_dependencies()
         self.root.draw()
+        self._draw_dependencies()
         self._draw_controls_text()
 
     def _draw_controls_text(self):
@@ -146,12 +146,27 @@ class DiagramViewer:
         draw.text_screen_space("\n".join(lines), 20, Rect((0, 0), Window().size))
 
     def _draw_dependencies(self):
-        self._get_all_visible_dependencies()
+        pairs = self._get_all_visible_dependency_pairs()
+        for source, target in pairs:
+            draw.arrow(source.rect.midtop, target.rect.midbottom, color="#ff0000", width=4)
 
-    def _get_all_visible_dependencies(self) -> list[tuple]:
-        dependency_data = {}
-        for script in self.root.get_scripts_recursive():
-            deepest_item = script.get_deepest_visible_in_parent_chain()
-            dependency_data[deepest_item.path] = {"item": deepest_item, "dependencies": []}
+    def _get_all_visible_dependency_pairs(self) -> list[tuple]:
+        #dependency_data = {}
+        #for item in self._get_all_visible_dependency_sources():
+        #   dependency_data[item.path] = {"item": item, "dependencies": item.get_all_script_dependencies()}
+
+        pairs = []
+        for dependency_source in self._get_visible_items(self.root.get_scripts_recursive()):
+            for dependency_target in self._get_visible_items(dependency_source.get_all_script_dependencies()):
+                pairs.append((dependency_source, dependency_target))
         
-        return [(0,),]
+        return pairs
+
+    def _get_visible_items(self, items_list):
+        items = set()
+        for item in items_list:
+            deepest_item = item.get_deepest_visible_in_parent_chain()
+            if deepest_item is None: continue
+            items.add(deepest_item)
+        return items
+ 

@@ -11,6 +11,13 @@ def rect(rect: Rect, color="#ffffff", width=1):
     pygame.draw.rect(Window().surface, color, Camera().project_rect(rect), math.ceil(Camera().project_size_component(width)))
 
 
+def arrow(source: Vector2, destination: Vector2, color="#ffffff", width=1):
+    source = Camera().project_position(source)
+    destination = Camera().project_position(destination)
+    width = Camera().project_size_component(width)
+    pygame.draw.line(Window().surface, color, source, destination, max(1, int(width)))
+
+
 def text(text: str, size: float, containing_rect: Rect, color="#ffffff", v_alignment=-1, h_alignment=-1):
     text_screen_space(text, int(Camera().project_size_component(size)), Camera().project_rect(containing_rect), color, v_alignment, h_alignment)
 

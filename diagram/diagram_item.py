@@ -71,3 +71,22 @@ class DiagramItem:
             chain.append(chain[-1].parent)
         chain.reverse()
         return chain
+
+    def get_all_script_dependencies(self):
+        raise NotImplementedError()
+
+    def get_deepest_visible_in_parent_chain(self):
+        chain = self.get_parent_chain()
+
+        last_visible = chain[0]
+
+        for item in chain[1:]:
+            if last_visible.is_collapsed: break 
+            if last_visible.is_hidden: break 
+            last_visible = item
+
+        if last_visible.is_hidden:  # None visible
+            return None 
+
+        return last_visible
+    

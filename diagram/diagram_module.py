@@ -109,3 +109,10 @@ class DiagramModule(DiagramItem):
         for module in self.modules:
             modules += module.get_modules_recursive()
         return modules
+
+    def get_all_script_dependencies(self):
+        dependencies = set()
+        for script in self.get_scripts_recursive():
+            for dependency in script.get_all_script_dependencies():
+                dependencies.add(dependency)
+        return dependencies
