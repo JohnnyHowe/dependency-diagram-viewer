@@ -13,6 +13,19 @@ class DiagramModule(DiagramItem):
         self.scripts = []
         self.is_collapsed = False
 
+    def update(self):
+        self._update_size()
+        for submodule in self.modules:
+            submodule.update()
+
+    def move(self, change: Vector2):
+        for child in self.modules + self.scripts:
+            child.move(change)
+
+    # ===========================================================================================
+    # region Drawing and Sizing
+    # ===========================================================================================
+
     def draw(self):
         if not self.is_root:
             self._draw_shape()
@@ -22,11 +35,6 @@ class DiagramModule(DiagramItem):
         if not self.is_collapsed:
             for child in self.modules + self.scripts:
                 child.draw()
-
-    def update(self):
-        self._update_size()
-        for submodule in self.modules:
-            submodule.update()
 
     def _draw_shape(self):
         self.draw_background_fill()
@@ -46,12 +54,6 @@ class DiagramModule(DiagramItem):
             center = self.rect.center
             self.rect = Rect((0, 0), self.min_size)
             self.rect.center = center
-
-    def _is_self_or_parent_collapsed(self):
-        for item in self.get_parent_chain():
-            if item.is_collapsed:
-                return True
-        return False
 
     def _expand_to_fit_children(self):
         self.rect = Rect(self.rect.center, (0, 0))
@@ -75,6 +77,16 @@ class DiagramModule(DiagramItem):
         rect.size = Vector2(rect.size) - (padding * 2 + detail_padding)
         return rect
 
+    # ===========================================================================================
+    # region Tree Traversal
+    # ===========================================================================================
+
+    def _is_self_or_parent_collapsed(self):
+        for item in self.get_parent_chain():
+            if item.is_collapsed:
+                return True
+        return False
+
     def get_all_visible_children_recursive(self):
         if self.is_collapsed:
             return [self]
@@ -97,7 +109,3 @@ class DiagramModule(DiagramItem):
         for module in self.modules:
             modules += module.get_modules_recursive()
         return modules
-
-    def move(self, change: Vector2):
-        for child in self.modules + self.scripts:
-            child.move(change)

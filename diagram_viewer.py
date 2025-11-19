@@ -127,6 +127,7 @@ class DiagramViewer:
 
     def _draw(self):
         Window().surface.fill((0, 0, 0))
+        self._draw_dependencies()
         self.root.draw()
         self._draw_controls_text()
 
@@ -143,3 +144,9 @@ class DiagramViewer:
             "s: save"
         ]
         draw.text_screen_space("\n".join(lines), 20, Rect((0, 0), Window().size))
+
+    def _draw_dependencies(self):
+        pass
+
+    def _get_all_visible_dependencies(self) -> list[tuple]:
+        pass
