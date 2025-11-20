@@ -9,7 +9,6 @@ class Project:
         self.path = path
         self.namespaces = {"none": Namespace("none")}
         self._parse()
-        self.pretty_print()
 
     def _parse(self):
         self.script_contents = {}
@@ -39,11 +38,11 @@ class Project:
         namespace.parse_contents(contents, file_path)
 
     def _find_dependencies(self):
-        all_members = list(self._get_members_recursive())
+        all_members = list(self.get_members_recursive())
         for namespace in self.namespaces.values():
             namespace.find_dependencies(all_members)
 
-    def _get_members_recursive(self):
+    def get_members_recursive(self):
         for namespace in self.namespaces.values():
             for member in namespace.get_members_recursive():
                 yield member
