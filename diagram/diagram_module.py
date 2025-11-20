@@ -2,6 +2,7 @@ from pygame import Rect, Vector2
 import configuration
 from diagram.diagram_item import DiagramItem
 from window_engine import draw
+from window_engine.window import Window
 
 
 class DiagramModule(DiagramItem):
@@ -17,6 +18,7 @@ class DiagramModule(DiagramItem):
         self._update_size()
         for submodule in self.modules:
             submodule.update()
+        self.space_children()
 
     def move(self, change: Vector2):
         for child in self.modules + self.scripts:
@@ -116,3 +118,39 @@ class DiagramModule(DiagramItem):
             for dependency in script.get_all_script_dependencies():
                 dependencies.add(dependency)
         return dependencies
+
+    # ===========================================================================================
+    # region Auto Spaceing
+    # ===========================================================================================
+
+    def space_children(self):
+        pairs_moved = set()
+        children = self.modules + self.scripts
+        for child1 in children:
+            for child2 in children:
+                if child1 == child2: continue
+                if (child1, child2) in pairs_moved: continue
+                self._space_pair(child1, child2)
+                pairs_moved.add((child2, child1))
+
+    def _space_pair(self, item1, item2):
+        overlap = item1.rect.clip(item2.rect)
+
+        if overlap.width == 0 and overlap.height == 0:
+            return
+
+        max_movement = Window().delta_time_seconds * configuration.auto_push_pixels_per_second
+        movement = Vector2(0, 0)
+
+        if overlap.width > overlap.height:
+            movement.y = min(max_movement, overlap.height)
+        else:
+            movement.x = min(max_movement, overlap.height)
+
+        if item1.rect.center[0] > item2.rect.center[0]:
+            movement.x *= -1
+        if item1.rect.center[1] > item2.rect.center[1]:
+            movement.y *= -1
+
+        item1.move(-movement / 2)
+        item2.move(movement / 2)

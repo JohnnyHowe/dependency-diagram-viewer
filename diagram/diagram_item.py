@@ -2,6 +2,7 @@ from pygame import Color, Rect, Vector2
 
 import configuration
 from window_engine import draw
+from window_engine.window import Window
 
 
 class DiagramItem:
@@ -55,6 +56,9 @@ class DiagramItem:
     # ===========================================================================================
     # region Tree Traversal
     # ===========================================================================================
+
+    def get_children(self):
+        raise NotImplementedError()
 
     def is_parent_or_self_hidden(self):
         for item in self.get_parent_chain():
