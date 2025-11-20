@@ -5,9 +5,9 @@ from namespace import Namespace
 
 
 def write(file_path: str, project: Project):
+    d = _get_as_dict(project)
+    s = json.dumps(d, indent=4)
     with open(file_path, "w") as file:
-        d = _get_as_dict(project)
-        s = json.dumps(d, indent=4)
         file.write(s)
 
 
@@ -18,33 +18,56 @@ def _get_as_dict(project: Project) -> dict:
         namespaces_to_contained_files[namespace.name] = set(_get_files_in_namespace(namespace))
 
     script_dependencies = _get_script_dependencies(project)
+    grouped_namespaces = _get_grouped_namespaces(project.namespaces.keys())
 
-    data = {
-        "path": "",
-        "name": "",
+    return _create_data_dict(project, "", grouped_namespaces, namespaces_to_contained_files, script_dependencies)
+
+
+def _create_data_dict(project: Project, current_namespace: str, grouped_namespaces: dict, namespaces_to_contained_files, script_dependencies) -> dict:
+    d = {
+        "path": current_namespace,
+        "full_name": current_namespace,
+        "name": current_namespace.split(".")[-1],
         "folders": [],
-        "scripts": []
+        "scripts": [],
     }
 
-    for namespace in project.namespaces.values():
-        scripts = []
-        for file_path in namespaces_to_contained_files[namespace.name]:
-            name = re.split(r"[\\/]", file_path)[-1]
-            scripts.append({
-                "path": file_path,
-                "name": name,
+    if current_namespace in namespaces_to_contained_files:
+        for file_path in namespaces_to_contained_files[current_namespace]:
+            d["scripts"].append({
+                "path": file_path, 
                 "full_name": file_path,
+                "name": re.split(r"[\\/]", file_path)[-1],
                 "dependencies": list(script_dependencies[file_path])
             })
 
-        data["folders"].append({
-            "path": namespace.name,
-            "name": namespace.name,
-            "folders": [],
-            "scripts": scripts,
-        })
-        
-    return data
+    for namespace_base, namespace_children in grouped_namespaces.items():
+        name = ".".join([current_namespace, namespace_base]).strip(".")
+        data_dict = _create_data_dict(project, name, namespace_children, namespaces_to_contained_files, script_dependencies)
+        if namespace_base == "none":
+            d["scripts"] = data_dict["scripts"]
+        else:
+            d["folders"].append(data_dict)
+    return d
+
+
+def _get_grouped_namespaces(all_namespaces):
+    grouped = {}
+    for namespace in all_namespaces:
+        _add_namespace_to_grouping(grouped, namespace.split("."), 0)
+    return grouped
+
+
+def _add_namespace_to_grouping(groups: dict, namespace_parts: list, index):
+    current = namespace_parts[index]
+
+    if not current in groups:
+        groups[current] = {}
+
+    if index == len(namespace_parts) - 1:
+        groups[current] = {}
+    else:
+        _add_namespace_to_grouping(groups[current], namespace_parts, index + 1)
 
 
 def _get_files_in_namespace(namespace: Namespace):
