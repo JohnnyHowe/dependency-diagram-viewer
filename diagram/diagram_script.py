@@ -18,3 +18,9 @@ class DiagramScript(DiagramItem):
  
     def get_all_script_dependencies(self):
         return self.dependencies
+
+    def __str__(self):
+        return f"DiagramScript({self.name})"
+
+    def __repr__(self):
+        return str(self)

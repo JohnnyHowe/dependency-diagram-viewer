@@ -1,3 +1,4 @@
+import math
 import random
 from pygame import Rect, Vector2
 import configuration
@@ -5,6 +6,7 @@ from diagram.diagram_item import DiagramItem
 from window_engine import draw
 from window_engine.window import Window
 
+import time
 
 class DiagramModule(DiagramItem):
     min_size = Vector2(160, 80)
@@ -137,9 +139,11 @@ class DiagramModule(DiagramItem):
             module.space_children()
 
     def _space_pair(self, item1, item2):
-        overlap = item1.rect.clip(item2.rect)
-        if overlap.width == 0 and overlap.height == 0:
+        distance_to_leave_overlap = self._get_distance_to_leave_overlap(item1, item2) 
+        if distance_to_leave_overlap.x == 0 and distance_to_leave_overlap.y == 0:
             return
+
+        #print(distance_to_leave_overlap, item1, item2)
 
         # add some randomness if they're the exact same
         if item1.rect == item2.rect:
@@ -148,17 +152,34 @@ class DiagramModule(DiagramItem):
         max_movement = Window().delta_time_seconds * configuration.auto_push_pixels_per_second
         movement = Vector2(0, 0)
 
-        #print(item1.name, item2.name)
-
-        if overlap.width > overlap.height:
-            movement.y = min(max_movement, overlap.height)
+        if distance_to_leave_overlap.x > distance_to_leave_overlap.y:
+            movement.y = min(max_movement, distance_to_leave_overlap.y)
         else:
-            movement.x = min(max_movement, overlap.height)
+            movement.x = min(max_movement, distance_to_leave_overlap.x)
 
         if item1.rect.center[0] > item2.rect.center[0]:
             movement.x *= -1
         if item1.rect.center[1] > item2.rect.center[1]:
             movement.y *= -1
 
-        item1.move(-movement / 2)
-        item2.move(movement / 2)
+        item1_size = self._get_rect_area_sqr(item1.rect)
+        item2_size = self._get_rect_area_sqr(item2.rect)
+        item1_weight = item1_size / (item1_size + item2_size)
+
+        item1.move(-movement * (1 - item1_weight))
+        item2.move(movement * item1_weight)
+
+    def _get_distance_to_leave_overlap(self, item1, item2) -> Vector2:
+        return Vector2(
+            min(max(0, item2.rect.topright[0] - item1.rect.topleft[0]), max(0, item1.rect.topright[0] - item2.rect.topleft[0])),
+            min(max(0, item1.rect.bottomleft[1] - item2.rect.topleft[1]), max(0, item2.rect.bottomleft[1] - item1.rect.topleft[1])),
+        )
+
+    def _get_rect_area_sqr(self, rect):
+        return math.sqrt(rect.w * rect.w + rect.h * rect.h)
+
+    def __str__(self):
+        return f"DiagramModule({self.name})"
+
+    def __repr__(self):
+        return str(self)

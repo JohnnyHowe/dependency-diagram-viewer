@@ -20,7 +20,7 @@ class Window(metaclass=Singleton):
         self.delta_time_seconds = 1.0 / 60
 
     def update(self):
-        self.delta_time_seconds = self._clock.tick() / 1000.0
+        self.delta_time_seconds = self._clock.tick(120) / 1000.0
         self._run_event_loop()
         for func in sorted(self._draw_calls, key=lambda call: call[1]):
             func[0]()
