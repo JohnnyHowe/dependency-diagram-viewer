@@ -6,7 +6,6 @@ from diagram.diagram_item import DiagramItem
 from window_engine import draw
 from window_engine.window import Window
 
-import time
 
 class DiagramModule(DiagramItem):
     min_size = Vector2(160, 80)
@@ -15,7 +14,7 @@ class DiagramModule(DiagramItem):
         super().__init__(path, name, parent)
         self.modules = []
         self.scripts = []
-        self.is_collapsed = False
+        self.is_collapsed = True
 
     def update(self):
         self._update_size()
@@ -140,14 +139,14 @@ class DiagramModule(DiagramItem):
 
     def _space_pair(self, item1, item2):
         distance_to_leave_overlap = self._get_distance_to_leave_overlap(item1, item2) 
-        if distance_to_leave_overlap.x == 0 and distance_to_leave_overlap.y == 0:
+        if distance_to_leave_overlap.x == 0 or distance_to_leave_overlap.y == 0:
             return
-
-        #print(distance_to_leave_overlap, item1, item2)
 
         # add some randomness if they're the exact same
         if item1.rect == item2.rect:
-            item1.rect.center = Vector2(item1.rect.center) + Vector2(random.random() - 0.5, random.random() - 0.5) * 1000
+            offset = Vector2(item1.rect.size)
+            offset.y = 0
+            item1.rect.center = Vector2(item1.rect.center) + offset
 
         max_movement = Window().delta_time_seconds * configuration.auto_push_pixels_per_second
         movement = Vector2(0, 0)
@@ -168,6 +167,10 @@ class DiagramModule(DiagramItem):
 
         item1.move(-movement * (1 - item1_weight))
         item2.move(movement * item1_weight)
+
+    def r(self, seed):
+        random.seed(seed)
+        return random.randint(-1, 1)
 
     def _get_distance_to_leave_overlap(self, item1, item2) -> Vector2:
         return Vector2(

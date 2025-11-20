@@ -14,6 +14,7 @@
             "program": "main.py",
             "args": ["./drifto.json"]
             //"args": ["./dwarfhold.json"]
+            //"args": ["./example1.json"]
 
             //"program": "project_parsers/unity_parser/parse_unity_project.py",
             //"args": ["C:/Users/Work/Documents/Projects/drifto/Assets/Scripts", "./drifto.json"]

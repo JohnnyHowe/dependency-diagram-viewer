@@ -1,4 +1,4 @@
-from pygame import Rect
+from pygame import Rect, Vector2
 import pygame
 
 from diagram.diagram_loader import DiagramLoader
@@ -61,6 +61,8 @@ class DiagramViewer:
             DiagramSaver(self.file_path, self.root).save()
         if key == pygame.K_a:
             self.space_children = not self.space_children
+        if key == pygame.K_r:
+            self._reset_positions()
 
     def _toggle_selection_visibility(self):
         if self.held_item:
@@ -69,6 +71,10 @@ class DiagramViewer:
     def _toggle_selection_collapse(self):
         if isinstance(self.held_item, DiagramModule):
             self.held_item.is_collapsed = not self.held_item.is_collapsed
+
+    def _reset_positions(self):
+        for child in self.root.get_all_children_recursive():
+            child.rect.center = Vector2(0, 0)
 
     # ===========================================================================================
     # region Mouse input
@@ -149,6 +155,7 @@ class DiagramViewer:
             "h: toggle visibility on selection",
             "c: collapse/expand selection",
             "a: turn %s auto spacing" % ("off" if self.space_children else "on"),
+            "r: reset all positions",
             "",
             "s: save"
         ]
