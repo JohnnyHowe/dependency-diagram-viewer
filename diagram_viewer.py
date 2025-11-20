@@ -19,6 +19,7 @@ class DiagramViewer:
         self._load_diagram()
         self.hovered_item = None
         self.held_item = None
+        self.space_children = False
         self._run()
 
     def _load_diagram(self):
@@ -31,9 +32,14 @@ class DiagramViewer:
     def _run_frame(self):
         self._camera_controller.update()
         Mouse().update()
+
         self._update_mouse_input()
         self._update_key_input()
+
         self.root.update()
+        if self.space_children:
+            self.root.space_children()
+
         self._draw()
         Window().update()
 
@@ -53,6 +59,8 @@ class DiagramViewer:
             self._toggle_selection_collapse()
         if key == pygame.K_s:
             DiagramSaver(self.file_path, self.root).save()
+        if key == pygame.K_a:
+            self.space_children = not self.space_children
 
     def _toggle_selection_visibility(self):
         if self.held_item:
@@ -140,6 +148,7 @@ class DiagramViewer:
             "f: reset camera",
             "h: toggle visibility on selection",
             "c: collapse/expand selection",
+            "a: turn %s auto spacing" % ("off" if self.space_children else "on"),
             "",
             "s: save"
         ]

@@ -19,7 +19,6 @@ class DiagramModule(DiagramItem):
         self._update_size()
         for submodule in self.modules:
             submodule.update()
-        self.space_children()
 
     def move(self, change: Vector2):
         for child in self.modules + self.scripts:
@@ -133,6 +132,9 @@ class DiagramModule(DiagramItem):
                 if (child1, child2) in pairs_moved: continue
                 self._space_pair(child1, child2)
                 pairs_moved.add((child2, child1))
+
+        for module in self.modules:
+            module.space_children()
 
     def _space_pair(self, item1, item2):
         overlap = item1.rect.clip(item2.rect)
