@@ -9,10 +9,12 @@
             "name": "Python Debugger: Current File",
             "type": "debugpy",
             "request": "launch",
-            "program": "main.py",
             "console": "integratedTerminal",
-            "args": ["./dwarfhold.json"]
-
+            //"program": "main.py",
+            //"args": ["./dwarfhold.json"]
+            "program": "project_parsers/unity_parser/parse_unity_project.py",
+            "args": ["C:/Users/Work/Documents/Projects/drifto/Assets/Scripts/Generics/Systems/GameConfiguration", "./drifto.json"]
+            //"args": ["C:/Users/Work/Documents/Projects/drifto/Assets/Scripts/Generics", "./drifto.json"]
         }
     ]
 }
