@@ -3,6 +3,7 @@ import argparse
 import os
 
 from project import Project
+from json_writer import write
 
 
 def main():
@@ -15,9 +16,8 @@ def main():
         print(f"File \"{args.project_path}\" does not exist")
         return
 
-    #print(args.project_path)
-    #print(args.output_path)
     proj = Project(args.project_path)
+    write(args.output_path, proj)
 
 if __name__ == "__main__":
     main()
