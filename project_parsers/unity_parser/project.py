@@ -12,26 +12,42 @@ class Project:
         self.pretty_print()
 
     def _parse(self):
+        self.script_contents = {}
         for root, dir_names, file_names in os.walk(self.path):
             for file_name in file_names:
                 if csharp_parser.is_script(file_name):
                     self._parse_file(os.path.join(root, file_name))
+        self._find_dependencies()
                 
     def _parse_file(self, file_path):
         contents = csharp_parser.load_contents(file_path)
+        self.script_contents[file_path] = contents
         root_members = csharp_parser.get_root_members(contents)
 
         for data in root_members:
             self._add_script_root_member(*data, file_path)
 
-    def _add_script_root_member(self, member_type, name, contents, file_path):
+    def _add_script_root_member(self, member_type, name, contents, definition, file_path):
         if member_type != "namespace":
-            self.namespaces["none"].members.append(Member(name, member_type, contents, file_path))
-            pass
+            namespace = self.namespaces["none"]
         elif name not in self.namespaces:
             namespace = Namespace(name)
-            namespace.parse_contents(contents, file_path)
             self.namespaces[name] = namespace
+        else:
+            namespace = self.namespaces[name]
+
+        namespace.parse_contents(contents, file_path)
+
+    def _find_dependencies(self):
+        all_members = list(self._get_members_recursive())
+        for namespace in self.namespaces.values():
+            namespace.find_dependencies(all_members)
+
+    def _get_members_recursive(self):
+        for namespace in self.namespaces.values():
+            for member in namespace.get_members_recursive():
+                yield member
+
 
     def pretty_print(self):
         print(f"Project at {self.path}")

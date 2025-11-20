@@ -31,7 +31,9 @@ def get_root_members(contents: string) -> list[tuple]:
 		member_name = match.group(2)
 		contents_start_index = match.end()
 		if get_bracket_depth(contents, contents_start_index) != 0: continue
-		members.append((member_type, member_name, get_member_contents(contents, contents_start_index)))
+
+		member_char_range = get_member_contents_range(contents, contents_start_index)
+		members.append((member_type, member_name, contents[member_char_range[0]: member_char_range[1]], contents[match.start(): member_char_range[0] - 1].strip()))
 
 	return members
 
@@ -43,8 +45,12 @@ def get_bracket_depth(contents, char_index):
 		elif contents[i] == "}": depth -= 1
 	return depth
 
-
 def get_member_contents(parent_contents: string, start_character_index) -> string:
+	start, end = get_member_contents_range(parent_contents, start_character_index)
+	return strip_empty_lines(parent_contents[start: end])
+
+
+def get_member_contents_range(parent_contents: string, start_character_index) -> tuple:
 	bracket_depth = 0
 	has_found_first_bracket = False
 	start_bracket_index = -1
@@ -53,7 +59,7 @@ def get_member_contents(parent_contents: string, start_character_index) -> strin
 	while bracket_depth > 0 or not has_found_first_bracket:
 		if len(parent_contents) <= char_index:
 			print("Not all brackets closed???")
-			return ""
+			return (0, 0)
 
 		if parent_contents[char_index] == "{":
 			bracket_depth += 1
@@ -64,8 +70,7 @@ def get_member_contents(parent_contents: string, start_character_index) -> strin
 			bracket_depth -= 1
 
 		char_index += 1
-
-	return strip_empty_lines(parent_contents[start_bracket_index + 1: char_index - 1])
+	return (start_bracket_index + 1, char_index - 1)
 
 
 def strip_empty_lines(s: str) -> str:
@@ -90,11 +95,11 @@ def get_dependencies(contents: string, all_member_full_namespaces) -> list:
 	return list(used)
 
 
-def depends_on(contents: string, full_member_namespace: string) -> bool:
+def depends_on(full_file_contents: str, member_contents: string, full_member_namespace: string, current_namespace: str) -> bool:
 	parts = full_member_namespace.split(".")
 	member_name = parts[-1]
 
-	if not member_name in contents:
+	if not member_name in member_contents:
 		return False
 
 	# okay, there's a member in the file with the same member name
@@ -102,7 +107,7 @@ def depends_on(contents: string, full_member_namespace: string) -> bool:
 
 	full_use_of_member_in_code = member_name
 	pattern = re.compile(r"([\w.]*)\." + member_name)
-	for match in pattern.finditer(contents):
+	for match in pattern.finditer(member_contents):
 		if not full_member_namespace.endswith(match.group(0)): continue
 		full_use_of_member_in_code = match.group(0)
 
@@ -111,12 +116,17 @@ def depends_on(contents: string, full_member_namespace: string) -> bool:
 		return True
 
 	# does the partial namespace reference connect to a "using x"?
-	namespaces_in_use = get_all_namespaces_in_use(contents)
+	namespaces_in_use = get_all_namespaces_in_use(full_file_contents) + list(get_all_parent_namespaces(current_namespace))
 	for namespace in namespaces_in_use:
 		if namespace + "." + full_use_of_member_in_code == full_member_namespace:
 			return True
-
 	return False
+
+
+def get_all_parent_namespaces(current_namespace):
+	parts = current_namespace.split(".")
+	for i in range(len(parts)):
+		yield ".".join(parts[:i])
 
 
 def get_all_namespaces_in_use(contents):
