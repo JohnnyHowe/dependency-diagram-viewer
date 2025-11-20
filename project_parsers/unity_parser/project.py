@@ -16,7 +16,16 @@ class Project:
             for file_name in file_names:
                 if csharp_parser.is_script(file_name):
                     self._parse_file(os.path.join(root, file_name))
+        self.cull_empty_namespaces()
         self._find_dependencies()
+
+    def cull_empty_namespaces(self):
+        to_cull = []
+        for key, value in self.namespaces.items():
+            if len(value.members) == 0:
+                to_cull.append(key)
+        for key in to_cull:
+            del self.namespaces[key]
                 
     def _parse_file(self, file_path):
         contents = csharp_parser.load_contents(file_path)

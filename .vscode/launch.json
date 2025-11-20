@@ -11,11 +11,12 @@
             "request": "launch",
             "console": "integratedTerminal",
 
-            "program": "main.py",
-            "args": ["./drifto.json"]
+            //"program": "main.py",
+            //"args": ["./drifto.json"]
+            //"args": ["./dwarfhold.json"]
 
-            //"program": "project_parsers/unity_parser/parse_unity_project.py",
-            //"args": ["C:/Users/Work/Documents/Projects/drifto/Assets/Scripts", "./drifto.json"]
+            "program": "project_parsers/unity_parser/parse_unity_project.py",
+            "args": ["C:/Users/Work/Documents/Projects/drifto/Assets/Scripts", "./drifto.json"]
         }
     ]
 }

@@ -38,7 +38,7 @@ def _create_data_dict(project: Project, current_namespace: str, grouped_namespac
                 "path": file_path, 
                 "full_name": file_path,
                 "name": re.split(r"[\\/]", file_path)[-1],
-                "dependencies": list(script_dependencies[file_path])
+                "dependencies": sorted(list(script_dependencies[file_path]))
             })
 
     for namespace_base, namespace_children in grouped_namespaces.items():
@@ -48,6 +48,9 @@ def _create_data_dict(project: Project, current_namespace: str, grouped_namespac
             d["scripts"] = data_dict["scripts"]
         else:
             d["folders"].append(data_dict)
+
+    d["scripts"] = sorted(d["scripts"], key=lambda item: item["path"])
+    d["folders"] = sorted(d["folders"], key=lambda item: item["path"])
     return d
 
 

@@ -1,3 +1,4 @@
+import random
 from pygame import Rect, Vector2
 import configuration
 from diagram.diagram_item import DiagramItem
@@ -135,12 +136,17 @@ class DiagramModule(DiagramItem):
 
     def _space_pair(self, item1, item2):
         overlap = item1.rect.clip(item2.rect)
-
         if overlap.width == 0 and overlap.height == 0:
             return
 
+        # add some randomness if they're the exact same
+        if item1.rect == item2.rect:
+            item1.rect.center = Vector2(item1.rect.center) + Vector2(random.random() - 0.5, random.random() - 0.5) * 1000
+
         max_movement = Window().delta_time_seconds * configuration.auto_push_pixels_per_second
         movement = Vector2(0, 0)
+
+        #print(item1.name, item2.name)
 
         if overlap.width > overlap.height:
             movement.y = min(max_movement, overlap.height)
