@@ -126,7 +126,7 @@ class DiagramModule(DiagramItem):
 
     def get_children(self):
         return self.scripts + self.modules
-
+        
     # ===========================================================================================
     # region Auto Spaceing
     # ===========================================================================================
