@@ -132,13 +132,21 @@ class DiagramViewer:
 	def _mouse_down(self, button_index: int):
 		if button_index != self.selection_mouse_button_index: return
 		self.is_holding_selection = self._is_mouse_over_selected_item()
+
 		if not self.is_holding_selection:
 			self.selection_start_position = Mouse().position
 
 	def _is_mouse_over_selected_item(self) -> bool:
 		mouse_pos = Mouse().position
 		for item in self.selected_items:
-			if item.rect.collidepoint(mouse_pos):
+			if item.rect.collidepoint(mouse_pos) and not self._is_mouse_over_child(item):
+				return True
+		return False
+
+	def _is_mouse_over_child(self, item):
+		mouse_pos = Mouse().position
+		for child in item.get_children():
+			if child.rect.collidepoint(mouse_pos):
 				return True
 		return False
 

@@ -124,6 +124,9 @@ class DiagramModule(DiagramItem):
                 dependencies.add(dependency)
         return dependencies
 
+    def get_children(self):
+        return self.scripts + self.modules
+
     # ===========================================================================================
     # region Auto Spaceing
     # ===========================================================================================
