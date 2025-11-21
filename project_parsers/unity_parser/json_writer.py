@@ -85,6 +85,8 @@ def _get_script_dependencies(project: Project):
 
     for member in project.get_members_recursive():
         member_dependencies = set(map(lambda member: member.file_path, member.member_dependencies))
+        #if member.file_path.endswith("SpeedLinesScaler.cs"):
+        #    print(member)
         dependencies[member.file_path] = dependencies[member.file_path].union(member_dependencies).union(member.namespace_dependencies_not_in_members)
 
     return dependencies

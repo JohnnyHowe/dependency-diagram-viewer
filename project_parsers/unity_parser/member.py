@@ -63,6 +63,9 @@ class Member:
             self.ensure_depends_on_namespace(namespace)
 
     def ensure_depends_on_namespace(self, namespace_name: str):
+        if namespace_name == "none" or namespace_name == "":
+            return
+
         if self._already_depends_on_namespace_recursive(namespace_name):
             return
 

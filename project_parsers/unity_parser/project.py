@@ -1,5 +1,6 @@
 import os
 
+from project_parsers.unity_parser.member import Member
 from project_parsers.unity_parser.namespace import Namespace
 from project_parsers.unity_parser import csharp_parser
 
@@ -37,15 +38,15 @@ class Project:
             self._add_script_root_member(*data, file_path)
 
     def _add_script_root_member(self, member_type, name, contents, definition, file_path):
-        if member_type != "namespace":
+        # member isn't in a namespace :/
+        if member_type != "namespace": 
             namespace = self.namespaces["none"]
-        elif name not in self.namespaces:
-            namespace = Namespace(name)
-            self.namespaces[name] = namespace
-        else:
-            namespace = self.namespaces[name]
+            namespace.members.append(Member(name, member_type, contents, definition, file_path, namespace))
+            return
 
-        namespace.parse_contents(contents, file_path)
+        if name not in self.namespaces:
+            self.namespaces[name] = Namespace(name)
+        self.namespaces[name].parse_contents(contents, file_path)
 
     def _find_dependencies(self):
         all_members = list(self.get_members_recursive())
