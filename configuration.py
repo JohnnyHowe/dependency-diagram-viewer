@@ -12,4 +12,7 @@ held_item_fill_color = "#666666"
 item_outline_color = "#ffffff"
 item_hidden_outline_color = "#333333"
 
+dependency_default_color = "#ffffff"
+dependency_unfocussed_color = "#444444"
+
 auto_push_pixels_per_second = 1000

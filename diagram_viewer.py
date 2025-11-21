@@ -1,6 +1,7 @@
 from pygame import Rect, Vector2
 import pygame
 
+import configuration
 from diagram.diagram_loader import DiagramLoader
 from diagram.diagram_module import DiagramModule
 from diagram.diagram_saver import DiagramSaver
@@ -239,12 +240,13 @@ class DiagramViewer:
 
 		is_item_targetted = len(self.selected_items) > 0
 
-		other_color = "#444444" if is_item_targetted > 0 else "#ffffff"
+		other_color = configuration.dependency_unfocussed_color if is_item_targetted > 0 else configuration.dependency_default_color
 		other_layer = -1 if is_item_targetted > 0 else 1
+
 		for pair in other_pairs:
 			draw.arrow(pair[0].rect.midtop, pair[1].rect.midbottom, other_color, 4, other_layer)
 		for pair in selected_pairs:
-			draw.arrow(pair[0].rect.midtop, pair[1].rect.midbottom, "#ffffff", 4, 2)
+			draw.arrow(pair[0].rect.midtop, pair[1].rect.midbottom, configuration.dependency_default_color, 4, 2)
 
 	def _is_dependency_targetted(self, pair):
 		for item in pair:
