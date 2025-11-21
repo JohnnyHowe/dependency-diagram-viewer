@@ -1,14 +1,12 @@
-import json
 import re
+from json_parser import update_file
 from project import Project
 from namespace import Namespace
 
 
 def write(file_path: str, project: Project):
     d = _get_as_dict(project)
-    s = json.dumps(d, indent=4)
-    with open(file_path, "w") as file:
-        file.write(s)
+    update_file(file_path, d)
 
 
 def _get_as_dict(project: Project) -> dict:
