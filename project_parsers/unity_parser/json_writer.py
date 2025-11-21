@@ -84,7 +84,7 @@ def _get_script_dependencies(project: Project):
         dependencies[file_path] = set()
 
     for member in project.get_members_recursive():
-        member_dependencies = set(map(lambda member: member.file_path, member.dependencies))
-        dependencies[member.file_path] = dependencies[member.file_path].union(member_dependencies)
+        member_dependencies = set(map(lambda member: member.file_path, member.member_dependencies))
+        dependencies[member.file_path] = dependencies[member.file_path].union(member_dependencies).union(member.namespace_dependencies_not_in_members)
 
     return dependencies

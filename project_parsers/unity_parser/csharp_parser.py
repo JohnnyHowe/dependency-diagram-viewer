@@ -7,7 +7,7 @@ def is_script(file_name):
 
 
 def load_contents(file_path: string) -> string:
-	with open(file_path, "r") as file:
+	with open(file_path, "r", encoding="utf-8") as file:
 		contents = file.read()
 		pattern = r'//.*?$|/\*.*?\*/'
 		return re.sub(pattern, '', contents, flags=re.MULTILINE | re.DOTALL)
@@ -133,7 +133,7 @@ def get_all_parent_namespaces(current_namespace):
 
 def get_all_namespaces_in_use(contents):
 	pattern = r'\s*using\s+(.*?);' 
-	namespaces = [""]
+	namespaces = []
 	for match in re.finditer(pattern, contents):
 		namespaces.append(match.group(1).strip())
 	return namespaces

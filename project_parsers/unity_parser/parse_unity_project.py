@@ -16,8 +16,13 @@ def main():
         print(f"File \"{args.project_path}\" does not exist")
         return
 
-    proj = Project(args.project_path)
-    write(args.output_path, proj)
+    parse(args.project_path, args.output_path)
+
+
+def parse(project_path, output_path):
+    proj = Project(project_path)
+    write(output_path, proj)
+    
 
 if __name__ == "__main__":
     main()
