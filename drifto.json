@@ -31,8 +31,8 @@
                                 "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.GameSetting\\GameSettings.cs"
                             ],
                             "position": [
-                                -117,
-                                211
+                                -365,
+                                214
                             ]
                         },
                         {
@@ -44,8 +44,8 @@
                                 "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\Drifto.CameraMovementMobile\\CameraCarFollower.cs"
                             ],
                             "position": [
-                                -277,
-                                237
+                                -525,
+                                240
                             ]
                         },
                         {
@@ -59,8 +59,8 @@
                                 "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.CarController\\ICarController.cs"
                             ],
                             "position": [
-                                -277,
-                                197
+                                -525,
+                                200
                             ]
                         }
                     ]
@@ -79,8 +79,8 @@
                             "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Generics\\Utilities\\SmoothFollowTransform.cs",
                             "dependencies": [],
                             "position": [
-                                -277,
-                                304
+                                -525,
+                                307
                             ]
                         }
                     ]
@@ -432,7 +432,7 @@
                             "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Generics\\EditorScripts\\CustomEditorUtilities\\Drawing.cs",
                             "dependencies": [],
                             "position": [
-                                -337,
+                                -188,
                                 514
                             ]
                         },
@@ -443,7 +443,7 @@
                             "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Generics\\EditorScripts\\CustomEditorUtilities\\FileFinder.cs",
                             "dependencies": [],
                             "position": [
-                                -497,
+                                -348,
                                 541
                             ]
                         },
@@ -454,7 +454,7 @@
                             "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Generics\\EditorScripts\\CustomEditorUtilities\\SceneUtility.cs",
                             "dependencies": [],
                             "position": [
-                                -497,
+                                -348,
                                 501
                             ]
                         }
@@ -482,7 +482,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Generics\\Systems\\JonathonOH.DataObfuscating\\ObfuscatedFloat.cs"
                                     ],
                                     "position": [
-                                        -331,
+                                        -182,
                                         -30
                                     ]
                                 },
@@ -497,7 +497,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Generics\\Systems\\JonathonOH.DataObfuscating\\XOREncryptorDecryptor.cs"
                                     ],
                                     "position": [
-                                        -491,
+                                        -342,
                                         -4
                                     ]
                                 },
@@ -510,7 +510,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Generics\\Systems\\JonathonOH.DataObfuscating\\XOREncryptorDecryptor.cs"
                                     ],
                                     "position": [
-                                        -491,
+                                        -342,
                                         -44
                                     ]
                                 }
@@ -527,7 +527,7 @@
                                 "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Generics\\Systems\\JonathonOH.DataObfuscating\\XOREncryptorDecryptor.cs"
                             ],
                             "position": [
-                                -331,
+                                -182,
                                 -117
                             ]
                         },
@@ -540,7 +540,7 @@
                                 "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Generics\\Systems\\JonathonOH.DataObfuscating\\ObfuscatedFloat.cs"
                             ],
                             "position": [
-                                -491,
+                                -342,
                                 16
                             ]
                         },
@@ -553,7 +553,7 @@
                                 "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Generics\\Systems\\JonathonOH.DataObfuscating\\XOREncryptorDecryptor.cs"
                             ],
                             "position": [
-                                -331,
+                                -182,
                                 -157
                             ]
                         },
@@ -566,7 +566,7 @@
                                 "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Generics\\Systems\\JonathonOH.DataObfuscating\\ObfuscatedInt.cs"
                             ],
                             "position": [
-                                -491,
+                                -342,
                                 -117
                             ]
                         },
@@ -579,7 +579,7 @@
                                 "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Generics\\Systems\\JonathonOH.DataObfuscating\\XOREncryptorDecryptor.cs"
                             ],
                             "position": [
-                                -331,
+                                -182,
                                 -197
                             ]
                         },
@@ -593,7 +593,7 @@
                                 "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Generics\\Systems\\JonathonOH.DataObfuscating\\XOREncryptorDecryptor.cs"
                             ],
                             "position": [
-                                -491,
+                                -342,
                                 -157
                             ]
                         },
@@ -604,7 +604,7 @@
                             "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Generics\\Systems\\JonathonOH.DataObfuscating\\XOREncryptorDecryptor.cs",
                             "dependencies": [],
                             "position": [
-                                -491,
+                                -342,
                                 -197
                             ]
                         }
@@ -630,7 +630,7 @@
                                     "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.SoundManagement\\MasterVolumeManager.cs",
                                     "dependencies": [],
                                     "position": [
-                                        -183,
+                                        -34,
                                         -24
                                     ]
                                 }
@@ -656,7 +656,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.SoundManagement\\AudioPlayerComponent.cs"
                                     ],
                                     "position": [
-                                        -171,
+                                        -22,
                                         -182
                                     ]
                                 },
@@ -669,7 +669,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.CarController\\CarController.cs"
                                     ],
                                     "position": [
-                                        -331,
+                                        -182,
                                         -120
                                     ]
                                 },
@@ -685,7 +685,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.CarController\\CarSuspension.cs"
                                     ],
                                     "position": [
-                                        -171,
+                                        -22,
                                         -222
                                     ]
                                 },
@@ -698,7 +698,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.RoadConfiguration\\SurfaceType.cs"
                                     ],
                                     "position": [
-                                        -331,
+                                        -182,
                                         -160
                                     ]
                                 },
@@ -717,7 +717,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.RoadConfiguration\\SurfaceType.cs"
                                     ],
                                     "position": [
-                                        -11,
+                                        138,
                                         -274
                                     ]
                                 },
@@ -733,7 +733,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.CarController\\CarSuspension.cs"
                                     ],
                                     "position": [
-                                        -331,
+                                        -182,
                                         -200
                                     ]
                                 },
@@ -751,7 +751,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.SoundManagement\\SoundManager.cs"
                                     ],
                                     "position": [
-                                        -171,
+                                        -22,
                                         -302
                                     ]
                                 },
@@ -766,7 +766,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.CarController\\CarController.cs"
                                     ],
                                     "position": [
-                                        -331,
+                                        -182,
                                         -240
                                     ]
                                 },
@@ -784,7 +784,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.SoundManagement\\SoundManager.cs"
                                     ],
                                     "position": [
-                                        -331,
+                                        -182,
                                         -360
                                     ]
                                 },
@@ -798,7 +798,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.CarController\\CarConfiguration.cs"
                                     ],
                                     "position": [
-                                        -331,
+                                        -182,
                                         -320
                                     ]
                                 },
@@ -814,7 +814,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.RoadConfiguration\\SurfaceType.cs"
                                     ],
                                     "position": [
-                                        -171,
+                                        -22,
                                         -262
                                     ]
                                 },
@@ -829,7 +829,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.RoadConfiguration\\SurfaceType.cs"
                                     ],
                                     "position": [
-                                        -331,
+                                        -182,
                                         -280
                                     ]
                                 }
@@ -855,7 +855,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.RoadConfiguration\\SurfaceType.cs"
                                     ],
                                     "position": [
-                                        -260,
+                                        -111,
                                         -993
                                     ]
                                 },
@@ -869,7 +869,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.CarController\\CarConfiguration.cs"
                                     ],
                                     "position": [
-                                        -420,
+                                        -271,
                                         -977
                                     ]
                                 },
@@ -882,7 +882,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\Jonathon.Drifto.CarInventory\\CarFamily.cs"
                                     ],
                                     "position": [
-                                        -260,
+                                        -111,
                                         -1033
                                     ]
                                 },
@@ -899,7 +899,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.CarController\\CarConfiguration.cs"
                                     ],
                                     "position": [
-                                        -420,
+                                        -271,
                                         -1017
                                     ]
                                 },
@@ -912,7 +912,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\Jonathon.Drifto.CarInventory\\PurchaseType.cs"
                                     ],
                                     "position": [
-                                        -260,
+                                        -111,
                                         -1073
                                     ]
                                 },
@@ -923,7 +923,7 @@
                                     "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\Jonathon.Drifto.CarInventory\\PurchaseType.cs",
                                     "dependencies": [],
                                     "position": [
-                                        -420,
+                                        -271,
                                         -1057
                                     ]
                                 }
@@ -945,7 +945,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.CarTracking\\TrackableRoadSection.cs"
                                     ],
                                     "position": [
-                                        -259,
+                                        -110,
                                         -617
                                     ]
                                 },
@@ -958,7 +958,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.CarTracking\\DrawArrow.cs"
                                     ],
                                     "position": [
-                                        -419,
+                                        -270,
                                         -588
                                     ]
                                 },
@@ -971,7 +971,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.CarTracking\\DirectionTracker.cs"
                                     ],
                                     "position": [
-                                        -259,
+                                        -110,
                                         -657
                                     ]
                                 },
@@ -982,7 +982,7 @@
                                     "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.CarTracking\\DrawArrow.cs",
                                     "dependencies": [],
                                     "position": [
-                                        -419,
+                                        -270,
                                         -628
                                     ]
                                 },
@@ -993,7 +993,7 @@
                                     "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.CarTracking\\TrackableRoadSection.cs",
                                     "dependencies": [],
                                     "position": [
-                                        -419,
+                                        -270,
                                         -668
                                     ]
                                 }
@@ -1013,7 +1013,7 @@
                                     "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\EditorScripts\\JonathonOH.Drifto.DebugCamera\\DebugCamera.cs",
                                     "dependencies": [],
                                     "position": [
-                                        -264,
+                                        -115,
                                         -556
                                     ]
                                 },
@@ -1026,7 +1026,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\EditorScripts\\JonathonOH.Drifto.DebugCamera\\DebugCamera.cs"
                                     ],
                                     "position": [
-                                        -424,
+                                        -275,
                                         -530
                                     ]
                                 },
@@ -1039,7 +1039,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\EditorScripts\\JonathonOH.Drifto.DebugCamera\\DebugCamera.cs"
                                     ],
                                     "position": [
-                                        -424,
+                                        -275,
                                         -570
                                     ]
                                 }
@@ -1061,7 +1061,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\EditorScripts\\DuplicateCamera\\DuplicateCameraData.cs"
                                     ],
                                     "position": [
-                                        -308,
+                                        -159,
                                         -913
                                     ]
                                 },
@@ -1074,7 +1074,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\EditorScripts\\DuplicateCamera\\DuplicatableCamera.cs"
                                     ],
                                     "position": [
-                                        -468,
+                                        -319,
                                         -897
                                     ]
                                 },
@@ -1088,7 +1088,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\EditorScripts\\DuplicateCamera\\DuplicateCameraData.cs"
                                     ],
                                     "position": [
-                                        -308,
+                                        -159,
                                         -953
                                     ]
                                 },
@@ -1102,7 +1102,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\EditorScripts\\DuplicateCamera\\DuplicateCameraData.cs"
                                     ],
                                     "position": [
-                                        -468,
+                                        -319,
                                         -937
                                     ]
                                 },
@@ -1113,7 +1113,7 @@
                                     "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\EditorScripts\\DuplicateCamera\\Editor\\Vector2Drawer.cs",
                                     "dependencies": [],
                                     "position": [
-                                        -308,
+                                        -159,
                                         -993
                                     ]
                                 },
@@ -1124,7 +1124,7 @@
                                     "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\EditorScripts\\DuplicateCamera\\Editor\\Vector3Drawer.cs",
                                     "dependencies": [],
                                     "position": [
-                                        -468,
+                                        -319,
                                         -977
                                     ]
                                 }
@@ -1144,7 +1144,7 @@
                                     "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\EditorScripts\\Build\\Editor\\DriftoXcodeConfigurer.cs",
                                     "dependencies": [],
                                     "position": [
-                                        -538,
+                                        -389,
                                         144
                                     ]
                                 }
@@ -1164,7 +1164,7 @@
                                     "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\GameConfiguration\\DebugGameConfiguration.cs",
                                     "dependencies": [],
                                     "position": [
-                                        -276,
+                                        -127,
                                         108
                                     ]
                                 },
@@ -1175,7 +1175,7 @@
                                     "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\GameConfiguration\\GameConfiguration.cs",
                                     "dependencies": [],
                                     "position": [
-                                        -436,
+                                        -287,
                                         138
                                     ]
                                 },
@@ -1190,7 +1190,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\GameConfiguration\\GameConfiguration.cs"
                                     ],
                                     "position": [
-                                        -436,
+                                        -287,
                                         87
                                     ]
                                 }
@@ -1213,7 +1213,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.GameManagement\\GameStateController.cs"
                                     ],
                                     "position": [
-                                        -279,
+                                        -130,
                                         -854
                                     ]
                                 },
@@ -1229,7 +1229,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.InventoryManagement\\PlayerInventory.cs"
                                     ],
                                     "position": [
-                                        -439,
+                                        -290,
                                         -825
                                     ]
                                 },
@@ -1251,7 +1251,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.GameManagement\\GameStateController.cs"
                                     ],
                                     "position": [
-                                        -279,
+                                        -130,
                                         -894
                                     ]
                                 },
@@ -1278,7 +1278,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\RunSummarizer.cs"
                                     ],
                                     "position": [
-                                        -439,
+                                        -290,
                                         -865
                                     ]
                                 },
@@ -1293,7 +1293,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.GameManagement\\OnGameStateChange.cs"
                                     ],
                                     "position": [
-                                        -439,
+                                        -290,
                                         -905
                                     ]
                                 }
@@ -1316,7 +1316,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.GameSetting\\GameSettings.cs"
                                     ],
                                     "position": [
-                                        -286,
+                                        -137,
                                         -791
                                     ]
                                 },
@@ -1327,7 +1327,7 @@
                                     "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.GameSetting\\CarInputMode.cs",
                                     "dependencies": [],
                                     "position": [
-                                        -446,
+                                        -297,
                                         -765
                                     ]
                                 },
@@ -1342,7 +1342,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.SoundManagement\\SoundManager.cs"
                                     ],
                                     "position": [
-                                        -446,
+                                        -297,
                                         -805
                                     ]
                                 }
@@ -1370,7 +1370,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.GameSetting\\GameSettings.cs"
                                     ],
                                     "position": [
-                                        -279,
+                                        -130,
                                         187
                                     ]
                                 },
@@ -1388,7 +1388,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.SceneManagement\\MySceneManager.cs"
                                     ],
                                     "position": [
-                                        -439,
+                                        -290,
                                         197
                                     ]
                                 }
@@ -1419,7 +1419,7 @@
                                                 "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.InventoryManagement\\InventoryDataLoaderVersion2.cs"
                                             ],
                                             "position": [
-                                                -230,
+                                                -81,
                                                 -1031
                                             ]
                                         },
@@ -1435,7 +1435,7 @@
                                                 "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.InventoryManagement\\InventoryDataLoaderVersion3.cs"
                                             ],
                                             "position": [
-                                                -390,
+                                                -241,
                                                 -1022
                                             ]
                                         }
@@ -1457,7 +1457,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.InventoryManagement\\InventoryDataLoaderVersion2.cs"
                                     ],
                                     "position": [
-                                        -230,
+                                        -81,
                                         -1149
                                     ]
                                 },
@@ -1474,7 +1474,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.InventoryManagement\\InventoryDataLoaderVersion3.cs"
                                     ],
                                     "position": [
-                                        -390,
+                                        -241,
                                         -1144
                                     ]
                                 },
@@ -1498,7 +1498,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.StageManagement\\StageInventory.cs"
                                     ],
                                     "position": [
-                                        -390,
+                                        -241,
                                         -1184
                                     ]
                                 }
@@ -1520,7 +1520,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.RoadConfiguration\\SurfaceType.cs"
                                     ],
                                     "position": [
-                                        -278,
+                                        -129,
                                         268
                                     ]
                                 },
@@ -1531,7 +1531,7 @@
                                     "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.RoadConfiguration\\SurfaceType.cs",
                                     "dependencies": [],
                                     "position": [
-                                        -438,
+                                        -289,
                                         277
                                     ]
                                 }
@@ -1553,7 +1553,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\EditorScripts\\RoadSectionCreationTooling\\Editor\\EnvironmentObjectIdentifier.cs"
                                     ],
                                     "position": [
-                                        -298,
+                                        -149,
                                         26
                                     ]
                                 },
@@ -1564,7 +1564,7 @@
                                     "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\EditorScripts\\RoadSectionCreationTooling\\Editor\\EnvironmentObjectIdentifier.cs",
                                     "dependencies": [],
                                     "position": [
-                                        -458,
+                                        -309,
                                         59
                                     ]
                                 },
@@ -1575,7 +1575,7 @@
                                     "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\EditorScripts\\RoadSectionCreationTooling\\Editor\\TreeAlignerWindow.cs",
                                     "dependencies": [],
                                     "position": [
-                                        -458,
+                                        -309,
                                         6
                                     ]
                                 }
@@ -1600,7 +1600,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.RoadGeneration\\RoadPieceEnvironmentItem.cs"
                                     ],
                                     "position": [
-                                        -279,
+                                        -130,
                                         379
                                     ]
                                 },
@@ -1613,7 +1613,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.RoadGeneration\\RoadGenerator.cs"
                                     ],
                                     "position": [
-                                        -439,
+                                        -290,
                                         413
                                     ]
                                 },
@@ -1629,7 +1629,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.RoadGeneration\\IRoadGenerator.cs"
                                     ],
                                     "position": [
-                                        -279,
+                                        -130,
                                         339
                                     ]
                                 },
@@ -1643,7 +1643,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.RoadGeneration\\DriftoRoadSection.cs"
                                     ],
                                     "position": [
-                                        -439,
+                                        -290,
                                         372
                                     ]
                                 },
@@ -1654,7 +1654,7 @@
                                     "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.RoadGeneration\\RoadSectionAligner.cs",
                                     "dependencies": [],
                                     "position": [
-                                        -279,
+                                        -130,
                                         298
                                     ]
                                 },
@@ -1667,7 +1667,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.RoadGeneration\\RoadSectionAligner.cs"
                                     ],
                                     "position": [
-                                        -439,
+                                        -290,
                                         331
                                     ]
                                 },
@@ -1681,7 +1681,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.RoadGeneration\\RoadPieceEnvironmentItem.cs"
                                     ],
                                     "position": [
-                                        -439,
+                                        -290,
                                         291
                                     ]
                                 }
@@ -1706,7 +1706,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.RunRecording\\RecordingData.cs"
                                     ],
                                     "position": [
-                                        -337,
+                                        -188,
                                         728
                                     ]
                                 },
@@ -1721,7 +1721,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.RunRecording\\RecordingData.cs"
                                     ],
                                     "position": [
-                                        -497,
+                                        -348,
                                         775
                                     ]
                                 },
@@ -1735,7 +1735,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.RunRecording\\Recording.cs"
                                     ],
                                     "position": [
-                                        -337,
+                                        -188,
                                         318
                                     ]
                                 },
@@ -1748,7 +1748,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.RunRecording\\Recording.cs"
                                     ],
                                     "position": [
-                                        -497,
+                                        -348,
                                         735
                                     ]
                                 },
@@ -1761,7 +1761,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.RunRecording\\Recording.cs"
                                     ],
                                     "position": [
-                                        -177,
+                                        -28,
                                         280
                                     ]
                                 },
@@ -1784,7 +1784,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.StageManagement\\StageInventory.cs"
                                     ],
                                     "position": [
-                                        -497,
+                                        -348,
                                         334
                                     ]
                                 },
@@ -1801,7 +1801,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.RunRecording\\RunPlayer.cs"
                                     ],
                                     "position": [
-                                        -337,
+                                        -188,
                                         278
                                     ]
                                 },
@@ -1822,7 +1822,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.StageManagement\\StageInventory.cs"
                                     ],
                                     "position": [
-                                        -497,
+                                        -348,
                                         293
                                     ]
                                 },
@@ -1842,7 +1842,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.RunRecording\\RunPlayer.cs"
                                     ],
                                     "position": [
-                                        -497,
+                                        -348,
                                         250
                                     ]
                                 }
@@ -1864,7 +1864,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Generics\\Systems\\JonathonOH.DataObfuscating\\ObfuscatedInt.cs"
                                     ],
                                     "position": [
-                                        -536,
+                                        -387,
                                         225
                                     ]
                                 }
@@ -1886,7 +1886,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.SceneManagement\\MySceneManager.cs"
                                     ],
                                     "position": [
-                                        -310,
+                                        -161,
                                         -53
                                     ]
                                 },
@@ -1902,7 +1902,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\ToSort\\UISounds\\UISounds.cs"
                                     ],
                                     "position": [
-                                        -470,
+                                        -321,
                                         -42
                                     ]
                                 }
@@ -1926,7 +1926,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.ScoreManagement\\ScoreBonusData.cs"
                                     ],
                                     "position": [
-                                        -337,
+                                        -188,
                                         263
                                     ]
                                 },
@@ -1946,7 +1946,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.ScoreManagement\\ScoreController.cs"
                                     ],
                                     "position": [
-                                        -497,
+                                        -348,
                                         694
                                     ]
                                 },
@@ -1964,7 +1964,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.ScoreManagement\\ScoreBonusData.cs"
                                     ],
                                     "position": [
-                                        -337,
+                                        -188,
                                         221
                                     ]
                                 },
@@ -1978,7 +1978,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.ScoreManagement\\ScoreController.cs"
                                     ],
                                     "position": [
-                                        -497,
+                                        -348,
                                         254
                                     ]
                                 },
@@ -1992,7 +1992,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.ScoreManagement\\ScoreBonusData.cs"
                                     ],
                                     "position": [
-                                        -177,
+                                        -28,
                                         182
                                     ]
                                 },
@@ -2011,7 +2011,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.ScoreManagement\\ScoreController.cs"
                                     ],
                                     "position": [
-                                        -497,
+                                        -348,
                                         212
                                     ]
                                 },
@@ -2022,7 +2022,7 @@
                                     "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.ScoreManagement\\ScoreBonusData.cs",
                                     "dependencies": [],
                                     "position": [
-                                        -337,
+                                        -188,
                                         180
                                     ]
                                 },
@@ -2043,7 +2043,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.StageManagement\\StageInventory.cs"
                                     ],
                                     "position": [
-                                        -497,
+                                        -348,
                                         170
                                     ]
                                 }
@@ -2063,7 +2063,7 @@
                                     "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.SoundManagement\\AudioPlayer.cs",
                                     "dependencies": [],
                                     "position": [
-                                        -285,
+                                        -136,
                                         -134
                                     ]
                                 },
@@ -2077,7 +2077,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.SoundManagement\\SoundManager.cs"
                                     ],
                                     "position": [
-                                        -445,
+                                        -296,
                                         -105
                                     ]
                                 },
@@ -2092,7 +2092,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.SoundManagement\\MasterVolumeManager.cs"
                                     ],
                                     "position": [
-                                        -445,
+                                        -296,
                                         -150
                                     ]
                                 }
@@ -2112,7 +2112,7 @@
                                     "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.StageManagement\\StageInventory.cs",
                                     "dependencies": [],
                                     "position": [
-                                        -536,
+                                        -387,
                                         306
                                     ]
                                 }
@@ -2144,7 +2144,7 @@
                                                 "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\ToSort\\JonathonOH.Drifto.UI\\UIGraph.cs"
                                             ],
                                             "position": [
-                                                -551,
+                                                -402,
                                                 59
                                             ]
                                         }
@@ -2164,7 +2164,7 @@
                                             "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\ToSort\\JonathonOH.Drifto.UI\\Extensions\\GraphicSetAlpha.cs",
                                             "dependencies": [],
                                             "position": [
-                                                -551,
+                                                -402,
                                                 148
                                             ]
                                         }
@@ -2186,7 +2186,7 @@
                                                 "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Generics\\Utilities\\Utils\\TouchInput.cs"
                                             ],
                                             "position": [
-                                                -265,
+                                                -116,
                                                 -240
                                             ]
                                         },
@@ -2199,7 +2199,7 @@
                                                 "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\MenuMobile\\View.cs"
                                             ],
                                             "position": [
-                                                -265,
+                                                -116,
                                                 264
                                             ]
                                         },
@@ -2210,7 +2210,7 @@
                                             "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\MenuMobile\\CarStatsUI.cs",
                                             "dependencies": [],
                                             "position": [
-                                                -265,
+                                                -116,
                                                 -400
                                             ]
                                         },
@@ -2227,7 +2227,7 @@
                                                 "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\ToSort\\JonathonOH.Drifto.UI\\Menu\\MenuCarPanelController.cs"
                                             ],
                                             "position": [
-                                                -425,
+                                                -276,
                                                 615
                                             ]
                                         },
@@ -2244,7 +2244,7 @@
                                                 "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\MenuMobile\\View.cs"
                                             ],
                                             "position": [
-                                                -105,
+                                                44,
                                                 -5
                                             ]
                                         },
@@ -2263,7 +2263,7 @@
                                                 "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\ToSort\\JonathonOH.Drifto.UI\\UIGraph.cs"
                                             ],
                                             "position": [
-                                                -265,
+                                                -116,
                                                 -3
                                             ]
                                         },
@@ -2288,7 +2288,7 @@
                                                 "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\ToSort\\UISounds\\UISounds.cs"
                                             ],
                                             "position": [
-                                                -265,
+                                                -116,
                                                 -360
                                             ]
                                         },
@@ -2302,7 +2302,7 @@
                                                 "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\MenuMobile\\ColorSelector.cs"
                                             ],
                                             "position": [
-                                                -425,
+                                                -276,
                                                 -338
                                             ]
                                         },
@@ -2328,7 +2328,7 @@
                                                 "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\ToSort\\UISounds\\UISounds.cs"
                                             ],
                                             "position": [
-                                                -425,
+                                                -276,
                                                 -498
                                             ]
                                         },
@@ -2342,7 +2342,7 @@
                                                 "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.RunSummaries\\RunSummary.cs"
                                             ],
                                             "position": [
-                                                -425,
+                                                -276,
                                                 -418
                                             ]
                                         },
@@ -2359,7 +2359,7 @@
                                                 "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\ToSort\\JonathonOH.Drifto.UI\\RectTransformChangeDetection.cs"
                                             ],
                                             "position": [
-                                                -265,
+                                                -116,
                                                 -48
                                             ]
                                         },
@@ -2376,7 +2376,7 @@
                                                 "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\ToSort\\JonathonOH.Drifto.UI\\Spring.cs"
                                             ],
                                             "position": [
-                                                -425,
+                                                -276,
                                                 -378
                                             ]
                                         },
@@ -2401,7 +2401,7 @@
                                                 "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\ToSort\\JonathonOH.Drifto.UI\\SelectionExtension.cs"
                                             ],
                                             "position": [
-                                                -425,
+                                                -276,
                                                 -298
                                             ]
                                         },
@@ -2415,7 +2415,7 @@
                                                 "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\MenuMobile\\MenuCarPurchaseButton.cs"
                                             ],
                                             "position": [
-                                                -425,
+                                                -276,
                                                 -458
                                             ]
                                         },
@@ -2428,7 +2428,7 @@
                                                 "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\ToSort\\JonathonOH.Drifto.UI\\Spring.cs"
                                             ],
                                             "position": [
-                                                -265,
+                                                -116,
                                                 222
                                             ]
                                         },
@@ -2450,7 +2450,7 @@
                                                 "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\ToSort\\JonathonOH.Drifto.UI\\Menu\\ScrollRectSelectable.cs"
                                             ],
                                             "position": [
-                                                -425,
+                                                -276,
                                                 286
                                             ]
                                         },
@@ -2468,7 +2468,7 @@
                                                 "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\ToSort\\JonathonOH.Drifto.UI\\Menu\\MenuStagePanelController.cs"
                                             ],
                                             "position": [
-                                                -425,
+                                                -276,
                                                 121
                                             ]
                                         },
@@ -2481,7 +2481,7 @@
                                                 "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\ToSort\\JonathonOH.Drifto.UI\\Spring.cs"
                                             ],
                                             "position": [
-                                                -425,
+                                                -276,
                                                 246
                                             ]
                                         },
@@ -2497,7 +2497,7 @@
                                                 "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\ToSort\\JonathonOH.Drifto.UI\\Menu\\MenuStageSetPiece.cs"
                                             ],
                                             "position": [
-                                                -265,
+                                                -116,
                                                 -90
                                             ]
                                         },
@@ -2515,7 +2515,7 @@
                                                 "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\ToSort\\JonathonOH.Drifto.UI\\SelectionExtension.cs"
                                             ],
                                             "position": [
-                                                -425,
+                                                -276,
                                                 79
                                             ]
                                         },
@@ -2526,7 +2526,7 @@
                                             "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\ToSort\\JonathonOH.Drifto.UI\\Menu\\MenuStageSetPiece.cs",
                                             "dependencies": [],
                                             "position": [
-                                                -265,
+                                                -116,
                                                 -145
                                             ]
                                         },
@@ -2537,7 +2537,7 @@
                                             "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\MenuMobile\\MenuUIComponent.cs",
                                             "dependencies": [],
                                             "position": [
-                                                -425,
+                                                -276,
                                                 -24
                                             ]
                                         },
@@ -2548,7 +2548,7 @@
                                             "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\MenuMobile\\MenuUIFadable.cs",
                                             "dependencies": [],
                                             "position": [
-                                                -425,
+                                                -276,
                                                 -67
                                             ]
                                         },
@@ -2562,7 +2562,7 @@
                                                 "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\MenuMobile\\MenuUIFadable.cs"
                                             ],
                                             "position": [
-                                                -265,
+                                                -116,
                                                 -320
                                             ]
                                         },
@@ -2576,7 +2576,7 @@
                                                 "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\MenuMobile\\MenuUIFadable.cs"
                                             ],
                                             "position": [
-                                                -425,
+                                                -276,
                                                 22
                                             ]
                                         },
@@ -2587,7 +2587,7 @@
                                             "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\MenuMobile\\MenuUISlider.cs",
                                             "dependencies": [],
                                             "position": [
-                                                -425,
+                                                -276,
                                                 -258
                                             ]
                                         },
@@ -2601,7 +2601,7 @@
                                                 "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\MenuMobile\\MenuUIComponent.cs"
                                             ],
                                             "position": [
-                                                -265,
+                                                -116,
                                                 179
                                             ]
                                         },
@@ -2612,7 +2612,7 @@
                                             "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\ToSort\\JonathonOH.Drifto.UI\\MainGameUI\\RemoveMaterialSmoothness.cs",
                                             "dependencies": [],
                                             "position": [
-                                                -425,
+                                                -276,
                                                 -218
                                             ]
                                         },
@@ -2628,7 +2628,7 @@
                                                 "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\ToSort\\JonathonOH.Drifto.UI\\SelectionExtension.cs"
                                             ],
                                             "position": [
-                                                -265,
+                                                -116,
                                                 99
                                             ]
                                         },
@@ -2643,7 +2643,7 @@
                                                 "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\ToSort\\JonathonOH.Drifto.UI\\SelectionExtension.cs"
                                             ],
                                             "position": [
-                                                -265,
+                                                -116,
                                                 139
                                             ]
                                         },
@@ -2654,7 +2654,7 @@
                                             "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\ToSort\\JonathonOH.Drifto.UI\\Menu\\SetWorldScale.cs",
                                             "dependencies": [],
                                             "position": [
-                                                -265,
+                                                -116,
                                                 45
                                             ]
                                         },
@@ -2670,7 +2670,7 @@
                                                 "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\MenuMobile\\MenuUITranslation.cs"
                                             ],
                                             "position": [
-                                                -425,
+                                                -276,
                                                 -108
                                             ]
                                         },
@@ -2684,7 +2684,7 @@
                                                 "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\MenuMobile\\View.cs"
                                             ],
                                             "position": [
-                                                -265,
+                                                -116,
                                                 -280
                                             ]
                                         },
@@ -2702,7 +2702,7 @@
                                                 "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\ToSort\\JonathonOH.Drifto.UI\\ContinuousSquashStretch.cs"
                                             ],
                                             "position": [
-                                                -425,
+                                                -276,
                                                 202
                                             ]
                                         },
@@ -2716,7 +2716,7 @@
                                                 "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\MenuMobile\\MenuUIComponent.cs"
                                             ],
                                             "position": [
-                                                -425,
+                                                -276,
                                                 161
                                             ]
                                         }
@@ -2731,7 +2731,7 @@
                                     "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\ToSort\\JonathonOH.Drifto.UI\\AnchorToTopOfParent.cs",
                                     "dependencies": [],
                                     "position": [
-                                        -319,
+                                        -170,
                                         876
                                     ]
                                 },
@@ -2742,7 +2742,7 @@
                                     "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\ToSort\\JonathonOH.Drifto.UI\\AutoSetSelectableNavigationLine.cs",
                                     "dependencies": [],
                                     "position": [
-                                        -159,
+                                        -10,
                                         956
                                     ]
                                 },
@@ -2755,7 +2755,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\ToSort\\JonathonOH.Drifto.UI\\BetterCanvasScaler.cs"
                                     ],
                                     "position": [
-                                        -328,
+                                        -179,
                                         148
                                     ]
                                 },
@@ -2766,7 +2766,7 @@
                                     "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\ToSort\\JonathonOH.Drifto.UI\\BlurPanel.cs",
                                     "dependencies": [],
                                     "position": [
-                                        -328,
+                                        -179,
                                         1076
                                     ]
                                 },
@@ -2777,7 +2777,7 @@
                                     "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\ToSort\\JonathonOH.Drifto.UI\\MainGameUI\\BonusView.cs",
                                     "dependencies": [],
                                     "position": [
-                                        -328,
+                                        -179,
                                         676
                                     ]
                                 },
@@ -2793,7 +2793,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\ToSort\\JonathonOH.Drifto.UI\\MainGameUI\\GameUIController.cs"
                                     ],
                                     "position": [
-                                        -328,
+                                        -179,
                                         1036
                                     ]
                                 },
@@ -2804,7 +2804,7 @@
                                     "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\ToSort\\JonathonOH.Drifto.UI\\ButtonExtension.cs",
                                     "dependencies": [],
                                     "position": [
-                                        -168,
+                                        -19,
                                         727
                                     ]
                                 },
@@ -2818,7 +2818,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\ToSort\\JonathonOH.Drifto.UI\\Spring.cs"
                                     ],
                                     "position": [
-                                        -488,
+                                        -339,
                                         1088
                                     ]
                                 },
@@ -2835,7 +2835,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.CarController\\CarController.cs"
                                     ],
                                     "position": [
-                                        -335,
+                                        -186,
                                         188
                                     ]
                                 },
@@ -2849,7 +2849,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\ToSort\\JonathonOH.Drifto.UI\\GameOver\\GameOverUIPresenter.cs"
                                     ],
                                     "position": [
-                                        -154,
+                                        -5,
                                         770
                                     ]
                                 },
@@ -2860,7 +2860,7 @@
                                     "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\ToSort\\JonathonOH.Drifto.UI\\ContinuousSquashStretch.cs",
                                     "dependencies": [],
                                     "position": [
-                                        -488,
+                                        -339,
                                         848
                                     ]
                                 },
@@ -2871,7 +2871,7 @@
                                     "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\ToSort\\JonathonOH.Drifto.UI\\EnsureFitsOnScreen.cs",
                                     "dependencies": [],
                                     "position": [
-                                        -495,
+                                        -346,
                                         315
                                     ]
                                 },
@@ -2885,7 +2885,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.SceneManagement\\MySceneManager.cs"
                                     ],
                                     "position": [
-                                        -495,
+                                        -346,
                                         190
                                     ]
                                 },
@@ -2902,7 +2902,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.SceneManagement\\MySceneManager.cs"
                                     ],
                                     "position": [
-                                        -495,
+                                        -346,
                                         235
                                     ]
                                 },
@@ -2922,7 +2922,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.SceneManagement\\MySceneManager.cs"
                                     ],
                                     "position": [
-                                        -488,
+                                        -339,
                                         1168
                                     ]
                                 },
@@ -2936,7 +2936,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\ToSort\\JonathonOH.Drifto.UI\\GameOver\\GameOverUIPresenter.cs"
                                     ],
                                     "position": [
-                                        -319,
+                                        -170,
                                         996
                                     ]
                                 },
@@ -2949,7 +2949,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\ToSort\\JonathonOH.Drifto.UI\\GameOver\\GameOverUIPresenter.cs"
                                     ],
                                     "position": [
-                                        -495,
+                                        -346,
                                         768
                                     ]
                                 },
@@ -2973,7 +2973,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.ScoreManagement\\ScoreController.cs"
                                     ],
                                     "position": [
-                                        -315,
+                                        -166,
                                         836
                                     ]
                                 },
@@ -2990,7 +2990,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\ToSort\\JonathonOH.Drifto.UI\\MainGameUI\\GameUIController.cs"
                                     ],
                                     "position": [
-                                        -328,
+                                        -179,
                                         1156
                                     ]
                                 },
@@ -3001,7 +3001,7 @@
                                     "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\ToSort\\JonathonOH.Drifto.UI\\ImageSlider.cs",
                                     "dependencies": [],
                                     "position": [
-                                        -488,
+                                        -339,
                                         1048
                                     ]
                                 },
@@ -3012,7 +3012,7 @@
                                     "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\ToSort\\JonathonOH.Drifto.UI\\LayoutGroupUpdater.cs",
                                     "dependencies": [],
                                     "position": [
-                                        -495,
+                                        -346,
                                         275
                                     ]
                                 },
@@ -3025,7 +3025,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\ToSort\\JonathonOH.Drifto.UI\\MainGameUI\\GameUIController.cs"
                                     ],
                                     "position": [
-                                        -328,
+                                        -179,
                                         956
                                     ]
                                 },
@@ -3039,7 +3039,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.SceneManagement\\MySceneManager.cs"
                                     ],
                                     "position": [
-                                        -310,
+                                        -161,
                                         229
                                     ]
                                 },
@@ -3054,7 +3054,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\ToSort\\JonathonOH.Drifto.UI\\UIContainerSlide.cs"
                                     ],
                                     "position": [
-                                        -328,
+                                        -179,
                                         1116
                                     ]
                                 },
@@ -3065,7 +3065,7 @@
                                     "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\ToSort\\JonathonOH.Drifto.UI\\RectTransformChangeDetection.cs",
                                     "dependencies": [],
                                     "position": [
-                                        -495,
+                                        -346,
                                         356
                                     ]
                                 },
@@ -3076,7 +3076,7 @@
                                     "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\ToSort\\JonathonOH.Drifto.UI\\RectTransformMimic.cs",
                                     "dependencies": [],
                                     "position": [
-                                        -488,
+                                        -339,
                                         808
                                     ]
                                 },
@@ -3087,7 +3087,7 @@
                                     "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\ToSort\\JonathonOH.Drifto.UI\\ScrollRectBuffer.cs",
                                     "dependencies": [],
                                     "position": [
-                                        -328,
+                                        -179,
                                         716
                                     ]
                                 },
@@ -3098,7 +3098,7 @@
                                     "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\ToSort\\JonathonOH.Drifto.UI\\ScrollRectDisableInteractionsOnScroll.cs",
                                     "dependencies": [],
                                     "position": [
-                                        -310,
+                                        -161,
                                         271
                                     ]
                                 },
@@ -3111,7 +3111,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\ToSort\\JonathonOH.Drifto.UI\\Spring.cs"
                                     ],
                                     "position": [
-                                        -488,
+                                        -339,
                                         888
                                     ]
                                 },
@@ -3122,7 +3122,7 @@
                                     "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\ToSort\\JonathonOH.Drifto.UI\\ScrollRectStartSetter.cs",
                                     "dependencies": [],
                                     "position": [
-                                        -335,
+                                        -186,
                                         311
                                     ]
                                 },
@@ -3133,7 +3133,7 @@
                                     "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\ToSort\\JonathonOH.Drifto.UI\\SelectionExtension.cs",
                                     "dependencies": [],
                                     "position": [
-                                        -488,
+                                        -339,
                                         688
                                     ]
                                 },
@@ -3148,7 +3148,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\ToSort\\JonathonOH.Drifto.UI\\Settings\\SettingsSliderPC.cs"
                                     ],
                                     "position": [
-                                        -310,
+                                        -161,
                                         352
                                     ]
                                 },
@@ -3163,7 +3163,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.SceneManagement\\MySceneManager.cs"
                                     ],
                                     "position": [
-                                        -488,
+                                        -339,
                                         1008
                                     ]
                                 },
@@ -3174,7 +3174,7 @@
                                     "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\ToSort\\JonathonOH.Drifto.UI\\Settings\\SettingsSliderPC.cs",
                                     "dependencies": [],
                                     "position": [
-                                        -310,
+                                        -161,
                                         916
                                     ]
                                 },
@@ -3188,7 +3188,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\ToSort\\JonathonOH.Drifto.UI\\SettingsPresenter.cs"
                                     ],
                                     "position": [
-                                        -488,
+                                        -339,
                                         968
                                     ]
                                 },
@@ -3199,7 +3199,7 @@
                                     "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\ToSort\\UI\\ShowWhenCanScroll.cs",
                                     "dependencies": [],
                                     "position": [
-                                        -488,
+                                        -339,
                                         1128
                                     ]
                                 },
@@ -3210,7 +3210,7 @@
                                     "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\ToSort\\UI\\Editor\\SkewedImageInspector.cs",
                                     "dependencies": [],
                                     "position": [
-                                        -495,
+                                        -346,
                                         648
                                     ]
                                 },
@@ -3224,7 +3224,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\ToSort\\JonathonOH.Drifto.UI\\Spring.cs"
                                     ],
                                     "position": [
-                                        -328,
+                                        -179,
                                         796
                                     ]
                                 },
@@ -3238,7 +3238,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\ToSort\\JonathonOH.Drifto.UI\\Spring.cs"
                                     ],
                                     "position": [
-                                        -328,
+                                        -179,
                                         636
                                     ]
                                 },
@@ -3249,7 +3249,7 @@
                                     "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\ToSort\\JonathonOH.Drifto.UI\\UIGraph.cs",
                                     "dependencies": [],
                                     "position": [
-                                        -488,
+                                        -339,
                                         928
                                     ]
                                 },
@@ -3262,7 +3262,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\ToSort\\JonathonOH.Drifto.UI\\MainGameUI\\GameUIController.cs"
                                     ],
                                     "position": [
-                                        -328,
+                                        -179,
                                         756
                                     ]
                                 },
@@ -3277,7 +3277,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.GameManagement\\GameStateController.cs"
                                     ],
                                     "position": [
-                                        -488,
+                                        -339,
                                         728
                                     ]
                                 }
@@ -3301,7 +3301,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.InputManagement\\MobileCarInputController.cs"
                                     ],
                                     "position": [
-                                        -550,
+                                        -401,
                                         63
                                     ]
                                 }
@@ -3324,7 +3324,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.RoadGeneration\\RoadPieceEnvironmentItem.cs"
                                     ],
                                     "position": [
-                                        -339,
+                                        -190,
                                         668
                                     ]
                                 },
@@ -3338,7 +3338,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.RoadGeneration\\RoadPieceEnvironmentItem.cs"
                                     ],
                                     "position": [
-                                        -499,
+                                        -350,
                                         678
                                     ]
                                 }
@@ -3357,7 +3357,7 @@
                                 "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.CarController\\ICarController.cs"
                             ],
                             "position": [
-                                -354,
+                                -205,
                                 -207
                             ]
                         },
@@ -3368,7 +3368,7 @@
                             "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Generics\\Utilities\\CameraComponenetCopier.cs",
                             "dependencies": [],
                             "position": [
-                                -351,
+                                -202,
                                 -285
                             ]
                         },
@@ -3383,7 +3383,7 @@
                                 "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.GameManagement\\GameStateController.cs"
                             ],
                             "position": [
-                                -347,
+                                -198,
                                 -513
                             ]
                         },
@@ -3397,7 +3397,7 @@
                                 "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.GameSetting\\GameSettings.cs"
                             ],
                             "position": [
-                                -406,
+                                -257,
                                 -321
                             ]
                         },
@@ -3413,7 +3413,7 @@
                                 "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.SceneManagement\\MySceneManager.cs"
                             ],
                             "position": [
-                                -349,
+                                -200,
                                 -746
                             ]
                         },
@@ -3427,7 +3427,7 @@
                                 "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.GameSetting\\GameSettings.cs"
                             ],
                             "position": [
-                                -575,
+                                -426,
                                 -38
                             ]
                         },
@@ -3440,7 +3440,7 @@
                                 "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.InventoryManagement\\PlayerInventory.cs"
                             ],
                             "position": [
-                                -187,
+                                -38,
                                 -448
                             ]
                         },
@@ -3451,7 +3451,7 @@
                             "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\EditorScripts\\Editor\\DisableShadows.cs",
                             "dependencies": [],
                             "position": [
-                                -575,
+                                -426,
                                 -318
                             ]
                         },
@@ -3465,7 +3465,7 @@
                                 "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.RoadGeneration\\RoadPieceEnvironmentItem.cs"
                             ],
                             "position": [
-                                -556,
+                                -407,
                                 -731
                             ]
                         },
@@ -3479,7 +3479,7 @@
                                 "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.RoadGeneration\\RoadPieceEnvironmentItem.cs"
                             ],
                             "position": [
-                                -534,
+                                -385,
                                 -691
                             ]
                         },
@@ -3490,7 +3490,7 @@
                             "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\GameSystems\\GadsmeAdCamera.cs",
                             "dependencies": [],
                             "position": [
-                                -355,
+                                -206,
                                 -437
                             ]
                         },
@@ -3501,7 +3501,7 @@
                             "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\GameSystems\\GadsmeAdManager.cs",
                             "dependencies": [],
                             "position": [
-                                -574,
+                                -425,
                                 -78
                             ]
                         },
@@ -3515,7 +3515,7 @@
                                 "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.RoadGeneration\\RoadPieceEnvironmentItem.cs"
                             ],
                             "position": [
-                                -515,
+                                -366,
                                 -491
                             ]
                         },
@@ -3530,7 +3530,7 @@
                                 "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Generics\\Systems\\JonathonOH.PlatformSwitching\\PlatformDeterminer.cs"
                             ],
                             "position": [
-                                -347,
+                                -198,
                                 -475
                             ]
                         },
@@ -3543,7 +3543,7 @@
                                 "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\ToSort\\JonathonOH.Drifto.UI\\BetterCanvasScaler.cs"
                             ],
                             "position": [
-                                -575,
+                                -426,
                                 -278
                             ]
                         },
@@ -3554,7 +3554,7 @@
                             "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\EditorScripts\\Editor\\MissingPrefabUtility.cs",
                             "dependencies": [],
                             "position": [
-                                -575,
+                                -426,
                                 -158
                             ]
                         },
@@ -3565,7 +3565,7 @@
                             "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Generics\\Utilities\\MouseDisabler.cs",
                             "dependencies": [],
                             "position": [
-                                -533,
+                                -384,
                                 -411
                             ]
                         },
@@ -3576,7 +3576,7 @@
                             "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Generics\\Utilities\\MoveOffScreenOnInput.cs",
                             "dependencies": [],
                             "position": [
-                                -546,
+                                -397,
                                 -651
                             ]
                         },
@@ -3590,7 +3590,7 @@
                                 "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.GameManagement\\GameStateController.cs"
                             ],
                             "position": [
-                                -347,
+                                -198,
                                 -245
                             ]
                         },
@@ -3605,7 +3605,7 @@
                                 "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.SoundManagement\\SoundManager.cs"
                             ],
                             "position": [
-                                -553,
+                                -404,
                                 -611
                             ]
                         },
@@ -3619,7 +3619,7 @@
                                 "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.RoadGeneration\\RoadPieceEnvironmentItem.cs"
                             ],
                             "position": [
-                                -177,
+                                -28,
                                 -143
                             ]
                         },
@@ -3633,7 +3633,7 @@
                                 "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.RoadGeneration\\RoadPieceEnvironmentItem.cs"
                             ],
                             "position": [
-                                -574,
+                                -425,
                                 -118
                             ]
                         },
@@ -3644,7 +3644,7 @@
                             "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Generics\\Utilities\\RandomTexture.cs",
                             "dependencies": [],
                             "position": [
-                                -574,
+                                -425,
                                 -238
                             ]
                         },
@@ -3659,7 +3659,7 @@
                                 "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.GameManagement\\GameStateController.cs"
                             ],
                             "position": [
-                                -183,
+                                -34,
                                 -183
                             ]
                         },
@@ -3670,7 +3670,7 @@
                             "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\ToSort\\UI\\ScaleWobble.cs",
                             "dependencies": [],
                             "position": [
-                                -574,
+                                -425,
                                 -198
                             ]
                         },
@@ -3681,7 +3681,7 @@
                             "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\SetMainCameraTag.cs",
                             "dependencies": [],
                             "position": [
-                                -540,
+                                -391,
                                 -571
                             ]
                         },
@@ -3696,7 +3696,7 @@
                                 "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.SoundManagement\\SoundManager.cs"
                             ],
                             "position": [
-                                -522,
+                                -373,
                                 -371
                             ]
                         },
@@ -3709,7 +3709,7 @@
                                 "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.GameManagement\\GameStateController.cs"
                             ],
                             "position": [
-                                -349,
+                                -200,
                                 -706
                             ]
                         },
@@ -3725,7 +3725,7 @@
                                 "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\ToSort\\JonathonOH.Drifto.UI\\UIContainerSlide.cs"
                             ],
                             "position": [
-                                -527,
+                                -378,
                                 -531
                             ]
                         },
@@ -3736,7 +3736,7 @@
                             "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\ToSort\\UI\\TransformScaleOscillate.cs",
                             "dependencies": [],
                             "position": [
-                                -350,
+                                -201,
                                 -359
                             ]
                         },
@@ -3747,7 +3747,7 @@
                             "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\ToSort\\UI\\UIContainerAdjustToSafeArea.cs",
                             "dependencies": [],
                             "position": [
-                                -349,
+                                -200,
                                 -399
                             ]
                         },
@@ -3758,7 +3758,7 @@
                             "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\UI\\ToSort\\UI\\UIImageScaler.cs",
                             "dependencies": [],
                             "position": [
-                                -534,
+                                -385,
                                 -451
                             ]
                         }
@@ -3778,7 +3778,7 @@
                             "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Generics\\Utilities\\CrashlyticsEventLogger.cs",
                             "dependencies": [],
                             "position": [
-                                -452,
+                                -303,
                                 200
                             ]
                         }
@@ -3798,7 +3798,7 @@
                             "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Generics\\Utilities\\unity-tools\\Utils\\VectorUtils.cs",
                             "dependencies": [],
                             "position": [
-                                -452,
+                                -303,
                                 361
                             ]
                         }
@@ -3818,7 +3818,7 @@
                             "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Generics\\Systems\\GameConfiguration\\GameConfigurationAccessorBase.cs",
                             "dependencies": [],
                             "position": [
-                                -497,
+                                -348,
                                 280
                             ]
                         }
@@ -3841,7 +3841,7 @@
                                 "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Generics\\Systems\\JonathonOH.PlatformSwitching\\PlatformSwitcherConfiguration.cs"
                             ],
                             "position": [
-                                -355,
+                                -206,
                                 795
                             ]
                         },
@@ -3852,7 +3852,7 @@
                             "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Generics\\Systems\\JonathonOH.PlatformSwitching\\ObjectTogglers\\DisableObjectInReleaseBuild.cs",
                             "dependencies": [],
                             "position": [
-                                -515,
+                                -366,
                                 884
                             ]
                         },
@@ -3863,7 +3863,7 @@
                             "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Generics\\Systems\\JonathonOH.PlatformSwitching\\FormFactor.cs",
                             "dependencies": [],
                             "position": [
-                                -355,
+                                -206,
                                 755
                             ]
                         },
@@ -3874,7 +3874,7 @@
                             "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Generics\\Systems\\JonathonOH.PlatformSwitching\\Platform.cs",
                             "dependencies": [],
                             "position": [
-                                -515,
+                                -366,
                                 844
                             ]
                         },
@@ -3889,7 +3889,7 @@
                                 "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Generics\\Systems\\JonathonOH.PlatformSwitching\\PlatformSwitcherConfiguration.cs"
                             ],
                             "position": [
-                                -355,
+                                -206,
                                 675
                             ]
                         },
@@ -3905,7 +3905,7 @@
                                 "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Generics\\Systems\\JonathonOH.PlatformSwitching\\PlatformVariant.cs"
                             ],
                             "position": [
-                                -515,
+                                -366,
                                 804
                             ]
                         },
@@ -3919,7 +3919,7 @@
                                 "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Generics\\Systems\\JonathonOH.PlatformSwitching\\PlatformEnableDisabler.cs"
                             ],
                             "position": [
-                                -355,
+                                -206,
                                 715
                             ]
                         },
@@ -3934,7 +3934,7 @@
                                 "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Generics\\Systems\\JonathonOH.PlatformSwitching\\PlatformEnableDisabler.cs"
                             ],
                             "position": [
-                                -515,
+                                -366,
                                 764
                             ]
                         },
@@ -3949,7 +3949,7 @@
                                 "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Generics\\Systems\\JonathonOH.PlatformSwitching\\PlatformSwitcherConfiguration.cs"
                             ],
                             "position": [
-                                -515,
+                                -366,
                                 644
                             ]
                         },
@@ -3963,7 +3963,7 @@
                                 "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Generics\\Systems\\JonathonOH.PlatformSwitching\\Platform.cs"
                             ],
                             "position": [
-                                -515,
+                                -366,
                                 684
                             ]
                         },
@@ -3978,7 +3978,7 @@
                                 "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Generics\\Systems\\JonathonOH.PlatformSwitching\\PlatformDeterminer.cs"
                             ],
                             "position": [
-                                -515,
+                                -366,
                                 724
                             ]
                         }
@@ -4006,7 +4006,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Generics\\Utilities\\PreferenceUtility\\EditorPreferenceUtility\\SetEditorPreferenceFromInspector.cs"
                                     ],
                                     "position": [
-                                        -515,
+                                        -366,
                                         13
                                     ]
                                 }
@@ -4026,7 +4026,7 @@
                                     "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Generics\\Utilities\\PreferenceUtility\\PlayerPreferenceUtility\\PlayerPrefsExtension.cs",
                                     "dependencies": [],
                                     "position": [
-                                        -355,
+                                        -206,
                                         101
                                     ]
                                 },
@@ -4039,7 +4039,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Generics\\Utilities\\PreferenceUtility\\PlayerPreferenceUtility\\PlayerPrefsExtension.cs"
                                     ],
                                     "position": [
-                                        -515,
+                                        -366,
                                         110
                                     ]
                                 }
@@ -4070,7 +4070,7 @@
                                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Generics\\EditorScripts\\ProjectQualityReviewer\\Reviewers\\NamespaceReviewer.cs"
                                     ],
                                     "position": [
-                                        -525,
+                                        -376,
                                         96
                                     ]
                                 }
@@ -4087,7 +4087,7 @@
                                 "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Generics\\EditorScripts\\ProjectQualityReviewer\\QualityIssue.cs"
                             ],
                             "position": [
-                                -350,
+                                -201,
                                 158
                             ]
                         },
@@ -4101,7 +4101,7 @@
                                 "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Generics\\EditorScripts\\ProjectQualityReviewer\\QualityIssue.cs"
                             ],
                             "position": [
-                                -515,
+                                -366,
                                 184
                             ]
                         },
@@ -4116,7 +4116,7 @@
                                 "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Generics\\EditorScripts\\ProjectQualityReviewer\\QualityIssue.cs"
                             ],
                             "position": [
-                                -350,
+                                -201,
                                 117
                             ]
                         },
@@ -4127,7 +4127,7 @@
                             "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Generics\\EditorScripts\\ProjectQualityReviewer\\QualityIssue.cs",
                             "dependencies": [],
                             "position": [
-                                -515,
+                                -366,
                                 144
                             ]
                         }
@@ -4149,7 +4149,7 @@
                                 "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\JonathonOH.Drifto.RoadGeneration\\DriftoRoadSection.cs"
                             ],
                             "position": [
-                                -499,
+                                -350,
                                 441
                             ]
                         }
@@ -4171,7 +4171,7 @@
                                 "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Generics\\Utilities\\unity-tools\\Extensions\\DebugExtensions.cs"
                             ],
                             "position": [
-                                -357,
+                                -208,
                                 716
                             ]
                         },
@@ -4182,7 +4182,7 @@
                             "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Generics\\Utilities\\unity-tools\\Extensions\\GameObejctGetScenePath.cs",
                             "dependencies": [],
                             "position": [
-                                -517,
+                                -368,
                                 733
                             ]
                         },
@@ -4193,7 +4193,7 @@
                             "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Generics\\Utilities\\unity-tools\\Extensions\\GraphicSetAlpha.cs",
                             "dependencies": [],
                             "position": [
-                                -357,
+                                -208,
                                 676
                             ]
                         },
@@ -4204,7 +4204,7 @@
                             "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Generics\\Utilities\\unity-tools\\Extensions\\LayerMaskContains.cs",
                             "dependencies": [],
                             "position": [
-                                -517,
+                                -368,
                                 693
                             ]
                         },
@@ -4215,7 +4215,7 @@
                             "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Generics\\Utilities\\unity-tools\\Extensions\\SpriteRendererSetAlpha.cs",
                             "dependencies": [],
                             "position": [
-                                -357,
+                                -208,
                                 636
                             ]
                         },
@@ -4226,7 +4226,7 @@
                             "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Generics\\Utilities\\unity-tools\\Extensions\\VectorParseExtensions.cs",
                             "dependencies": [],
                             "position": [
-                                -517,
+                                -368,
                                 653
                             ]
                         }
@@ -4246,7 +4246,7 @@
                             "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Generics\\Systems\\JonathonOH.UnityStorage\\IKeyValueStorage.cs",
                             "dependencies": [],
                             "position": [
-                                -357,
+                                -208,
                                 600
                             ]
                         },
@@ -4260,7 +4260,7 @@
                                 "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Generics\\Systems\\JonathonOH.UnityStorage\\IKeyValueStorage.cs"
                             ],
                             "position": [
-                                -517,
+                                -368,
                                 609
                             ]
                         }
@@ -4295,7 +4295,7 @@
             "path": "MusicManager",
             "name": "MusicManager",
             "is_hidden": false,
-            "is_collapsed": false,
+            "is_collapsed": true,
             "folders": [],
             "scripts": [
                 {
@@ -4315,8 +4315,8 @@
                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\MusicManager\\TrackList.cs"
                     ],
                     "position": [
-                        -829,
-                        268
+                        -686,
+                        288
                     ]
                 },
                 {
@@ -4326,8 +4326,8 @@
                     "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\MusicManager\\SceneClass.cs",
                     "dependencies": [],
                     "position": [
-                        -1021,
-                        180
+                        -878,
+                        200
                     ]
                 },
                 {
@@ -4337,8 +4337,8 @@
                     "full_name": "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\MusicManager\\Track.cs",
                     "dependencies": [],
                     "position": [
-                        -831,
-                        184
+                        -688,
+                        204
                     ]
                 },
                 {
@@ -4351,8 +4351,8 @@
                         "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts\\Project\\Systems\\MusicManager\\Track.cs"
                     ],
                     "position": [
-                        -1018,
-                        267
+                        -875,
+                        287
                     ]
                 }
             ]

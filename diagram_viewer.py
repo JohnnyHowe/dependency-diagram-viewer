@@ -228,13 +228,26 @@ class DiagramViewer:
 		draw.text_screen_space("\n".join(lines), 20, Rect((0, 0), Window().size))
 
 	def _draw_dependencies(self):
-		pairs = self._get_all_visible_dependency_pairs()
+		pairs = set(self._get_all_visible_dependency_pairs())
+		seen = set()
 
 		for pair in pairs:
-			self._draw_dependency_pair(pair)
+			if pair in seen: continue
 
-	def _draw_dependency_pair(self, pair):
-		draw.arrow(pair[0].rect.midtop, pair[1].rect.midbottom, self._get_dependency_color(pair), 4, 2)
+			inverse = (pair[1], pair[0])
+			if inverse in pairs:
+				self._draw_both_way_dependency(pair)
+			else:
+				draw.arrow(pair[0].rect.midtop, pair[1].rect.midbottom, self._get_dependency_color(pair), 4, 2)
+
+			seen.add(pair)
+			seen.add(inverse)
+
+	def _draw_both_way_dependency(self, pair):
+		left = pair[0] if pair[0].rect.center[0] < pair[1].rect.center[0] else pair[1]
+		right = pair[0] if left == pair[1] else pair[1]
+		draw.arrow(right.rect.midleft, left.rect.midright, self._get_dependency_color(pair), 4, 2)
+		draw.arrow(left.rect.midright, right.rect.midleft, self._get_dependency_color(pair), 4, 2)
 
 	def _get_dependency_color(self, pair):
 		focussed = len(self.selected_items) == 0 or self._is_dependency_targetted(pair)
