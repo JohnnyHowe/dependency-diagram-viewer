@@ -164,7 +164,7 @@ class DiagramViewer:
 	def _set_selection(self):
 		self._clear_selection()
 
-		items_to_select = list(self._get_visible_items_contained_in_selection_rect())
+		items_to_select = list(self._get_outermost_visible_items_contained_in_selection_rect())
 
 		if len(items_to_select) == 0:
 			item_under_mouse = self._get_deepest_visible_item_under_mouse()
@@ -174,6 +174,21 @@ class DiagramViewer:
 		self.selected_items = items_to_select
 		for item in self.selected_items:
 			item.is_held = True
+
+	def _get_outermost_visible_items_contained_in_selection_rect(self):
+		items = set()
+		for item in sorted(self._get_visible_items_contained_in_selection_rect(), key=lambda item: item.depth):
+
+			already_in = False
+			for parent in item.get_parent_chain():
+				if parent in items:
+					already_in = True
+					continue
+
+			if not already_in:
+				items.add(item)
+
+		return items
 
 	def _get_visible_items_contained_in_selection_rect(self):
 		rect = self._get_selection_rect()

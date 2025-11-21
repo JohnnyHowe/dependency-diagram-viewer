@@ -18,7 +18,7 @@ class DiagramScript(DiagramItem):
     
     def get_children(self):
         return []
- 
+
     def get_all_script_dependencies(self):
         return self.dependencies
 
