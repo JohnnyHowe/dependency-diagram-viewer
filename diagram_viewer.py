@@ -145,8 +145,9 @@ class DiagramViewer:
 
 	def _is_mouse_over_visible_child(self, item):
 		mouse_pos = Mouse().position
-		if item.is_collapsed:
-			return False
+		if isinstance(item, DiagramModule):
+			if item.is_collapsed:
+				return False
 		for child in item.get_children():
 			if child.rect.collidepoint(mouse_pos):
 				return True
@@ -182,7 +183,7 @@ class DiagramViewer:
 		for item in sorted(self._get_visible_items_contained_in_selection_rect(), key=lambda item: item.depth):
 
 			already_in = False
-			for parent in item.get_parent_chain_visible():
+			for parent in item.get_parent_chain():
 				if parent in items:
 					already_in = True
 					continue
