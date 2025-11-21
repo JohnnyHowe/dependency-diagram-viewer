@@ -18,7 +18,9 @@ class DiagramViewer:
         self._camera_controller = CameraController()
         self._load_diagram()
         self.hovered_item = None
-        self.held_item = None
+        self.selected_items = []
+        self.is_holding_selection = False
+        self.selection_start_position = None
         self.space_children = False
         self._run()
 
@@ -65,12 +67,24 @@ class DiagramViewer:
             self._reset_positions()
 
     def _toggle_selection_visibility(self):
-        if self.held_item:
-            self.held_item.is_hidden = not self.held_item.is_hidden
+        balance = 0
+        for item in self.selected_items:
+            balance += -1 if item.is_hidden else 1
+        new_state = balance >= 0
+        for item in self.selected_items:
+            item.is_hidden = new_state 
 
     def _toggle_selection_collapse(self):
-        if isinstance(self.held_item, DiagramModule):
-            self.held_item.is_collapsed = not self.held_item.is_collapsed
+        modules = []
+        for item in self.selected_items:
+            if isinstance(item, DiagramModule):
+                modules.append(item)
+        balance = 0
+        for item in modules:
+            balance += -1 if item.is_collapsed else 1
+        new_state = balance >= 0
+        for item in modules:
+            item.is_collapsed = new_state
 
     def _reset_positions(self):
         for child in self.root.get_all_children_recursive():
@@ -82,7 +96,19 @@ class DiagramViewer:
 
     def _update_mouse_input(self):
         self._update_mouse_over()
-        self._update_held_item()
+        self._move_held_items()
+
+        for event in Window().pygame_events:
+            if event.type == pygame.MOUSEBUTTONDOWN:
+                self._mouse_down(event.button)
+            if event.type == pygame.MOUSEBUTTONUP:
+                self._mouse_up(event.button)
+
+    def _move_held_items(self):
+        if not self.is_holding_selection: return
+        rel = Mouse().screen_rel
+        for item in self.selected_items:
+            item.move(rel)
 
     def _update_mouse_over(self):
         deepest_item_with_mouse_over = self._get_deepest_item_under_mouse()
@@ -107,33 +133,47 @@ class DiagramViewer:
             if item.is_root: continue
             if not item.rect.collidepoint(Mouse().position): continue
             yield item
-            
-    def _update_held_item(self):
-        for event in Window().pygame_events:
-            if event.type == pygame.MOUSEBUTTONDOWN:
-                self._mouse_down(event.button)
-            if event.type == pygame.MOUSEBUTTONUP:
-                self._mouse_up(event.button)
-
-        self._move_held_item()
 
     def _mouse_down(self, button_index: int):
         if button_index != self.selection_mouse_button_index: return
+        self.is_holding_selection = self._is_mouse_over_selected_item()
+        if not self.is_holding_selection:
+            self.selection_start_position = Mouse().position
 
-        if self.hovered_item:
-            self.held_item = self.hovered_item
-            self.held_item.is_held = True
+    def _is_mouse_over_selected_item(self) -> bool:
+        mouse_pos = Mouse().position
+        for item in self.selected_items:
+            if item.rect.collidepoint(mouse_pos):
+                return True
+        return False
 
     def _mouse_up(self, button_index: int):
-        if button_index != self.selection_mouse_button_index: return
+        if not self.is_holding_selection:
+            if button_index != self.selection_mouse_button_index: return
+            self._set_selection(self._get_selection_rect())
+            self.selection_start_position = None
 
-        if self.held_item:
-            self.held_item.is_held = False
-            self.held_item = None
+        self.is_holding_selection = False
 
-    def _move_held_item(self):
-        if self.held_item:
-            self.held_item.move(Mouse().rel)
+    def _set_selection(self, rect: Rect):
+        self._clear_selection()
+        for item in self.root.get_all_visible_children_recursive():
+            if rect.contains(item.rect):
+                self.selected_items.append(item)
+                item.is_held = True
+
+    def _clear_selection(self):
+        for item in self.selected_items:
+            item.is_held = False
+        self.selected_items = []
+
+    def _get_selection_rect(self):
+        if self.selection_start_position is None:
+            return None
+        current_pos = Mouse().position
+        rect = Rect(current_pos, self.selection_start_position - current_pos)
+        rect.normalize()
+        return rect
 
     # ===========================================================================================
     # region Drawing
@@ -143,7 +183,16 @@ class DiagramViewer:
         Window().surface.fill((0, 0, 0))
         self.root.draw()
         self._draw_dependencies()
+        self._draw_selection()
         self._draw_controls_text()
+
+    def _draw_selection(self):
+        self._draw_selection_rect()
+
+    def _draw_selection_rect(self):
+        if self.selection_start_position is None:
+            return
+        draw.rect(self._get_selection_rect(), "#0000ff")
 
     def _draw_controls_text(self):
         lines = [
@@ -172,7 +221,8 @@ class DiagramViewer:
             else:
                 other_pairs.append(pair)
 
-        is_item_targetted = self.held_item != None or self.hovered_item != None
+        #is_item_targetted = self.held_item != None or self.hovered_item != None
+        is_item_targetted = False
 
         other_color = "#444444" if is_item_targetted > 0 else "#ffffff"
         other_layer = -1 if is_item_targetted > 0 else 1
@@ -183,7 +233,8 @@ class DiagramViewer:
             draw.arrow(pair[0].rect.midtop, pair[1].rect.midbottom, "#ff0000", 4, 2)
 
     def _is_dependency_targetted(self, pair):
-        targetted_item = self.held_item if self.held_item else self.hovered_item
+        #targetted_item = self.held_item if self.held_item else self.hovered_item
+        targetted_item = None
         return targetted_item in pair[0].get_parent_chain() or targetted_item in pair[1].get_parent_chain()
 
     def _get_all_visible_dependency_pairs(self) -> list[tuple]:
