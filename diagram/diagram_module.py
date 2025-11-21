@@ -91,9 +91,13 @@ class DiagramModule(DiagramItem):
         return False
 
     def get_all_visible_children_recursive(self):
+        base = [self]
+        if self.parent == None:
+            base = []
+
         if self.is_collapsed:
-            return [self]
-        children = [self, ] + self.scripts
+            return base 
+        children = base + self.scripts
         for module in self.modules:
             children += module.get_all_visible_children_recursive()
         return children

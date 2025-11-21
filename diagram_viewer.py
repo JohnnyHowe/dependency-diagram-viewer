@@ -148,15 +148,22 @@ class DiagramViewer:
         return False
 
     def _mouse_up(self, button_index: int):
+        self._clear_selection()
         if not self.is_holding_selection:
             if button_index != self.selection_mouse_button_index: return
             self._set_selection(self._get_selection_rect())
             self.selection_start_position = None
+        
+        if len(self.selected_items) == 0:
+            for item in self.root.get_all_visible_children_recursive():
+                if item.rect.collidepoint(Mouse().position):
+                    self.selected_items = [item]
+                    item.is_held = True
+                    continue
 
         self.is_holding_selection = False
 
     def _set_selection(self, rect: Rect):
-        self._clear_selection()
         for item in self.root.get_all_visible_children_recursive():
             if rect.contains(item.rect):
                 self.selected_items.append(item)
