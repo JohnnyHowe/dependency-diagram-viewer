@@ -13,6 +13,8 @@ item_outline_color = "#ffffff"
 item_hidden_outline_color = "#333333"
 
 dependency_default_color = "#ffffff"
+dependency_wrong_way_color = "#ff4949"
 dependency_unfocussed_color = "#444444"
+dependency_wrong_way_unfocussed_color = "#401515"
 
 auto_push_pixels_per_second = 1000

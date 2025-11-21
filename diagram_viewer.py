@@ -239,14 +239,22 @@ class DiagramViewer:
 				other_pairs.append(pair)
 
 		is_item_targetted = len(self.selected_items) > 0
-
-		other_color = configuration.dependency_unfocussed_color if is_item_targetted > 0 else configuration.dependency_default_color
 		other_layer = -1 if is_item_targetted > 0 else 1
 
 		for pair in other_pairs:
-			draw.arrow(pair[0].rect.midtop, pair[1].rect.midbottom, other_color, 4, other_layer)
+
+			wrong_way = pair[0].rect.midtop[1] < pair[1].rect.midbottom[1]
+			if is_item_targetted:
+				color = configuration.dependency_wrong_way_unfocussed_color if wrong_way else configuration.dependency_unfocussed_color
+			else:
+				color = configuration.dependency_wrong_way_color if wrong_way else configuration.dependency_default_color
+
+			draw.arrow(pair[0].rect.midtop, pair[1].rect.midbottom, color, 4, other_layer)
+
 		for pair in selected_pairs:
-			draw.arrow(pair[0].rect.midtop, pair[1].rect.midbottom, configuration.dependency_default_color, 4, 2)
+			wrong_way = pair[0].rect.midtop[1] < pair[1].rect.midbottom[1]
+			color = configuration.dependency_wrong_way_color if wrong_way else configuration.dependency_default_color
+			draw.arrow(pair[0].rect.midtop, pair[1].rect.midbottom, color, 4, 2)
 
 	def _is_dependency_targetted(self, pair):
 		for item in pair:
