@@ -20,19 +20,6 @@ class Namespace:
             namespaces_used = set(csharp_parser.get_all_namespaces_in_use(all_scripts[member.file_path])).intersection(all_namespace_names)
             member.ensure_depends_on_namespaces(namespaces_used)
 
-        #namespaces_in_use = set()
-        #for script_path in self.scripts:
-        #    for namespace in csharp_parser.get_all_namespaces_in_use(all_scripts[script_path]):
-        #        namespaces_in_use.add(namespace)
-        #for member in self.get_members_recursive():
-        #    for dependency in member.dependencies:
-        #        if dependency in namespaces_in_use:
-        #            namespaces_in_use.remove(dependency)
-        #if len(namespaces_in_use) > 0:
-        #    print(f"{self.name} has dependencies not marked in its members!")
-        #    for namespace in namespaces_in_use:
-        #        print("  - " + namespace)
-
     def get_members_recursive(self):
         for member in self.members:
             for member in member.get_members_recursive():

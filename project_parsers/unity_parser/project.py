@@ -11,7 +11,6 @@ class Project:
         self._parse()
 
     def _parse(self):
-        print()
         self.script_contents = {}
         for root, dir_names, file_names in os.walk(self.path):
             for file_name in file_names:
@@ -19,7 +18,6 @@ class Project:
                     self._parse_file(os.path.join(root, file_name))
         self.cull_empty_namespaces()
         self._find_dependencies()
-        print()
         self.ensure_all_namespaces_accounted_for()
 
     def cull_empty_namespaces(self):

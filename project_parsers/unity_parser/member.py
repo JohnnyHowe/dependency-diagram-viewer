@@ -66,7 +66,6 @@ class Member:
         if self._already_depends_on_namespace_recursive(namespace_name):
             return
 
-        print(f"{self.get_full_namespace()} missing clear reference to {namespace_name}")
         self._add_to_namespace_dependencies(namespace_name)
 
     def _add_to_namespace_dependencies(self, namespace: str):
