@@ -32,13 +32,16 @@ class DiagramSaver:
 
         return d
 
-    def _get_script_as_dict(self, script: DiagramScript) -> dict:
-        d = self._get_item_as_dict(script)
-        d["full_name"] = script.full_name
+    def _get_script_as_dict(self, item) -> dict:
+        d = self._get_item_as_dict(item)
+        d["full_name"] = item.full_name
         d["dependencies"] = []
-        d["position"] = script.rect.center
-        for dependency in script.dependencies:
-            d["dependencies"].append(dependency.full_name)
+        d["position"] = item.rect.center
+        for dependency in item.dependencies:
+            if isinstance(dependency, DiagramScript):
+                d["dependencies"].append(dependency.full_name)
+            else:
+                d["dependencies"].append(dependency.path)
         return d
 
     def _get_item_as_dict(self, item: DiagramItem) -> dict:
