@@ -230,31 +230,20 @@ class DiagramViewer:
 	def _draw_dependencies(self):
 		pairs = self._get_all_visible_dependency_pairs()
 
-		selected_pairs = []
-		other_pairs = []
 		for pair in pairs:
-			if self._is_dependency_targetted(pair): 
-				selected_pairs.append(pair)
-			else:
-				other_pairs.append(pair)
+			self._draw_dependency_pair(pair)
 
-		is_item_targetted = len(self.selected_items) > 0
-		other_layer = -1 if is_item_targetted > 0 else 1
+	def _draw_dependency_pair(self, pair):
+		draw.arrow(pair[0].rect.midtop, pair[1].rect.midbottom, self._get_dependency_color(pair), 4, 2)
 
-		for pair in other_pairs:
-
-			wrong_way = pair[0].rect.midtop[1] < pair[1].rect.midbottom[1]
-			if is_item_targetted:
-				color = configuration.dependency_wrong_way_unfocussed_color if wrong_way else configuration.dependency_unfocussed_color
-			else:
-				color = configuration.dependency_wrong_way_color if wrong_way else configuration.dependency_default_color
-
-			draw.arrow(pair[0].rect.midtop, pair[1].rect.midbottom, color, 4, other_layer)
-
-		for pair in selected_pairs:
-			wrong_way = pair[0].rect.midtop[1] < pair[1].rect.midbottom[1]
+	def _get_dependency_color(self, pair):
+		focussed = len(self.selected_items) == 0 or self._is_dependency_targetted(pair)
+		wrong_way = pair[0].rect.midtop[1] < pair[1].rect.midbottom[1]
+		if focussed:
 			color = configuration.dependency_wrong_way_color if wrong_way else configuration.dependency_default_color
-			draw.arrow(pair[0].rect.midtop, pair[1].rect.midbottom, color, 4, 2)
+		else:
+			color = configuration.dependency_wrong_way_unfocussed_color if wrong_way else configuration.dependency_unfocussed_color
+		return color
 
 	def _is_dependency_targetted(self, pair):
 		for item in pair:
