@@ -237,21 +237,21 @@ class DiagramViewer:
 			else:
 				other_pairs.append(pair)
 
-		#is_item_targetted = self.held_item != None or self.hovered_item != None
-		is_item_targetted = False
+		is_item_targetted = len(self.selected_items) > 0
 
 		other_color = "#444444" if is_item_targetted > 0 else "#ffffff"
 		other_layer = -1 if is_item_targetted > 0 else 1
 		for pair in other_pairs:
 			draw.arrow(pair[0].rect.midtop, pair[1].rect.midbottom, other_color, 4, other_layer)
-
 		for pair in selected_pairs:
-			draw.arrow(pair[0].rect.midtop, pair[1].rect.midbottom, "#ff0000", 4, 2)
+			draw.arrow(pair[0].rect.midtop, pair[1].rect.midbottom, "#ffffff", 4, 2)
 
 	def _is_dependency_targetted(self, pair):
-		#targetted_item = self.held_item if self.held_item else self.hovered_item
-		targetted_item = None
-		return targetted_item in pair[0].get_parent_chain() or targetted_item in pair[1].get_parent_chain()
+		for item in pair:
+			for parent in item.get_parent_chain():
+				if parent in self.selected_items:
+					return True
+		return False
 
 	def _get_all_visible_dependency_pairs(self) -> list[tuple]:
 		pairs = []
