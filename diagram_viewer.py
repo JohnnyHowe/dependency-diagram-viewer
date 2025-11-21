@@ -262,18 +262,20 @@ class DiagramViewer:
 
 			inverse = (pair[1], pair[0])
 			if inverse in pairs:
-				self._draw_both_way_dependency(pair)
+				self._draw_mutual_dependency(pair)
 			else:
 				draw.arrow(pair[0].rect.midtop, pair[1].rect.midbottom, self._get_dependency_color(pair), layer=2)
 
 			seen.add(pair)
 			seen.add(inverse)
 
-	def _draw_both_way_dependency(self, pair):
+	def _draw_mutual_dependency(self, pair):
 		left = pair[0] if pair[0].rect.center[0] < pair[1].rect.center[0] else pair[1]
 		right = pair[0] if left == pair[1] else pair[1]
-		draw.arrow(right.rect.midleft, left.rect.midright, self._get_dependency_color(pair), layer=2)
-		draw.arrow(left.rect.midright, right.rect.midleft, self._get_dependency_color(pair), layer=2)
+		focussed = len(self.selected_items) == 0 or self._is_dependency_targetted(pair)
+		color = configuration.dependency_wrong_way_color if focussed else configuration.dependency_wrong_way_unfocussed_color
+		draw.arrow(right.rect.midleft, left.rect.midright, color, layer=2)
+		draw.arrow(left.rect.midright, right.rect.midleft, color, layer=2)
 
 	def _get_dependency_color(self, pair):
 		focussed = len(self.selected_items) == 0 or self._is_dependency_targetted(pair)
