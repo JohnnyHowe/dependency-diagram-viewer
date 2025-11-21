@@ -132,6 +132,7 @@ class DiagramModule(DiagramItem):
     # ===========================================================================================
 
     def space_children(self):
+        if self.is_collapsed: return
         pairs_moved = set()
         children = self.modules + self.scripts
         for child1 in children:
