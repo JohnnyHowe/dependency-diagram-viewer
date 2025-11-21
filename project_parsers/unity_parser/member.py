@@ -54,7 +54,8 @@ class Member:
         return self.parent.get_namespace()
 
     def pretty_print(self, indent=0):
-        print("\t" * indent + f"({self.member_type}) {self.name:<48} depends on {", ".join(map(lambda d: d.name, self.member_dependencies))}")
+        dependency_names = ", ".join(map(lambda d: d.name, self.member_dependencies))
+        print("\t" * indent + f"({self.member_type}) {self.name:<48} depends on {dependency_names}")
         for member in self.members:
             member.pretty_print(indent + 1)
         
