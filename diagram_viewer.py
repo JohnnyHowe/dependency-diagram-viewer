@@ -259,12 +259,13 @@ class DiagramViewer:
 
 		for pair in pairs:
 			if pair in seen: continue
+			focussed = len(self.selected_items) == 0 or self._is_dependency_targetted(pair)
 
 			inverse = (pair[1], pair[0])
 			if inverse in pairs:
 				self._draw_mutual_dependency(pair)
 			else:
-				draw.arrow(pair[0].rect.midtop, pair[1].rect.midbottom, self._get_dependency_color(pair), layer=2)
+				draw.arrow(pair[0].rect.midtop, pair[1].rect.midbottom, self._get_dependency_color(pair), layer=1 if focussed else 0)
 
 			seen.add(pair)
 			seen.add(inverse)
