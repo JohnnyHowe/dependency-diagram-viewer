@@ -1,7 +1,8 @@
+from argparse import Namespace
 import re
-from json_parser import update_file
-from project import Project
-from namespace import Namespace
+
+from project_parsers.unity_parser.json_parser import update_file
+from project_parsers.unity_parser.project import Project
 
 
 def write(file_path: str, project: Project):

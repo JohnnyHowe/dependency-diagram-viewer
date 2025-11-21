@@ -1,7 +1,7 @@
 import os
-import csharp_parser
-from namespace import Namespace
-from member import Member
+
+from project_parsers.unity_parser.namespace import Namespace
+from project_parsers.unity_parser import csharp_parser
 
 
 class Project:

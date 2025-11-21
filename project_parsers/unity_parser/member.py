@@ -1,4 +1,6 @@
-import csharp_parser
+
+
+from project_parsers.unity_parser import csharp_parser
 
 
 class Member:

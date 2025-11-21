@@ -23,13 +23,15 @@ class DiagramViewer:
 		self.is_holding_selection = False
 		self.selection_start_position = None
 		self.space_children = False
+		self.reset_callback = None
+		self.running = True
 		self._run()
 
 	def _load_diagram(self):
 		self.root = DiagramLoader(self.file_path).get_root()
 
 	def _run(self):
-		while True:
+		while self.running:
 			self._run_frame()
 
 	def _run_frame(self):
@@ -64,8 +66,6 @@ class DiagramViewer:
 			DiagramSaver(self.file_path, self.root).save()
 		if key == pygame.K_a:
 			self.space_children = not self.space_children
-		if key == pygame.K_r:
-			self._reset_positions()
 
 	def _toggle_selection_visibility(self):
 		balance = 0
@@ -247,7 +247,6 @@ class DiagramViewer:
 			"h: toggle visibility on selection",
 			"c: collapse/expand selection",
 			"a: turn %s auto spacing" % ("off" if self.space_children else "on"),
-			"r: reset all positions",
 			"",
 			"s: save"
 		]

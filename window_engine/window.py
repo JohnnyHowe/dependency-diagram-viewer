@@ -18,6 +18,7 @@ class Window(metaclass=Singleton):
         self._draw_calls = []
         self._clock = pygame.time.Clock()
         self.delta_time_seconds = 1.0 / 60
+        self.update_callbacks = set()
 
     def update(self):
         self.delta_time_seconds = self._clock.tick(120) / 1000.0
@@ -26,6 +27,8 @@ class Window(metaclass=Singleton):
             func[0]()
         self._draw_calls = []
         pygame.display.flip()
+        for callback in self.update_callbacks:
+            callback()
 
     def _run_event_loop(self):
         self.pygame_events = pygame.event.get()
