@@ -19,7 +19,7 @@ class Member:
     def _parse(self):
         self.file_contents = csharp_parser.load_contents(self.file_path)
 
-        for data in csharp_parser.get_root_members(self.contents):
+        for data in csharp_parser.get_root_members(self.contents, self.file_path):
             assert data[0] != "namespace" "Namespace found but not the root of a file!"
             self.members.append(Member(data[1], data[0], data[2], data[3], self.file_path, self))
 

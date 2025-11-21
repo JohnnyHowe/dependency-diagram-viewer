@@ -13,7 +13,7 @@ def load_contents(file_path: string) -> string:
 		return re.sub(pattern, '', contents, flags=re.MULTILINE | re.DOTALL)
 
 
-def get_root_members(contents: string) -> list[tuple]:
+def get_root_members(contents: string, file_path: str) -> list[tuple]:
 	"""
 	Parse the text and get all the root members (classes, enums, interfaces, namespaces)
 	Return in form [(type, name, contents), ...] 
@@ -32,8 +32,11 @@ def get_root_members(contents: string) -> list[tuple]:
 		contents_start_index = match.end()
 		if get_bracket_depth(contents, contents_start_index) != 0: continue
 
-		member_char_range = get_member_contents_range(contents, contents_start_index)
-		members.append((member_type, member_name, contents[member_char_range[0]: member_char_range[1]], contents[match.start(): member_char_range[0] - 1].strip()))
+		try:
+			member_char_range = get_member_contents_range(contents, contents_start_index)
+			members.append((member_type, member_name, contents[member_char_range[0]: member_char_range[1]], contents[match.start(): member_char_range[0] - 1].strip()))
+		except:
+			print(f"Problem parsing {file_path}, skipping...")
 
 	return members
 
@@ -58,8 +61,7 @@ def get_member_contents_range(parent_contents: string, start_character_index) ->
 	char_index = start_character_index
 	while bracket_depth > 0 or not has_found_first_bracket:
 		if len(parent_contents) <= char_index:
-			print("Not all brackets closed???")
-			return (0, 0)
+			raise Exception("Not all brackets closed?")
 
 		if parent_contents[char_index] == "{":
 			bracket_depth += 1

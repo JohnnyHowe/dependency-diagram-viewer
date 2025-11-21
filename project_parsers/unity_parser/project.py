@@ -30,7 +30,7 @@ class Project:
     def _parse_file(self, file_path):
         contents = csharp_parser.load_contents(file_path)
         self.script_contents[file_path] = contents
-        root_members = csharp_parser.get_root_members(contents)
+        root_members = csharp_parser.get_root_members(contents, file_path)
 
         for data in root_members:
             self._add_script_root_member(*data, file_path)
