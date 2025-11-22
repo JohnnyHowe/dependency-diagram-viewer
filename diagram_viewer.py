@@ -71,6 +71,9 @@ class DiagramViewer:
 		if key == pygame.K_a:
 			self.space_children = not self.space_children
 		if key == pygame.K_r:
+			Window().queue_draw_call(lambda: Window().surface.fill("#000000"), 10)
+			draw.text_screen_space("Reloading...", 20, Rect((0, 0), Window().size), layer=11, v_alignment=0, h_alignment=0)
+			Window().update()
 			self.parser.update_dependencies_file()
 			self.reload_diagram()
 

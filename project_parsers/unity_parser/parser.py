@@ -1,4 +1,4 @@
-import json_parser
+from dependency_file_merger import update_file
 from project_parsers.unity_parser.json_writer import get_as_dict
 from project_parsers.unity_parser.project import Project
 
@@ -10,4 +10,4 @@ class Parser:
 
     def update_dependencies_file(self):
         proj = Project(self.project_path)
-        json_parser.update_file(self.output_path, get_as_dict(proj))
+        update_file(self.output_path, get_as_dict(proj))
