@@ -165,29 +165,48 @@ class DiagramViewer:
 		if button_index != self.selection_mouse_button_index: return
 
 		if self.is_holding_selection:
-			self.is_holding_selection = False
-			if Mouse().position == self.selection_start_position:
-				self._set_selection()
+			if pygame.key.get_pressed()[pygame.K_LCTRL]:
+				self._toggle_selected(set(self._get_items_to_select()))
+			else:
+				self.is_holding_selection = False
+				if Mouse().position == self.selection_start_position:
+					self._set_selection()
 		else:
-			self._set_selection()
+			if pygame.key.get_pressed()[pygame.K_LCTRL]:
+				self._toggle_selected(set(self._get_items_to_select()))
+			else:
+				self._set_selection()
 
 		self.selection_start_position = None
 		self.is_holding_selection = False
 
+	def _toggle_selected(self, items: set):
+		held_score = sum([1 if item in self.selected_items else -1 for item in items])
+		new_state = held_score < 0
+
+		for item in items:
+			item.is_held = new_state
+
+		if new_state:
+			self.selected_items = self.selected_items.union(items)
+		else:
+			self.selected_items -= items 
+
 	def _set_selection(self):
-		if not pygame.key.get_pressed()[pygame.K_LSHIFT]:
+		if not pygame.key.get_pressed()[pygame.K_LSHIFT] or pygame.key.get_pressed()[pygame.K_LCTRL]:
 			self._clear_selection()
 
-		items_to_select = self._get_outermost_visible_items_contained_in_selection_rect()
+		self.selected_items = self.selected_items.union(self._get_items_to_select())
+		for item in self.selected_items:
+			item.is_held = True
 
+	def _get_items_to_select(self):
+		items_to_select = self._get_outermost_visible_items_contained_in_selection_rect()
 		if len(items_to_select) == 0:
 			item_under_mouse = self._get_deepest_visible_item_under_mouse()
 			if item_under_mouse:
 				items_to_select = [item_under_mouse]
-
-		self.selected_items = self.selected_items.union(items_to_select)
-		for item in self.selected_items:
-			item.is_held = True
+		return items_to_select
 
 	def _get_outermost_visible_items_contained_in_selection_rect(self):
 		items = set()
