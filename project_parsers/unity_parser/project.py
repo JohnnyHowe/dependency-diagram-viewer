@@ -41,6 +41,7 @@ class Project:
         # member isn't in a namespace :/
         if member_type != "namespace": 
             namespace = self.namespaces["none"]
+            namespace.scripts.add(file_path)
             namespace.members.append(Member(name, member_type, contents, definition, file_path, namespace))
             return
 
