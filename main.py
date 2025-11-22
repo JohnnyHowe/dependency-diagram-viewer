@@ -1,5 +1,6 @@
 import argparse
 import os
+from diagram_viewer import DiagramViewer
 from project_parsers.python_parser.parser import Parser  as PythonParser
 
 parsers = {
@@ -24,7 +25,8 @@ def _main():
         print("Project path \"{args.project_path}\" doesn't exist!")
         return
 
-    parser = parsers[args.parser]
+    parser = parsers[args.parser](args.project_path, args.output_path)
+    DiagramViewer(parser)
 
 
 if __name__ == "__main__":

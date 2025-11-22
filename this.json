@@ -55,8 +55,8 @@
             "dependencies": [],
             "is_hidden": false,
             "position": [
-                -977,
-                -494
+                -1249,
+                -351
             ]
         },
         {
@@ -65,7 +65,7 @@
             "name": "main.py",
             "dependencies": [
                 "./diagram_viewer.py",
-                "./project_parsers\\python_parser\\parse_python_project.py"
+                "./project_parsers\\python_parser\\parser.py"
             ],
             "is_hidden": false,
             "position": [
@@ -191,8 +191,21 @@
                             "dependencies": [],
                             "is_hidden": false,
                             "position": [
-                                -1212,
-                                -208
+                                -1491,
+                                -110
+                            ]
+                        },
+                        {
+                            "path": "./project_parsers\\python_parser\\parser.py",
+                            "full_name": "./project_parsers\\python_parser\\parser.py",
+                            "name": "parser.py",
+                            "dependencies": [
+                                "./json_parser.py"
+                            ],
+                            "is_hidden": false,
+                            "position": [
+                                -1168,
+                                -22
                             ]
                         },
                         {
@@ -204,8 +217,8 @@
                             ],
                             "is_hidden": false,
                             "position": [
-                                -1038,
-                                -210
+                                -1317,
+                                -112
                             ]
                         },
                         {
@@ -215,8 +228,8 @@
                             "dependencies": [],
                             "is_hidden": false,
                             "position": [
-                                -1389,
-                                -208
+                                -1668,
+                                -110
                             ]
                         },
                         {
@@ -226,8 +239,8 @@
                             "dependencies": [],
                             "is_hidden": false,
                             "position": [
-                                -1566,
-                                -207
+                                -1845,
+                                -109
                             ]
                         }
                     ],
@@ -247,8 +260,8 @@
                             "dependencies": [],
                             "is_hidden": false,
                             "position": [
-                                -645,
-                                -225
+                                -641,
+                                -133
                             ]
                         },
                         {
@@ -258,8 +271,8 @@
                             "dependencies": [],
                             "is_hidden": false,
                             "position": [
-                                -643,
-                                -155
+                                -639,
+                                -63
                             ]
                         },
                         {
@@ -272,8 +285,8 @@
                             ],
                             "is_hidden": false,
                             "position": [
-                                -628,
-                                99
+                                -624,
+                                191
                             ]
                         },
                         {
@@ -283,8 +296,8 @@
                             "dependencies": [],
                             "is_hidden": false,
                             "position": [
-                                -822,
-                                -156
+                                -818,
+                                -64
                             ]
                         },
                         {
@@ -296,8 +309,8 @@
                             ],
                             "is_hidden": false,
                             "position": [
-                                -817,
-                                -73
+                                -813,
+                                19
                             ]
                         },
                         {
@@ -307,8 +320,8 @@
                             "dependencies": [],
                             "is_hidden": false,
                             "position": [
-                                -818,
-                                -226
+                                -814,
+                                -134
                             ]
                         },
                         {
@@ -316,12 +329,13 @@
                             "full_name": "./project_parsers\\unity_parser\\project.py",
                             "name": "project.py",
                             "dependencies": [
+                                "./project_parsers\\unity_parser\\member.py",
                                 "./project_parsers\\unity_parser\\namespace.py"
                             ],
                             "is_hidden": false,
                             "position": [
-                                -816,
-                                11
+                                -812,
+                                103
                             ]
                         }
                     ],

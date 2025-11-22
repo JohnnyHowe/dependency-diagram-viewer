@@ -15,7 +15,7 @@ class DiagramViewer:
 
 	def __init__(self, parser):
 		self.parser = parser
-		self.root = DiagramLoader(self.parser.output_path).get_root()
+		self.reload_diagram()
 
 		self._camera_controller = CameraController()
 
@@ -27,6 +27,11 @@ class DiagramViewer:
 
 		self.space_children = False
 		self.reset_callback = None
+
+		self._run()
+
+	def reload_diagram(self):
+		self.root = DiagramLoader(self.parser.output_path).get_root()
 
 	def _run(self):
 		while self.running:
@@ -64,6 +69,9 @@ class DiagramViewer:
 			DiagramSaver(self.parser.output_path, self.root).save()
 		if key == pygame.K_a:
 			self.space_children = not self.space_children
+		if key == pygame.K_r:
+			self.parser.update_dependencies_file()
+			self.reload_diagram()
 
 	def _toggle_selection_visibility(self):
 		balance = 0
@@ -247,6 +255,7 @@ class DiagramViewer:
 			"a: turn %s auto spacing" % ("off" if self.space_children else "on"),
 			"",
 			"s: save"
+			"r: reload/parse project again",
 		]
 		draw.text_screen_space("\n".join(lines), 20, Rect((0, 0), Window().size))
 
