@@ -6,11 +6,11 @@ from project_parsers.unity_parser.project import Project
 
 
 def write(file_path: str, project: Project):
-    d = _get_as_dict(project)
+    d = get_as_dict(project)
     update_file(file_path, d)
 
 
-def _get_as_dict(project: Project) -> dict:
+def get_as_dict(project: Project) -> dict:
 
     namespaces_to_contained_files = {}
     for namespace in project.namespaces.values():

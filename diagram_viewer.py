@@ -31,6 +31,7 @@ class DiagramViewer:
 		self._run()
 
 	def reload_diagram(self):
+		self.parser.update_dependencies_file()
 		self.root = DiagramLoader(self.parser.output_path).get_root()
 
 	def _run(self):

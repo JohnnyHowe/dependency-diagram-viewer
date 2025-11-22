@@ -1,10 +1,12 @@
 import argparse
 import os
 from diagram_viewer import DiagramViewer
-from project_parsers.python_parser.parser import Parser  as PythonParser
+from project_parsers.python_parser.parser import Parser as PythonParser
+from project_parsers.unity_parser.parser import Parser as CSharpParser
 
 parsers = {
-    "python": PythonParser
+    "python": PythonParser,
+    "csharp": CSharpParser
 }
 
 
