@@ -32,7 +32,7 @@ class Namespace:
     def get_full_namespace_parts(self):
         if self.name == "none":
             return []
-        return [self.name]
+        return self.name.split(".")
         
     def get_full_namespace(self):
         return ".".join(self.get_full_namespace_parts())

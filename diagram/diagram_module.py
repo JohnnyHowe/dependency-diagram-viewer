@@ -59,8 +59,13 @@ class DiagramModule(DiagramItem):
             self.rect.center = center
 
     def _expand_to_fit_children(self):
+        children = self.modules + self.scripts
+        if len(children) == 0:
+            self.size = self.min_size
+            return
+
         self.rect = Rect(self.rect.center, (0, 0))
-        for child in self.modules + self.scripts:
+        for child in children:
             self.rect = self.rect.union(child.rect)
 
         header_padding = Vector2(0, configuration.module_font_size) * 2

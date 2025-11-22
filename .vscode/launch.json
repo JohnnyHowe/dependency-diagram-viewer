@@ -13,7 +13,7 @@
 
             "program": "main.py",
             //"args": ["python", "./", "./this.json"]
-            "args": ["csharp", "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts", "./drifto.json"]
+            "args": ["csharp", "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts", "./dependencies.json"]
 
             //"args": ["./dwarfhold.json"]
             //"args": ["./example1.json"]

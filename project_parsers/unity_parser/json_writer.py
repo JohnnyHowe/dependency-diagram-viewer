@@ -1,92 +1,102 @@
-from argparse import Namespace
-import re
-
+import os
 from project_parsers.unity_parser.json_parser import update_file
 from project_parsers.unity_parser.project import Project
+from project_parsers.unity_parser.namespace import Namespace
 
 
 def write(file_path: str, project: Project):
-    d = get_as_dict(project)
-    update_file(file_path, d)
+    update_file(file_path, ProjectDictionaryConverter(project).get_as_dict())
 
 
 def get_as_dict(project: Project) -> dict:
-
-    namespaces_to_contained_files = {}
-    for namespace in project.namespaces.values():
-        namespaces_to_contained_files[namespace.name] = set(_get_files_in_namespace(namespace))
-
-    script_dependencies = _get_script_dependencies(project)
-    grouped_namespaces = _get_grouped_namespaces(project.namespaces.keys())
-
-    return _create_data_dict(project, "", grouped_namespaces, namespaces_to_contained_files, script_dependencies)
+    return ProjectDictionaryConverter(project).get_as_dict()
 
 
-def _create_data_dict(project: Project, current_namespace: str, grouped_namespaces: dict, namespaces_to_contained_files, script_dependencies) -> dict:
-    d = {
-        "path": current_namespace,
-        "full_name": current_namespace,
-        "name": current_namespace.split(".")[-1],
-        "folders": [],
-        "scripts": [],
-    }
+class ProjectDictionaryConverter:
+    def __init__(self, project: Project):
+        self.project = project
+        self._set_all_script_dependencies()
 
-    if current_namespace in namespaces_to_contained_files:
-        for file_path in namespaces_to_contained_files[current_namespace]:
-            d["scripts"].append({
-                "path": file_path, 
-                "full_name": file_path,
-                "name": re.split(r"[\\/]", file_path)[-1],
-                "dependencies": sorted(list(script_dependencies[file_path]))
-            })
+    def _set_all_script_dependencies(self):
+        dependencies = {}
 
-    for namespace_base, namespace_children in grouped_namespaces.items():
-        name = ".".join([current_namespace, namespace_base]).strip(".")
-        data_dict = _create_data_dict(project, name, namespace_children, namespaces_to_contained_files, script_dependencies)
-        if namespace_base == "none":
-            d["scripts"] = data_dict["scripts"]
-        else:
-            d["folders"].append(data_dict)
+        for file_path in self.project.script_contents.keys():
+            dependencies[file_path] = set()
 
-    d["scripts"] = sorted(d["scripts"], key=lambda item: item["path"])
-    d["folders"] = sorted(d["folders"], key=lambda item: item["path"])
-    return d
+        for member in self.project.get_members_recursive():
+            member_dependencies = set(map(lambda member: member.file_path, member.member_dependencies))
+            dependencies[member.file_path] = dependencies[member.file_path].union(member_dependencies).union(member.namespace_dependencies_not_in_members)
 
+        self.all_script_dependencies = dependencies
 
-def _get_grouped_namespaces(all_namespaces):
-    grouped = {}
-    for namespace in all_namespaces:
-        _add_namespace_to_grouping(grouped, namespace.split("."), 0)
-    return grouped
+    def get_as_dict(self) -> dict:
 
+        hierarchy = {
+            "path": self.project.path,
+            "name": "",
+            "folders": [],
+            "scripts": []
+        }
 
-def _add_namespace_to_grouping(groups: dict, namespace_parts: list, index):
-    current = namespace_parts[index]
+        for namespace_name in sorted(self.project.namespaces.keys()):
+            self._add_namespace_to_hierarchy(hierarchy, self.project.namespaces[namespace_name])
 
-    if not current in groups:
-        groups[current] = {}
+        return hierarchy
 
-    if index == len(namespace_parts) - 1:
-        groups[current] = {}
-    else:
-        _add_namespace_to_grouping(groups[current], namespace_parts, index + 1)
+    def _add_namespace_to_hierarchy(self, hierarchy: dict, namespace: Namespace):
+        parts = namespace.get_full_namespace_parts()
+        current_place_in_hierarchy = hierarchy
+        for i in range(len(parts)):
+            current_place_in_hierarchy = self._get_folder_by_name_create_if_necessary(current_place_in_hierarchy["folders"], ".".join(parts[:i + 1]))
 
+        current_place_in_hierarchy["scripts"] = self._sorted_item_list(self._get_script_dicts(namespace))
 
-def _get_files_in_namespace(namespace: Namespace):
-    for member in namespace.members:
-        yield member.file_path
+    def _get_folder_by_name_create_if_necessary(self, folder_list: list, full_name: str):
+        name = full_name.split(".")[-1]
 
+        found = self._get_folder_by_name(folder_list, name)
+        if found: return found
+    
+        new_folder = {
+            "name": name,
+            "path": full_name,
+            "full_name": full_name,
+            "folders": [],
+            "scripts": []
+        }
+        folder_list.append(new_folder)
+        return new_folder
 
-def _get_script_dependencies(project: Project):
-    dependencies = {}
+    def _get_folder_by_name(self, folder_list: list, name: str):
+        for folder in folder_list:
+            if folder["name"] == name:
+                return folder
+        return None
 
-    for file_path in project.script_contents.keys():
-        dependencies[file_path] = set()
+    def _get_namespace_as_dict(self, namespace: Namespace):
+        name = ''
+        if len(namespace.name) > 0:
+            name = namespace.name.split(".")[-1]
 
-    for member in project.get_members_recursive():
-        member_dependencies = set(map(lambda member: member.file_path, member.member_dependencies))
-        #if member.file_path.endswith("SpeedLinesScaler.cs"):
-        #    print(member)
-        dependencies[member.file_path] = dependencies[member.file_path].union(member_dependencies).union(member.namespace_dependencies_not_in_members)
+        return {
+            "path": namespace.get_full_namespace(),
+            "name": name,
+            "scripts": self._sorted_item_list(list(self._get_script_dicts(namespace))),
+            "folders": []
+        }
 
-    return dependencies
+    def _get_script_dicts(self, namespace: Namespace):
+        for script_path in namespace.scripts:
+            yield self._get_script_dict(namespace, script_path)
+
+    def _get_script_dict(self, containing_namespace: Namespace, script_path: str) -> dict:
+        file_name = os.path.basename(script_path)
+        return {
+            "name": file_name,
+            "path": script_path,
+            "full_name": script_path,
+            "dependencies": sorted(list(self.all_script_dependencies[script_path]))
+        }
+
+    def _sorted_item_list(self, items: list) -> list:
+        return sorted(items, key=lambda item: item["path"])

@@ -28,6 +28,7 @@ def _main():
         return
 
     parser = parsers[args.parser](args.project_path, args.output_path)
+    #parser.update_dependencies_file()
     DiagramViewer(parser)
 
 
