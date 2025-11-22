@@ -28,7 +28,7 @@ def _merge_projects(new: dict, old: dict):
 			_overwrite_diagram_only_data(item, match)
 
 
-def _get_match(item, all_items):
+def _get_match(item: dict, all_items):
 	candidates = []
 	for item2 in all_items:
 		if item["name"] == item2["name"]:
@@ -61,13 +61,14 @@ def _get_similarity_heuristic(path1: str, path2: str):
 		else:
 			break
 
-	for i in range(max_iteration - 1, -1, -1):
-		if parts1[i] == parts2[i]:
+	for i in range(max_iteration):
+		if parts1[-i] == parts2[-i]:
 			score += 1
 		else:
 			break
 
-	return score
+	max_score = len(path1) + len(path2)
+	return score / max_score
 
 
 def _overwrite_diagram_only_data(to_change: dict, other: dict):

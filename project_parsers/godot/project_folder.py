@@ -54,7 +54,7 @@ class ProjectFolder:
         return None
 
     def get_as_dict(self) -> dict:
-        d = { "path": self.path, "folders": [], "scripts": [], "full_name": self.full_name, "name": self.name }
+        d = { "path": self.path, "folders": [], "scripts": [], "name": self.name }
         for folder in self.folders:
             d["folders"].append(folder.get_as_dict())
         for script in self.scripts:

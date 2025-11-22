@@ -13,8 +13,13 @@
                             "full_name": "ginger_beer.gd",
                             "name": "ginger_beer.gd",
                             "dependencies": [
-                                "Event",
-                                "CraftingResult"
+                                "CraftingResult",
+                                "Event"
+                            ],
+                            "is_hidden": false,
+                            "position": [
+                                -1046,
+                                -352
                             ]
                         },
                         {
@@ -22,9 +27,14 @@
                             "full_name": "on_first_recipe_token.gd",
                             "name": "on_first_recipe_token.gd",
                             "dependencies": [
-                                "Token",
+                                "Cart",
                                 "Event",
-                                "Cart"
+                                "Token"
+                            ],
+                            "is_hidden": false,
+                            "position": [
+                                -1046,
+                                -352
                             ]
                         },
                         {
@@ -33,6 +43,11 @@
                             "name": "start_day_progress.gd",
                             "dependencies": [
                                 "Event"
+                            ],
+                            "is_hidden": false,
+                            "position": [
+                                -1046,
+                                -352
                             ]
                         },
                         {
@@ -41,11 +56,17 @@
                             "name": "toggle_day_progress.gd",
                             "dependencies": [
                                 "Event"
+                            ],
+                            "is_hidden": false,
+                            "position": [
+                                -1046,
+                                -352
                             ]
                         }
                     ],
-                    "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\Events\\tutorial",
-                    "name": "tutorial"
+                    "name": "tutorial",
+                    "is_hidden": false,
+                    "is_collapsed": true
                 }
             ],
             "scripts": [
@@ -56,6 +77,11 @@
                     "dependencies": [
                         "TimeController",
                         "Event"
+                    ],
+                    "is_hidden": false,
+                    "position": [
+                        -1046,
+                        -352
                     ]
                 },
                 {
@@ -65,6 +91,11 @@
                     "dependencies": [
                         "Event",
                         "EnemySpawner"
+                    ],
+                    "is_hidden": false,
+                    "position": [
+                        -1046,
+                        -352
                     ]
                 },
                 {
@@ -73,10 +104,15 @@
                     "name": "cart_full_event.gd",
                     "dependencies": [
                         "TokenFinder",
-                        "Token",
-                        "PopupData",
+                        "Cart",
                         "Event",
-                        "Cart"
+                        "PopupData",
+                        "Token"
+                    ],
+                    "is_hidden": false,
+                    "position": [
+                        -1046,
+                        -352
                     ]
                 },
                 {
@@ -86,6 +122,11 @@
                     "dependencies": [
                         "Event",
                         "PopupData"
+                    ],
+                    "is_hidden": false,
+                    "position": [
+                        -1046,
+                        -352
                     ]
                 },
                 {
@@ -93,9 +134,14 @@
                     "full_name": "end_of_day_enemy_spawn.gd",
                     "name": "end_of_day_enemy_spawn.gd",
                     "dependencies": [
-                        "Camera",
+                        "EnemySpawner",
                         "Event",
-                        "EnemySpawner"
+                        "Camera"
+                    ],
+                    "is_hidden": false,
+                    "position": [
+                        -1046,
+                        -352
                     ]
                 },
                 {
@@ -104,8 +150,13 @@
                     "name": "end_of_day_ginger_beer_consumption.gd",
                     "dependencies": [
                         "Event",
-                        "Token",
-                        "PopupData"
+                        "PopupData",
+                        "Token"
+                    ],
+                    "is_hidden": false,
+                    "position": [
+                        -1046,
+                        -352
                     ]
                 },
                 {
@@ -114,8 +165,13 @@
                     "name": "first_bear_event.gd",
                     "dependencies": [
                         "Event",
-                        "Token",
-                        "PopupData"
+                        "PopupData",
+                        "Token"
+                    ],
+                    "is_hidden": false,
+                    "position": [
+                        -1046,
+                        -352
                     ]
                 },
                 {
@@ -124,8 +180,13 @@
                     "name": "first_tower_event.gd",
                     "dependencies": [
                         "Event",
-                        "PopupData",
-                        "CraftingResult"
+                        "CraftingResult",
+                        "PopupData"
+                    ],
+                    "is_hidden": false,
+                    "position": [
+                        -1046,
+                        -352
                     ]
                 },
                 {
@@ -135,6 +196,11 @@
                     "dependencies": [
                         "Event",
                         "PopupData"
+                    ],
+                    "is_hidden": false,
+                    "position": [
+                        -1046,
+                        -352
                     ]
                 },
                 {
@@ -143,8 +209,13 @@
                     "name": "stone_mine_creation.gd",
                     "dependencies": [
                         "Event",
-                        "PopupData",
-                        "CraftingResult"
+                        "CraftingResult",
+                        "PopupData"
+                    ],
+                    "is_hidden": false,
+                    "position": [
+                        -1046,
+                        -352
                     ]
                 },
                 {
@@ -152,10 +223,15 @@
                     "full_name": "summon_boss.gd",
                     "name": "summon_boss.gd",
                     "dependencies": [
-                        "Event",
                         "EnemySpawner",
-                        "PopupData",
-                        "CraftingResult"
+                        "Event",
+                        "CraftingResult",
+                        "PopupData"
+                    ],
+                    "is_hidden": false,
+                    "position": [
+                        -1046,
+                        -352
                     ]
                 },
                 {
@@ -163,13 +239,19 @@
                     "full_name": "TaskListEvent",
                     "name": "TaskListEvent",
                     "dependencies": [
-                        "Event",
-                        "CraftingResult"
+                        "CraftingResult",
+                        "Event"
+                    ],
+                    "is_hidden": false,
+                    "position": [
+                        -1046,
+                        -352
                     ]
                 }
             ],
-            "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\Events",
-            "name": "Events"
+            "name": "Events",
+            "is_hidden": true,
+            "is_collapsed": true
         },
         {
             "path": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics",
@@ -186,25 +268,41 @@
                                     "full_name": "audio_manager.gd",
                                     "name": "audio_manager.gd",
                                     "dependencies": [
-                                        "LoopableAudioStreamPlayer",
-                                        "BetterResourceLoader"
+                                        "BetterResourceLoader",
+                                        "LoopableAudioStreamPlayer"
+                                    ],
+                                    "is_hidden": false,
+                                    "position": [
+                                        -1051,
+                                        -669
                                     ]
                                 },
                                 {
                                     "path": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages\\AudioManager\\easy_audio_player.gd",
                                     "full_name": "EasyAudioPlayer",
                                     "name": "EasyAudioPlayer",
-                                    "dependencies": []
+                                    "dependencies": [],
+                                    "is_hidden": false,
+                                    "position": [
+                                        -1051,
+                                        -669
+                                    ]
                                 },
                                 {
                                     "path": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages\\AudioManager\\loopable_audio_stream_player.gd",
                                     "full_name": "LoopableAudioStreamPlayer",
                                     "name": "LoopableAudioStreamPlayer",
-                                    "dependencies": []
+                                    "dependencies": [],
+                                    "is_hidden": false,
+                                    "position": [
+                                        -1051,
+                                        -669
+                                    ]
                                 }
                             ],
-                            "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages\\AudioManager",
-                            "name": "AudioManager"
+                            "name": "AudioManager",
+                            "is_hidden": false,
+                            "is_collapsed": true
                         },
                         {
                             "path": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages\\DebugLogger",
@@ -217,23 +315,39 @@
                                     "dependencies": [
                                         "ScrollContainerAutoScroll",
                                         "DebugLoggerStringProcessor"
+                                    ],
+                                    "is_hidden": false,
+                                    "position": [
+                                        -1051,
+                                        -669
                                     ]
                                 },
                                 {
                                     "path": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages\\DebugLogger\\debug_logger_string_processor.gd",
                                     "full_name": "DebugLoggerStringProcessor",
                                     "name": "DebugLoggerStringProcessor",
-                                    "dependencies": []
+                                    "dependencies": [],
+                                    "is_hidden": false,
+                                    "position": [
+                                        -1051,
+                                        -669
+                                    ]
                                 },
                                 {
                                     "path": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages\\DebugLogger\\player_input_logger.gd",
                                     "full_name": "player_input_logger.gd",
                                     "name": "player_input_logger.gd",
-                                    "dependencies": []
+                                    "dependencies": [],
+                                    "is_hidden": false,
+                                    "position": [
+                                        -1051,
+                                        -669
+                                    ]
                                 }
                             ],
-                            "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages\\DebugLogger",
-                            "name": "DebugLogger"
+                            "name": "DebugLogger",
+                            "is_hidden": false,
+                            "is_collapsed": true
                         },
                         {
                             "path": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages\\EventBus",
@@ -245,11 +359,17 @@
                                     "name": "event_bus.gd",
                                     "dependencies": [
                                         "DynamicSignalCollection"
+                                    ],
+                                    "is_hidden": false,
+                                    "position": [
+                                        -1051,
+                                        -669
                                     ]
                                 }
                             ],
-                            "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages\\EventBus",
-                            "name": "EventBus"
+                            "name": "EventBus",
+                            "is_hidden": false,
+                            "is_collapsed": true
                         },
                         {
                             "path": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages\\GameDataManager",
@@ -262,11 +382,17 @@
                                     "dependencies": [
                                         "BetterResourceLoader",
                                         "DictionaryUtility"
+                                    ],
+                                    "is_hidden": false,
+                                    "position": [
+                                        -1051,
+                                        -669
                                     ]
                                 }
                             ],
-                            "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages\\GameDataManager",
-                            "name": "GameDataManager"
+                            "name": "GameDataManager",
+                            "is_hidden": false,
+                            "is_collapsed": true
                         },
                         {
                             "path": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages\\PlayerPreferences",
@@ -277,13 +403,19 @@
                                     "full_name": "player_preferences.gd",
                                     "name": "player_preferences.gd",
                                     "dependencies": [
-                                        "DictionaryUtility",
-                                        "DynamicSignalCollection"
+                                        "DynamicSignalCollection",
+                                        "DictionaryUtility"
+                                    ],
+                                    "is_hidden": false,
+                                    "position": [
+                                        -1051,
+                                        -669
                                     ]
                                 }
                             ],
-                            "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages\\PlayerPreferences",
-                            "name": "PlayerPreferences"
+                            "name": "PlayerPreferences",
+                            "is_hidden": false,
+                            "is_collapsed": true
                         },
                         {
                             "path": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages\\RPGStylePopups",
@@ -293,7 +425,12 @@
                                     "path": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages\\RPGStylePopups\\popup_data.gd",
                                     "full_name": "PopupData",
                                     "name": "PopupData",
-                                    "dependencies": []
+                                    "dependencies": [],
+                                    "is_hidden": false,
+                                    "position": [
+                                        -1051,
+                                        -669
+                                    ]
                                 },
                                 {
                                     "path": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages\\RPGStylePopups\\rpg_style_popup.gd",
@@ -301,6 +438,11 @@
                                     "name": "RPGStylePopup",
                                     "dependencies": [
                                         "PopupData"
+                                    ],
+                                    "is_hidden": false,
+                                    "position": [
+                                        -1051,
+                                        -669
                                     ]
                                 },
                                 {
@@ -310,11 +452,17 @@
                                     "dependencies": [
                                         "RPGStylePopup",
                                         "PopupData"
+                                    ],
+                                    "is_hidden": false,
+                                    "position": [
+                                        -1051,
+                                        -669
                                     ]
                                 }
                             ],
-                            "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages\\RPGStylePopups",
-                            "name": "RPGStylePopups"
+                            "name": "RPGStylePopups",
+                            "is_hidden": false,
+                            "is_collapsed": true
                         },
                         {
                             "path": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages\\ScriptTestRunner",
@@ -324,25 +472,37 @@
                                     "path": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages\\ScriptTestRunner\\test_result.gd",
                                     "full_name": "TestResult",
                                     "name": "TestResult",
-                                    "dependencies": []
+                                    "dependencies": [],
+                                    "is_hidden": false,
+                                    "position": [
+                                        -1051,
+                                        -669
+                                    ]
                                 },
                                 {
                                     "path": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages\\ScriptTestRunner\\test_runner.gd",
                                     "full_name": "test_runner.gd",
                                     "name": "test_runner.gd",
                                     "dependencies": [
-                                        "TestResult",
-                                        "BetterResourceLoader"
+                                        "BetterResourceLoader",
+                                        "TestResult"
+                                    ],
+                                    "is_hidden": false,
+                                    "position": [
+                                        -1051,
+                                        -669
                                     ]
                                 }
                             ],
-                            "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages\\ScriptTestRunner",
-                            "name": "ScriptTestRunner"
+                            "name": "ScriptTestRunner",
+                            "is_hidden": false,
+                            "is_collapsed": true
                         }
                     ],
                     "scripts": [],
-                    "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages",
-                    "name": "Packages"
+                    "name": "Packages",
+                    "is_hidden": false,
+                    "is_collapsed": true
                 },
                 {
                     "path": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts",
@@ -352,49 +512,89 @@
                             "path": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\array_caster.gd",
                             "full_name": "ArrayCaster",
                             "name": "ArrayCaster",
-                            "dependencies": []
+                            "dependencies": [],
+                            "is_hidden": false,
+                            "position": [
+                                -1051,
+                                -669
+                            ]
                         },
                         {
                             "path": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\better_lerp.gd",
                             "full_name": "BetterLerp",
                             "name": "BetterLerp",
-                            "dependencies": []
+                            "dependencies": [],
+                            "is_hidden": false,
+                            "position": [
+                                -1051,
+                                -669
+                            ]
                         },
                         {
                             "path": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\better_random.gd",
                             "full_name": "BetterRandom",
                             "name": "BetterRandom",
-                            "dependencies": []
+                            "dependencies": [],
+                            "is_hidden": false,
+                            "position": [
+                                -1051,
+                                -669
+                            ]
                         },
                         {
                             "path": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\better_resource_loader.gd",
                             "full_name": "BetterResourceLoader",
                             "name": "BetterResourceLoader",
-                            "dependencies": []
+                            "dependencies": [],
+                            "is_hidden": false,
+                            "position": [
+                                -1051,
+                                -669
+                            ]
                         },
                         {
                             "path": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\combination_set.gd",
                             "full_name": "CombinationSet",
                             "name": "CombinationSet",
-                            "dependencies": []
+                            "dependencies": [],
+                            "is_hidden": false,
+                            "position": [
+                                -1051,
+                                -669
+                            ]
                         },
                         {
                             "path": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\dictionary_utility.gd",
                             "full_name": "DictionaryUtility",
                             "name": "DictionaryUtility",
-                            "dependencies": []
+                            "dependencies": [],
+                            "is_hidden": false,
+                            "position": [
+                                -1051,
+                                -669
+                            ]
                         },
                         {
                             "path": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\dynamic_signal_collection.gd",
                             "full_name": "DynamicSignalCollection",
                             "name": "DynamicSignalCollection",
-                            "dependencies": []
+                            "dependencies": [],
+                            "is_hidden": false,
+                            "position": [
+                                -1051,
+                                -669
+                            ]
                         },
                         {
                             "path": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\easings.gd",
                             "full_name": "Easings",
                             "name": "Easings",
-                            "dependencies": []
+                            "dependencies": [],
+                            "is_hidden": false,
+                            "position": [
+                                -1051,
+                                -669
+                            ]
                         },
                         {
                             "path": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\fps_counter.gd",
@@ -402,58 +602,100 @@
                             "name": "fps_counter.gd",
                             "dependencies": [
                                 "BetterLerp"
+                            ],
+                            "is_hidden": false,
+                            "position": [
+                                -1051,
+                                -669
                             ]
                         },
                         {
                             "path": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\game_saver.gd",
                             "full_name": "GameSaver",
                             "name": "GameSaver",
-                            "dependencies": []
+                            "dependencies": [],
+                            "is_hidden": false,
+                            "position": [
+                                -1051,
+                                -669
+                            ]
                         },
                         {
                             "path": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\node_finder.gd",
                             "full_name": "NodeFinder",
                             "name": "NodeFinder",
-                            "dependencies": []
+                            "dependencies": [],
+                            "is_hidden": false,
+                            "position": [
+                                -1051,
+                                -669
+                            ]
                         },
                         {
                             "path": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\scroll_container_auto_scroll.gd",
                             "full_name": "ScrollContainerAutoScroll",
                             "name": "ScrollContainerAutoScroll",
-                            "dependencies": []
+                            "dependencies": [],
+                            "is_hidden": false,
+                            "position": [
+                                -1051,
+                                -669
+                            ]
                         },
                         {
                             "path": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\set.gd",
                             "full_name": "Set",
                             "name": "Set",
-                            "dependencies": []
+                            "dependencies": [],
+                            "is_hidden": false,
+                            "position": [
+                                -1051,
+                                -669
+                            ]
                         },
                         {
                             "path": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\string_util.gd",
                             "full_name": "StringUtil",
                             "name": "StringUtil",
-                            "dependencies": []
+                            "dependencies": [],
+                            "is_hidden": false,
+                            "position": [
+                                -1051,
+                                -669
+                            ]
                         },
                         {
                             "path": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\vector_util.gd",
                             "full_name": "VectorUtil",
                             "name": "VectorUtil",
-                            "dependencies": []
+                            "dependencies": [],
+                            "is_hidden": false,
+                            "position": [
+                                -1051,
+                                -669
+                            ]
                         },
                         {
                             "path": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\weblink_button.gd",
                             "full_name": "weblink_button.gd",
                             "name": "weblink_button.gd",
-                            "dependencies": []
+                            "dependencies": [],
+                            "is_hidden": false,
+                            "position": [
+                                -1051,
+                                -669
+                            ]
                         }
                     ],
-                    "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts",
-                    "name": "Scripts"
+                    "name": "Scripts",
+                    "is_hidden": false,
+                    "is_collapsed": true
                 }
             ],
             "scripts": [],
-            "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics",
-            "name": "Generics"
+            "name": "Generics",
+            "is_hidden": true,
+            "is_collapsed": true
         },
         {
             "path": "C:/Users/Work/Documents/Projects/dwarfhold\\Systems",
@@ -466,7 +708,12 @@
                             "path": "C:/Users/Work/Documents/Projects/dwarfhold\\Systems\\DwarfHoldAudio\\dwarfhold_easy_audio_player.gd",
                             "full_name": "DwarfHoldEasyAudioPlayer",
                             "name": "DwarfHoldEasyAudioPlayer",
-                            "dependencies": []
+                            "dependencies": [],
+                            "is_hidden": false,
+                            "position": [
+                                560,
+                                -318
+                            ]
                         },
                         {
                             "path": "C:/Users/Work/Documents/Projects/dwarfhold\\Systems\\DwarfHoldAudio\\dwarfhold_music_manager.gd",
@@ -474,6 +721,11 @@
                             "name": "dwarfhold_music_manager.gd",
                             "dependencies": [
                                 "LoopableAudioStreamPlayer"
+                            ],
+                            "is_hidden": false,
+                            "position": [
+                                560,
+                                -318
                             ]
                         },
                         {
@@ -481,13 +733,19 @@
                             "full_name": "dwarfhold_sound_effects_manager.gd",
                             "name": "dwarfhold_sound_effects_manager.gd",
                             "dependencies": [
-                                "LoopableAudioStreamPlayer",
-                                "BetterRandom"
+                                "BetterRandom",
+                                "LoopableAudioStreamPlayer"
+                            ],
+                            "is_hidden": false,
+                            "position": [
+                                560,
+                                -318
                             ]
                         }
                     ],
-                    "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\Systems\\DwarfHoldAudio",
-                    "name": "DwarfHoldAudio"
+                    "name": "DwarfHoldAudio",
+                    "is_hidden": true,
+                    "is_collapsed": true
                 },
                 {
                     "path": "C:/Users/Work/Documents/Projects/dwarfhold\\Systems\\EnemySpawner",
@@ -498,16 +756,22 @@
                             "full_name": "EnemySpawner",
                             "name": "EnemySpawner",
                             "dependencies": [
-                                "TimeController",
+                                "ArrayCaster",
                                 "TokenContainer",
                                 "World",
-                                "ArrayCaster",
-                                "TokenCreator"
+                                "TokenCreator",
+                                "TimeController"
+                            ],
+                            "is_hidden": true,
+                            "position": [
+                                437,
+                                9
                             ]
                         }
                     ],
-                    "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\Systems\\EnemySpawner",
-                    "name": "EnemySpawner"
+                    "name": "EnemySpawner",
+                    "is_hidden": true,
+                    "is_collapsed": false
                 },
                 {
                     "path": "C:/Users/Work/Documents/Projects/dwarfhold\\Systems\\EventManager",
@@ -518,14 +782,19 @@
                             "full_name": "Event",
                             "name": "Event",
                             "dependencies": [
-                                "TimeController",
-                                "RPGStylePopupManager",
+                                "CraftingManager",
                                 "TokenContainer",
+                                "TokenCreator",
                                 "TokenManager",
                                 "EventManager",
-                                "Token",
-                                "CraftingManager",
-                                "TokenCreator"
+                                "TimeController",
+                                "RPGStylePopupManager",
+                                "Token"
+                            ],
+                            "is_hidden": false,
+                            "position": [
+                                560,
+                                -398
                             ]
                         },
                         {
@@ -533,18 +802,24 @@
                             "full_name": "EventManager",
                             "name": "EventManager",
                             "dependencies": [
-                                "TimeController",
                                 "TokenContainer",
-                                "RPGStylePopupManager",
-                                "TokenManager",
                                 "CraftingManager",
+                                "Event",
                                 "TokenCreator",
-                                "Event"
+                                "TimeController",
+                                "RPGStylePopupManager",
+                                "TokenManager"
+                            ],
+                            "is_hidden": true,
+                            "position": [
+                                0,
+                                0
                             ]
                         }
                     ],
-                    "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\Systems\\EventManager",
-                    "name": "EventManager"
+                    "name": "EventManager",
+                    "is_hidden": true,
+                    "is_collapsed": true
                 }
             ],
             "scripts": [
@@ -553,15 +828,21 @@
                     "full_name": "token_area_pusher.gd",
                     "name": "token_area_pusher.gd",
                     "dependencies": [
-                        "Token",
                         "TokenContainer",
                         "TokenManager",
-                        "World"
+                        "World",
+                        "Token"
+                    ],
+                    "is_hidden": true,
+                    "position": [
+                        560,
+                        -198
                     ]
                 }
             ],
-            "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\Systems",
-            "name": "Systems"
+            "name": "Systems",
+            "is_hidden": false,
+            "is_collapsed": false
         },
         {
             "path": "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine",
@@ -578,16 +859,21 @@
                                     "full_name": "CraftingManager",
                                     "name": "CraftingManager",
                                     "dependencies": [
-                                        "TimeController",
-                                        "BetterRandom",
-                                        "BetterResourceLoader",
-                                        "TokenContainer",
-                                        "TokenManager",
                                         "RecipeUtility",
                                         "Token",
+                                        "TokenContainer",
                                         "TokenMoveEvent",
+                                        "BetterResourceLoader",
                                         "TokenCreator",
-                                        "CraftingResult"
+                                        "TokenManager",
+                                        "CraftingResult",
+                                        "TimeController",
+                                        "BetterRandom"
+                                    ],
+                                    "is_hidden": false,
+                                    "position": [
+                                        202,
+                                        -103
                                     ]
                                 },
                                 {
@@ -596,17 +882,28 @@
                                     "name": "CraftingResult",
                                     "dependencies": [
                                         "Token"
+                                    ],
+                                    "is_hidden": false,
+                                    "position": [
+                                        -849,
+                                        -681
                                     ]
                                 },
                                 {
                                     "path": "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\CraftingManager\\recipe_utility.gd",
                                     "full_name": "RecipeUtility",
                                     "name": "RecipeUtility",
-                                    "dependencies": []
+                                    "dependencies": [],
+                                    "is_hidden": false,
+                                    "position": [
+                                        -849,
+                                        -681
+                                    ]
                                 }
                             ],
-                            "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\CraftingManager",
-                            "name": "CraftingManager"
+                            "name": "CraftingManager",
+                            "is_hidden": false,
+                            "is_collapsed": true
                         },
                         {
                             "path": "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\SaveManager",
@@ -617,17 +914,23 @@
                                     "full_name": "SaveController",
                                     "name": "SaveController",
                                     "dependencies": [
-                                        "TimeController",
                                         "TokenContainer",
-                                        "TokenManager",
                                         "GameSaver",
                                         "Token",
-                                        "TokenMoveEvent"
+                                        "TokenMoveEvent",
+                                        "TimeController",
+                                        "TokenManager"
+                                    ],
+                                    "is_hidden": false,
+                                    "position": [
+                                        -849,
+                                        -681
                                     ]
                                 }
                             ],
-                            "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\SaveManager",
-                            "name": "SaveManager"
+                            "name": "SaveManager",
+                            "is_hidden": false,
+                            "is_collapsed": true
                         },
                         {
                             "path": "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TimeController",
@@ -637,11 +940,17 @@
                                     "path": "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TimeController\\time_controller.gd",
                                     "full_name": "TimeController",
                                     "name": "TimeController",
-                                    "dependencies": []
+                                    "dependencies": [],
+                                    "is_hidden": false,
+                                    "position": [
+                                        202,
+                                        -103
+                                    ]
                                 }
                             ],
-                            "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TimeController",
-                            "name": "TimeController"
+                            "name": "TimeController",
+                            "is_hidden": false,
+                            "is_collapsed": true
                         },
                         {
                             "path": "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenBase",
@@ -651,40 +960,61 @@
                                     "path": "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenBase\\copy_sprite.gd",
                                     "full_name": "copy_sprite.gd",
                                     "name": "copy_sprite.gd",
-                                    "dependencies": []
+                                    "dependencies": [],
+                                    "is_hidden": false,
+                                    "position": [
+                                        -849,
+                                        -681
+                                    ]
                                 },
                                 {
                                     "path": "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenBase\\sprite_flash.gd",
                                     "full_name": "sprite_flash.gd",
                                     "name": "sprite_flash.gd",
-                                    "dependencies": []
+                                    "dependencies": [],
+                                    "is_hidden": false,
+                                    "position": [
+                                        -849,
+                                        -681
+                                    ]
                                 },
                                 {
                                     "path": "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenBase\\token.gd",
                                     "full_name": "Token",
                                     "name": "Token",
                                     "dependencies": [
-                                        "ProgressBarManager",
-                                        "TimeController",
+                                        "BetterLerp",
+                                        "CraftingManager",
                                         "World",
                                         "TokenContainer",
-                                        "TokenManager",
-                                        "BetterLerp",
-                                        "VectorUtil",
                                         "TokenMoveEvent",
-                                        "CraftingManager",
-                                        "TokenCreator"
+                                        "TokenCreator",
+                                        "ProgressBarManager",
+                                        "TokenManager",
+                                        "TimeController",
+                                        "VectorUtil"
+                                    ],
+                                    "is_hidden": false,
+                                    "position": [
+                                        -849,
+                                        -681
                                     ]
                                 },
                                 {
                                     "path": "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenBase\\token_outline.tres.gd",
                                     "full_name": "token_outline.tres.gd",
                                     "name": "token_outline.tres.gd",
-                                    "dependencies": []
+                                    "dependencies": [],
+                                    "is_hidden": false,
+                                    "position": [
+                                        -849,
+                                        -681
+                                    ]
                                 }
                             ],
-                            "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenBase",
-                            "name": "TokenBase"
+                            "name": "TokenBase",
+                            "is_hidden": false,
+                            "is_collapsed": true
                         },
                         {
                             "path": "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenContainer",
@@ -695,9 +1025,14 @@
                                     "full_name": "BaseTokenCache",
                                     "name": "BaseTokenCache",
                                     "dependencies": [
-                                        "TokenCache",
                                         "TokenMoveEvent",
-                                        "Token"
+                                        "Token",
+                                        "TokenCache"
+                                    ],
+                                    "is_hidden": false,
+                                    "position": [
+                                        -849,
+                                        -681
                                     ]
                                 },
                                 {
@@ -707,6 +1042,11 @@
                                     "dependencies": [
                                         "TokenMoveEvent",
                                         "Token"
+                                    ],
+                                    "is_hidden": false,
+                                    "position": [
+                                        -849,
+                                        -681
                                     ]
                                 },
                                 {
@@ -714,18 +1054,24 @@
                                     "full_name": "TokenContainer",
                                     "name": "TokenContainer",
                                     "dependencies": [
-                                        "DictionaryUtility",
-                                        "TokenManager",
+                                        "BaseTokenCache",
                                         "Token",
                                         "TokenMoveEvent",
-                                        "BaseTokenCache",
+                                        "TokenCreator",
+                                        "TokenManager",
                                         "TokenAccessHelper",
-                                        "TokenCreator"
+                                        "DictionaryUtility"
+                                    ],
+                                    "is_hidden": false,
+                                    "position": [
+                                        202,
+                                        -103
                                     ]
                                 }
                             ],
-                            "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenContainer",
-                            "name": "TokenContainer"
+                            "name": "TokenContainer",
+                            "is_hidden": false,
+                            "is_collapsed": true
                         },
                         {
                             "path": "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenExtras",
@@ -738,6 +1084,11 @@
                                     "dependencies": [
                                         "TokenManager",
                                         "TokenContainer"
+                                    ],
+                                    "is_hidden": false,
+                                    "position": [
+                                        -849,
+                                        -681
                                     ]
                                 },
                                 {
@@ -745,9 +1096,14 @@
                                     "full_name": "token_spacer.gd",
                                     "name": "token_spacer.gd",
                                     "dependencies": [
-                                        "Token",
                                         "TokenContainer",
-                                        "CombinationSet"
+                                        "CombinationSet",
+                                        "Token"
+                                    ],
+                                    "is_hidden": false,
+                                    "position": [
+                                        -849,
+                                        -681
                                     ]
                                 },
                                 {
@@ -755,14 +1111,20 @@
                                     "full_name": "token_z_index_sorter.gd",
                                     "name": "token_z_index_sorter.gd",
                                     "dependencies": [
-                                        "TokenManager",
                                         "TokenContainer",
+                                        "TokenManager",
                                         "Token"
+                                    ],
+                                    "is_hidden": false,
+                                    "position": [
+                                        -849,
+                                        -681
                                     ]
                                 }
                             ],
-                            "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenExtras",
-                            "name": "TokenExtras"
+                            "name": "TokenExtras",
+                            "is_hidden": false,
+                            "is_collapsed": true
                         },
                         {
                             "path": "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenManagement",
@@ -774,6 +1136,11 @@
                                     "name": "TokenAccessHelper",
                                     "dependencies": [
                                         "Token"
+                                    ],
+                                    "is_hidden": false,
+                                    "position": [
+                                        -849,
+                                        -681
                                     ]
                                 },
                                 {
@@ -781,14 +1148,19 @@
                                     "full_name": "TokenCreator",
                                     "name": "TokenCreator",
                                     "dependencies": [
-                                        "TimeController",
-                                        "BetterResourceLoader",
-                                        "DictionaryUtility",
-                                        "TokenContainer",
-                                        "TokenManager",
-                                        "Token",
+                                        "CraftingManager",
                                         "StringUtil",
-                                        "CraftingManager"
+                                        "Token",
+                                        "TokenContainer",
+                                        "BetterResourceLoader",
+                                        "TokenManager",
+                                        "TimeController",
+                                        "DictionaryUtility"
+                                    ],
+                                    "is_hidden": false,
+                                    "position": [
+                                        -849,
+                                        -681
                                     ]
                                 },
                                 {
@@ -796,14 +1168,19 @@
                                     "full_name": "TokenManager",
                                     "name": "TokenManager",
                                     "dependencies": [
-                                        "TimeController",
                                         "TokenContainer",
-                                        "World",
-                                        "Token",
-                                        "TokenMoveEvent",
                                         "CraftingManager",
+                                        "World",
+                                        "TokenMoveEvent",
+                                        "TokenCreator",
+                                        "TimeController",
                                         "TokenAccessHelper",
-                                        "TokenCreator"
+                                        "Token"
+                                    ],
+                                    "is_hidden": false,
+                                    "position": [
+                                        -849,
+                                        -681
                                     ]
                                 },
                                 {
@@ -812,16 +1189,23 @@
                                     "name": "TokenMoveEvent",
                                     "dependencies": [
                                         "Token"
+                                    ],
+                                    "is_hidden": false,
+                                    "position": [
+                                        -849,
+                                        -681
                                     ]
                                 }
                             ],
-                            "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenManagement",
-                            "name": "TokenManagement"
+                            "name": "TokenManagement",
+                            "is_hidden": false,
+                            "is_collapsed": true
                         }
                     ],
                     "scripts": [],
-                    "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core",
-                    "name": "Core"
+                    "name": "Core",
+                    "is_hidden": false,
+                    "is_collapsed": true
                 },
                 {
                     "path": "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Extensions",
@@ -836,16 +1220,23 @@
                                     "name": "cursor.gd",
                                     "dependencies": [
                                         "TokenManager"
+                                    ],
+                                    "is_hidden": false,
+                                    "position": [
+                                        -849,
+                                        -681
                                     ]
                                 }
                             ],
-                            "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Extensions\\CustomCursor",
-                            "name": "CustomCursor"
+                            "name": "CustomCursor",
+                            "is_hidden": false,
+                            "is_collapsed": true
                         }
                     ],
                     "scripts": [],
-                    "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Extensions",
-                    "name": "Extensions"
+                    "name": "Extensions",
+                    "is_hidden": false,
+                    "is_collapsed": true
                 },
                 {
                     "path": "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\ToRedo",
@@ -858,21 +1249,29 @@
                                     "path": "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\ToRedo\\SettingsManager\\settings_manager.gd",
                                     "full_name": "settings_manager.gd",
                                     "name": "settings_manager.gd",
-                                    "dependencies": []
+                                    "dependencies": [],
+                                    "is_hidden": false,
+                                    "position": [
+                                        -849,
+                                        -681
+                                    ]
                                 }
                             ],
-                            "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\ToRedo\\SettingsManager",
-                            "name": "SettingsManager"
+                            "name": "SettingsManager",
+                            "is_hidden": false,
+                            "is_collapsed": true
                         }
                     ],
                     "scripts": [],
-                    "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\ToRedo",
-                    "name": "ToRedo"
+                    "name": "ToRedo",
+                    "is_hidden": false,
+                    "is_collapsed": true
                 }
             ],
             "scripts": [],
-            "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine",
-            "name": "TokenEngine"
+            "name": "TokenEngine",
+            "is_hidden": true,
+            "is_collapsed": true
         },
         {
             "path": "C:/Users/Work/Documents/Projects/dwarfhold\\Tokens",
@@ -888,11 +1287,17 @@
                             "dependencies": [
                                 "Enemy",
                                 "Token"
+                            ],
+                            "is_hidden": false,
+                            "position": [
+                                -1051,
+                                -192
                             ]
                         }
                     ],
-                    "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\Tokens\\Bosses",
-                    "name": "Bosses"
+                    "name": "Bosses",
+                    "is_hidden": false,
+                    "is_collapsed": true
                 },
                 {
                     "path": "C:/Users/Work/Documents/Projects/dwarfhold\\Tokens\\Cart",
@@ -905,11 +1310,17 @@
                             "dependencies": [
                                 "ProgressBarManager",
                                 "Token"
+                            ],
+                            "is_hidden": false,
+                            "position": [
+                                0,
+                                0
                             ]
                         }
                     ],
-                    "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\Tokens\\Cart",
-                    "name": "Cart"
+                    "name": "Cart",
+                    "is_hidden": false,
+                    "is_collapsed": true
                 },
                 {
                     "path": "C:/Users/Work/Documents/Projects/dwarfhold\\Tokens\\Enemies",
@@ -922,6 +1333,11 @@
                             "dependencies": [
                                 "Enemy",
                                 "BetterLerp"
+                            ],
+                            "is_hidden": false,
+                            "position": [
+                                -1051,
+                                -192
                             ]
                         },
                         {
@@ -930,8 +1346,13 @@
                             "name": "bear.gd",
                             "dependencies": [
                                 "Enemy",
-                                "Token",
-                                "BetterLerp"
+                                "BetterLerp",
+                                "Token"
+                            ],
+                            "is_hidden": false,
+                            "position": [
+                                -1051,
+                                -192
                             ]
                         },
                         {
@@ -940,6 +1361,11 @@
                             "name": "beaver.gd",
                             "dependencies": [
                                 "Enemy"
+                            ],
+                            "is_hidden": false,
+                            "position": [
+                                -1051,
+                                -192
                             ]
                         },
                         {
@@ -948,6 +1374,11 @@
                             "name": "boar.gd",
                             "dependencies": [
                                 "Enemy"
+                            ],
+                            "is_hidden": false,
+                            "position": [
+                                -1051,
+                                -192
                             ]
                         },
                         {
@@ -958,11 +1389,17 @@
                                 "ProgressBarManager",
                                 "Projectile",
                                 "Token"
+                            ],
+                            "is_hidden": false,
+                            "position": [
+                                -1051,
+                                -192
                             ]
                         }
                     ],
-                    "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\Tokens\\Enemies",
-                    "name": "Enemies"
+                    "name": "Enemies",
+                    "is_hidden": false,
+                    "is_collapsed": true
                 },
                 {
                     "path": "C:/Users/Work/Documents/Projects/dwarfhold\\Tokens\\ProgressBar",
@@ -972,7 +1409,12 @@
                             "path": "C:/Users/Work/Documents/Projects/dwarfhold\\Tokens\\ProgressBar\\progress_bar_display.gd",
                             "full_name": "ProgressBarDisplay",
                             "name": "ProgressBarDisplay",
-                            "dependencies": []
+                            "dependencies": [],
+                            "is_hidden": false,
+                            "position": [
+                                -1051,
+                                -192
+                            ]
                         },
                         {
                             "path": "C:/Users/Work/Documents/Projects/dwarfhold\\Tokens\\ProgressBar\\progress_bar_manager.gd",
@@ -981,11 +1423,17 @@
                             "dependencies": [
                                 "ProgressBarDisplay",
                                 "Easings"
+                            ],
+                            "is_hidden": false,
+                            "position": [
+                                -1051,
+                                -192
                             ]
                         }
                     ],
-                    "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\Tokens\\ProgressBar",
-                    "name": "ProgressBar"
+                    "name": "ProgressBar",
+                    "is_hidden": false,
+                    "is_collapsed": true
                 },
                 {
                     "path": "C:/Users/Work/Documents/Projects/dwarfhold\\Tokens\\Projectiles",
@@ -996,16 +1444,22 @@
                             "full_name": "Projectile",
                             "name": "Projectile",
                             "dependencies": [
-                                "Set",
                                 "World",
-                                "DictionaryUtility",
+                                "Set",
                                 "Token",
+                                "DictionaryUtility",
                                 "VectorUtil"
+                            ],
+                            "is_hidden": false,
+                            "position": [
+                                -1051,
+                                -192
                             ]
                         }
                     ],
-                    "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\Tokens\\Projectiles",
-                    "name": "Projectiles"
+                    "name": "Projectiles",
+                    "is_hidden": false,
+                    "is_collapsed": true
                 },
                 {
                     "path": "C:/Users/Work/Documents/Projects/dwarfhold\\Tokens\\Towers",
@@ -1017,6 +1471,11 @@
                             "name": "area_outline.gd",
                             "dependencies": [
                                 "Token"
+                            ],
+                            "is_hidden": false,
+                            "position": [
+                                -1051,
+                                -192
                             ]
                         },
                         {
@@ -1025,6 +1484,11 @@
                             "name": "sniper.gd",
                             "dependencies": [
                                 "TowerBase"
+                            ],
+                            "is_hidden": false,
+                            "position": [
+                                -1051,
+                                -192
                             ]
                         },
                         {
@@ -1032,8 +1496,13 @@
                             "full_name": "spikes.gd",
                             "name": "spikes.gd",
                             "dependencies": [
-                                "TowerBase",
-                                "Enemy"
+                                "Enemy",
+                                "TowerBase"
+                            ],
+                            "is_hidden": false,
+                            "position": [
+                                -1051,
+                                -192
                             ]
                         },
                         {
@@ -1042,14 +1511,20 @@
                             "name": "TowerBase",
                             "dependencies": [
                                 "Enemy",
-                                "ProgressBarManager",
+                                "Projectile",
                                 "Token",
-                                "Projectile"
+                                "ProgressBarManager"
+                            ],
+                            "is_hidden": false,
+                            "position": [
+                                -1051,
+                                -192
                             ]
                         }
                     ],
-                    "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\Tokens\\Towers",
-                    "name": "Towers"
+                    "name": "Towers",
+                    "is_hidden": false,
+                    "is_collapsed": true
                 }
             ],
             "scripts": [
@@ -1059,11 +1534,17 @@
                     "name": "TokenFinder",
                     "dependencies": [
                         "TokenContainer"
+                    ],
+                    "is_hidden": false,
+                    "position": [
+                        -1051,
+                        -192
                     ]
                 }
             ],
-            "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\Tokens",
-            "name": "Tokens"
+            "name": "Tokens",
+            "is_hidden": true,
+            "is_collapsed": true
         },
         {
             "path": "C:/Users/Work/Documents/Projects/dwarfhold\\ToSort",
@@ -1079,11 +1560,17 @@
                             "dependencies": [
                                 "TokenManager",
                                 "BetterLerp"
+                            ],
+                            "is_hidden": false,
+                            "position": [
+                                -1051,
+                                -433
                             ]
                         }
                     ],
-                    "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\ToSort\\PlayAreaHighlighter",
-                    "name": "PlayAreaHighlighter"
+                    "name": "PlayAreaHighlighter",
+                    "is_hidden": false,
+                    "is_collapsed": true
                 }
             ],
             "scripts": [
@@ -1091,11 +1578,17 @@
                     "path": "C:/Users/Work/Documents/Projects/dwarfhold\\ToSort\\mouse_event_stopper.gd",
                     "full_name": "mouse_event_stopper.gd",
                     "name": "mouse_event_stopper.gd",
-                    "dependencies": []
+                    "dependencies": [],
+                    "is_hidden": false,
+                    "position": [
+                        -1051,
+                        -433
+                    ]
                 }
             ],
-            "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\ToSort",
-            "name": "ToSort"
+            "name": "ToSort",
+            "is_hidden": true,
+            "is_collapsed": true
         },
         {
             "path": "C:/Users/Work/Documents/Projects/dwarfhold\\UI",
@@ -1113,6 +1606,11 @@
                                     "name": "debug_ui.gd",
                                     "dependencies": [
                                         "TokenManager"
+                                    ],
+                                    "is_hidden": false,
+                                    "position": [
+                                        -1051,
+                                        -504
                                     ]
                                 },
                                 {
@@ -1120,14 +1618,20 @@
                                     "full_name": "display_hovered_token_data.gd",
                                     "name": "display_hovered_token_data.gd",
                                     "dependencies": [
-                                        "Token",
                                         "TokenManager",
-                                        "StringUtil"
+                                        "StringUtil",
+                                        "Token"
+                                    ],
+                                    "is_hidden": false,
+                                    "position": [
+                                        -1051,
+                                        -504
                                     ]
                                 }
                             ],
-                            "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\UI\\Debug\\DebugUI",
-                            "name": "DebugUI"
+                            "name": "DebugUI",
+                            "is_hidden": false,
+                            "is_collapsed": true
                         },
                         {
                             "path": "C:/Users/Work/Documents/Projects/dwarfhold\\UI\\Debug\\SettingsDebugUI",
@@ -1138,20 +1642,27 @@
                                     "full_name": "settings_debug_ui.gd",
                                     "name": "settings_debug_ui.gd",
                                     "dependencies": [
-                                        "NodeFinder",
                                         "SaveController",
+                                        "NodeFinder",
                                         "BetterResourceLoader",
                                         "DictionaryUtility"
+                                    ],
+                                    "is_hidden": false,
+                                    "position": [
+                                        -1051,
+                                        -504
                                     ]
                                 }
                             ],
-                            "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\UI\\Debug\\SettingsDebugUI",
-                            "name": "SettingsDebugUI"
+                            "name": "SettingsDebugUI",
+                            "is_hidden": false,
+                            "is_collapsed": true
                         }
                     ],
                     "scripts": [],
-                    "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\UI\\Debug",
-                    "name": "Debug"
+                    "name": "Debug",
+                    "is_hidden": false,
+                    "is_collapsed": true
                 },
                 {
                     "path": "C:/Users/Work/Documents/Projects/dwarfhold\\UI\\GameElements",
@@ -1166,11 +1677,17 @@
                                     "name": "active_quest.gd",
                                     "dependencies": [
                                         "TaskListEvent"
+                                    ],
+                                    "is_hidden": false,
+                                    "position": [
+                                        -1051,
+                                        -504
                                     ]
                                 }
                             ],
-                            "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\UI\\GameElements\\ActiveQuest",
-                            "name": "ActiveQuest"
+                            "name": "ActiveQuest",
+                            "is_hidden": false,
+                            "is_collapsed": true
                         },
                         {
                             "path": "C:/Users/Work/Documents/Projects/dwarfhold\\UI\\GameElements\\CraftingAnimationDisplay",
@@ -1183,11 +1700,17 @@
                                     "dependencies": [
                                         "TokenManager",
                                         "BetterResourceLoader"
+                                    ],
+                                    "is_hidden": false,
+                                    "position": [
+                                        -1051,
+                                        -504
                                     ]
                                 }
                             ],
-                            "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\UI\\GameElements\\CraftingAnimationDisplay",
-                            "name": "CraftingAnimationDisplay"
+                            "name": "CraftingAnimationDisplay",
+                            "is_hidden": false,
+                            "is_collapsed": true
                         },
                         {
                             "path": "C:/Users/Work/Documents/Projects/dwarfhold\\UI\\GameElements\\PauseIndicator",
@@ -1199,11 +1722,17 @@
                                     "name": "pause_indicator.gd",
                                     "dependencies": [
                                         "TimeController"
+                                    ],
+                                    "is_hidden": false,
+                                    "position": [
+                                        -1051,
+                                        -504
                                     ]
                                 }
                             ],
-                            "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\UI\\GameElements\\PauseIndicator",
-                            "name": "PauseIndicator"
+                            "name": "PauseIndicator",
+                            "is_hidden": false,
+                            "is_collapsed": true
                         },
                         {
                             "path": "C:/Users/Work/Documents/Projects/dwarfhold\\UI\\GameElements\\RecipeBook",
@@ -1216,8 +1745,13 @@
                                     "dependencies": [
                                         "TokenManager",
                                         "TokenCreator",
-                                        "CraftingManager",
-                                        "RecipeBookItem"
+                                        "RecipeBookItem",
+                                        "CraftingManager"
+                                    ],
+                                    "is_hidden": false,
+                                    "position": [
+                                        -1051,
+                                        -504
                                     ]
                                 },
                                 {
@@ -1228,11 +1762,17 @@
                                         "TokenManager",
                                         "TokenCreator",
                                         "Easings"
+                                    ],
+                                    "is_hidden": false,
+                                    "position": [
+                                        -1051,
+                                        -504
                                     ]
                                 }
                             ],
-                            "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\UI\\GameElements\\RecipeBook",
-                            "name": "RecipeBook"
+                            "name": "RecipeBook",
+                            "is_hidden": false,
+                            "is_collapsed": true
                         },
                         {
                             "path": "C:/Users/Work/Documents/Projects/dwarfhold\\UI\\GameElements\\TaskList",
@@ -1244,13 +1784,19 @@
                                     "name": "task_list_ui.gd",
                                     "dependencies": [
                                         "BetterLerp",
-                                        "ScrollContainerThatConsumesAllScrollEvents",
-                                        "TaskListEvent"
+                                        "TaskListEvent",
+                                        "ScrollContainerThatConsumesAllScrollEvents"
+                                    ],
+                                    "is_hidden": false,
+                                    "position": [
+                                        -1051,
+                                        -504
                                     ]
                                 }
                             ],
-                            "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\UI\\GameElements\\TaskList",
-                            "name": "TaskList"
+                            "name": "TaskList",
+                            "is_hidden": false,
+                            "is_collapsed": true
                         },
                         {
                             "path": "C:/Users/Work/Documents/Projects/dwarfhold\\UI\\GameElements\\TimeDisplay",
@@ -1260,21 +1806,32 @@
                                     "path": "C:/Users/Work/Documents/Projects/dwarfhold\\UI\\GameElements\\TimeDisplay\\day_progress_anim.gd",
                                     "full_name": "day_progress_anim.gd",
                                     "name": "day_progress_anim.gd",
-                                    "dependencies": []
+                                    "dependencies": [],
+                                    "is_hidden": false,
+                                    "position": [
+                                        -1051,
+                                        -504
+                                    ]
                                 },
                                 {
                                     "path": "C:/Users/Work/Documents/Projects/dwarfhold\\UI\\GameElements\\TimeDisplay\\time_ui.gd",
                                     "full_name": "TimeUI",
                                     "name": "TimeUI",
                                     "dependencies": [
-                                        "TimeController",
                                         "TokenContainer",
+                                        "TimeController",
                                         "World"
+                                    ],
+                                    "is_hidden": false,
+                                    "position": [
+                                        -1051,
+                                        -504
                                     ]
                                 }
                             ],
-                            "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\UI\\GameElements\\TimeDisplay",
-                            "name": "TimeDisplay"
+                            "name": "TimeDisplay",
+                            "is_hidden": false,
+                            "is_collapsed": true
                         },
                         {
                             "path": "C:/Users/Work/Documents/Projects/dwarfhold\\UI\\GameElements\\TokenTooltip",
@@ -1286,18 +1843,25 @@
                                     "name": "token_tooltip.gd",
                                     "dependencies": [
                                         "TokenManager",
-                                        "BetterResourceLoader",
-                                        "CraftingManager"
+                                        "CraftingManager",
+                                        "BetterResourceLoader"
+                                    ],
+                                    "is_hidden": false,
+                                    "position": [
+                                        -1051,
+                                        -504
                                     ]
                                 }
                             ],
-                            "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\UI\\GameElements\\TokenTooltip",
-                            "name": "TokenTooltip"
+                            "name": "TokenTooltip",
+                            "is_hidden": false,
+                            "is_collapsed": true
                         }
                     ],
                     "scripts": [],
-                    "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\UI\\GameElements",
-                    "name": "GameElements"
+                    "name": "GameElements",
+                    "is_hidden": false,
+                    "is_collapsed": true
                 },
                 {
                     "path": "C:/Users/Work/Documents/Projects/dwarfhold\\UI\\Screens",
@@ -1313,11 +1877,17 @@
                                     "dependencies": [
                                         "TimeController",
                                         "SaveController"
+                                    ],
+                                    "is_hidden": false,
+                                    "position": [
+                                        -1051,
+                                        -504
                                     ]
                                 }
                             ],
-                            "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\UI\\Screens\\GameOver",
-                            "name": "GameOver"
+                            "name": "GameOver",
+                            "is_hidden": false,
+                            "is_collapsed": true
                         },
                         {
                             "path": "C:/Users/Work/Documents/Projects/dwarfhold\\UI\\Screens\\SettingsMenu",
@@ -1330,11 +1900,17 @@
                                     "dependencies": [
                                         "UserInterfaceMenu",
                                         "SaveController"
+                                    ],
+                                    "is_hidden": false,
+                                    "position": [
+                                        0,
+                                        0
                                     ]
                                 }
                             ],
-                            "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\UI\\Screens\\SettingsMenu",
-                            "name": "SettingsMenu"
+                            "name": "SettingsMenu",
+                            "is_hidden": false,
+                            "is_collapsed": true
                         }
                     ],
                     "scripts": [
@@ -1342,11 +1918,17 @@
                             "path": "C:/Users/Work/Documents/Projects/dwarfhold\\UI\\Screens\\user_interface_menu.gd",
                             "full_name": "UserInterfaceMenu",
                             "name": "UserInterfaceMenu",
-                            "dependencies": []
+                            "dependencies": [],
+                            "is_hidden": false,
+                            "position": [
+                                -1051,
+                                -504
+                            ]
                         }
                     ],
-                    "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\UI\\Screens",
-                    "name": "Screens"
+                    "name": "Screens",
+                    "is_hidden": false,
+                    "is_collapsed": true
                 }
             ],
             "scripts": [
@@ -1354,17 +1936,28 @@
                     "path": "C:/Users/Work/Documents/Projects/dwarfhold\\UI\\ui_enabler.gd",
                     "full_name": "ui_enabler.gd",
                     "name": "ui_enabler.gd",
-                    "dependencies": []
+                    "dependencies": [],
+                    "is_hidden": false,
+                    "position": [
+                        -1051,
+                        -504
+                    ]
                 },
                 {
                     "path": "C:/Users/Work/Documents/Projects/dwarfhold\\UI\\ui_flash.gd",
                     "full_name": "ui_flash.gd",
                     "name": "ui_flash.gd",
-                    "dependencies": []
+                    "dependencies": [],
+                    "is_hidden": false,
+                    "position": [
+                        -1051,
+                        -504
+                    ]
                 }
             ],
-            "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\UI",
-            "name": "UI"
+            "name": "UI",
+            "is_hidden": true,
+            "is_collapsed": true
         }
     ],
     "scripts": [
@@ -1373,11 +1966,16 @@
             "full_name": "Camera",
             "name": "Camera",
             "dependencies": [
-                "TokenManager",
-                "World",
+                "EnemySpawner",
                 "BetterLerp",
-                "VectorUtil",
-                "EnemySpawner"
+                "World",
+                "TokenManager",
+                "VectorUtil"
+            ],
+            "is_hidden": true,
+            "position": [
+                -373,
+                -355
             ]
         },
         {
@@ -1385,8 +1983,13 @@
             "full_name": "environment_art.gd",
             "name": "environment_art.gd",
             "dependencies": [
-                "World",
-                "BetterResourceLoader"
+                "BetterResourceLoader",
+                "World"
+            ],
+            "is_hidden": true,
+            "position": [
+                -543,
+                -355
             ]
         },
         {
@@ -1394,17 +1997,27 @@
             "full_name": "game.gd",
             "name": "game.gd",
             "dependencies": [
-                "TimeController",
-                "SettingsMenu",
                 "TokenContainer",
-                "World"
+                "TimeController",
+                "World",
+                "SettingsMenu"
+            ],
+            "is_hidden": true,
+            "position": [
+                -713,
+                -355
             ]
         },
         {
             "path": "C:/Users/Work/Documents/Projects/dwarfhold\\scroll_container_that_consumes_all_scroll_events.gd",
             "full_name": "ScrollContainerThatConsumesAllScrollEvents",
             "name": "ScrollContainerThatConsumesAllScrollEvents",
-            "dependencies": []
+            "dependencies": [],
+            "is_hidden": true,
+            "position": [
+                -883,
+                -353
+            ]
         },
         {
             "path": "C:/Users/Work/Documents/Projects/dwarfhold\\world.gd",
@@ -1412,9 +2025,15 @@
             "name": "World",
             "dependencies": [
                 "Projectile"
+            ],
+            "is_hidden": true,
+            "position": [
+                -1053,
+                -173
             ]
         }
     ],
-    "full_name": "C:/Users/Work/Documents/Projects/dwarfhold",
-    "name": "dwarfhold"
+    "name": "dwarfhold",
+    "is_hidden": false,
+    "is_collapsed": false
 }
