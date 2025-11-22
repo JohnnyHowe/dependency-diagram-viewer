@@ -155,11 +155,10 @@ class DiagramModule(DiagramItem):
         if distance_to_leave_overlap.x == 0 or distance_to_leave_overlap.y == 0:
             return
 
-        # add some randomness if they're the exact same
-        if item1.rect == item2.rect:
-            offset = Vector2(item1.rect.size)
-            offset.y = 0
+        if item1.rect.center == item2.rect.center:
+            offset = Vector2(item1.rect.size[0], 0)
             item1.rect.center = Vector2(item1.rect.center) + offset
+            return
 
         max_movement = Window().delta_time_seconds * configuration.auto_push_pixels_per_second
         movement = Vector2(0, 0)
