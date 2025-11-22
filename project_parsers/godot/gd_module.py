@@ -44,7 +44,7 @@ class GdModule(ProjectFolder):
 
 	def get_all_scripts_with_class_names(self):
 		for script in self.get_all_scripts():
-			if not script.name.endswith(".gd"):
+			if script.class_name:
 				yield script
 
 	def update_internal_dependencies(self):
