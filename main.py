@@ -3,10 +3,12 @@ import os
 from diagram_viewer import DiagramViewer
 from project_parsers.python_parser.parser import Parser as PythonParser
 from project_parsers.unity_parser.parser import Parser as CSharpParser
+from project_parsers.godot.godot_parser import GodotParser
 
 parsers = {
     "python": PythonParser,
-    "csharp": CSharpParser
+    "csharp": CSharpParser,
+    "godot": GodotParser,
 }
 
 

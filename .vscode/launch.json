@@ -12,21 +12,8 @@
             "console": "integratedTerminal",
 
             "program": "main.py",
-            //"args": ["python", "./", "./this.json"]
-            "args": ["csharp", "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts", "./dependencies.json"]
-
-            //"args": ["./dwarfhold.json"]
-            //"args": ["./example1.json"]
-
-
-            // "program": "parse_and_show_unity_project.py",
-            // "args": ["C:/Users/Work/Documents/Projects/drifto/Assets/Scripts", "./dependencies.json"],
-
-            //"program": "project_parsers/unity_parser/parse_unity_project.py",
-            //"args": ["C:/Users/Work/Documents/Projects/drifto/Assets/Scripts", "./drifto.json"]
-
-            //"program": "project_parsers/python_parser/parse_python_project.py",
-            //"args": ["C:/Users/Work/Documents/Projects/dependency-diagram-viewer", "./this.json"]
+            "args": ["godot", "C:/Users/Work/Documents/Projects/dwarfhold", "./dependencies.json"]
+            //"args": ["csharp", "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts", "./dependencies.json"]
         }
     ]
 }
