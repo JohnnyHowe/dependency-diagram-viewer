@@ -116,6 +116,7 @@ class DiagramViewer:
 				self._mouse_up(event.button)
 
 	def _update_hover(self):
+		if self.is_holding_selection: return
 		deepest_item_with_mouse_over = self._get_deepest_visible_item_under_mouse()
 
 		if self.hovered_item:
