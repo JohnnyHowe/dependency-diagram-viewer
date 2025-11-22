@@ -28,17 +28,12 @@ def _merge_projects(new: dict, old: dict):
 			_overwrite_diagram_only_data(item, match)
 
 
-log = False
 def _get_match(item: dict, all_items):
-	log = "craftingmanager" in item["path"].lower()
-	if log: print(f"\nLooking for match for {item}")
 	candidates = []
 	for item2 in all_items:
 		if item["name"] == item2["name"]:
 			candidates.append(item2)
 
-	if log:
-		print("Found no candidates!")
 	if len(candidates) == 0:
 		return None
 
@@ -74,9 +69,6 @@ def _get_similarity_heuristic(path1: str, path2: str):
 
 	max_score = len(path1) + len(path2)
 	score = score / max_score
-
-	if log:
-		print(path1, path2, score)
 
 	return score
 
