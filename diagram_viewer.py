@@ -11,24 +11,22 @@ from window_engine.window import Window
 from camera_controller import CameraController
 
 class DiagramViewer:
-	file_path: str
 	selection_mouse_button_index = 1
 
-	def __init__(self, file_path: str):
-		self.file_path = file_path
+	def __init__(self, parser):
+		self.parser = parser
+		self.root = DiagramLoader(self.parser.output_path).get_root()
+
 		self._camera_controller = CameraController()
-		self._load_diagram()
+
+		self.running = True
 		self.hovered_item = None
 		self.selected_items = []
 		self.is_holding_selection = False
 		self.selection_start_position = None
+
 		self.space_children = False
 		self.reset_callback = None
-		self.running = True
-		self._run()
-
-	def _load_diagram(self):
-		self.root = DiagramLoader(self.file_path).get_root()
 
 	def _run(self):
 		while self.running:
@@ -63,7 +61,7 @@ class DiagramViewer:
 		if key == pygame.K_c:
 			self._toggle_selection_collapse()
 		if key == pygame.K_s:
-			DiagramSaver(self.file_path, self.root).save()
+			DiagramSaver(self.parser.output_path, self.root).save()
 		if key == pygame.K_a:
 			self.space_children = not self.space_children
 
