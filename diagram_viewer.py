@@ -21,7 +21,7 @@ class DiagramViewer:
 
 		self.running = True
 		self.hovered_item = None
-		self.selected_items = []
+		self.selected_items = set()
 		self.is_holding_selection = False
 		self.selection_start_position = None
 
@@ -142,9 +142,7 @@ class DiagramViewer:
 	def _mouse_down(self, button_index: int):
 		if button_index != self.selection_mouse_button_index: return
 		self.is_holding_selection = self._is_mouse_over_selected_item()
-
-		if not self.is_holding_selection:
-			self.selection_start_position = Mouse().position
+		self.selection_start_position = Mouse().position
 
 	def _is_mouse_over_selected_item(self) -> bool:
 		mouse_pos = Mouse().position
@@ -168,23 +166,26 @@ class DiagramViewer:
 
 		if self.is_holding_selection:
 			self.is_holding_selection = False
+			if Mouse().position == self.selection_start_position:
+				self._set_selection()
 		else:
 			self._set_selection()
-			self.selection_start_position = None
 
+		self.selection_start_position = None
 		self.is_holding_selection = False
 
 	def _set_selection(self):
-		self._clear_selection()
+		if not pygame.key.get_pressed()[pygame.K_LSHIFT]:
+			self._clear_selection()
 
-		items_to_select = list(self._get_outermost_visible_items_contained_in_selection_rect())
+		items_to_select = self._get_outermost_visible_items_contained_in_selection_rect()
 
 		if len(items_to_select) == 0:
 			item_under_mouse = self._get_deepest_visible_item_under_mouse()
 			if item_under_mouse:
 				items_to_select = [item_under_mouse]
 
-		self.selected_items = items_to_select
+		self.selected_items = self.selected_items.union(items_to_select)
 		for item in self.selected_items:
 			item.is_held = True
 
@@ -212,7 +213,7 @@ class DiagramViewer:
 	def _clear_selection(self):
 		for item in self.selected_items:
 			item.is_held = False
-		self.selected_items = []
+		self.selected_items = set()
 
 	def _get_selection_rect(self):
 		if self.selection_start_position is None:
@@ -243,7 +244,7 @@ class DiagramViewer:
 		self._draw_selection_rect()
 
 	def _draw_selection_rect(self):
-		if self.selection_start_position is None:
+		if self.selection_start_position is None or self.is_holding_selection:
 			return
 		draw.rect(self._get_selection_rect(), "#0000ff")
 
