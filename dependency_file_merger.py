@@ -6,8 +6,7 @@ import re
 def update_file(file_path, new_project_dict: dict):
 	if os.path.exists(file_path):
 		old = _read_file_as_dict(file_path)
-
-	_merge_projects(new_project_dict, old)
+		_merge_projects(new_project_dict, old)
 	
 	json_txt = json.dumps(new_project_dict, indent=4)
 	with open(file_path, "w") as file:

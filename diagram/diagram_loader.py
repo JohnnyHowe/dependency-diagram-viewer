@@ -23,7 +23,7 @@ class DiagramLoader:
     def _create_module_from_data_dict_recursive(self, parent, data: dict) -> DiagramModule:
         module = DiagramModule(data["path"], data["name"], parent)
         module.is_hidden = data.get("is_hidden", False)
-        module.is_collapsed = data.get("is_collapsed", False)
+        module.is_collapsed = data.get("is_collapsed", not module.is_root)
         self._all_items[module.path] = [module, data]
 
         for script_data in data["scripts"]:
