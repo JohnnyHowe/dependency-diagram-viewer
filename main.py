@@ -26,7 +26,7 @@ def _main():
         return
 
     if not os.path.exists(args.project_path):
-        print("Project path \"{args.project_path}\" doesn't exist!")
+        print(f"Project path \"{args.project_path}\" doesn't exist!")
         return
 
     parser = parsers[args.parser](args.project_path, args.output_path)
