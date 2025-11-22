@@ -11,7 +11,7 @@ class ProjectFolder:
 
     def _set_name(self):
         parts = Path(self.path).parts
-        if len(parts) <= 1:
+        if len(parts) == 0:
             self.name = "[root]"
         else:
             self.name = parts[-1]

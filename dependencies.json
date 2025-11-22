@@ -54,8 +54,8 @@
                     "full_name": "auto_pause_on_crafting_complete.gd",
                     "name": "auto_pause_on_crafting_complete.gd",
                     "dependencies": [
-                        "Event",
-                        "TimeController"
+                        "TimeController",
+                        "Event"
                     ]
                 },
                 {
@@ -331,8 +331,8 @@
                                     "full_name": "test_runner.gd",
                                     "name": "test_runner.gd",
                                     "dependencies": [
-                                        "BetterResourceLoader",
-                                        "TestResult"
+                                        "TestResult",
+                                        "BetterResourceLoader"
                                     ]
                                 }
                             ],
@@ -498,11 +498,11 @@
                             "full_name": "EnemySpawner",
                             "name": "EnemySpawner",
                             "dependencies": [
-                                "ArrayCaster",
-                                "World",
-                                "TokenCreator",
                                 "TimeController",
-                                "TokenContainer"
+                                "TokenContainer",
+                                "World",
+                                "ArrayCaster",
+                                "TokenCreator"
                             ]
                         }
                     ],
@@ -518,14 +518,14 @@
                             "full_name": "Event",
                             "name": "Event",
                             "dependencies": [
+                                "TimeController",
+                                "RPGStylePopupManager",
+                                "TokenContainer",
+                                "TokenManager",
                                 "EventManager",
                                 "Token",
                                 "CraftingManager",
-                                "TokenCreator",
-                                "TimeController",
-                                "TokenContainer",
-                                "TokenManager",
-                                "RPGStylePopupManager"
+                                "TokenCreator"
                             ]
                         },
                         {
@@ -533,13 +533,13 @@
                             "full_name": "EventManager",
                             "name": "EventManager",
                             "dependencies": [
-                                "RPGStylePopupManager",
-                                "CraftingManager",
-                                "Event",
-                                "TokenCreator",
                                 "TimeController",
+                                "TokenContainer",
+                                "RPGStylePopupManager",
                                 "TokenManager",
-                                "TokenContainer"
+                                "CraftingManager",
+                                "TokenCreator",
+                                "Event"
                             ]
                         }
                     ],
@@ -578,16 +578,16 @@
                                     "full_name": "CraftingManager",
                                     "name": "CraftingManager",
                                     "dependencies": [
+                                        "TimeController",
+                                        "BetterRandom",
+                                        "BetterResourceLoader",
+                                        "TokenContainer",
+                                        "TokenManager",
                                         "RecipeUtility",
                                         "Token",
                                         "TokenMoveEvent",
-                                        "BetterRandom",
-                                        "CraftingResult",
                                         "TokenCreator",
-                                        "TimeController",
-                                        "TokenContainer",
-                                        "TokenManager",
-                                        "BetterResourceLoader"
+                                        "CraftingResult"
                                     ]
                                 },
                                 {
@@ -617,12 +617,12 @@
                                     "full_name": "SaveController",
                                     "name": "SaveController",
                                     "dependencies": [
-                                        "Token",
-                                        "TokenMoveEvent",
-                                        "GameSaver",
                                         "TimeController",
+                                        "TokenContainer",
                                         "TokenManager",
-                                        "TokenContainer"
+                                        "GameSaver",
+                                        "Token",
+                                        "TokenMoveEvent"
                                     ]
                                 }
                             ],
@@ -664,16 +664,16 @@
                                     "full_name": "Token",
                                     "name": "Token",
                                     "dependencies": [
-                                        "VectorUtil",
-                                        "BetterLerp",
-                                        "TokenMoveEvent",
-                                        "CraftingManager",
-                                        "TokenCreator",
                                         "ProgressBarManager",
                                         "TimeController",
+                                        "World",
                                         "TokenContainer",
                                         "TokenManager",
-                                        "World"
+                                        "BetterLerp",
+                                        "VectorUtil",
+                                        "TokenMoveEvent",
+                                        "CraftingManager",
+                                        "TokenCreator"
                                     ]
                                 },
                                 {
@@ -714,13 +714,13 @@
                                     "full_name": "TokenContainer",
                                     "name": "TokenContainer",
                                     "dependencies": [
+                                        "DictionaryUtility",
+                                        "TokenManager",
                                         "Token",
                                         "TokenMoveEvent",
                                         "BaseTokenCache",
                                         "TokenAccessHelper",
-                                        "TokenCreator",
-                                        "TokenManager",
-                                        "DictionaryUtility"
+                                        "TokenCreator"
                                     ]
                                 }
                             ],
@@ -755,8 +755,8 @@
                                     "full_name": "token_z_index_sorter.gd",
                                     "name": "token_z_index_sorter.gd",
                                     "dependencies": [
-                                        "TokenContainer",
                                         "TokenManager",
+                                        "TokenContainer",
                                         "Token"
                                     ]
                                 }
@@ -781,14 +781,14 @@
                                     "full_name": "TokenCreator",
                                     "name": "TokenCreator",
                                     "dependencies": [
-                                        "Token",
-                                        "StringUtil",
+                                        "TimeController",
                                         "BetterResourceLoader",
                                         "DictionaryUtility",
-                                        "CraftingManager",
                                         "TokenContainer",
                                         "TokenManager",
-                                        "TimeController"
+                                        "Token",
+                                        "StringUtil",
+                                        "CraftingManager"
                                     ]
                                 },
                                 {
@@ -796,14 +796,14 @@
                                     "full_name": "TokenManager",
                                     "name": "TokenManager",
                                     "dependencies": [
+                                        "TimeController",
+                                        "TokenContainer",
+                                        "World",
                                         "Token",
                                         "TokenMoveEvent",
-                                        "World",
                                         "CraftingManager",
                                         "TokenAccessHelper",
-                                        "TokenCreator",
-                                        "TimeController",
-                                        "TokenContainer"
+                                        "TokenCreator"
                                     ]
                                 },
                                 {
@@ -997,10 +997,10 @@
                             "name": "Projectile",
                             "dependencies": [
                                 "Set",
-                                "Token",
-                                "VectorUtil",
+                                "World",
                                 "DictionaryUtility",
-                                "World"
+                                "Token",
+                                "VectorUtil"
                             ]
                         }
                     ],
@@ -1139,9 +1139,9 @@
                                     "name": "settings_debug_ui.gd",
                                     "dependencies": [
                                         "NodeFinder",
+                                        "SaveController",
                                         "BetterResourceLoader",
-                                        "DictionaryUtility",
-                                        "SaveController"
+                                        "DictionaryUtility"
                                     ]
                                 }
                             ],
@@ -1214,10 +1214,10 @@
                                     "full_name": "recipe_book.gd",
                                     "name": "recipe_book.gd",
                                     "dependencies": [
-                                        "RecipeBookItem",
                                         "TokenManager",
                                         "TokenCreator",
-                                        "CraftingManager"
+                                        "CraftingManager",
+                                        "RecipeBookItem"
                                     ]
                                 },
                                 {
@@ -1267,9 +1267,9 @@
                                     "full_name": "TimeUI",
                                     "name": "TimeUI",
                                     "dependencies": [
+                                        "TimeController",
                                         "TokenContainer",
-                                        "World",
-                                        "TimeController"
+                                        "World"
                                     ]
                                 }
                             ],
@@ -1311,8 +1311,8 @@
                                     "full_name": "game_over_screen.gd",
                                     "name": "game_over_screen.gd",
                                     "dependencies": [
-                                        "SaveController",
-                                        "TimeController"
+                                        "TimeController",
+                                        "SaveController"
                                     ]
                                 }
                             ],
@@ -1373,11 +1373,11 @@
             "full_name": "Camera",
             "name": "Camera",
             "dependencies": [
-                "VectorUtil",
-                "BetterLerp",
+                "TokenManager",
                 "World",
-                "EnemySpawner",
-                "TokenManager"
+                "BetterLerp",
+                "VectorUtil",
+                "EnemySpawner"
             ]
         },
         {
@@ -1385,8 +1385,8 @@
             "full_name": "environment_art.gd",
             "name": "environment_art.gd",
             "dependencies": [
-                "BetterResourceLoader",
-                "World"
+                "World",
+                "BetterResourceLoader"
             ]
         },
         {
@@ -1394,10 +1394,10 @@
             "full_name": "game.gd",
             "name": "game.gd",
             "dependencies": [
+                "TimeController",
                 "SettingsMenu",
                 "TokenContainer",
-                "World",
-                "TimeController"
+                "World"
             ]
         },
         {
