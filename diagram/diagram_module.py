@@ -156,7 +156,7 @@ class DiagramModule(DiagramItem):
             return
 
         if item1.rect.center == item2.rect.center:
-            offset = Vector2(item1.rect.size[0], 0)
+            offset = Vector2(item1.rect.size[0] + 10, 0)
             item1.rect.center = Vector2(item1.rect.center) + offset
             return
 
