@@ -86,7 +86,7 @@ class DiagramItem:
 
         for item in chain[1:]:
             if last_visible.is_collapsed: break 
-            if last_visible.is_hidden: break 
+            if item.is_hidden: break
             last_visible = item
 
         if last_visible.is_hidden:  # None visible

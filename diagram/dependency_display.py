@@ -34,3 +34,12 @@ class DependencyDisplay:
 		left = self.source if self.source.rect.center[0] < self.target.rect.center[0] else self.target
 		right = self.source if left == self.target else self.target
 		return right.rect.midleft
+
+	def __str__(self):
+		return f"DependencyDisplay({self.source, self.target, self.dependency_type})"
+
+	def __repr__(self):
+		return str(self)
+
+	def __lt__(self, other):
+		return self.source.name < other.source.name

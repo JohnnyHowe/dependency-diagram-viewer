@@ -21,6 +21,8 @@ class DependencyDrawer:
 	def _draw_dependency(self, dependency: DependencyDisplay) -> None:
 		focussed = len(self.selected_items) == 0 or self._is_dependency_targetted(dependency)
 		draw.arrow(dependency.get_start_position(), dependency.get_end_position(), self._get_dependency_color(dependency), layer=1 if focussed else 0)
+		if dependency.dependency_type == "mutual":
+			draw.arrow(dependency.get_end_position(), dependency.get_start_position(), self._get_dependency_color(dependency), layer=1 if focussed else 0)
 
 	def _get_dependency_color(self, dependency_display: DependencyDisplay):
 		focussed = len(self.selected_items) == 0 or self._is_dependency_targetted(dependency_display)

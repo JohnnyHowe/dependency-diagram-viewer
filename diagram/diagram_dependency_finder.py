@@ -8,50 +8,52 @@ class DiagramDependencyFinder:
 		self.root = root
 
 	def get_all_visible_dependencies(self) -> list[DependencyDisplay]:
-		self.dependencies = []
-		for dependency_source in self._get_visible_items(self.root.get_scripts_recursive()):
-			self._get_all_visible_dependencies_for_source(dependency_source)
+		self._set_all_dependencies()
+		self._raise_dependencies_to_visible_parents()
 		self._filter_mutual_dependencies()
+		self._filter()
+		self.dependencies = sorted(list(self.dependencies))
 		return self.dependencies
 
-	def _get_all_visible_dependencies_for_source(self, source: DiagramItem):
-		for target in source.get_all_script_dependencies():
-			self._get_dependency_displays(source, target)
+	def _set_all_dependencies(self):
+		self.dependencies = set()
+		for source in self.root.get_scripts_recursive():
+			for target in source.get_all_script_dependencies():
+				self.dependencies.add(DependencyDisplay(source, target))
 
-	def _get_dependency_displays(self, source: DiagramItem, target: DiagramItem):
-		# take the deepest visible parent of target
-		deepest_target_parent = target.get_deepest_visible_in_parent_chain()
+	def _raise_dependencies_to_visible_parents(self):
+		raised = set()
+		for dependency in self.dependencies:
+			raised.add(DependencyDisplay(
+				dependency.source.get_deepest_visible_in_parent_chain(),
+				dependency.target.get_deepest_visible_in_parent_chain(),
+			))
+		self.dependencies = raised
 
-		# Unless parent is parent of source - then nothing
-		if source.is_child_of(deepest_target_parent):
-			return
+	def _filter(self):
+		filtered = set()
+		for dependency in self.dependencies:
 
-		direct = deepest_target_parent == target
-		dependency_type = "direct" if direct else None
-		self.dependencies.append(DependencyDisplay(source, deepest_target_parent, dependency_type))
+			if dependency.source == dependency.target:
+				continue
+			if dependency.source.is_root or dependency.target.is_root:
+				continue
+			if dependency.source.is_child_of(dependency.target) or dependency.target.is_child_of(dependency.source):
+				continue
 
-	def _get_visible_items(self, items_list):
-		items = set()
-		for item in items_list:
-			deepest_item = item.get_deepest_visible_in_parent_chain()
-			if deepest_item is None: continue
-			items.add(deepest_item)
-		return items
+			filtered.add(dependency)
+
+		self.dependencies = filtered
  
 	def _filter_mutual_dependencies(self):
-		to_remove = []
+		dependencies_by_pair = {}
 
-		# find ones to remove
-		seen_pairs = {}
 		for dependency in self.dependencies:
-			if dependency.inverse_pair in seen_pairs:
-				to_remove.append(dependency)
-			seen_pairs[dependency.pair] = dependency
+			if dependency.pair in dependencies_by_pair:
+				dependencies_by_pair[dependency.pair].dependency_type = "mutual"
+			elif dependency.inverse_pair in dependencies_by_pair:
+				dependencies_by_pair[dependency.inverse_pair].dependency_type = "mutual"
+			else:
+				dependencies_by_pair[dependency.pair] = dependency
 
-		# remove
-		for dependency in to_remove:
-			self.dependencies.remove(dependency)
-
-		# update non-removed one to "mutual"
-		for dependency in to_remove:
-			seen_pairs[dependency.inverse_pair].dependency_type = "mutual"
+		self.dependencies = set(dependencies_by_pair.values())
