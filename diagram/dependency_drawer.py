@@ -15,7 +15,7 @@ class DependencyDrawer:
 		self.selected_items = selected_items
 		self.diagram_dependency_finder = DiagramDependencyFinder(root)
 
-		pairs = set(self.diagram_dependency_finder.get_all_visible_dependency_pairs())
+		pairs = set(self.diagram_dependency_finder.get_all_visible_dependencies())
 		seen = set()
 
 		for dependency_display in pairs:

@@ -94,3 +94,5 @@ class DiagramItem:
 
         return last_visible
     
+    def is_child_of(self, other):
+        return other in self.get_parent_chain()

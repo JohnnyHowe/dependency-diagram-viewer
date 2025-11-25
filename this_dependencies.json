@@ -14,8 +14,8 @@
             ],
             "is_hidden": false,
             "position": [
-                504,
-                -635
+                628,
+                -630
             ]
         },
         {
@@ -121,8 +121,8 @@
                     ],
                     "is_hidden": false,
                     "position": [
-                        -83,
-                        -474
+                        -207,
+                        -478
                     ]
                 },
                 {
@@ -137,8 +137,8 @@
                     ],
                     "is_hidden": false,
                     "position": [
-                        -20,
-                        -223
+                        -181,
+                        -229
                     ]
                 },
                 {
@@ -146,12 +146,13 @@
                     "full_name": "./diagram\\diagram_dependency_finder.py",
                     "name": "diagram_dependency_finder.py",
                     "dependencies": [
-                        "./diagram\\dependency_display.py"
+                        "./diagram\\dependency_display.py",
+                        "./diagram\\diagram_item.py"
                     ],
                     "is_hidden": false,
                     "position": [
-                        -81,
-                        -363
+                        -205,
+                        -367
                     ]
                 },
                 {
@@ -164,8 +165,8 @@
                     ],
                     "is_hidden": false,
                     "position": [
-                        96,
-                        -580
+                        -65,
+                        -586
                     ]
                 },
                 {
@@ -178,8 +179,8 @@
                     ],
                     "is_hidden": false,
                     "position": [
-                        181,
-                        -222
+                        202,
+                        -229
                     ]
                 },
                 {
@@ -193,8 +194,8 @@
                     ],
                     "is_hidden": false,
                     "position": [
-                        277,
-                        -473
+                        4,
+                        -365
                     ]
                 },
                 {
@@ -208,8 +209,8 @@
                     ],
                     "is_hidden": false,
                     "position": [
-                        92,
-                        -362
+                        20,
+                        -230
                     ]
                 },
                 {
@@ -222,8 +223,8 @@
                     ],
                     "is_hidden": false,
                     "position": [
-                        94,
-                        -474
+                        196,
+                        -364
                     ]
                 }
             ],

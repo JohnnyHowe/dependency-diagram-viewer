@@ -8,7 +8,7 @@ class DependencyDisplay:
     pair: tuple[DiagramItem]
     inverse_pair: tuple[DiagramItem]
 
-    # none (normal), "transitive"
+    # none (normal), "transitive", "mutual"
     dependecy_type: str = None
 
     def __init__(self, source: DiagramItem, target: DiagramItem, depedency_type: str = None) -> None:
