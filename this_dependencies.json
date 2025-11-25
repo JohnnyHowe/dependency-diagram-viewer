@@ -1,483 +1,18 @@
 {
     "path": "./",
+    "full_name": "./",
     "name": "[root]",
-    "is_hidden": false,
-    "is_collapsed": false,
-    "folders": [
-        {
-            "path": "./diagram",
-            "name": "diagram",
-            "is_hidden": false,
-            "is_collapsed": false,
-            "folders": [],
-            "scripts": [
-                {
-                    "path": "./diagram\\dependency_display.py",
-                    "name": "dependency_display.py",
-                    "is_hidden": false,
-                    "full_name": "./diagram\\dependency_display.py",
-                    "dependencies": [
-                        "./diagram\\diagram_item.py"
-                    ],
-                    "position": [
-                        -83,
-                        -474
-                    ]
-                },
-                {
-                    "path": "./diagram\\diagram_dependency_finder.py",
-                    "name": "diagram_dependency_finder.py",
-                    "is_hidden": false,
-                    "full_name": "./diagram\\diagram_dependency_finder.py",
-                    "dependencies": [
-                        "./diagram\\dependency_display.py"
-                    ],
-                    "position": [
-                        -81,
-                        -363
-                    ]
-                },
-                {
-                    "path": "./diagram\\diagram_item.py",
-                    "name": "diagram_item.py",
-                    "is_hidden": false,
-                    "full_name": "./diagram\\diagram_item.py",
-                    "dependencies": [
-                        "./configuration.py",
-                        "./window_engine\\window.py"
-                    ],
-                    "position": [
-                        96,
-                        -580
-                    ]
-                },
-                {
-                    "path": "./diagram\\diagram_loader.py",
-                    "name": "diagram_loader.py",
-                    "is_hidden": false,
-                    "full_name": "./diagram\\diagram_loader.py",
-                    "dependencies": [
-                        "./diagram\\diagram_module.py",
-                        "./diagram\\diagram_script.py"
-                    ],
-                    "position": [
-                        183,
-                        -270
-                    ]
-                },
-                {
-                    "path": "./diagram\\diagram_module.py",
-                    "name": "diagram_module.py",
-                    "is_hidden": false,
-                    "full_name": "./diagram\\diagram_module.py",
-                    "dependencies": [
-                        "./configuration.py",
-                        "./diagram\\diagram_item.py",
-                        "./window_engine\\window.py"
-                    ],
-                    "position": [
-                        277,
-                        -473
-                    ]
-                },
-                {
-                    "path": "./diagram\\diagram_saver.py",
-                    "name": "diagram_saver.py",
-                    "is_hidden": false,
-                    "full_name": "./diagram\\diagram_saver.py",
-                    "dependencies": [
-                        "./diagram\\diagram_item.py",
-                        "./diagram\\diagram_module.py",
-                        "./diagram\\diagram_script.py"
-                    ],
-                    "position": [
-                        92,
-                        -362
-                    ]
-                },
-                {
-                    "path": "./diagram\\diagram_script.py",
-                    "name": "diagram_script.py",
-                    "is_hidden": false,
-                    "full_name": "./diagram\\diagram_script.py",
-                    "dependencies": [
-                        "./configuration.py",
-                        "./diagram\\diagram_item.py"
-                    ],
-                    "position": [
-                        94,
-                        -474
-                    ]
-                }
-            ]
-        },
-        {
-            "path": "./project_parsers",
-            "name": "project_parsers",
-            "is_hidden": false,
-            "is_collapsed": true,
-            "folders": [
-                {
-                    "path": "./project_parsers\\godot",
-                    "name": "godot",
-                    "is_hidden": false,
-                    "is_collapsed": true,
-                    "folders": [],
-                    "scripts": [
-                        {
-                            "path": "./project_parsers\\godot\\file_parser.py",
-                            "name": "file_parser.py",
-                            "is_hidden": false,
-                            "full_name": "./project_parsers\\godot\\file_parser.py",
-                            "dependencies": [],
-                            "position": [
-                                647,
-                                133
-                            ]
-                        },
-                        {
-                            "path": "./project_parsers\\godot\\gd_module.py",
-                            "name": "gd_module.py",
-                            "is_hidden": false,
-                            "full_name": "./project_parsers\\godot\\gd_module.py",
-                            "dependencies": [],
-                            "position": [
-                                117,
-                                135
-                            ]
-                        },
-                        {
-                            "path": "./project_parsers\\godot\\gd_script.py",
-                            "name": "gd_script.py",
-                            "is_hidden": false,
-                            "full_name": "./project_parsers\\godot\\gd_script.py",
-                            "dependencies": [],
-                            "position": [
-                                821,
-                                132
-                            ]
-                        },
-                        {
-                            "path": "./project_parsers\\godot\\godot_parser.py",
-                            "name": "godot_parser.py",
-                            "is_hidden": false,
-                            "full_name": "./project_parsers\\godot\\godot_parser.py",
-                            "dependencies": [
-                                "./dependency_file_merger.py",
-                                "./project_parsers\\godot\\gd_module.py"
-                            ],
-                            "position": [
-                                119,
-                                237
-                            ]
-                        },
-                        {
-                            "path": "./project_parsers\\godot\\project_folder.py",
-                            "name": "project_folder.py",
-                            "is_hidden": false,
-                            "full_name": "./project_parsers\\godot\\project_folder.py",
-                            "dependencies": [],
-                            "position": [
-                                471,
-                                134
-                            ]
-                        },
-                        {
-                            "path": "./project_parsers\\godot\\project_script.py",
-                            "name": "project_script.py",
-                            "is_hidden": false,
-                            "full_name": "./project_parsers\\godot\\project_script.py",
-                            "dependencies": [],
-                            "position": [
-                                291,
-                                130
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "path": "./project_parsers\\python_parser",
-                    "name": "python_parser",
-                    "is_hidden": false,
-                    "is_collapsed": true,
-                    "folders": [],
-                    "scripts": [
-                        {
-                            "path": "./project_parsers\\python_parser\\folder.py",
-                            "name": "folder.py",
-                            "is_hidden": false,
-                            "full_name": "./project_parsers\\python_parser\\folder.py",
-                            "dependencies": [],
-                            "position": [
-                                629,
-                                185
-                            ]
-                        },
-                        {
-                            "path": "./project_parsers\\python_parser\\parse_python_project.py",
-                            "name": "parse_python_project.py",
-                            "is_hidden": false,
-                            "full_name": "./project_parsers\\python_parser\\parse_python_project.py",
-                            "dependencies": [
-                                "./json_parser.py"
-                            ],
-                            "position": [
-                                289,
-                                185
-                            ]
-                        },
-                        {
-                            "path": "./project_parsers\\python_parser\\parser.py",
-                            "name": "parser.py",
-                            "is_hidden": false,
-                            "full_name": "./project_parsers\\python_parser\\parser.py",
-                            "dependencies": [
-                                "./json_parser.py"
-                            ],
-                            "position": [
-                                459,
-                                185
-                            ]
-                        },
-                        {
-                            "path": "./project_parsers\\python_parser\\script.py",
-                            "name": "script.py",
-                            "is_hidden": false,
-                            "full_name": "./project_parsers\\python_parser\\script.py",
-                            "dependencies": [],
-                            "position": [
-                                119,
-                                185
-                            ]
-                        },
-                        {
-                            "path": "./project_parsers\\python_parser\\script_parser.py",
-                            "name": "script_parser.py",
-                            "is_hidden": false,
-                            "full_name": "./project_parsers\\python_parser\\script_parser.py",
-                            "dependencies": [],
-                            "position": [
-                                -51,
-                                185
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "path": "./project_parsers\\unity_parser",
-                    "name": "unity_parser",
-                    "is_hidden": false,
-                    "is_collapsed": true,
-                    "folders": [],
-                    "scripts": [
-                        {
-                            "path": "./project_parsers\\unity_parser\\csharp_parser.py",
-                            "name": "csharp_parser.py",
-                            "is_hidden": false,
-                            "full_name": "./project_parsers\\unity_parser\\csharp_parser.py",
-                            "dependencies": [],
-                            "position": [
-                                829,
-                                -55
-                            ]
-                        },
-                        {
-                            "path": "./project_parsers\\unity_parser\\json_parser.py",
-                            "name": "json_parser.py",
-                            "is_hidden": false,
-                            "full_name": "./project_parsers\\unity_parser\\json_parser.py",
-                            "dependencies": [],
-                            "position": [
-                                658,
-                                183
-                            ]
-                        },
-                        {
-                            "path": "./project_parsers\\unity_parser\\json_writer.py",
-                            "name": "json_writer.py",
-                            "is_hidden": false,
-                            "full_name": "./project_parsers\\unity_parser\\json_writer.py",
-                            "dependencies": [
-                                "./project_parsers\\unity_parser\\json_parser.py",
-                                "./project_parsers\\unity_parser\\namespace.py",
-                                "./project_parsers\\unity_parser\\project.py"
-                            ],
-                            "position": [
-                                472,
-                                316
-                            ]
-                        },
-                        {
-                            "path": "./project_parsers\\unity_parser\\member.py",
-                            "name": "member.py",
-                            "is_hidden": false,
-                            "full_name": "./project_parsers\\unity_parser\\member.py",
-                            "dependencies": [],
-                            "position": [
-                                467,
-                                -57
-                            ]
-                        },
-                        {
-                            "path": "./project_parsers\\unity_parser\\namespace.py",
-                            "name": "namespace.py",
-                            "is_hidden": false,
-                            "full_name": "./project_parsers\\unity_parser\\namespace.py",
-                            "dependencies": [
-                                "./project_parsers\\unity_parser\\member.py"
-                            ],
-                            "position": [
-                                469,
-                                58
-                            ]
-                        },
-                        {
-                            "path": "./project_parsers\\unity_parser\\parse_unity_project.py",
-                            "name": "parse_unity_project.py",
-                            "is_hidden": false,
-                            "full_name": "./project_parsers\\unity_parser\\parse_unity_project.py",
-                            "dependencies": [],
-                            "position": [
-                                648,
-                                -55
-                            ]
-                        },
-                        {
-                            "path": "./project_parsers\\unity_parser\\parser.py",
-                            "name": "parser.py",
-                            "is_hidden": false,
-                            "full_name": "./project_parsers\\unity_parser\\parser.py",
-                            "dependencies": [
-                                "./dependency_file_merger.py",
-                                "./project_parsers\\unity_parser\\json_writer.py",
-                                "./project_parsers\\unity_parser\\project.py"
-                            ],
-                            "position": [
-                                470,
-                                428
-                            ]
-                        },
-                        {
-                            "path": "./project_parsers\\unity_parser\\project.py",
-                            "name": "project.py",
-                            "is_hidden": false,
-                            "full_name": "./project_parsers\\unity_parser\\project.py",
-                            "dependencies": [
-                                "./project_parsers\\unity_parser\\member.py",
-                                "./project_parsers\\unity_parser\\namespace.py"
-                            ],
-                            "position": [
-                                473,
-                                183
-                            ]
-                        }
-                    ]
-                }
-            ],
-            "scripts": []
-        },
-        {
-            "path": "./window_engine",
-            "name": "window_engine",
-            "is_hidden": false,
-            "is_collapsed": true,
-            "folders": [],
-            "scripts": [
-                {
-                    "path": "./window_engine\\camera.py",
-                    "name": "camera.py",
-                    "is_hidden": false,
-                    "full_name": "./window_engine\\camera.py",
-                    "dependencies": [
-                        "./window_engine\\singleton.py",
-                        "./window_engine\\window.py"
-                    ],
-                    "position": [
-                        191,
-                        -761
-                    ]
-                },
-                {
-                    "path": "./window_engine\\draw.py",
-                    "name": "draw.py",
-                    "is_hidden": false,
-                    "full_name": "./window_engine\\draw.py",
-                    "dependencies": [
-                        "./window_engine\\camera.py",
-                        "./window_engine\\font_cache.py",
-                        "./window_engine\\window.py"
-                    ],
-                    "position": [
-                        384,
-                        -621
-                    ]
-                },
-                {
-                    "path": "./window_engine\\font_cache.py",
-                    "name": "font_cache.py",
-                    "is_hidden": false,
-                    "full_name": "./window_engine\\font_cache.py",
-                    "dependencies": [
-                        "./window_engine\\singleton.py"
-                    ],
-                    "position": [
-                        383,
-                        -766
-                    ]
-                },
-                {
-                    "path": "./window_engine\\mouse.py",
-                    "name": "mouse.py",
-                    "is_hidden": false,
-                    "full_name": "./window_engine\\mouse.py",
-                    "dependencies": [
-                        "./window_engine\\camera.py",
-                        "./window_engine\\singleton.py",
-                        "./window_engine\\window.py"
-                    ],
-                    "position": [
-                        183,
-                        -626
-                    ]
-                },
-                {
-                    "path": "./window_engine\\singleton.py",
-                    "name": "singleton.py",
-                    "is_hidden": false,
-                    "full_name": "./window_engine\\singleton.py",
-                    "dependencies": [],
-                    "position": [
-                        189,
-                        -1024
-                    ]
-                },
-                {
-                    "path": "./window_engine\\window.py",
-                    "name": "window.py",
-                    "is_hidden": false,
-                    "full_name": "./window_engine\\window.py",
-                    "dependencies": [
-                        "./window_engine\\singleton.py"
-                    ],
-                    "position": [
-                        195,
-                        -886
-                    ]
-                }
-            ]
-        }
-    ],
     "scripts": [
         {
             "path": "./camera_controller.py",
-            "name": "camera_controller.py",
-            "is_hidden": false,
             "full_name": "./camera_controller.py",
+            "name": "camera_controller.py",
             "dependencies": [
                 "./window_engine\\camera.py",
                 "./window_engine\\mouse.py",
                 "./window_engine\\window.py"
             ],
+            "is_hidden": false,
             "position": [
                 504,
                 -635
@@ -485,10 +20,10 @@
         },
         {
             "path": "./configuration.py",
-            "name": "configuration.py",
-            "is_hidden": false,
             "full_name": "./configuration.py",
+            "name": "configuration.py",
             "dependencies": [],
+            "is_hidden": false,
             "position": [
                 13,
                 -818
@@ -496,10 +31,10 @@
         },
         {
             "path": "./dependency_file_merger.py",
-            "name": "dependency_file_merger.py",
-            "is_hidden": false,
             "full_name": "./dependency_file_merger.py",
+            "name": "dependency_file_merger.py",
             "dependencies": [],
+            "is_hidden": false,
             "position": [
                 360,
                 -57
@@ -507,13 +42,13 @@
         },
         {
             "path": "./diagram_viewer.py",
-            "name": "diagram_viewer.py",
-            "is_hidden": false,
             "full_name": "./diagram_viewer.py",
+            "name": "diagram_viewer.py",
             "dependencies": [
                 "./camera_controller.py",
                 "./configuration.py",
                 "./diagram\\dependency_display.py",
+                "./diagram\\dependency_drawer.py",
                 "./diagram\\diagram_dependency_finder.py",
                 "./diagram\\diagram_loader.py",
                 "./diagram\\diagram_module.py",
@@ -521,6 +56,7 @@
                 "./window_engine\\mouse.py",
                 "./window_engine\\window.py"
             ],
+            "is_hidden": false,
             "position": [
                 108,
                 -61
@@ -528,10 +64,10 @@
         },
         {
             "path": "./json_parser.py",
-            "name": "json_parser.py",
-            "is_hidden": false,
             "full_name": "./json_parser.py",
+            "name": "json_parser.py",
             "dependencies": [],
+            "is_hidden": false,
             "position": [
                 620,
                 -62
@@ -539,15 +75,15 @@
         },
         {
             "path": "./main.py",
-            "name": "main.py",
-            "is_hidden": false,
             "full_name": "./main.py",
+            "name": "main.py",
             "dependencies": [
                 "./diagram_viewer.py",
                 "./project_parsers\\godot\\godot_parser.py",
                 "./project_parsers\\python_parser\\parser.py",
                 "./project_parsers\\unity_parser\\parser.py"
             ],
+            "is_hidden": false,
             "position": [
                 283,
                 337
@@ -555,19 +91,507 @@
         },
         {
             "path": "./parse_and_show_unity_project.py",
-            "name": "parse_and_show_unity_project.py",
-            "is_hidden": false,
             "full_name": "./parse_and_show_unity_project.py",
+            "name": "parse_and_show_unity_project.py",
             "dependencies": [
                 "./diagram_viewer.py",
                 "./project_parsers\\unity_parser\\json_writer.py",
                 "./project_parsers\\unity_parser\\project.py",
                 "./window_engine\\window.py"
             ],
+            "is_hidden": false,
             "position": [
                 476,
                 336
             ]
         }
-    ]
+    ],
+    "folders": [
+        {
+            "path": "./diagram",
+            "full_name": "./diagram",
+            "name": "diagram",
+            "scripts": [
+                {
+                    "path": "./diagram\\dependency_display.py",
+                    "full_name": "./diagram\\dependency_display.py",
+                    "name": "dependency_display.py",
+                    "dependencies": [
+                        "./diagram\\diagram_item.py"
+                    ],
+                    "is_hidden": false,
+                    "position": [
+                        -83,
+                        -474
+                    ]
+                },
+                {
+                    "path": "./diagram\\dependency_drawer.py",
+                    "full_name": "./diagram\\dependency_drawer.py",
+                    "name": "dependency_drawer.py",
+                    "dependencies": [
+                        "./configuration.py",
+                        "./diagram\\dependency_display.py",
+                        "./diagram\\diagram_dependency_finder.py",
+                        "./diagram\\diagram_module.py"
+                    ],
+                    "is_hidden": false,
+                    "position": [
+                        -20,
+                        -223
+                    ]
+                },
+                {
+                    "path": "./diagram\\diagram_dependency_finder.py",
+                    "full_name": "./diagram\\diagram_dependency_finder.py",
+                    "name": "diagram_dependency_finder.py",
+                    "dependencies": [
+                        "./diagram\\dependency_display.py"
+                    ],
+                    "is_hidden": false,
+                    "position": [
+                        -81,
+                        -363
+                    ]
+                },
+                {
+                    "path": "./diagram\\diagram_item.py",
+                    "full_name": "./diagram\\diagram_item.py",
+                    "name": "diagram_item.py",
+                    "dependencies": [
+                        "./configuration.py",
+                        "./window_engine\\window.py"
+                    ],
+                    "is_hidden": false,
+                    "position": [
+                        96,
+                        -580
+                    ]
+                },
+                {
+                    "path": "./diagram\\diagram_loader.py",
+                    "full_name": "./diagram\\diagram_loader.py",
+                    "name": "diagram_loader.py",
+                    "dependencies": [
+                        "./diagram\\diagram_module.py",
+                        "./diagram\\diagram_script.py"
+                    ],
+                    "is_hidden": false,
+                    "position": [
+                        181,
+                        -222
+                    ]
+                },
+                {
+                    "path": "./diagram\\diagram_module.py",
+                    "full_name": "./diagram\\diagram_module.py",
+                    "name": "diagram_module.py",
+                    "dependencies": [
+                        "./configuration.py",
+                        "./diagram\\diagram_item.py",
+                        "./window_engine\\window.py"
+                    ],
+                    "is_hidden": false,
+                    "position": [
+                        277,
+                        -473
+                    ]
+                },
+                {
+                    "path": "./diagram\\diagram_saver.py",
+                    "full_name": "./diagram\\diagram_saver.py",
+                    "name": "diagram_saver.py",
+                    "dependencies": [
+                        "./diagram\\diagram_item.py",
+                        "./diagram\\diagram_module.py",
+                        "./diagram\\diagram_script.py"
+                    ],
+                    "is_hidden": false,
+                    "position": [
+                        92,
+                        -362
+                    ]
+                },
+                {
+                    "path": "./diagram\\diagram_script.py",
+                    "full_name": "./diagram\\diagram_script.py",
+                    "name": "diagram_script.py",
+                    "dependencies": [
+                        "./configuration.py",
+                        "./diagram\\diagram_item.py"
+                    ],
+                    "is_hidden": false,
+                    "position": [
+                        94,
+                        -474
+                    ]
+                }
+            ],
+            "folders": [],
+            "is_hidden": false,
+            "is_collapsed": false
+        },
+        {
+            "path": "./project_parsers",
+            "full_name": "./project_parsers",
+            "name": "project_parsers",
+            "scripts": [],
+            "folders": [
+                {
+                    "path": "./project_parsers\\godot",
+                    "full_name": "./project_parsers\\godot",
+                    "name": "godot",
+                    "scripts": [
+                        {
+                            "path": "./project_parsers\\godot\\file_parser.py",
+                            "full_name": "./project_parsers\\godot\\file_parser.py",
+                            "name": "file_parser.py",
+                            "dependencies": [],
+                            "is_hidden": false,
+                            "position": [
+                                647,
+                                133
+                            ]
+                        },
+                        {
+                            "path": "./project_parsers\\godot\\gd_module.py",
+                            "full_name": "./project_parsers\\godot\\gd_module.py",
+                            "name": "gd_module.py",
+                            "dependencies": [],
+                            "is_hidden": false,
+                            "position": [
+                                117,
+                                135
+                            ]
+                        },
+                        {
+                            "path": "./project_parsers\\godot\\gd_script.py",
+                            "full_name": "./project_parsers\\godot\\gd_script.py",
+                            "name": "gd_script.py",
+                            "dependencies": [],
+                            "is_hidden": false,
+                            "position": [
+                                821,
+                                132
+                            ]
+                        },
+                        {
+                            "path": "./project_parsers\\godot\\godot_parser.py",
+                            "full_name": "./project_parsers\\godot\\godot_parser.py",
+                            "name": "godot_parser.py",
+                            "dependencies": [
+                                "./dependency_file_merger.py",
+                                "./project_parsers\\godot\\gd_module.py"
+                            ],
+                            "is_hidden": false,
+                            "position": [
+                                119,
+                                237
+                            ]
+                        },
+                        {
+                            "path": "./project_parsers\\godot\\project_folder.py",
+                            "full_name": "./project_parsers\\godot\\project_folder.py",
+                            "name": "project_folder.py",
+                            "dependencies": [],
+                            "is_hidden": false,
+                            "position": [
+                                471,
+                                134
+                            ]
+                        },
+                        {
+                            "path": "./project_parsers\\godot\\project_script.py",
+                            "full_name": "./project_parsers\\godot\\project_script.py",
+                            "name": "project_script.py",
+                            "dependencies": [],
+                            "is_hidden": false,
+                            "position": [
+                                291,
+                                130
+                            ]
+                        }
+                    ],
+                    "folders": [],
+                    "is_hidden": false,
+                    "is_collapsed": true
+                },
+                {
+                    "path": "./project_parsers\\python_parser",
+                    "full_name": "./project_parsers\\python_parser",
+                    "name": "python_parser",
+                    "scripts": [
+                        {
+                            "path": "./project_parsers\\python_parser\\folder.py",
+                            "full_name": "./project_parsers\\python_parser\\folder.py",
+                            "name": "folder.py",
+                            "dependencies": [],
+                            "is_hidden": false,
+                            "position": [
+                                629,
+                                185
+                            ]
+                        },
+                        {
+                            "path": "./project_parsers\\python_parser\\parser.py",
+                            "full_name": "./project_parsers\\python_parser\\parser.py",
+                            "name": "parser.py",
+                            "dependencies": [
+                                "./json_parser.py"
+                            ],
+                            "is_hidden": false,
+                            "position": [
+                                459,
+                                185
+                            ]
+                        },
+                        {
+                            "path": "./project_parsers\\python_parser\\parse_python_project.py",
+                            "full_name": "./project_parsers\\python_parser\\parse_python_project.py",
+                            "name": "parse_python_project.py",
+                            "dependencies": [
+                                "./json_parser.py"
+                            ],
+                            "is_hidden": false,
+                            "position": [
+                                289,
+                                185
+                            ]
+                        },
+                        {
+                            "path": "./project_parsers\\python_parser\\script.py",
+                            "full_name": "./project_parsers\\python_parser\\script.py",
+                            "name": "script.py",
+                            "dependencies": [],
+                            "is_hidden": false,
+                            "position": [
+                                119,
+                                185
+                            ]
+                        },
+                        {
+                            "path": "./project_parsers\\python_parser\\script_parser.py",
+                            "full_name": "./project_parsers\\python_parser\\script_parser.py",
+                            "name": "script_parser.py",
+                            "dependencies": [],
+                            "is_hidden": false,
+                            "position": [
+                                -51,
+                                185
+                            ]
+                        }
+                    ],
+                    "folders": [],
+                    "is_hidden": false,
+                    "is_collapsed": true
+                },
+                {
+                    "path": "./project_parsers\\unity_parser",
+                    "full_name": "./project_parsers\\unity_parser",
+                    "name": "unity_parser",
+                    "scripts": [
+                        {
+                            "path": "./project_parsers\\unity_parser\\csharp_parser.py",
+                            "full_name": "./project_parsers\\unity_parser\\csharp_parser.py",
+                            "name": "csharp_parser.py",
+                            "dependencies": [],
+                            "is_hidden": false,
+                            "position": [
+                                829,
+                                -55
+                            ]
+                        },
+                        {
+                            "path": "./project_parsers\\unity_parser\\json_parser.py",
+                            "full_name": "./project_parsers\\unity_parser\\json_parser.py",
+                            "name": "json_parser.py",
+                            "dependencies": [],
+                            "is_hidden": false,
+                            "position": [
+                                658,
+                                183
+                            ]
+                        },
+                        {
+                            "path": "./project_parsers\\unity_parser\\json_writer.py",
+                            "full_name": "./project_parsers\\unity_parser\\json_writer.py",
+                            "name": "json_writer.py",
+                            "dependencies": [
+                                "./project_parsers\\unity_parser\\json_parser.py",
+                                "./project_parsers\\unity_parser\\namespace.py",
+                                "./project_parsers\\unity_parser\\project.py"
+                            ],
+                            "is_hidden": false,
+                            "position": [
+                                472,
+                                316
+                            ]
+                        },
+                        {
+                            "path": "./project_parsers\\unity_parser\\member.py",
+                            "full_name": "./project_parsers\\unity_parser\\member.py",
+                            "name": "member.py",
+                            "dependencies": [],
+                            "is_hidden": false,
+                            "position": [
+                                467,
+                                -57
+                            ]
+                        },
+                        {
+                            "path": "./project_parsers\\unity_parser\\namespace.py",
+                            "full_name": "./project_parsers\\unity_parser\\namespace.py",
+                            "name": "namespace.py",
+                            "dependencies": [
+                                "./project_parsers\\unity_parser\\member.py"
+                            ],
+                            "is_hidden": false,
+                            "position": [
+                                469,
+                                58
+                            ]
+                        },
+                        {
+                            "path": "./project_parsers\\unity_parser\\parser.py",
+                            "full_name": "./project_parsers\\unity_parser\\parser.py",
+                            "name": "parser.py",
+                            "dependencies": [
+                                "./dependency_file_merger.py",
+                                "./project_parsers\\unity_parser\\json_writer.py",
+                                "./project_parsers\\unity_parser\\project.py"
+                            ],
+                            "is_hidden": false,
+                            "position": [
+                                470,
+                                428
+                            ]
+                        },
+                        {
+                            "path": "./project_parsers\\unity_parser\\parse_unity_project.py",
+                            "full_name": "./project_parsers\\unity_parser\\parse_unity_project.py",
+                            "name": "parse_unity_project.py",
+                            "dependencies": [],
+                            "is_hidden": false,
+                            "position": [
+                                648,
+                                -55
+                            ]
+                        },
+                        {
+                            "path": "./project_parsers\\unity_parser\\project.py",
+                            "full_name": "./project_parsers\\unity_parser\\project.py",
+                            "name": "project.py",
+                            "dependencies": [
+                                "./project_parsers\\unity_parser\\member.py",
+                                "./project_parsers\\unity_parser\\namespace.py"
+                            ],
+                            "is_hidden": false,
+                            "position": [
+                                473,
+                                183
+                            ]
+                        }
+                    ],
+                    "folders": [],
+                    "is_hidden": false,
+                    "is_collapsed": true
+                }
+            ],
+            "is_hidden": false,
+            "is_collapsed": true
+        },
+        {
+            "path": "./window_engine",
+            "full_name": "./window_engine",
+            "name": "window_engine",
+            "scripts": [
+                {
+                    "path": "./window_engine\\camera.py",
+                    "full_name": "./window_engine\\camera.py",
+                    "name": "camera.py",
+                    "dependencies": [
+                        "./window_engine\\singleton.py",
+                        "./window_engine\\window.py"
+                    ],
+                    "is_hidden": false,
+                    "position": [
+                        191,
+                        -761
+                    ]
+                },
+                {
+                    "path": "./window_engine\\draw.py",
+                    "full_name": "./window_engine\\draw.py",
+                    "name": "draw.py",
+                    "dependencies": [
+                        "./window_engine\\camera.py",
+                        "./window_engine\\font_cache.py",
+                        "./window_engine\\window.py"
+                    ],
+                    "is_hidden": false,
+                    "position": [
+                        384,
+                        -621
+                    ]
+                },
+                {
+                    "path": "./window_engine\\font_cache.py",
+                    "full_name": "./window_engine\\font_cache.py",
+                    "name": "font_cache.py",
+                    "dependencies": [
+                        "./window_engine\\singleton.py"
+                    ],
+                    "is_hidden": false,
+                    "position": [
+                        383,
+                        -766
+                    ]
+                },
+                {
+                    "path": "./window_engine\\mouse.py",
+                    "full_name": "./window_engine\\mouse.py",
+                    "name": "mouse.py",
+                    "dependencies": [
+                        "./window_engine\\camera.py",
+                        "./window_engine\\singleton.py",
+                        "./window_engine\\window.py"
+                    ],
+                    "is_hidden": false,
+                    "position": [
+                        183,
+                        -626
+                    ]
+                },
+                {
+                    "path": "./window_engine\\singleton.py",
+                    "full_name": "./window_engine\\singleton.py",
+                    "name": "singleton.py",
+                    "dependencies": [],
+                    "is_hidden": false,
+                    "position": [
+                        189,
+                        -1024
+                    ]
+                },
+                {
+                    "path": "./window_engine\\window.py",
+                    "full_name": "./window_engine\\window.py",
+                    "name": "window.py",
+                    "dependencies": [
+                        "./window_engine\\singleton.py"
+                    ],
+                    "is_hidden": false,
+                    "position": [
+                        195,
+                        -886
+                    ]
+                }
+            ],
+            "folders": [],
+            "is_hidden": false,
+            "is_collapsed": true
+        }
+    ],
+    "is_hidden": false,
+    "is_collapsed": false
 }
