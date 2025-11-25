@@ -6,6 +6,7 @@ from dependency_display import DependencyDisplay
 from diagram.diagram_loader import DiagramLoader
 from diagram.diagram_module import DiagramModule
 from diagram.diagram_saver import DiagramSaver
+from diagram_dependency_finder import DiagramDependencyFinder
 import window_engine.draw as draw
 from window_engine.mouse import Mouse
 from window_engine.window import Window
@@ -13,6 +14,7 @@ from camera_controller import CameraController
 
 class DiagramViewer:
 	selection_mouse_button_index = 1
+	diagram_dependency_finder: DiagramDependencyFinder
 
 	def __init__(self, parser):
 		self.parser = parser
@@ -34,6 +36,7 @@ class DiagramViewer:
 	def reload_diagram(self):
 		self.parser.update_dependencies_file()
 		self.root = DiagramLoader(self.parser.output_path).get_root()
+		self.diagram_dependency_finder = DiagramDependencyFinder(self.root)
 
 	def _run(self):
 		while self.running:
@@ -286,7 +289,7 @@ class DiagramViewer:
 		draw.text_screen_space("\n".join(lines), 20, Rect((0, 0), Window().size))
 
 	def _draw_dependencies(self):
-		pairs = set(self._get_all_visible_dependency_pairs())
+		pairs = set(self.diagram_dependency_finder.get_all_visible_dependency_pairs())
 		seen = set()
 
 		for dependency_display in pairs:
@@ -324,20 +327,3 @@ class DiagramViewer:
 				if parent in self.selected_items:
 					return True
 		return False
-
-	def _get_all_visible_dependency_pairs(self) -> list[DependencyDisplay]:
-		pairs = []
-		for dependency_source in self._get_visible_items(self.root.get_scripts_recursive()):
-			for dependency_target in self._get_visible_items(dependency_source.get_all_script_dependencies()):
-				if dependency_source == dependency_target: continue
-				pairs.append(DependencyDisplay(dependency_source, dependency_target))
-		return pairs
-
-	def _get_visible_items(self, items_list):
-		items = set()
-		for item in items_list:
-			deepest_item = item.get_deepest_visible_in_parent_chain()
-			if deepest_item is None: continue
-			items.add(deepest_item)
-		return items
- 
