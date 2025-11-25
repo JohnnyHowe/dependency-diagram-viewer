@@ -1,4 +1,4 @@
-from dependency_display import DependencyDisplay
+from diagram.dependency_display import DependencyDisplay
 
 
 class DiagramDependencyFinder:

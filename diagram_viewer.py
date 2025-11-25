@@ -2,11 +2,11 @@ from pygame import Rect, Vector2
 import pygame
 
 import configuration
-from dependency_display import DependencyDisplay
+from diagram.dependency_display import DependencyDisplay
 from diagram.diagram_loader import DiagramLoader
 from diagram.diagram_module import DiagramModule
 from diagram.diagram_saver import DiagramSaver
-from diagram_dependency_finder import DiagramDependencyFinder
+from diagram.diagram_dependency_finder import DiagramDependencyFinder
 import window_engine.draw as draw
 from window_engine.mouse import Mouse
 from window_engine.window import Window

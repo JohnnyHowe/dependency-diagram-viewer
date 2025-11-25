@@ -12,6 +12,32 @@
             "folders": [],
             "scripts": [
                 {
+                    "path": "./diagram\\dependency_display.py",
+                    "name": "dependency_display.py",
+                    "is_hidden": false,
+                    "full_name": "./diagram\\dependency_display.py",
+                    "dependencies": [
+                        "./diagram\\diagram_item.py"
+                    ],
+                    "position": [
+                        -83,
+                        -474
+                    ]
+                },
+                {
+                    "path": "./diagram\\diagram_dependency_finder.py",
+                    "name": "diagram_dependency_finder.py",
+                    "is_hidden": false,
+                    "full_name": "./diagram\\diagram_dependency_finder.py",
+                    "dependencies": [
+                        "./diagram\\dependency_display.py"
+                    ],
+                    "position": [
+                        -81,
+                        -363
+                    ]
+                },
+                {
                     "path": "./diagram\\diagram_item.py",
                     "name": "diagram_item.py",
                     "is_hidden": false,
@@ -105,8 +131,8 @@
                             "full_name": "./project_parsers\\godot\\file_parser.py",
                             "dependencies": [],
                             "position": [
-                                882,
-                                263
+                                647,
+                                133
                             ]
                         },
                         {
@@ -116,8 +142,8 @@
                             "full_name": "./project_parsers\\godot\\gd_module.py",
                             "dependencies": [],
                             "position": [
-                                352,
-                                265
+                                117,
+                                135
                             ]
                         },
                         {
@@ -127,8 +153,8 @@
                             "full_name": "./project_parsers\\godot\\gd_script.py",
                             "dependencies": [],
                             "position": [
-                                1056,
-                                262
+                                821,
+                                132
                             ]
                         },
                         {
@@ -141,8 +167,8 @@
                                 "./project_parsers\\godot\\gd_module.py"
                             ],
                             "position": [
-                                354,
-                                367
+                                119,
+                                237
                             ]
                         },
                         {
@@ -152,8 +178,8 @@
                             "full_name": "./project_parsers\\godot\\project_folder.py",
                             "dependencies": [],
                             "position": [
-                                706,
-                                264
+                                471,
+                                134
                             ]
                         },
                         {
@@ -163,8 +189,8 @@
                             "full_name": "./project_parsers\\godot\\project_script.py",
                             "dependencies": [],
                             "position": [
-                                526,
-                                260
+                                291,
+                                130
                             ]
                         }
                     ]
@@ -183,8 +209,8 @@
                             "full_name": "./project_parsers\\python_parser\\folder.py",
                             "dependencies": [],
                             "position": [
-                                864,
-                                315
+                                629,
+                                185
                             ]
                         },
                         {
@@ -196,8 +222,8 @@
                                 "./json_parser.py"
                             ],
                             "position": [
-                                524,
-                                315
+                                289,
+                                185
                             ]
                         },
                         {
@@ -209,8 +235,8 @@
                                 "./json_parser.py"
                             ],
                             "position": [
-                                694,
-                                315
+                                459,
+                                185
                             ]
                         },
                         {
@@ -220,8 +246,8 @@
                             "full_name": "./project_parsers\\python_parser\\script.py",
                             "dependencies": [],
                             "position": [
-                                354,
-                                315
+                                119,
+                                185
                             ]
                         },
                         {
@@ -231,8 +257,8 @@
                             "full_name": "./project_parsers\\python_parser\\script_parser.py",
                             "dependencies": [],
                             "position": [
-                                184,
-                                315
+                                -51,
+                                185
                             ]
                         }
                     ]
@@ -251,8 +277,8 @@
                             "full_name": "./project_parsers\\unity_parser\\csharp_parser.py",
                             "dependencies": [],
                             "position": [
-                                1064,
-                                75
+                                829,
+                                -55
                             ]
                         },
                         {
@@ -262,8 +288,8 @@
                             "full_name": "./project_parsers\\unity_parser\\json_parser.py",
                             "dependencies": [],
                             "position": [
-                                893,
-                                313
+                                658,
+                                183
                             ]
                         },
                         {
@@ -277,8 +303,8 @@
                                 "./project_parsers\\unity_parser\\project.py"
                             ],
                             "position": [
-                                707,
-                                446
+                                472,
+                                316
                             ]
                         },
                         {
@@ -288,8 +314,8 @@
                             "full_name": "./project_parsers\\unity_parser\\member.py",
                             "dependencies": [],
                             "position": [
-                                702,
-                                73
+                                467,
+                                -57
                             ]
                         },
                         {
@@ -301,8 +327,8 @@
                                 "./project_parsers\\unity_parser\\member.py"
                             ],
                             "position": [
-                                704,
-                                188
+                                469,
+                                58
                             ]
                         },
                         {
@@ -312,8 +338,8 @@
                             "full_name": "./project_parsers\\unity_parser\\parse_unity_project.py",
                             "dependencies": [],
                             "position": [
-                                883,
-                                75
+                                648,
+                                -55
                             ]
                         },
                         {
@@ -327,8 +353,8 @@
                                 "./project_parsers\\unity_parser\\project.py"
                             ],
                             "position": [
-                                705,
-                                558
+                                470,
+                                428
                             ]
                         },
                         {
@@ -341,8 +367,8 @@
                                 "./project_parsers\\unity_parser\\namespace.py"
                             ],
                             "position": [
-                                708,
-                                313
+                                473,
+                                183
                             ]
                         }
                     ]
@@ -469,40 +495,14 @@
             ]
         },
         {
-            "path": "./dependency_display.py",
-            "name": "dependency_display.py",
-            "is_hidden": false,
-            "full_name": "./dependency_display.py",
-            "dependencies": [
-                "./diagram\\diagram_item.py"
-            ],
-            "position": [
-                283,
-                -115
-            ]
-        },
-        {
             "path": "./dependency_file_merger.py",
             "name": "dependency_file_merger.py",
             "is_hidden": false,
             "full_name": "./dependency_file_merger.py",
             "dependencies": [],
             "position": [
-                595,
-                73
-            ]
-        },
-        {
-            "path": "./diagram_dependency_finder.py",
-            "name": "diagram_dependency_finder.py",
-            "is_hidden": false,
-            "full_name": "./diagram_dependency_finder.py",
-            "dependencies": [
-                "./dependency_display.py"
-            ],
-            "position": [
-                284,
-                15
+                360,
+                -57
             ]
         },
         {
@@ -513,8 +513,8 @@
             "dependencies": [
                 "./camera_controller.py",
                 "./configuration.py",
-                "./dependency_display.py",
-                "./diagram_dependency_finder.py",
+                "./diagram\\dependency_display.py",
+                "./diagram\\diagram_dependency_finder.py",
                 "./diagram\\diagram_loader.py",
                 "./diagram\\diagram_module.py",
                 "./diagram\\diagram_saver.py",
@@ -522,8 +522,8 @@
                 "./window_engine\\window.py"
             ],
             "position": [
-                283,
-                162
+                108,
+                -61
             ]
         },
         {
@@ -533,8 +533,8 @@
             "full_name": "./json_parser.py",
             "dependencies": [],
             "position": [
-                855,
-                68
+                620,
+                -62
             ]
         },
         {
@@ -549,8 +549,8 @@
                 "./project_parsers\\unity_parser\\parser.py"
             ],
             "position": [
-                518,
-                467
+                283,
+                337
             ]
         },
         {
@@ -565,8 +565,8 @@
                 "./window_engine\\window.py"
             ],
             "position": [
-                711,
-                466
+                476,
+                336
             ]
         }
     ]
