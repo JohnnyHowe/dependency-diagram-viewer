@@ -10,8 +10,10 @@ class DiagramDependencyFinder:
 	def get_all_visible_dependencies(self) -> list[DependencyDisplay]:
 		self._set_all_dependencies()
 		self._raise_dependencies_to_visible_parents()
-		self._filter_mutual_dependencies()
+		self._filter_self_dependencies()
+		self._filter_duplicates()
 		self._filter()
+		self._filter_mutual_dependencies()
 		self.dependencies = sorted(list(self.dependencies))
 		return self.dependencies
 
@@ -30,12 +32,26 @@ class DiagramDependencyFinder:
 			))
 		self.dependencies = raised
 
+	def _filter_duplicates(self):
+		filtered = set()
+		seen = set()
+		for dependency in self.dependencies:
+			if dependency.pair in seen: continue
+			seen.add(dependency.pair)
+			filtered.add(dependency)
+		self.dependencies = filtered
+
+	def _filter_self_dependencies(self):
+		filtered = set()
+		for dependency in self.dependencies:
+			if not dependency.source == dependency.target:
+				filtered.add(dependency)
+		self.dependencies = filtered
+
 	def _filter(self):
 		filtered = set()
 		for dependency in self.dependencies:
 
-			if dependency.source == dependency.target:
-				continue
 			if dependency.source.is_root or dependency.target.is_root:
 				continue
 			if dependency.source.is_child_of(dependency.target) or dependency.target.is_child_of(dependency.source):
@@ -49,9 +65,7 @@ class DiagramDependencyFinder:
 		dependencies_by_pair = {}
 
 		for dependency in self.dependencies:
-			if dependency.pair in dependencies_by_pair:
-				dependencies_by_pair[dependency.pair].dependency_type = "mutual"
-			elif dependency.inverse_pair in dependencies_by_pair:
+			if dependency.inverse_pair in dependencies_by_pair:
 				dependencies_by_pair[dependency.inverse_pair].dependency_type = "mutual"
 			else:
 				dependencies_by_pair[dependency.pair] = dependency

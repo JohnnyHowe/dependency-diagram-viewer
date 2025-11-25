@@ -113,8 +113,8 @@
                         "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenBase\\token.gd",
                         "C:/Users/Work/Documents/Projects/dwarfhold\\Tokens\\token_finder.gd",
                         "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages\\RPGStylePopups\\popup_data.gd",
-                        "C:/Users/Work/Documents/Projects/dwarfhold\\Systems\\EventManager\\event.gd",
-                        "C:/Users/Work/Documents/Projects/dwarfhold\\Tokens\\Cart\\cart.gd"
+                        "C:/Users/Work/Documents/Projects/dwarfhold\\Tokens\\Cart\\cart.gd",
+                        "C:/Users/Work/Documents/Projects/dwarfhold\\Systems\\EventManager\\event.gd"
                     ],
                     "position": [
                         -924,
@@ -141,9 +141,9 @@
                     "is_hidden": false,
                     "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\Events\\end_of_day_enemy_spawn.gd",
                     "dependencies": [
-                        "C:/Users/Work/Documents/Projects/dwarfhold\\camera.gd",
+                        "C:/Users/Work/Documents/Projects/dwarfhold\\Systems\\EventManager\\event.gd",
                         "C:/Users/Work/Documents/Projects/dwarfhold\\Systems\\EnemySpawner\\enemy_spawner.gd",
-                        "C:/Users/Work/Documents/Projects/dwarfhold\\Systems\\EventManager\\event.gd"
+                        "C:/Users/Work/Documents/Projects/dwarfhold\\camera.gd"
                     ],
                     "position": [
                         -924,
@@ -281,12 +281,12 @@
                                     "is_hidden": false,
                                     "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages\\AudioManager\\audio_manager.gd",
                                     "dependencies": [
-                                        "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages\\AudioManager\\loopable_audio_stream_player.gd",
-                                        "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\better_resource_loader.gd"
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\better_resource_loader.gd",
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages\\AudioManager\\loopable_audio_stream_player.gd"
                                     ],
                                     "position": [
-                                        948,
-                                        -1706
+                                        -205,
+                                        -1875
                                     ]
                                 },
                                 {
@@ -296,8 +296,8 @@
                                     "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages\\AudioManager\\easy_audio_player.gd",
                                     "dependencies": [],
                                     "position": [
-                                        1118,
-                                        -1785
+                                        -35,
+                                        -1954
                                     ]
                                 },
                                 {
@@ -307,8 +307,8 @@
                                     "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages\\AudioManager\\loopable_audio_stream_player.gd",
                                     "dependencies": [],
                                     "position": [
-                                        943,
-                                        -1789
+                                        -210,
+                                        -1958
                                     ]
                                 }
                             ]
@@ -330,8 +330,8 @@
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages\\DebugLogger\\debug_logger_string_processor.gd"
                                     ],
                                     "position": [
-                                        109,
-                                        -1720
+                                        -1044,
+                                        -1889
                                     ]
                                 },
                                 {
@@ -341,8 +341,8 @@
                                     "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages\\DebugLogger\\debug_logger_string_processor.gd",
                                     "dependencies": [],
                                     "position": [
-                                        107,
-                                        -1793
+                                        -1046,
+                                        -1962
                                     ]
                                 },
                                 {
@@ -352,8 +352,8 @@
                                     "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages\\DebugLogger\\player_input_logger.gd",
                                     "dependencies": [],
                                     "position": [
-                                        299,
-                                        -1789
+                                        -854,
+                                        -1958
                                     ]
                                 }
                             ]
@@ -374,8 +374,8 @@
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\dynamic_signal_collection.gd"
                                     ],
                                     "position": [
-                                        519,
-                                        -1791
+                                        -634,
+                                        -1960
                                     ]
                                 }
                             ]
@@ -397,8 +397,8 @@
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\better_resource_loader.gd"
                                     ],
                                     "position": [
-                                        1355,
-                                        -1786
+                                        202,
+                                        -1955
                                     ]
                                 }
                             ]
@@ -420,8 +420,8 @@
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\dictionary_utility.gd"
                                     ],
                                     "position": [
-                                        -338,
-                                        -1797
+                                        -1491,
+                                        -1966
                                     ]
                                 }
                             ]
@@ -440,8 +440,8 @@
                                     "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages\\RPGStylePopups\\popup_data.gd",
                                     "dependencies": [],
                                     "position": [
-                                        733,
-                                        -1796
+                                        -420,
+                                        -1965
                                     ]
                                 },
                                 {
@@ -453,8 +453,8 @@
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages\\RPGStylePopups\\popup_data.gd"
                                     ],
                                     "position": [
-                                        733,
-                                        -1720
+                                        -420,
+                                        -1889
                                     ]
                                 },
                                 {
@@ -467,8 +467,8 @@
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages\\RPGStylePopups\\popup_data.gd"
                                     ],
                                     "position": [
-                                        733,
-                                        -1636
+                                        -420,
+                                        -1805
                                     ]
                                 }
                             ]
@@ -487,8 +487,8 @@
                                     "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages\\ScriptTestRunner\\test_result.gd",
                                     "dependencies": [],
                                     "position": [
-                                        -180,
-                                        -1627
+                                        -1267,
+                                        -1968
                                     ]
                                 },
                                 {
@@ -501,8 +501,8 @@
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\better_resource_loader.gd"
                                     ],
                                     "position": [
-                                        -253,
-                                        -1559
+                                        -1266,
+                                        -1898
                                     ]
                                 },
                                 {
@@ -514,8 +514,8 @@
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages\\ScriptTestRunner\\test_result.gd"
                                     ],
                                     "position": [
-                                        -69,
-                                        -1556
+                                        -26,
+                                        -613
                                     ]
                                 }
                             ]
@@ -546,8 +546,8 @@
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\array_util.gd"
                                     ],
                                     "position": [
-                                        -569,
-                                        -1703
+                                        -26,
+                                        -613
                                     ]
                                 }
                             ]
@@ -561,8 +561,8 @@
                             "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\array_caster.gd",
                             "dependencies": [],
                             "position": [
-                                -747,
-                                -1839
+                                385,
+                                -2263
                             ]
                         },
                         {
@@ -572,8 +572,8 @@
                             "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\array_util.gd",
                             "dependencies": [],
                             "position": [
-                                -579,
-                                -1838
+                                -26,
+                                -613
                             ]
                         },
                         {
@@ -583,8 +583,8 @@
                             "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\better_lerp.gd",
                             "dependencies": [],
                             "position": [
-                                -917,
-                                -1839
+                                215,
+                                -2263
                             ]
                         },
                         {
@@ -594,8 +594,8 @@
                             "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\better_random.gd",
                             "dependencies": [],
                             "position": [
-                                -1087,
-                                -1839
+                                45,
+                                -2263
                             ]
                         },
                         {
@@ -605,8 +605,8 @@
                             "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\better_resource_loader.gd",
                             "dependencies": [],
                             "position": [
-                                -1257,
-                                -1839
+                                -125,
+                                -2263
                             ]
                         },
                         {
@@ -616,8 +616,8 @@
                             "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\combination_set.gd",
                             "dependencies": [],
                             "position": [
-                                -1427,
-                                -1839
+                                -295,
+                                -2263
                             ]
                         },
                         {
@@ -627,8 +627,8 @@
                             "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\dictionary_utility.gd",
                             "dependencies": [],
                             "position": [
-                                -1597,
-                                -1839
+                                -465,
+                                -2263
                             ]
                         },
                         {
@@ -638,8 +638,8 @@
                             "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\dynamic_signal_collection.gd",
                             "dependencies": [],
                             "position": [
-                                -1767,
-                                -1839
+                                -635,
+                                -2263
                             ]
                         },
                         {
@@ -649,8 +649,8 @@
                             "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\easings.gd",
                             "dependencies": [],
                             "position": [
-                                -1937,
-                                -1839
+                                -805,
+                                -2263
                             ]
                         },
                         {
@@ -662,8 +662,8 @@
                                 "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\better_lerp.gd"
                             ],
                             "position": [
-                                -904,
-                                -1750
+                                228,
+                                -2174
                             ]
                         },
                         {
@@ -673,8 +673,8 @@
                             "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\game_saver.gd",
                             "dependencies": [],
                             "position": [
-                                -2107,
-                                -1839
+                                -975,
+                                -2263
                             ]
                         },
                         {
@@ -684,8 +684,8 @@
                             "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\node_finder.gd",
                             "dependencies": [],
                             "position": [
-                                -2277,
-                                -1839
+                                -1145,
+                                -2263
                             ]
                         },
                         {
@@ -695,8 +695,8 @@
                             "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\scroll_container_auto_scroll.gd",
                             "dependencies": [],
                             "position": [
-                                -2447,
-                                -1839
+                                -1315,
+                                -2263
                             ]
                         },
                         {
@@ -706,8 +706,8 @@
                             "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\set.gd",
                             "dependencies": [],
                             "position": [
-                                -2617,
-                                -1839
+                                -1485,
+                                -2263
                             ]
                         },
                         {
@@ -717,8 +717,8 @@
                             "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\string_util.gd",
                             "dependencies": [],
                             "position": [
-                                -2787,
-                                -1839
+                                -1655,
+                                -2263
                             ]
                         },
                         {
@@ -728,8 +728,8 @@
                             "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\vector_util.gd",
                             "dependencies": [],
                             "position": [
-                                -2957,
-                                -1839
+                                -1825,
+                                -2263
                             ]
                         },
                         {
@@ -739,8 +739,8 @@
                             "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\weblink_button.gd",
                             "dependencies": [],
                             "position": [
-                                -3123,
-                                -1839
+                                -1991,
+                                -2263
                             ]
                         }
                     ]
@@ -768,8 +768,8 @@
                             "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\Systems\\DwarfHoldAudio\\dwarfhold_easy_audio_player.gd",
                             "dependencies": [],
                             "position": [
-                                -583,
-                                128
+                                -571,
+                                -68
                             ]
                         },
                         {
@@ -781,8 +781,8 @@
                                 "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages\\AudioManager\\loopable_audio_stream_player.gd"
                             ],
                             "position": [
-                                -2161,
-                                273
+                                -2149,
+                                77
                             ]
                         },
                         {
@@ -791,12 +791,12 @@
                             "is_hidden": false,
                             "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\Systems\\DwarfHoldAudio\\dwarfhold_sound_effects_manager.gd",
                             "dependencies": [
-                                "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages\\AudioManager\\loopable_audio_stream_player.gd",
-                                "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\better_random.gd"
+                                "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\better_random.gd",
+                                "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages\\AudioManager\\loopable_audio_stream_player.gd"
                             ],
                             "position": [
-                                -2161,
-                                273
+                                -2149,
+                                77
                             ]
                         }
                     ]
@@ -814,16 +814,16 @@
                             "is_hidden": false,
                             "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\Systems\\EnemySpawner\\enemy_spawner.gd",
                             "dependencies": [
-                                "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TimeController\\time_controller.gd",
                                 "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\array_caster.gd",
+                                "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TimeController\\time_controller.gd",
                                 "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenManagement\\token_creator.gd",
                                 "C:/Users/Work/Documents/Projects/dwarfhold\\world.gd",
                                 "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenDataAccess\\token_data_accessor.gd",
                                 "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenContainer\\token_container.gd"
                             ],
                             "position": [
-                                -1002,
-                                208
+                                -990,
+                                12
                             ]
                         }
                     ]
@@ -852,8 +852,8 @@
                                 "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenContainer\\token_container.gd"
                             ],
                             "position": [
-                                -1182,
-                                201
+                                -1170,
+                                5
                             ]
                         },
                         {
@@ -872,8 +872,8 @@
                                 "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenContainer\\token_container.gd"
                             ],
                             "position": [
-                                -1182,
-                                201
+                                -1170,
+                                5
                             ]
                         }
                     ]
@@ -892,8 +892,8 @@
                         "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenBase\\token.gd"
                     ],
                     "position": [
-                        -1380,
-                        268
+                        -1368,
+                        72
                     ]
                 }
             ]
@@ -978,8 +978,8 @@
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenContainer\\token_container.gd"
                                     ],
                                     "position": [
-                                        -623,
-                                        -402
+                                        -637,
+                                        -392
                                     ]
                                 },
                                 {
@@ -992,8 +992,8 @@
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenBase\\token.gd"
                                     ],
                                     "position": [
-                                        -619,
-                                        -485
+                                        -633,
+                                        -475
                                     ]
                                 }
                             ]
@@ -1008,7 +1008,7 @@
                                     "path": "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\RecipeAccess\\RecipeTests",
                                     "name": "RecipeTests",
                                     "is_hidden": false,
-                                    "is_collapsed": true,
+                                    "is_collapsed": false,
                                     "folders": [],
                                     "scripts": [
                                         {
@@ -1021,8 +1021,8 @@
                                                 "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages\\ScriptTestRunner\\test_result.gd"
                                             ],
                                             "position": [
-                                                -1055,
-                                                -1561
+                                                -611,
+                                                -1053
                                             ]
                                         },
                                         {
@@ -1035,8 +1035,8 @@
                                                 "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages\\ScriptTestRunner\\test_result.gd"
                                             ],
                                             "position": [
-                                                96,
-                                                -84
+                                                -249,
+                                                -1054
                                             ]
                                         },
                                         {
@@ -1049,8 +1049,8 @@
                                                 "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages\\ScriptTestRunner\\test_result.gd"
                                             ],
                                             "position": [
-                                                -62,
-                                                -280
+                                                -76,
+                                                -1058
                                             ]
                                         },
                                         {
@@ -1064,8 +1064,8 @@
                                                 "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\array_util.gd"
                                             ],
                                             "position": [
-                                                -395,
-                                                -687
+                                                102,
+                                                -1058
                                             ]
                                         },
                                         {
@@ -1078,8 +1078,8 @@
                                                 "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages\\ScriptTestRunner\\test_result.gd"
                                             ],
                                             "position": [
-                                                -1748,
-                                                -2039
+                                                -424,
+                                                -1054
                                             ]
                                         },
                                         {
@@ -1092,8 +1092,8 @@
                                                 "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages\\ScriptTestRunner\\test_result.gd"
                                             ],
                                             "position": [
-                                                -1748,
-                                                -2039
+                                                -808,
+                                                -1049
                                             ]
                                         }
                                     ]
@@ -1194,8 +1194,8 @@
                                     "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenBase\\copy_sprite.gd",
                                     "dependencies": [],
                                     "position": [
-                                        -51,
-                                        -787
+                                        -57,
+                                        -781
                                     ]
                                 },
                                 {
@@ -1205,8 +1205,8 @@
                                     "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenBase\\sprite_flash.gd",
                                     "dependencies": [],
                                     "position": [
-                                        -220,
-                                        -788
+                                        -226,
+                                        -782
                                     ]
                                 },
                                 {
@@ -1220,15 +1220,15 @@
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenManagement\\token_creator.gd",
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenManagement\\token_manager.gd",
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\Tokens\\ProgressBar\\progress_bar_manager.gd",
-                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\RecipeAccess\\recipe.gd",
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\world.gd",
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\RecipeAccess\\recipe.gd",
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\vector_util.gd",
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenManagement\\token_move_event.gd",
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenContainer\\token_container.gd"
                                     ],
                                     "position": [
-                                        -388,
-                                        -789
+                                        -396,
+                                        -783
                                     ]
                                 },
                                 {
@@ -1238,8 +1238,8 @@
                                     "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenBase\\token_outline.tres.gd",
                                     "dependencies": [],
                                     "position": [
-                                        118,
-                                        -787
+                                        112,
+                                        -781
                                     ]
                                 }
                             ]
@@ -1343,8 +1343,8 @@
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenContainer\\token_container.gd"
                                     ],
                                     "position": [
-                                        -1094,
-                                        -439
+                                        -1115,
+                                        -437
                                     ]
                                 },
                                 {
@@ -1358,8 +1358,8 @@
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenBase\\token.gd"
                                     ],
                                     "position": [
-                                        -1264,
-                                        -439
+                                        -1285,
+                                        -437
                                     ]
                                 },
                                 {
@@ -1373,8 +1373,8 @@
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenContainer\\token_container.gd"
                                     ],
                                     "position": [
-                                        -1434,
-                                        -439
+                                        -1455,
+                                        -437
                                     ]
                                 }
                             ]
@@ -1407,11 +1407,11 @@
                                     "dependencies": [
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TimeController\\time_controller.gd",
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenBase\\token.gd",
-                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenDataAccess\\token_data_accessor.gd",
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenManagement\\token_manager.gd",
-                                        "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\better_resource_loader.gd",
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\world.gd",
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\better_resource_loader.gd",
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Extensions\\RecipeTokens\\recipe_token_data_creator.gd",
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenDataAccess\\token_data_accessor.gd",
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\RecipeAccess\\recipe_accessor.gd",
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\dictionary_utility.gd",
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenContainer\\token_container.gd"
@@ -1583,8 +1583,8 @@
                                 "C:/Users/Work/Documents/Projects/dwarfhold\\Tokens\\Enemies\\enemy.gd"
                             ],
                             "position": [
-                                -544,
-                                597
+                                -341,
+                                543
                             ]
                         }
                     ]
@@ -1606,8 +1606,8 @@
                                 "C:/Users/Work/Documents/Projects/dwarfhold\\Tokens\\ProgressBar\\progress_bar_manager.gd"
                             ],
                             "position": [
-                                -423,
-                                396
+                                -204,
+                                355
                             ]
                         }
                     ]
@@ -1629,8 +1629,8 @@
                                 "C:/Users/Work/Documents/Projects/dwarfhold\\Tokens\\Enemies\\enemy.gd"
                             ],
                             "position": [
-                                -932,
-                                620
+                                -729,
+                                566
                             ]
                         },
                         {
@@ -1644,8 +1644,8 @@
                                 "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenBase\\token.gd"
                             ],
                             "position": [
-                                -932,
-                                620
+                                -729,
+                                566
                             ]
                         },
                         {
@@ -1657,8 +1657,8 @@
                                 "C:/Users/Work/Documents/Projects/dwarfhold\\Tokens\\Enemies\\enemy.gd"
                             ],
                             "position": [
-                                -932,
-                                620
+                                -729,
+                                566
                             ]
                         },
                         {
@@ -1670,8 +1670,8 @@
                                 "C:/Users/Work/Documents/Projects/dwarfhold\\Tokens\\Enemies\\enemy.gd"
                             ],
                             "position": [
-                                -932,
-                                620
+                                -729,
+                                566
                             ]
                         },
                         {
@@ -1685,8 +1685,8 @@
                                 "C:/Users/Work/Documents/Projects/dwarfhold\\Tokens\\Projectiles\\projectile.gd"
                             ],
                             "position": [
-                                -447,
-                                190
+                                -244,
+                                136
                             ]
                         }
                     ]
@@ -1705,8 +1705,8 @@
                             "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\Tokens\\ProgressBar\\progress_bar_display.gd",
                             "dependencies": [],
                             "position": [
-                                -548,
-                                203
+                                -345,
+                                149
                             ]
                         },
                         {
@@ -1719,8 +1719,8 @@
                                 "C:/Users/Work/Documents/Projects/dwarfhold\\Tokens\\ProgressBar\\progress_bar_display.gd"
                             ],
                             "position": [
-                                -548,
-                                203
+                                -345,
+                                149
                             ]
                         }
                     ]
@@ -1745,8 +1745,8 @@
                                 "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\dictionary_utility.gd"
                             ],
                             "position": [
-                                -772,
-                                201
+                                -569,
+                                147
                             ]
                         }
                     ]
@@ -1767,8 +1767,8 @@
                                 "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenBase\\token.gd"
                             ],
                             "position": [
-                                -1071,
-                                888
+                                -868,
+                                834
                             ]
                         },
                         {
@@ -1780,8 +1780,8 @@
                                 "C:/Users/Work/Documents/Projects/dwarfhold\\Tokens\\Towers\\tower_base.gd"
                             ],
                             "position": [
-                                -1071,
-                                888
+                                -868,
+                                834
                             ]
                         },
                         {
@@ -1794,8 +1794,8 @@
                                 "C:/Users/Work/Documents/Projects/dwarfhold\\Tokens\\Enemies\\enemy.gd"
                             ],
                             "position": [
-                                -1071,
-                                888
+                                -868,
+                                834
                             ]
                         },
                         {
@@ -1810,8 +1810,8 @@
                                 "C:/Users/Work/Documents/Projects/dwarfhold\\Tokens\\Projectiles\\projectile.gd"
                             ],
                             "position": [
-                                -449,
-                                289
+                                -246,
+                                235
                             ]
                         }
                     ]
@@ -1827,8 +1827,8 @@
                         "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenContainer\\token_container.gd"
                     ],
                     "position": [
-                        -357,
-                        164
+                        -154,
+                        110
                     ]
                 }
             ]
@@ -1837,12 +1837,12 @@
             "path": "C:/Users/Work/Documents/Projects/dwarfhold\\UI",
             "name": "UI",
             "is_hidden": true,
-            "is_collapsed": false,
+            "is_collapsed": true,
             "folders": [
                 {
                     "path": "C:/Users/Work/Documents/Projects/dwarfhold\\UI\\Debug",
                     "name": "Debug",
-                    "is_hidden": false,
+                    "is_hidden": true,
                     "is_collapsed": true,
                     "folders": [
                         {
@@ -1859,8 +1859,8 @@
                                     "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\UI\\Debug\\DebugUI\\debug_ui.gd",
                                     "dependencies": [],
                                     "position": [
-                                        -1485,
-                                        1463
+                                        -1590,
+                                        1562
                                     ]
                                 },
                                 {
@@ -1875,8 +1875,8 @@
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenBase\\token.gd"
                                     ],
                                     "position": [
-                                        -1485,
-                                        1463
+                                        -1590,
+                                        1562
                                     ]
                                 }
                             ]
@@ -1900,8 +1900,8 @@
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\better_resource_loader.gd"
                                     ],
                                     "position": [
-                                        -1485,
-                                        1463
+                                        -1590,
+                                        1562
                                     ]
                                 }
                             ]
@@ -1918,7 +1918,7 @@
                         {
                             "path": "C:/Users/Work/Documents/Projects/dwarfhold\\UI\\GameElements\\ActiveQuest",
                             "name": "ActiveQuest",
-                            "is_hidden": false,
+                            "is_hidden": true,
                             "is_collapsed": true,
                             "folders": [],
                             "scripts": [
@@ -1931,8 +1931,8 @@
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\Events\\tasklist_event.gd"
                                     ],
                                     "position": [
-                                        -1134,
-                                        1709
+                                        -1239,
+                                        1808
                                     ]
                                 }
                             ]
@@ -1940,7 +1940,7 @@
                         {
                             "path": "C:/Users/Work/Documents/Projects/dwarfhold\\UI\\GameElements\\CraftingAnimationDisplay",
                             "name": "CraftingAnimationDisplay",
-                            "is_hidden": false,
+                            "is_hidden": true,
                             "is_collapsed": true,
                             "folders": [],
                             "scripts": [
@@ -1954,8 +1954,8 @@
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\better_resource_loader.gd"
                                     ],
                                     "position": [
-                                        -1311,
-                                        1711
+                                        -1416,
+                                        1810
                                     ]
                                 }
                             ]
@@ -1963,7 +1963,7 @@
                         {
                             "path": "C:/Users/Work/Documents/Projects/dwarfhold\\UI\\GameElements\\PauseIndicator",
                             "name": "PauseIndicator",
-                            "is_hidden": false,
+                            "is_hidden": true,
                             "is_collapsed": true,
                             "folders": [],
                             "scripts": [
@@ -1976,8 +1976,8 @@
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TimeController\\time_controller.gd"
                                     ],
                                     "position": [
-                                        -1497,
-                                        1710
+                                        -1602,
+                                        1809
                                     ]
                                 }
                             ]
@@ -1986,7 +1986,7 @@
                             "path": "C:/Users/Work/Documents/Projects/dwarfhold\\UI\\GameElements\\RecipeBook",
                             "name": "RecipeBook",
                             "is_hidden": false,
-                            "is_collapsed": true,
+                            "is_collapsed": false,
                             "folders": [],
                             "scripts": [
                                 {
@@ -1996,22 +1996,22 @@
                                     "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\UI\\GameElements\\RecipeBook\\recipe_book.gd",
                                     "dependencies": [
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenManagement\\token_manager.gd",
-                                        "C:/Users/Work/Documents/Projects/dwarfhold\\UI\\GameElements\\RecipeBook\\recipe_item.gd",
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenManagement\\token_creator.gd",
-                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\CraftingManager\\crafting_manager.gd",
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\UI\\GameElements\\RecipeBook\\recipe_searcher.gd",
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\UI\\GameElements\\RecipeBook\\recipe_book_item.gd",
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\CraftingManager\\crafting_manager.gd",
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\RecipeAccess\\recipe_accessor.gd"
                                     ],
                                     "position": [
-                                        -1261,
-                                        2803
+                                        -116,
+                                        1823
                                     ]
                                 },
                                 {
-                                    "path": "C:/Users/Work/Documents/Projects/dwarfhold\\UI\\GameElements\\RecipeBook\\recipe_item.gd",
-                                    "name": "recipe_item.gd",
+                                    "path": "C:/Users/Work/Documents/Projects/dwarfhold\\UI\\GameElements\\RecipeBook\\recipe_book_item.gd",
+                                    "name": "recipe_book_item.gd",
                                     "is_hidden": false,
-                                    "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\UI\\GameElements\\RecipeBook\\recipe_item.gd",
+                                    "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\UI\\GameElements\\RecipeBook\\recipe_book_item.gd",
                                     "dependencies": [
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\RecipeAccess\\recipe.gd",
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenManagement\\token_manager.gd",
@@ -2019,8 +2019,8 @@
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenManagement\\token_creator.gd"
                                     ],
                                     "position": [
-                                        -655,
-                                        620
+                                        627,
+                                        -31
                                     ]
                                 },
                                 {
@@ -2032,8 +2032,8 @@
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\RecipeAccess\\recipe.gd"
                                     ],
                                     "position": [
-                                        -315,
-                                        957
+                                        -32,
+                                        1744
                                     ]
                                 }
                             ]
@@ -2041,7 +2041,7 @@
                         {
                             "path": "C:/Users/Work/Documents/Projects/dwarfhold\\UI\\GameElements\\TaskList",
                             "name": "TaskList",
-                            "is_hidden": false,
+                            "is_hidden": true,
                             "is_collapsed": true,
                             "folders": [],
                             "scripts": [
@@ -2056,8 +2056,8 @@
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\better_lerp.gd"
                                     ],
                                     "position": [
-                                        -1686,
-                                        1708
+                                        -1791,
+                                        1807
                                     ]
                                 }
                             ]
@@ -2065,7 +2065,7 @@
                         {
                             "path": "C:/Users/Work/Documents/Projects/dwarfhold\\UI\\GameElements\\TimeDisplay",
                             "name": "TimeDisplay",
-                            "is_hidden": false,
+                            "is_hidden": true,
                             "is_collapsed": true,
                             "folders": [],
                             "scripts": [
@@ -2076,8 +2076,8 @@
                                     "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\UI\\GameElements\\TimeDisplay\\day_progress_anim.gd",
                                     "dependencies": [],
                                     "position": [
-                                        -1261,
-                                        2803
+                                        -1366,
+                                        2902
                                     ]
                                 },
                                 {
@@ -2091,8 +2091,8 @@
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenContainer\\token_container.gd"
                                     ],
                                     "position": [
-                                        -655,
-                                        620
+                                        -760,
+                                        719
                                     ]
                                 }
                             ]
@@ -2100,7 +2100,7 @@
                         {
                             "path": "C:/Users/Work/Documents/Projects/dwarfhold\\UI\\GameElements\\TokenTooltip",
                             "name": "TokenTooltip",
-                            "is_hidden": false,
+                            "is_hidden": true,
                             "is_collapsed": true,
                             "folders": [],
                             "scripts": [
@@ -2115,8 +2115,8 @@
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\better_resource_loader.gd"
                                     ],
                                     "position": [
-                                        -1870,
-                                        1709
+                                        -1975,
+                                        1808
                                     ]
                                 }
                             ]
@@ -2127,7 +2127,7 @@
                 {
                     "path": "C:/Users/Work/Documents/Projects/dwarfhold\\UI\\Screens",
                     "name": "Screens",
-                    "is_hidden": false,
+                    "is_hidden": true,
                     "is_collapsed": true,
                     "folders": [
                         {
@@ -2147,8 +2147,8 @@
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TimeController\\time_controller.gd"
                                     ],
                                     "position": [
-                                        -1562,
-                                        2555
+                                        -1667,
+                                        2654
                                     ]
                                 }
                             ]
@@ -2170,8 +2170,8 @@
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\UI\\Screens\\user_interface_menu.gd"
                                     ],
                                     "position": [
-                                        -956,
-                                        374
+                                        -1061,
+                                        473
                                     ]
                                 }
                             ]
@@ -2185,8 +2185,8 @@
                             "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\UI\\Screens\\user_interface_menu.gd",
                             "dependencies": [],
                             "position": [
-                                -956,
-                                374
+                                -1061,
+                                473
                             ]
                         }
                     ]
@@ -2196,23 +2196,23 @@
                 {
                     "path": "C:/Users/Work/Documents/Projects/dwarfhold\\UI\\ui_enabler.gd",
                     "name": "ui_enabler.gd",
-                    "is_hidden": false,
+                    "is_hidden": true,
                     "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\UI\\ui_enabler.gd",
                     "dependencies": [],
                     "position": [
-                        -1701,
-                        1409
+                        -1806,
+                        1508
                     ]
                 },
                 {
                     "path": "C:/Users/Work/Documents/Projects/dwarfhold\\UI\\ui_flash.gd",
                     "name": "ui_flash.gd",
-                    "is_hidden": false,
+                    "is_hidden": true,
                     "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\UI\\ui_flash.gd",
                     "dependencies": [],
                     "position": [
-                        -1880,
-                        1409
+                        -1985,
+                        1508
                     ]
                 }
             ]
@@ -2286,8 +2286,8 @@
                 "C:/Users/Work/Documents/Projects/dwarfhold\\Tokens\\Projectiles\\projectile.gd"
             ],
             "position": [
-                -1626,
-                112
+                -1614,
+                -84
             ]
         }
     ]
