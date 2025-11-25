@@ -13,8 +13,8 @@
                             "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\Events\\tutorial\\ginger_beer.gd",
                             "name": "ginger_beer.gd",
                             "dependencies": [
-                                "C:/Users/Work/Documents/Projects/dwarfhold\\Systems\\EventManager\\event.gd",
-                                "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\CraftingManager\\crafting_result.gd"
+                                "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\CraftingManager\\crafting_result.gd",
+                                "C:/Users/Work/Documents/Projects/dwarfhold\\Systems\\EventManager\\event.gd"
                             ],
                             "is_hidden": false,
                             "position": [
@@ -28,8 +28,8 @@
                             "name": "on_first_recipe_token.gd",
                             "dependencies": [
                                 "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenBase\\token.gd",
-                                "C:/Users/Work/Documents/Projects/dwarfhold\\Systems\\EventManager\\event.gd",
-                                "C:/Users/Work/Documents/Projects/dwarfhold\\Tokens\\Cart\\cart.gd"
+                                "C:/Users/Work/Documents/Projects/dwarfhold\\Tokens\\Cart\\cart.gd",
+                                "C:/Users/Work/Documents/Projects/dwarfhold\\Systems\\EventManager\\event.gd"
                             ],
                             "is_hidden": false,
                             "position": [
@@ -89,8 +89,8 @@
                     "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\Events\\auto_slow_on_enemies_alive.gd",
                     "name": "auto_slow_on_enemies_alive.gd",
                     "dependencies": [
-                        "C:/Users/Work/Documents/Projects/dwarfhold\\Systems\\EventManager\\event.gd",
-                        "C:/Users/Work/Documents/Projects/dwarfhold\\Systems\\EnemySpawner\\enemy_spawner.gd"
+                        "C:/Users/Work/Documents/Projects/dwarfhold\\Systems\\EnemySpawner\\enemy_spawner.gd",
+                        "C:/Users/Work/Documents/Projects/dwarfhold\\Systems\\EventManager\\event.gd"
                     ],
                     "is_hidden": false,
                     "position": [
@@ -103,11 +103,11 @@
                     "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\Events\\cart_full_event.gd",
                     "name": "cart_full_event.gd",
                     "dependencies": [
-                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenBase\\token.gd",
                         "C:/Users/Work/Documents/Projects/dwarfhold\\Tokens\\token_finder.gd",
                         "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages\\RPGStylePopups\\popup_data.gd",
+                        "C:/Users/Work/Documents/Projects/dwarfhold\\Tokens\\Cart\\cart.gd",
                         "C:/Users/Work/Documents/Projects/dwarfhold\\Systems\\EventManager\\event.gd",
-                        "C:/Users/Work/Documents/Projects/dwarfhold\\Tokens\\Cart\\cart.gd"
+                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenBase\\token.gd"
                     ],
                     "is_hidden": false,
                     "position": [
@@ -120,8 +120,8 @@
                     "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\Events\\dwarf_die_no_beer.gd",
                     "name": "dwarf_die_no_beer.gd",
                     "dependencies": [
-                        "C:/Users/Work/Documents/Projects/dwarfhold\\Systems\\EventManager\\event.gd",
-                        "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages\\RPGStylePopups\\popup_data.gd"
+                        "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages\\RPGStylePopups\\popup_data.gd",
+                        "C:/Users/Work/Documents/Projects/dwarfhold\\Systems\\EventManager\\event.gd"
                     ],
                     "is_hidden": false,
                     "position": [
@@ -134,9 +134,9 @@
                     "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\Events\\end_of_day_enemy_spawn.gd",
                     "name": "end_of_day_enemy_spawn.gd",
                     "dependencies": [
-                        "C:/Users/Work/Documents/Projects/dwarfhold\\Systems\\EventManager\\event.gd",
+                        "C:/Users/Work/Documents/Projects/dwarfhold\\camera.gd",
                         "C:/Users/Work/Documents/Projects/dwarfhold\\Systems\\EnemySpawner\\enemy_spawner.gd",
-                        "C:/Users/Work/Documents/Projects/dwarfhold\\camera.gd"
+                        "C:/Users/Work/Documents/Projects/dwarfhold\\Systems\\EventManager\\event.gd"
                     ],
                     "is_hidden": false,
                     "position": [
@@ -149,9 +149,9 @@
                     "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\Events\\end_of_day_ginger_beer_consumption.gd",
                     "name": "end_of_day_ginger_beer_consumption.gd",
                     "dependencies": [
-                        "C:/Users/Work/Documents/Projects/dwarfhold\\Systems\\EventManager\\event.gd",
                         "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenBase\\token.gd",
-                        "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages\\RPGStylePopups\\popup_data.gd"
+                        "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages\\RPGStylePopups\\popup_data.gd",
+                        "C:/Users/Work/Documents/Projects/dwarfhold\\Systems\\EventManager\\event.gd"
                     ],
                     "is_hidden": false,
                     "position": [
@@ -164,9 +164,9 @@
                     "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\Events\\first_bear_event.gd",
                     "name": "first_bear_event.gd",
                     "dependencies": [
-                        "C:/Users/Work/Documents/Projects/dwarfhold\\Systems\\EventManager\\event.gd",
                         "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenBase\\token.gd",
-                        "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages\\RPGStylePopups\\popup_data.gd"
+                        "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages\\RPGStylePopups\\popup_data.gd",
+                        "C:/Users/Work/Documents/Projects/dwarfhold\\Systems\\EventManager\\event.gd"
                     ],
                     "is_hidden": false,
                     "position": [
@@ -179,9 +179,9 @@
                     "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\Events\\first_tower_event.gd",
                     "name": "first_tower_event.gd",
                     "dependencies": [
-                        "C:/Users/Work/Documents/Projects/dwarfhold\\Systems\\EventManager\\event.gd",
+                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\CraftingManager\\crafting_result.gd",
                         "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages\\RPGStylePopups\\popup_data.gd",
-                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\CraftingManager\\crafting_result.gd"
+                        "C:/Users/Work/Documents/Projects/dwarfhold\\Systems\\EventManager\\event.gd"
                     ],
                     "is_hidden": false,
                     "position": [
@@ -194,8 +194,8 @@
                     "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\Events\\spawn_cart.gd",
                     "name": "spawn_cart.gd",
                     "dependencies": [
-                        "C:/Users/Work/Documents/Projects/dwarfhold\\Systems\\EventManager\\event.gd",
-                        "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages\\RPGStylePopups\\popup_data.gd"
+                        "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages\\RPGStylePopups\\popup_data.gd",
+                        "C:/Users/Work/Documents/Projects/dwarfhold\\Systems\\EventManager\\event.gd"
                     ],
                     "is_hidden": false,
                     "position": [
@@ -208,9 +208,9 @@
                     "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\Events\\stone_mine_creation.gd",
                     "name": "stone_mine_creation.gd",
                     "dependencies": [
-                        "C:/Users/Work/Documents/Projects/dwarfhold\\Systems\\EventManager\\event.gd",
+                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\CraftingManager\\crafting_result.gd",
                         "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages\\RPGStylePopups\\popup_data.gd",
-                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\CraftingManager\\crafting_result.gd"
+                        "C:/Users/Work/Documents/Projects/dwarfhold\\Systems\\EventManager\\event.gd"
                     ],
                     "is_hidden": false,
                     "position": [
@@ -223,10 +223,10 @@
                     "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\Events\\summon_boss.gd",
                     "name": "summon_boss.gd",
                     "dependencies": [
-                        "C:/Users/Work/Documents/Projects/dwarfhold\\Systems\\EventManager\\event.gd",
                         "C:/Users/Work/Documents/Projects/dwarfhold\\Systems\\EnemySpawner\\enemy_spawner.gd",
+                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\CraftingManager\\crafting_result.gd",
                         "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages\\RPGStylePopups\\popup_data.gd",
-                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\CraftingManager\\crafting_result.gd"
+                        "C:/Users/Work/Documents/Projects/dwarfhold\\Systems\\EventManager\\event.gd"
                     ],
                     "is_hidden": false,
                     "position": [
@@ -239,8 +239,8 @@
                     "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\Events\\tasklist_event.gd",
                     "name": "tasklist_event.gd",
                     "dependencies": [
-                        "C:/Users/Work/Documents/Projects/dwarfhold\\Systems\\EventManager\\event.gd",
-                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\CraftingManager\\crafting_result.gd"
+                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\CraftingManager\\crafting_result.gd",
+                        "C:/Users/Work/Documents/Projects/dwarfhold\\Systems\\EventManager\\event.gd"
                     ],
                     "is_hidden": false,
                     "position": [
@@ -268,8 +268,8 @@
                                     "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages\\AudioManager\\audio_manager.gd",
                                     "name": "audio_manager.gd",
                                     "dependencies": [
-                                        "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages\\AudioManager\\loopable_audio_stream_player.gd",
-                                        "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\better_resource_loader.gd"
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\better_resource_loader.gd",
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages\\AudioManager\\loopable_audio_stream_player.gd"
                                     ],
                                     "is_hidden": false,
                                     "position": [
@@ -492,6 +492,14 @@
                                         0,
                                         -295
                                     ]
+                                },
+                                {
+                                    "path": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages\\ScriptTestRunner\\test_runner_example.tests.gd",
+                                    "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages\\ScriptTestRunner\\test_runner_example.tests.gd",
+                                    "name": "test_runner_example.tests.gd",
+                                    "dependencies": [
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages\\ScriptTestRunner\\test_result.gd"
+                                    ]
                                 }
                             ],
                             "name": "ScriptTestRunner",
@@ -506,7 +514,24 @@
                 },
                 {
                     "path": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts",
-                    "folders": [],
+                    "folders": [
+                        {
+                            "path": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\tests",
+                            "folders": [],
+                            "scripts": [
+                                {
+                                    "path": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\tests\\array_util.tests.gd",
+                                    "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\tests\\array_util.tests.gd",
+                                    "name": "array_util.tests.gd",
+                                    "dependencies": [
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\array_util.gd",
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages\\ScriptTestRunner\\test_result.gd"
+                                    ]
+                                }
+                            ],
+                            "name": "tests"
+                        }
+                    ],
                     "scripts": [
                         {
                             "path": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\array_caster.gd",
@@ -518,6 +543,12 @@
                                 0,
                                 -295
                             ]
+                        },
+                        {
+                            "path": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\array_util.gd",
+                            "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\array_util.gd",
+                            "name": "array_util.gd",
+                            "dependencies": []
                         },
                         {
                             "path": "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\better_lerp.gd",
@@ -733,8 +764,8 @@
                             "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\Systems\\DwarfHoldAudio\\dwarfhold_sound_effects_manager.gd",
                             "name": "dwarfhold_sound_effects_manager.gd",
                             "dependencies": [
-                                "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages\\AudioManager\\loopable_audio_stream_player.gd",
-                                "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\better_random.gd"
+                                "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\better_random.gd",
+                                "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages\\AudioManager\\loopable_audio_stream_player.gd"
                             ],
                             "is_hidden": false,
                             "position": [
@@ -756,11 +787,12 @@
                             "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\Systems\\EnemySpawner\\enemy_spawner.gd",
                             "name": "enemy_spawner.gd",
                             "dependencies": [
-                                "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TimeController\\time_controller.gd",
-                                "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenContainer\\token_container.gd",
-                                "C:/Users/Work/Documents/Projects/dwarfhold\\world.gd",
+                                "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenManagement\\token_creator.gd",
                                 "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\array_caster.gd",
-                                "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenManagement\\token_creator.gd"
+                                "C:/Users/Work/Documents/Projects/dwarfhold\\world.gd",
+                                "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenDataAccess\\token_data_accessor.gd",
+                                "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenContainer\\token_container.gd",
+                                "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TimeController\\time_controller.gd"
                             ],
                             "is_hidden": false,
                             "position": [
@@ -782,14 +814,15 @@
                             "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\Systems\\EventManager\\event.gd",
                             "name": "event.gd",
                             "dependencies": [
-                                "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TimeController\\time_controller.gd",
-                                "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages\\RPGStylePopups\\rpg_style_popup_manager.gd",
-                                "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenContainer\\token_container.gd",
+                                "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenManagement\\token_creator.gd",
                                 "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenManagement\\token_manager.gd",
+                                "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages\\RPGStylePopups\\rpg_style_popup_manager.gd",
                                 "C:/Users/Work/Documents/Projects/dwarfhold\\Systems\\EventManager\\event_manager.gd",
-                                "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenBase\\token.gd",
                                 "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\CraftingManager\\crafting_manager.gd",
-                                "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenManagement\\token_creator.gd"
+                                "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\RecipeAccess\\recipe_accessor.gd",
+                                "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenContainer\\token_container.gd",
+                                "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenBase\\token.gd",
+                                "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TimeController\\time_controller.gd"
                             ],
                             "is_hidden": false,
                             "position": [
@@ -802,13 +835,14 @@
                             "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\Systems\\EventManager\\event_manager.gd",
                             "name": "event_manager.gd",
                             "dependencies": [
-                                "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TimeController\\time_controller.gd",
-                                "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenContainer\\token_container.gd",
-                                "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages\\RPGStylePopups\\rpg_style_popup_manager.gd",
-                                "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenManagement\\token_manager.gd",
-                                "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\CraftingManager\\crafting_manager.gd",
                                 "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenManagement\\token_creator.gd",
-                                "C:/Users/Work/Documents/Projects/dwarfhold\\Systems\\EventManager\\event.gd"
+                                "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenManagement\\token_manager.gd",
+                                "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages\\RPGStylePopups\\rpg_style_popup_manager.gd",
+                                "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\CraftingManager\\crafting_manager.gd",
+                                "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\RecipeAccess\\recipe_accessor.gd",
+                                "C:/Users/Work/Documents/Projects/dwarfhold\\Systems\\EventManager\\event.gd",
+                                "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenContainer\\token_container.gd",
+                                "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TimeController\\time_controller.gd"
                             ],
                             "is_hidden": false,
                             "position": [
@@ -828,10 +862,10 @@
                     "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\Systems\\token_area_pusher.gd",
                     "name": "token_area_pusher.gd",
                     "dependencies": [
+                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenManagement\\token_manager.gd",
                         "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenBase\\token.gd",
-                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenContainer\\token_container.gd",
                         "C:/Users/Work/Documents/Projects/dwarfhold\\world.gd",
-                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenManagement\\token_manager.gd"
+                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenContainer\\token_container.gd"
                     ],
                     "is_hidden": false,
                     "position": [
@@ -859,16 +893,15 @@
                                     "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\CraftingManager\\crafting_manager.gd",
                                     "name": "crafting_manager.gd",
                                     "dependencies": [
-                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TimeController\\time_controller.gd",
-                                        "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\better_random.gd",
-                                        "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\better_resource_loader.gd",
-                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenContainer\\token_container.gd",
-                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenManagement\\token_manager.gd",
-                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\CraftingManager\\recipe_utility.gd",
-                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenBase\\token.gd",
-                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenManagement\\token_move_event.gd",
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenManagement\\token_creator.gd",
-                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\CraftingManager\\crafting_result.gd"
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenManagement\\token_manager.gd",
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\CraftingManager\\crafting_result.gd",
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\RecipeAccess\\recipe.gd",
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenManagement\\token_move_event.gd",
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\RecipeAccess\\recipe_accessor.gd",
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenContainer\\token_container.gd",
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TimeController\\time_controller.gd",
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenBase\\token.gd"
                                     ],
                                     "is_hidden": false,
                                     "position": [
@@ -881,19 +914,9 @@
                                     "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\CraftingManager\\crafting_result.gd",
                                     "name": "crafting_result.gd",
                                     "dependencies": [
-                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenBase\\token.gd"
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenBase\\token.gd",
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\RecipeAccess\\recipe.gd"
                                     ],
-                                    "is_hidden": false,
-                                    "position": [
-                                        0,
-                                        -202
-                                    ]
-                                },
-                                {
-                                    "path": "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\CraftingManager\\recipe_utility.gd",
-                                    "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\CraftingManager\\recipe_utility.gd",
-                                    "name": "recipe_utility.gd",
-                                    "dependencies": [],
                                     "is_hidden": false,
                                     "position": [
                                         0,
@@ -906,6 +929,97 @@
                             "is_collapsed": true
                         },
                         {
+                            "path": "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\RecipeAccess",
+                            "folders": [
+                                {
+                                    "path": "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\RecipeAccess\\RecipeTests",
+                                    "folders": [],
+                                    "scripts": [
+                                        {
+                                            "path": "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\RecipeAccess\\RecipeTests\\recipe_get_crafting_label_text.tests.gd",
+                                            "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\RecipeAccess\\RecipeTests\\recipe_get_crafting_label_text.tests.gd",
+                                            "name": "recipe_get_crafting_label_text.tests.gd",
+                                            "dependencies": [
+                                                "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\RecipeAccess\\recipe.gd",
+                                                "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages\\ScriptTestRunner\\test_result.gd"
+                                            ]
+                                        },
+                                        {
+                                            "path": "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\RecipeAccess\\RecipeTests\\recipe_get_display_name.tests.gd",
+                                            "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\RecipeAccess\\RecipeTests\\recipe_get_display_name.tests.gd",
+                                            "name": "recipe_get_display_name.tests.gd",
+                                            "dependencies": [
+                                                "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\RecipeAccess\\recipe.gd",
+                                                "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages\\ScriptTestRunner\\test_result.gd"
+                                            ]
+                                        },
+                                        {
+                                            "path": "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\RecipeAccess\\RecipeTests\\recipe_get_guaranteed_output_ids.tests.gd",
+                                            "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\RecipeAccess\\RecipeTests\\recipe_get_guaranteed_output_ids.tests.gd",
+                                            "name": "recipe_get_guaranteed_output_ids.tests.gd",
+                                            "dependencies": [
+                                                "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\RecipeAccess\\recipe.gd",
+                                                "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages\\ScriptTestRunner\\test_result.gd"
+                                            ]
+                                        },
+                                        {
+                                            "path": "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\RecipeAccess\\RecipeTests\\recipe_get_relevant_token_class_ids.tests.gd",
+                                            "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\RecipeAccess\\RecipeTests\\recipe_get_relevant_token_class_ids.tests.gd",
+                                            "name": "recipe_get_relevant_token_class_ids.tests.gd",
+                                            "dependencies": [
+                                                "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\RecipeAccess\\recipe.gd",
+                                                "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\array_util.gd",
+                                                "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages\\ScriptTestRunner\\test_result.gd"
+                                            ]
+                                        },
+                                        {
+                                            "path": "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\RecipeAccess\\RecipeTests\\recipe_matches_stack.tests.gd",
+                                            "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\RecipeAccess\\RecipeTests\\recipe_matches_stack.tests.gd",
+                                            "name": "recipe_matches_stack.tests.gd",
+                                            "dependencies": [
+                                                "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\RecipeAccess\\recipe.gd",
+                                                "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages\\ScriptTestRunner\\test_result.gd"
+                                            ]
+                                        },
+                                        {
+                                            "path": "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\RecipeAccess\\RecipeTests\\recipe_select_output.tests.gd",
+                                            "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\RecipeAccess\\RecipeTests\\recipe_select_output.tests.gd",
+                                            "name": "recipe_select_output.tests.gd",
+                                            "dependencies": [
+                                                "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\RecipeAccess\\recipe.gd",
+                                                "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Packages\\ScriptTestRunner\\test_result.gd"
+                                            ]
+                                        }
+                                    ],
+                                    "name": "RecipeTests"
+                                }
+                            ],
+                            "scripts": [
+                                {
+                                    "path": "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\RecipeAccess\\recipe.gd",
+                                    "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\RecipeAccess\\recipe.gd",
+                                    "name": "recipe.gd",
+                                    "dependencies": [
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\set.gd",
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\better_random.gd",
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\array_util.gd",
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\array_caster.gd"
+                                    ]
+                                },
+                                {
+                                    "path": "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\RecipeAccess\\recipe_accessor.gd",
+                                    "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\RecipeAccess\\recipe_accessor.gd",
+                                    "name": "recipe_accessor.gd",
+                                    "dependencies": [
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\RecipeAccess\\recipe.gd",
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenDataAccess\\token_data_accessor.gd",
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\better_resource_loader.gd"
+                                    ]
+                                }
+                            ],
+                            "name": "RecipeAccess"
+                        },
+                        {
                             "path": "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\SaveManager",
                             "folders": [],
                             "scripts": [
@@ -914,12 +1028,12 @@
                                     "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\SaveManager\\save_controller.gd",
                                     "name": "save_controller.gd",
                                     "dependencies": [
-                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TimeController\\time_controller.gd",
-                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenContainer\\token_container.gd",
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\game_saver.gd",
-                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenManagement\\token_manager.gd",
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenManagement\\token_move_event.gd",
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenContainer\\token_container.gd",
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenBase\\token.gd",
-                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenManagement\\token_move_event.gd"
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TimeController\\time_controller.gd",
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenManagement\\token_manager.gd"
                                     ],
                                     "is_hidden": false,
                                     "position": [
@@ -983,16 +1097,16 @@
                                     "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenBase\\token.gd",
                                     "name": "token.gd",
                                     "dependencies": [
-                                        "C:/Users/Work/Documents/Projects/dwarfhold\\Tokens\\ProgressBar\\progress_bar_manager.gd",
-                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TimeController\\time_controller.gd",
-                                        "C:/Users/Work/Documents/Projects/dwarfhold\\world.gd",
-                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenContainer\\token_container.gd",
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenManagement\\token_creator.gd",
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenManagement\\token_manager.gd",
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\better_lerp.gd",
-                                        "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\vector_util.gd",
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\RecipeAccess\\recipe.gd",
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\world.gd",
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenManagement\\token_move_event.gd",
-                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\CraftingManager\\crafting_manager.gd",
-                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenManagement\\token_creator.gd"
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\vector_util.gd",
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenContainer\\token_container.gd",
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\Tokens\\ProgressBar\\progress_bar_manager.gd",
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TimeController\\time_controller.gd"
                                     ],
                                     "is_hidden": false,
                                     "position": [
@@ -1025,9 +1139,9 @@
                                     "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenContainer\\base_token_cache.gd",
                                     "name": "base_token_cache.gd",
                                     "dependencies": [
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenManagement\\token_move_event.gd",
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenContainer\\token_cache.gd",
-                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenBase\\token.gd",
-                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenManagement\\token_move_event.gd"
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenBase\\token.gd"
                                     ],
                                     "is_hidden": false,
                                     "position": [
@@ -1054,12 +1168,12 @@
                                     "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenContainer\\token_container.gd",
                                     "name": "token_container.gd",
                                     "dependencies": [
-                                        "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\dictionary_utility.gd",
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenManagement\\token_manager.gd",
-                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenBase\\token.gd",
-                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenManagement\\token_move_event.gd",
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenContainer\\base_token_cache.gd",
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenManagement\\token_move_event.gd",
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\dictionary_utility.gd",
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenManagement\\token_access_helper.gd",
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenBase\\token.gd",
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenManagement\\token_creator.gd"
                                     ],
                                     "is_hidden": false,
@@ -1074,6 +1188,23 @@
                             "is_collapsed": true
                         },
                         {
+                            "path": "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenDataAccess",
+                            "folders": [],
+                            "scripts": [
+                                {
+                                    "path": "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenDataAccess\\token_data_accessor.gd",
+                                    "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenDataAccess\\token_data_accessor.gd",
+                                    "name": "token_data_accessor.gd",
+                                    "dependencies": [
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\string_util.gd",
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\better_resource_loader.gd",
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\dictionary_utility.gd"
+                                    ]
+                                }
+                            ],
+                            "name": "TokenDataAccess"
+                        },
+                        {
                             "path": "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenExtras",
                             "folders": [],
                             "scripts": [
@@ -1082,8 +1213,9 @@
                                     "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenExtras\\token_outline_updater.gd",
                                     "name": "token_outline_updater.gd",
                                     "dependencies": [
-                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenManagement\\token_manager.gd",
-                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenContainer\\token_container.gd"
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenManagement\\token_interactor.gd",
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenContainer\\token_container.gd",
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenManagement\\token_manager.gd"
                                     ],
                                     "is_hidden": false,
                                     "position": [
@@ -1097,8 +1229,8 @@
                                     "name": "token_spacer.gd",
                                     "dependencies": [
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenBase\\token.gd",
-                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenContainer\\token_container.gd",
-                                        "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\combination_set.gd"
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\combination_set.gd",
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenContainer\\token_container.gd"
                                     ],
                                     "is_hidden": false,
                                     "position": [
@@ -1112,8 +1244,8 @@
                                     "name": "token_z_index_sorter.gd",
                                     "dependencies": [
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenManagement\\token_manager.gd",
-                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenContainer\\token_container.gd",
-                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenBase\\token.gd"
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenBase\\token.gd",
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenContainer\\token_container.gd"
                                     ],
                                     "is_hidden": false,
                                     "position": [
@@ -1148,14 +1280,16 @@
                                     "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenManagement\\token_creator.gd",
                                     "name": "token_creator.gd",
                                     "dependencies": [
-                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TimeController\\time_controller.gd",
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenManagement\\token_manager.gd",
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\world.gd",
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\better_resource_loader.gd",
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\dictionary_utility.gd",
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Extensions\\RecipeTokens\\recipe_token_data_creator.gd",
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\RecipeAccess\\recipe_accessor.gd",
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenContainer\\token_container.gd",
-                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenManagement\\token_manager.gd",
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenDataAccess\\token_data_accessor.gd",
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenBase\\token.gd",
-                                        "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\string_util.gd",
-                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\CraftingManager\\crafting_manager.gd"
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TimeController\\time_controller.gd"
                                     ],
                                     "is_hidden": false,
                                     "position": [
@@ -1164,17 +1298,28 @@
                                     ]
                                 },
                                 {
+                                    "path": "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenManagement\\token_interactor.gd",
+                                    "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenManagement\\token_interactor.gd",
+                                    "name": "token_interactor.gd",
+                                    "dependencies": [
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\world.gd",
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenManagement\\token_move_event.gd",
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenManagement\\token_access_helper.gd",
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenContainer\\token_container.gd",
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenBase\\token.gd",
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenManagement\\token_manager.gd"
+                                    ]
+                                },
+                                {
                                     "path": "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenManagement\\token_manager.gd",
                                     "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenManagement\\token_manager.gd",
                                     "name": "token_manager.gd",
                                     "dependencies": [
-                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TimeController\\time_controller.gd",
-                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenContainer\\token_container.gd",
-                                        "C:/Users/Work/Documents/Projects/dwarfhold\\world.gd",
-                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenBase\\token.gd",
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\RecipeAccess\\recipe.gd",
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenManagement\\token_move_event.gd",
-                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\CraftingManager\\crafting_manager.gd",
-                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenManagement\\token_access_helper.gd",
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenContainer\\token_container.gd",
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenBase\\token.gd",
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TimeController\\time_controller.gd",
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenManagement\\token_creator.gd"
                                     ],
                                     "is_hidden": false,
@@ -1231,6 +1376,21 @@
                             "name": "CustomCursor",
                             "is_hidden": false,
                             "is_collapsed": true
+                        },
+                        {
+                            "path": "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Extensions\\RecipeTokens",
+                            "folders": [],
+                            "scripts": [
+                                {
+                                    "path": "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Extensions\\RecipeTokens\\recipe_token_data_creator.gd",
+                                    "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Extensions\\RecipeTokens\\recipe_token_data_creator.gd",
+                                    "name": "recipe_token_data_creator.gd",
+                                    "dependencies": [
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\RecipeAccess\\recipe.gd"
+                                    ]
+                                }
+                            ],
+                            "name": "RecipeTokens"
                         }
                     ],
                     "scripts": [],
@@ -1345,8 +1505,8 @@
                             "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\Tokens\\Enemies\\bear.gd",
                             "name": "bear.gd",
                             "dependencies": [
-                                "C:/Users/Work/Documents/Projects/dwarfhold\\Tokens\\Enemies\\enemy.gd",
                                 "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenBase\\token.gd",
+                                "C:/Users/Work/Documents/Projects/dwarfhold\\Tokens\\Enemies\\enemy.gd",
                                 "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\better_lerp.gd"
                             ],
                             "is_hidden": false,
@@ -1387,8 +1547,8 @@
                             "name": "enemy.gd",
                             "dependencies": [
                                 "C:/Users/Work/Documents/Projects/dwarfhold\\Tokens\\ProgressBar\\progress_bar_manager.gd",
-                                "C:/Users/Work/Documents/Projects/dwarfhold\\Tokens\\Projectiles\\projectile.gd",
-                                "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenBase\\token.gd"
+                                "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenBase\\token.gd",
+                                "C:/Users/Work/Documents/Projects/dwarfhold\\Tokens\\Projectiles\\projectile.gd"
                             ],
                             "is_hidden": false,
                             "position": [
@@ -1496,8 +1656,8 @@
                             "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\Tokens\\Towers\\spikes.gd",
                             "name": "spikes.gd",
                             "dependencies": [
-                                "C:/Users/Work/Documents/Projects/dwarfhold\\Tokens\\Towers\\tower_base.gd",
-                                "C:/Users/Work/Documents/Projects/dwarfhold\\Tokens\\Enemies\\enemy.gd"
+                                "C:/Users/Work/Documents/Projects/dwarfhold\\Tokens\\Enemies\\enemy.gd",
+                                "C:/Users/Work/Documents/Projects/dwarfhold\\Tokens\\Towers\\tower_base.gd"
                             ],
                             "is_hidden": false,
                             "position": [
@@ -1604,9 +1764,7 @@
                                     "path": "C:/Users/Work/Documents/Projects/dwarfhold\\UI\\Debug\\DebugUI\\debug_ui.gd",
                                     "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\UI\\Debug\\DebugUI\\debug_ui.gd",
                                     "name": "debug_ui.gd",
-                                    "dependencies": [
-                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenManagement\\token_manager.gd"
-                                    ],
+                                    "dependencies": [],
                                     "is_hidden": false,
                                     "position": [
                                         0,
@@ -1618,6 +1776,7 @@
                                     "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\UI\\Debug\\DebugUI\\display_hovered_token_data.gd",
                                     "name": "display_hovered_token_data.gd",
                                     "dependencies": [
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenManagement\\token_interactor.gd",
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenBase\\token.gd",
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\string_util.gd",
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenManagement\\token_manager.gd"
@@ -1744,9 +1903,11 @@
                                     "name": "recipe_book.gd",
                                     "dependencies": [
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenManagement\\token_manager.gd",
-                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenManagement\\token_creator.gd",
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\UI\\GameElements\\RecipeBook\\recipe_item.gd",
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\CraftingManager\\crafting_manager.gd",
-                                        "C:/Users/Work/Documents/Projects/dwarfhold\\UI\\GameElements\\RecipeBook\\recipe_item.gd"
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\UI\\GameElements\\RecipeBook\\recipe_searcher.gd",
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\RecipeAccess\\recipe_accessor.gd",
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenManagement\\token_creator.gd"
                                     ],
                                     "is_hidden": false,
                                     "position": [
@@ -1759,14 +1920,23 @@
                                     "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\UI\\GameElements\\RecipeBook\\recipe_item.gd",
                                     "name": "recipe_item.gd",
                                     "dependencies": [
-                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenManagement\\token_manager.gd",
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenManagement\\token_creator.gd",
-                                        "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\easings.gd"
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\RecipeAccess\\recipe.gd",
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\easings.gd",
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenManagement\\token_manager.gd"
                                     ],
                                     "is_hidden": false,
                                     "position": [
                                         0,
                                         -132
+                                    ]
+                                },
+                                {
+                                    "path": "C:/Users/Work/Documents/Projects/dwarfhold\\UI\\GameElements\\RecipeBook\\recipe_searcher.gd",
+                                    "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\UI\\GameElements\\RecipeBook\\recipe_searcher.gd",
+                                    "name": "recipe_searcher.gd",
+                                    "dependencies": [
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\RecipeAccess\\recipe.gd"
                                     ]
                                 }
                             ],
@@ -1783,8 +1953,8 @@
                                     "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\UI\\GameElements\\TaskList\\task_list_ui.gd",
                                     "name": "task_list_ui.gd",
                                     "dependencies": [
-                                        "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\better_lerp.gd",
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\scroll_container_that_consumes_all_scroll_events.gd",
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\better_lerp.gd",
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\Events\\tasklist_event.gd"
                                     ],
                                     "is_hidden": false,
@@ -1819,8 +1989,8 @@
                                     "name": "time_ui.gd",
                                     "dependencies": [
                                         "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TimeController\\time_controller.gd",
-                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenContainer\\token_container.gd",
-                                        "C:/Users/Work/Documents/Projects/dwarfhold\\world.gd"
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\world.gd",
+                                        "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenContainer\\token_container.gd"
                                     ],
                                     "is_hidden": false,
                                     "position": [
@@ -1966,11 +2136,11 @@
             "full_name": "C:/Users/Work/Documents/Projects/dwarfhold\\camera.gd",
             "name": "camera.gd",
             "dependencies": [
-                "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenManagement\\token_manager.gd",
-                "C:/Users/Work/Documents/Projects/dwarfhold\\world.gd",
                 "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\better_lerp.gd",
+                "C:/Users/Work/Documents/Projects/dwarfhold\\Systems\\EnemySpawner\\enemy_spawner.gd",
+                "C:/Users/Work/Documents/Projects/dwarfhold\\world.gd",
                 "C:/Users/Work/Documents/Projects/dwarfhold\\Generics\\Scripts\\vector_util.gd",
-                "C:/Users/Work/Documents/Projects/dwarfhold\\Systems\\EnemySpawner\\enemy_spawner.gd"
+                "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenManagement\\token_manager.gd"
             ],
             "is_hidden": false,
             "position": [
@@ -1998,9 +2168,9 @@
             "name": "game.gd",
             "dependencies": [
                 "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TimeController\\time_controller.gd",
-                "C:/Users/Work/Documents/Projects/dwarfhold\\UI\\Screens\\SettingsMenu\\settings_menu.gd",
+                "C:/Users/Work/Documents/Projects/dwarfhold\\world.gd",
                 "C:/Users/Work/Documents/Projects/dwarfhold\\TokenEngine\\Core\\TokenContainer\\token_container.gd",
-                "C:/Users/Work/Documents/Projects/dwarfhold\\world.gd"
+                "C:/Users/Work/Documents/Projects/dwarfhold\\UI\\Screens\\SettingsMenu\\settings_menu.gd"
             ],
             "is_hidden": false,
             "position": [

@@ -2,6 +2,7 @@ from pygame import Rect, Vector2
 import pygame
 
 import configuration
+from dependency_display import DependencyDisplay
 from diagram.diagram_loader import DiagramLoader
 from diagram.diagram_module import DiagramModule
 from diagram.diagram_saver import DiagramSaver
@@ -288,18 +289,17 @@ class DiagramViewer:
 		pairs = set(self._get_all_visible_dependency_pairs())
 		seen = set()
 
-		for pair in pairs:
-			if pair in seen: continue
-			focussed = len(self.selected_items) == 0 or self._is_dependency_targetted(pair)
+		for dependency_display in pairs:
+			if dependency_display.pair in seen: continue
+			focussed = len(self.selected_items) == 0 or self._is_dependency_targetted(dependency_display)
 
-			inverse = (pair[1], pair[0])
-			if inverse in pairs:
-				self._draw_mutual_dependency(pair)
+			if dependency_display.inverse_pair in pairs:
+				self._draw_mutual_dependency(dependency_display)
 			else:
-				draw.arrow(pair[0].rect.midtop, pair[1].rect.midbottom, self._get_dependency_color(pair), layer=1 if focussed else 0)
+				draw.arrow(dependency_display.source.rect.midtop, dependency_display.target.rect.midbottom, self._get_dependency_color(dependency_display), layer=1 if focussed else 0)
 
-			seen.add(pair)
-			seen.add(inverse)
+			seen.add(dependency_display.pair)
+			seen.add(dependency_display.inverse_pair)
 
 	def _draw_mutual_dependency(self, pair):
 		left = pair[0] if pair[0].rect.center[0] < pair[1].rect.center[0] else pair[1]
@@ -309,28 +309,28 @@ class DiagramViewer:
 		draw.arrow(right.rect.midleft, left.rect.midright, color, layer=2)
 		draw.arrow(left.rect.midright, right.rect.midleft, color, layer=2)
 
-	def _get_dependency_color(self, pair):
-		focussed = len(self.selected_items) == 0 or self._is_dependency_targetted(pair)
-		wrong_way = pair[0].rect.midtop[1] < pair[1].rect.midbottom[1]
+	def _get_dependency_color(self, dependency_display: DependencyDisplay):
+		focussed = len(self.selected_items) == 0 or self._is_dependency_targetted(dependency_display)
+		wrong_way = dependency_display.source.rect.midtop[1] < dependency_display.target.rect.midbottom[1]
 		if focussed:
 			color = configuration.dependency_wrong_way_color if wrong_way else configuration.dependency_default_color
 		else:
 			color = configuration.dependency_wrong_way_unfocussed_color if wrong_way else configuration.dependency_unfocussed_color
 		return color
 
-	def _is_dependency_targetted(self, pair):
-		for item in pair:
+	def _is_dependency_targetted(self, dependency_display: DependencyDisplay):
+		for item in dependency_display.pair:
 			for parent in item.get_parent_chain():
 				if parent in self.selected_items:
 					return True
 		return False
 
-	def _get_all_visible_dependency_pairs(self) -> list[tuple]:
+	def _get_all_visible_dependency_pairs(self) -> list[DependencyDisplay]:
 		pairs = []
 		for dependency_source in self._get_visible_items(self.root.get_scripts_recursive()):
 			for dependency_target in self._get_visible_items(dependency_source.get_all_script_dependencies()):
 				if dependency_source == dependency_target: continue
-				pairs.append((dependency_source, dependency_target))
+				pairs.append(DependencyDisplay(dependency_source, dependency_target))
 		return pairs
 
 	def _get_visible_items(self, items_list):
