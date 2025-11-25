@@ -15,32 +15,16 @@ class DependencyDrawer:
 		self.selected_items = selected_items
 		self.diagram_dependency_finder = DiagramDependencyFinder(root)
 
-		pairs = set(self.diagram_dependency_finder.get_all_visible_dependencies())
-		seen = set()
+		for dependency_display in self.diagram_dependency_finder.get_all_visible_dependencies():
+			self._draw_dependency(dependency_display)
 
-		for dependency_display in pairs:
-			if dependency_display.pair in seen: continue
-			focussed = len(self.selected_items) == 0 or self._is_dependency_targetted(dependency_display)
-
-			if dependency_display.inverse_pair in pairs:
-				self._draw_mutual_dependency(dependency_display)
-			else:
-				draw.arrow(dependency_display.source.rect.midtop, dependency_display.target.rect.midbottom, self._get_dependency_color(dependency_display), layer=1 if focussed else 0)
-
-			seen.add(dependency_display.pair)
-			seen.add(dependency_display.inverse_pair)
-
-	def _draw_mutual_dependency(self, pair):
-		left = pair[0] if pair[0].rect.center[0] < pair[1].rect.center[0] else pair[1]
-		right = pair[0] if left == pair[1] else pair[1]
-		focussed = len(self.selected_items) == 0 or self._is_dependency_targetted(pair)
-		color = configuration.dependency_wrong_way_color if focussed else configuration.dependency_wrong_way_unfocussed_color
-		draw.arrow(right.rect.midleft, left.rect.midright, color, layer=2)
-		draw.arrow(left.rect.midright, right.rect.midleft, color, layer=2)
+	def _draw_dependency(self, dependency: DependencyDisplay) -> None:
+		focussed = len(self.selected_items) == 0 or self._is_dependency_targetted(dependency)
+		draw.arrow(dependency.get_start_position(), dependency.get_end_position(), self._get_dependency_color(dependency), layer=1 if focussed else 0)
 
 	def _get_dependency_color(self, dependency_display: DependencyDisplay):
 		focussed = len(self.selected_items) == 0 or self._is_dependency_targetted(dependency_display)
-		wrong_way = dependency_display.source.rect.midtop[1] < dependency_display.target.rect.midbottom[1]
+		wrong_way = dependency_display.source.rect.midtop[1] < dependency_display.target.rect.midbottom[1] or dependency_display.dependency_type == "mutual"
 		if focussed:
 			color = configuration.dependency_wrong_way_color if wrong_way else configuration.dependency_default_color
 		else:
