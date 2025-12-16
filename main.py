@@ -1,15 +1,7 @@
 import argparse
 import os
 from diagram_viewer import DiagramViewer
-from project_parsers.python_parser.parser import Parser as PythonParser
-from project_parsers.csharp_namespace_parser.parser import Parser as CSharpParser
-from project_parsers.godot.godot_parser import GodotParser
-
-parsers = {
-    "python": PythonParser,
-    "csharp": CSharpParser,
-    "godot": GodotParser,
-}
+from project_parsers import parsers
 
 
 def _main():
@@ -30,7 +22,6 @@ def _main():
         return
 
     parser = parsers[args.parser](args.project_path, args.output_path)
-    #parser.update_dependencies_file()
     DiagramViewer(parser)
 
 
