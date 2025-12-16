@@ -1,6 +1,6 @@
 from dependency_file_merger import update_file
-from project_parsers.unity_parser.json_writer import get_as_dict
-from project_parsers.unity_parser.project import Project
+from project_parsers.csharp_namespace_parser.json_writer import get_as_dict
+from project_parsers.csharp_namespace_parser.project import Project
 
 
 class Parser:

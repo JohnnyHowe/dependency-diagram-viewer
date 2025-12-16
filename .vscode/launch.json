@@ -12,8 +12,8 @@
             "console": "integratedTerminal",
 
             "program": "main.py",
-            "args": ["godot", "C:/Users/Work/Documents/Projects/dwarfhold", "./dependencies.json"]
-            //"args": ["csharp", "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts", "./dependencies.json"]
+            //"args": ["godot", "C:/Users/Work/Documents/Projects/dwarfhold", "./dependencies.json"]
+            "args": ["csharp", "C:/Users/Work/Documents/Projects/drifto/Assets/Scripts", "./dependencies.json"]
             //"args": ["python", "./", "./this_dependencies.json"]
         }
     ]

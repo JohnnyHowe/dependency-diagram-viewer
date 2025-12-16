@@ -4,8 +4,8 @@ import os
 import pygame
 
 from diagram_viewer import DiagramViewer
-from project_parsers.unity_parser.json_writer import write
-from project_parsers.unity_parser.project import Project
+from project_parsers.csharp_namespace_parser.json_writer import write
+from project_parsers.csharp_namespace_parser.project import Project
 from window_engine.window import Window
 
 project_path = None

@@ -1,7 +1,7 @@
 import os
-from project_parsers.unity_parser.json_parser import update_file
-from project_parsers.unity_parser.project import Project
-from project_parsers.unity_parser.namespace import Namespace
+from project_parsers.csharp_namespace_parser.json_parser import update_file
+from project_parsers.csharp_namespace_parser.project import Project
+from project_parsers.csharp_namespace_parser.namespace import Namespace
 
 
 def write(file_path: str, project: Project):

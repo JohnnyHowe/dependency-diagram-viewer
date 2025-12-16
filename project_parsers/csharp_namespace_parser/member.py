@@ -1,5 +1,5 @@
 from pathlib import Path
-from project_parsers.unity_parser import csharp_parser
+from project_parsers.csharp_namespace_parser import csharp_parser
 
 
 class Member:
